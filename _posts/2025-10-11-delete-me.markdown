@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Delete Me!"
-date:   2025-10-11 19:35:26 -0400
-categories: jekyll update
----
-I will be deleting this once I show the process is working.
