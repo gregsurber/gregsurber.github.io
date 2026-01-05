@@ -36,11 +36,13 @@ navigation:
       url: "/news/"
 
 # Plugins
+remote_theme: "mmistakes/minimal-mistakes" # <--- CHANGED: "remote_theme", not "theme"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme # <--- ADDED
 
 # Defaults (Sets layout for different file types)
 defaults:
