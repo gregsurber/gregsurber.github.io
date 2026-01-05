@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Obsidian Nord Skin for Minimal Mistakes
+   Based on the Nord Color Palette (https://www.nordtheme.com/)
+   ========================================================================== */
+
+/* Nord Color Palette Definitions */
+$nord0:  #2e3440; /* Polar Night: Background darkest */
+$nord1:  #3b4252; /* Polar Night: Background darker */
+$nord2:  #434c5e; /* Polar Night: Background dark */
+$nord3:  #4c566a; /* Polar Night: Background light (comments/ignored) */
+$nord4:  #d8dee9; /* Snow Storm: Text main */
+$nord5:  #e5e9f0; /* Snow Storm: Text light */
+$nord6:  #eceff4; /* Snow Storm: Text lightest */
+$nord7:  #8fbcbb; /* Frost: Teal (Links/Accents) */
+$nord8:  #88c0d0; /* Frost: Cyan */
+$nord9:  #81a1c1; /* Frost: Blue */
+$nord10: #5e81ac; /* Frost: Dark Blue */
+$nord11: #bf616a; /* Aurora: Red (Errors) */
+$nord12: #d08770; /* Aurora: Orange */
+$nord13: #ebcb8b; /* Aurora: Yellow (Warnings) */
+$nord14: #a3be8c; /* Aurora: Green (Success) */
+$nord15: #b48ead; /* Aurora: Purple */
+
+/* ==========================================================================
+   Variable Overrides
+   ========================================================================== */
+
+/* Backgrounds */
+$background-color: $nord0;
+$footer-background-color: $nord1;
+$masthead-link-color: $nord4;
+$masthead-link-color-hover: $nord8;
+
+/* Text */
+$text-color: $nord4;
+$muted-text-color: $nord3;
+$heading-color: $nord6;
+
+/* Links */
+$link-color: $nord8;
+$link-color-visited: $nord8;
+$link-color-hover: $nord7;
+
+/* Code Blocks */
+$code-background-color: $nord1;
+$code-background-color-dark: $nord0;
+
+/* Tables & Borders */
+$border-color: $nord2;
+$table-text-color: $nord4;
+$table-stripe-color: $nord1;
+$table-header-background-color: $nord2;
+
+/* Form Elements */
+$form-background-color: $nord1;
+$form-text-color: $nord4;
+
+/* Navigation / Sidebar */
+$navicon-link-color-hover: $nord8;
+$sidebar-sticky-link-color: $nord4;
+$sidebar-sticky-link-color-hover: $nord8;
+
+/* Buttons */
+$primary-color: $nord9; /* Primary action button color */
+$success-color: $nord14;
+$warning-color: $nord13;
+$danger-color:  $nord11;
+
+/* Syntax Highlighting Base (If not using a separate Rouge theme) */
+$base00: $nord0;
+$base01: $nord1;
+$base02: $nord2;
+$base03: $nord3;
+$base04: $nord4;
+$base05: $nord5;
+$base06: $nord6;
+$base07: $nord7;
+$base08: $nord11;
+$base09: $nord12;
+$base0a: $nord13;
+$base0b: $nord14;
+$base0c: $nord7;
+$base0d: $nord9;
+$base0e: $nord15;
+$base0f: $nord10;
