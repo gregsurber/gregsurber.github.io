@@ -7,7 +7,6 @@ baseurl: ""
 locale: "en-US"
 
 # Theme Settings
-theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "nord" # Options: air, contrast, dark, mint, sunrise
 search: true
 
