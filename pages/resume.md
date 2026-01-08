@@ -5,16 +5,15 @@ permalink: /resume/
 author_profile: true
 ---
 
-**Greg Surber, CISSP, CISM, Associate C|CISO**
+# Greg Surber, CISSP, CISM, Associate C|CISO
+## Director of Cybersecurity | DLP, DSPM & TPRM Strategist
+_Billerica, MA | 253-951-5505 | info@gregsurber.com | linkedin.com/in/gregorysurber/_
 
-Director of Cybersecurity | DLP, DSPM & TPRM Strategist
-Billerica, MA | 253-951-5505 | info@gregsurber.com | linkedin.com/in/gregorysurber/
-
-**Professional Summary**
+## Professional Summary
 
 Accomplished cybersecurity executive with 15+ years driving enterprise GRC solutions and quantitative risk management strategies across regulated industrial and commercial environments. Expert in aligning security posture with business objectives, managing risk in IT/OT convergence zones, and establishing governance frameworks. Deep expertise in translating complex regulatory requirements (PCI DSS, HIPAA, GDPR, CCPA/CPRA, FISMA) into scalable, automated GRC solutions. Proven history building high-performing teams, enhancing third-party risk management (TPRM) programs, and driving measurable security improvements.
 
-**Strategic Leadership Highlights**
+## Strategic Leadership Highlights
 
 * **Audit Excellence:** Built enterprise security programs achieving consistent audit excellence across federal, utility, and commercial environments, serving as subject matter expert for FISMA, OIG, DoD STIG, and NERC CIP audits with zero findings.  
 * **Policy & Framework Development:** Created the first DoDEA System Security Plan—a 375-page framework now used as the agency-wide template. Championed major regulatory transitions including leading a federal agency's transition from DoD C\&A to Risk Management Framework (RMF).  
@@ -24,11 +23,10 @@ Accomplished cybersecurity executive with 15+ years driving enterprise GRC solut
 
 ---
 
-**Professional Experience**
+## Professional Experience
 
-Principal Cybersecurity Architect (Acting Associate Director) | Quanterix | Jan 2024 – Present
-
-Functioned as the primary security lead for the organization, bridging the gap between technical execution and executive strategy.
+### Principal Cybersecurity Architect (Acting Associate Director) | Quanterix | Jan 2024 – Present
+_Functioned as the primary security lead for the organization, bridging the gap between technical execution and executive strategy._
 
 * **DLP & DSPM Strategy Leadership:** Architected and implemented an enterprise-wide Data Loss Prevention (DLP) and Data Security Posture Management (DSPM) program utilizing Microsoft Purview. Established granular data classification standards, automated labeling policies, and integrity procedures to protect sensitive IP across hybrid environments.  
 * **Third-Party Risk Management (TPRM):** Enhanced the vendor security ecosystem by collaborating with Legal to standardize security requirements in MSAs/SOWs. Led the evaluation of critical vendors, reducing supply chain risk exposure through rigorous due diligence and continuous monitoring.  
@@ -36,17 +34,17 @@ Functioned as the primary security lead for the organization, bridging the gap b
 * **Incident Response & Forensics:** Managed end-to-end security incident response processes, including forensic investigations and root cause analysis, effectively containing threats and minimizing business disruption.  
 * **Security Architecture & Engineering:** Led security architecture reviews for new cloud platforms and infrastructure deployments, ensuring a "security by design" approach for all new applications and services.
 
-**Cybersecurity Manager** | **SAIC / Volpe Center, US DOT** | *Jul 2020 – Jan 2024*
+### Cybersecurity Manager | SAIC / Volpe Center, US DOT | Jul 2020 – Jan 2024
 
 * Designed and implemented enterprise-wide privilege access management solution, reducing local administrator accounts by 85%+.  
 * Served as subject matter expert for FISMA and Office of Inspector General audits.  
 * Supported strategic decision-making by providing continuous risk visibility to leadership.
 
-**Adjunct Professor of Cybersecurity** | **City University of Seattle** | *Aug 2021 – Present*
+### Adjunct Professor of Cybersecurity | City University of Seattle | Aug 2021 – Present
 
 * Developed and delivered Masters' and Bachelors’-level curriculum for Cybersecurity Auditing, Ethical Hacking, Data Security, and Cloud Security.
 
-**Senior Cybersecurity Engineer / Vulnerability Manager** | **Puget Sound Energy** | *Apr 2016 \- Jul 2020*
+### Senior Cybersecurity Engineer / Vulnerability Manager | Puget Sound Energy | Apr 2016 \- Jul 2020
 
 * Architected and managed enterprise vulnerability solutions for 9,000+ assets across IT and OT environments, achieving 95% average monthly security patch compliance.  
 * SIEM & Tooling Strategy: Led vendor product evaluations, testing, and selection for SIEM, vulnerability scanning, and third-party patching tools, ensuring optimal ROI and capability alignment.  
@@ -54,7 +52,7 @@ Functioned as the primary security lead for the organization, bridging the gap b
 * Served as subject matter expert for NERC CIP-007 and CIP-010 compliance audits, achieving zero findings in 2016 and 2019 NERC/WECC audits.  
 * Supported Payment Card Industry Data Security Standard (PCI DSS) compliance efforts by implementing security controls and conducting vulnerability assessments of payment systems.
 
-**Chief, Information Assurance Branch (GS13)** | **Department of Defense Education Activity (DoDEA)** | *Aug 2010 – Apr 2015*
+### Chief, Information Assurance Branch (GS13) | Department of Defense Education Activity (DoDEA) | Aug 2010 – Apr 2015
 
 * Directed information security for 40,000+ users across 9 countries, managing $750k budget and team of 7 geographically dispersed IA officers with full personnel management responsibilities.  
 * Led agency transition from DoD C\&A to Risk Management Framework (RMF), creating the first-ever DoDEA System Security Plan now used as agency-wide template.  
@@ -62,7 +60,7 @@ Functioned as the primary security lead for the organization, bridging the gap b
 
 ---
 
-**Core Competencies & Technical Skills**
+## Core Competencies & Technical Skills
 
 * **Cybersecurity Leadership:** Enterprise Security Program Development, Risk Management Strategy, Executive Communication, Strategic Road Mapping, Governance Frameworks.  
 * **Privacy & Compliance:** GDPR/CCPA/CPRA Compliance, HIPAA Security Programs, Privacy Impact Assessments (PIA), Data Subject Rights Management, Internal Audit & Third-Party Assessments.  
@@ -72,7 +70,7 @@ Functioned as the primary security lead for the organization, bridging the gap b
 
 ---
 
-**Education & Certifications**
+## Education & Certifications
 
 * **M.S. in Cybersecurity** | City University of Seattle  
 * **B.A. in Sociology/Criminology** | University of Oklahoma  
@@ -80,7 +78,7 @@ Functioned as the primary security lead for the organization, bridging the gap b
 
 ---
 
-**Publications**
+## Publications
 
 Surber, J.G., & Zantua, M. (2022). *Intelligent Interaction Honeypots for Threat Hunting within the Internet of Things*. DOI: 10.53735/cisse.v9i1.147
 
