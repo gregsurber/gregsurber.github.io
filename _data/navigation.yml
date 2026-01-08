@@ -7,3 +7,5 @@ main:
     url: "/posts/"
   - title: "Curated News"
     url: "/news/"
+  - title: "Research"
+    url: "/research/"
