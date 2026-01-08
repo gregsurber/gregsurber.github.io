@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Kinetic AI Research Feed"
+permalink: /research/
+---
+
+Scanning arXiv for intersection of **LLMs** and **ICS/SCADA**.
+
+{% if site.data.kinetic_feed %}
+  {% for paper in site.data.kinetic_feed limit:10 %}
+    <article class="archive__item">
+      <h3 class="archive__item-title">
+        <a href="{{ paper.link }}" target="_blank">{{ paper.title }}</a>
+      </h3>
+      <p class="page__meta">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ paper.date }} | 
+        <i class="far fa-user" aria-hidden="true"></i> {{ paper.authors | join: ", " | truncate: 50 }}
+      </p>
+      <p class="archive__item-excerpt">{{ paper.summary | truncatewords: 40 }}</p>
+    </article>
+  {% endfor %}
+{% else %}
+  <p>No research data found. Run the Python scanner to populate this feed.</p>
+{% endif %}
