@@ -16,7 +16,7 @@ Accomplished cybersecurity executive with 15+ years driving enterprise GRC solut
 ## Strategic Leadership Highlights
 
 * **Audit Excellence:** Built enterprise security programs achieving consistent audit excellence across federal, utility, and commercial environments, serving as subject matter expert for FISMA, OIG, DoD STIG, and NERC CIP audits with zero findings.  
-* **Policy & Framework Development:** Created the first DoDEA System Security Plan—a 375-page framework now used as the agency-wide template. Championed major regulatory transitions including leading a federal agency's transition from DoD C\&A to Risk Management Framework (RMF).  
+* **Policy & Framework Development:** Created the first DoDEA System Security Plan—a 375-page framework now used as the agency-wide template. Championed major regulatory transitions including leading a federal agency's transition from DoD C&A to Risk Management Framework (RMF).  
 * **Third-Party Risk (TPRM):** Enhanced TPRM processes by standardizing security requirements in MSAs/SOWs with Legal, reducing vendor-related risk exposure.  
 * **Security Culture:** Engineered security culture through enterprise-wide awareness initiatives for diverse audiences—from 6,000 educators to Master's-level cybersecurity students.  
 * **IT/OT Convergence:** Led an Operational Technology (OT) Security Working Group for a critical infrastructure utility, coordinating security implementation between IT and industrial control systems (ICS)/SCADA teams.
@@ -55,7 +55,7 @@ _Functioned as the primary security lead for the organization, bridging the gap 
 ### Chief, Information Assurance Branch (GS13) | Department of Defense Education Activity (DoDEA) | Aug 2010 – Apr 2015
 
 * Directed information security for 40,000+ users across 9 countries, managing $750k budget and team of 7 geographically dispersed IA officers with full personnel management responsibilities.  
-* Led agency transition from DoD C\&A to Risk Management Framework (RMF), creating the first-ever DoDEA System Security Plan now used as agency-wide template.  
+* Led agency transition from DoD C&A to Risk Management Framework (RMF), creating the first-ever DoDEA System Security Plan now used as agency-wide template.  
 * Achieved zero findings across multiple federal audits (FISMA, OIG, DoD STIG) through quantitative risk management and proactive compliance monitoring.
 
 ---
