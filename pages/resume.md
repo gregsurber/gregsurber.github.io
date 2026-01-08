@@ -1,3 +1,10 @@
+---
+layout: single
+title: "Resume"
+permalink: /resume/
+author_profile: true
+---
+
 **Greg Surber, CISSP, CISM, Associate C|CISO**
 
 Director of Cybersecurity | DLP, DSPM & TPRM Strategist
