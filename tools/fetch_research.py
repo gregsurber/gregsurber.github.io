@@ -6,16 +6,22 @@ import os
 from datetime import datetime, timedelta
 
 # --- Configuration ---
-# The query targets the intersection of LLMs and Industrial Control Systems
 SEARCH_QUERY = 'all:"LLM" OR all:"Large Language Model" AND all:"ICS" OR all:"SCADA" OR all:"Industrial Control"'
-DATA_DIR = "_data"
+MAX_RESULTS = 20
+
+# --- FIX: ROBUST PATHING ---
+# 1. Get the absolute path to the folder containing this script (e.g., /Users/greg/site/tools)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 2. Go up one level to the Project Root, then into _data
+# Result: /Users/greg/site/_data
+DATA_DIR = os.path.join(SCRIPT_DIR, "..", "_data")
+
 OUTPUT_FILENAME = "kinetic_feed.json"
-MAX_RESULTS = 20  # How many papers to fetch per run
 
 def fetch_arxiv_papers():
     """Queries arXiv and returns a list of dictionaries."""
     
-    # URL Encoding the query safely
     encoded_query = urllib.parse.quote(SEARCH_QUERY)
     base_url = "http://export.arxiv.org/api/query?"
     url = f"{base_url}search_query={encoded_query}&start=0&max_results={MAX_RESULTS}&sortBy=submittedDate&sortOrder=descending"
@@ -31,25 +37,20 @@ def fetch_arxiv_papers():
         extracted_papers = []
 
         for entry in root.findall('atom:entry', ns):
-            # Extract basic data
             paper_id = entry.find('atom:id', ns).text
             title = entry.find('atom:title', ns).text.replace('\n', ' ').strip()
             summary = entry.find('atom:summary', ns).text.replace('\n', ' ').strip()
             published = entry.find('atom:published', ns).text
-            
-            # Get primary link (usually the PDF or Abstract page)
             link = entry.find('atom:id', ns).text
-            
-            # Format authors list
             authors = [author.find('atom:name', ns).text for author in entry.findall('atom:author', ns)]
             
             paper_data = {
-                "id": paper_id, # Used for deduplication
+                "id": paper_id,
                 "title": title,
                 "authors": authors,
                 "summary": summary,
                 "link": link,
-                "date": published[:10], # YYYY-MM-DD
+                "date": published[:10],
                 "fetched_at": datetime.now().strftime("%Y-%m-%d")
             }
             extracted_papers.append(paper_data)
@@ -63,14 +64,14 @@ def fetch_arxiv_papers():
 def update_json_feed(new_papers):
     """Updates the local JSON file, avoiding duplicates."""
     
-    # Ensure _data directory exists
+    # Ensure root _data directory exists
     if not os.path.exists(DATA_DIR):
         os.makedirs(DATA_DIR)
         print(f"[*] Created directory: {DATA_DIR}")
 
     filepath = os.path.join(DATA_DIR, OUTPUT_FILENAME)
+    print(f"[*] Target File: {filepath}") # Debug print to confirm location
     
-    # Load existing data
     existing_papers = []
     if os.path.exists(filepath):
         try:
@@ -80,24 +81,20 @@ def update_json_feed(new_papers):
             print("[!] Warning: Could not decode existing JSON. Starting fresh.")
             existing_papers = []
 
-    # Create a set of existing IDs for fast lookup
     existing_ids = {p['id'] for p in existing_papers}
-    
     added_count = 0
     
-    # Process new papers (reversed so the newest of the new stays at top when inserted)
     for paper in reversed(new_papers):
         if paper['id'] not in existing_ids:
-            existing_papers.insert(0, paper) # Prepend to top of list
+            existing_papers.insert(0, paper)
             added_count += 1
             existing_ids.add(paper['id'])
 
-    # Save updated list
     with open(filepath, 'w') as f:
         json.dump(existing_papers, f, indent=2)
         
-    print(f"[*] Success. Added {added_count} new papers to {filepath}.")
-    print(f"[*] Total papers in database: {len(existing_papers)}")
+    print(f"[*] Success. Added {added_count} new papers.")
+    print(f"[*] Total papers: {len(existing_papers)}")
 
 if __name__ == "__main__":
     papers = fetch_arxiv_papers()
