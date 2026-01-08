@@ -22,18 +22,6 @@ author:
     - label: "GitHub"
       url: "https://github.com/gregsurber"
 
-# Navigation (Top Bar)
-navigation:
-  main:
-    - title: "About"
-      url: "/about/"
-    - title: "Resume"
-      url: "/resume/"
-    - title: "Blog"
-      url: "/posts/"
-    - title: "Curated News"
-      url: "/news/"
-
 # Plugins
 remote_theme: "mmistakes/minimal-mistakes" # <--- CHANGED: "remote_theme", not "theme"
 plugins:
