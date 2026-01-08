@@ -2,13 +2,12 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#333" # or use overlay_image: /assets/images/banner.jpg
+  overlay_color: "#333"
   caption: "Security Architecture • AI Governance • Risk Management"
 excerpt: >
-  I am a Principal Cybersecurity Architect with 20+ years of experience securing infrastructure 
-  and engineering GRC solutions. I am currently pivoting to the next frontier: **AI Governance**.
-  
-  <br /> <a href="/resume/" class="btn btn--light-outline btn--large">View My Resume</a>
+  I am a Principal Cybersecurity Architect with 20+ years of experience engineering GRC solutions. 
+  I am currently researching the next frontier: **Kinetic AI Risk**—governing the intersection 
+  of Agentic AI and Critical Infrastructure.
 ---
 
 ## Latest Thoughts
