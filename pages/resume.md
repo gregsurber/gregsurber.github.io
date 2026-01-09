@@ -25,7 +25,7 @@ Accomplished cybersecurity executive with 15+ years driving enterprise GRC solut
 
 ## Active Research & Open Source
 
-Creator & Lead Researcher | Kinetic Prompt Dataset (KPD) Jan 2026 – Present
+### Creator & Lead Researcher | Kinetic Prompt Dataset (KPD) Jan 2026 – Present
 
 * Developing the industry’s first "Prompt-to-PLC" vulnerability dataset, designed to benchmark Large Language Model (LLM) interactions with Industrial Control Systems (ICS).
 * Pioneered the "Kinetic Risk Mapping" framework, translating OWASP Agentic AI vulnerabilities (e.g., Goal Hijacking, Context Poisoning) into physical failure modes.
