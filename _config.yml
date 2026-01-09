@@ -18,7 +18,7 @@ author:
   location: "Massachusetts, USA"
   links:
     - label: "Email"            # <--- ADD THIS
-      url: "mailto:your-email@example.com"
+      url: "mailto:info@gregsurber.com"
       icon: "fas fa-fw fa-envelope-square"
     - label: "LinkedIn"
       url: "https://linkedin.com/in/gregorysurber"
