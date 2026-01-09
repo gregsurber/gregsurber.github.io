@@ -6,12 +6,12 @@ author_profile: true
 ---
 
 # Greg Surber, CISSP, CISM, Associate C|CISO
-## Director of Cybersecurity | DLP, DSPM & TPRM Strategist
+## Principal Cybersecurity Architect | OT Security & GRC | Kinetic AI Risk | CISSP CISM
 _Billerica, MA | 253-951-5505 | info@gregsurber.com | linkedin.com/in/gregorysurber/_
 
 ## Professional Summary
 
-Accomplished cybersecurity executive with 15+ years driving enterprise GRC solutions and quantitative risk management strategies across regulated industrial and commercial environments. Expert in aligning security posture with business objectives, managing risk in IT/OT convergence zones, and establishing governance frameworks. Deep expertise in translating complex regulatory requirements (PCI DSS, HIPAA, GDPR, CCPA/CPRA, FISMA) into scalable, automated GRC solutions. Proven history building high-performing teams, enhancing third-party risk management (TPRM) programs, and driving measurable security improvements.
+Accomplished cybersecurity executive with 15+ years driving enterprise GRC solutions and quantitative risk management strategies across regulated industrial and commercial environments. Expert in aligning security posture with business objectives, managing risk in IT/OT convergence zones, and establishing governance frameworks. Deep expertise in translating complex regulatory requirements (PCI DSS, HIPAA, GDPR, CCPA/CPRA, FISMA) into scalable, automated GRC solutions. Proven history building high-performing teams, enhancing third-party risk management (TPRM) programs, and driving measurable security improvements. Currently pioneering research into 'Kinetic AI Risk,' developing frameworks to secure the intersection of Agentic AI and Operational Technology (OT).
 
 ## Strategic Leadership Highlights
 
@@ -20,6 +20,17 @@ Accomplished cybersecurity executive with 15+ years driving enterprise GRC solut
 * **Third-Party Risk (TPRM):** Enhanced TPRM processes by standardizing security requirements in MSAs/SOWs with Legal, reducing vendor-related risk exposure.  
 * **Security Culture:** Engineered security culture through enterprise-wide awareness initiatives for diverse audiences—from 6,000 educators to Master's-level cybersecurity students.  
 * **IT/OT Convergence:** Led an Operational Technology (OT) Security Working Group for a critical infrastructure utility, coordinating security implementation between IT and industrial control systems (ICS)/SCADA teams.
+
+---
+
+## Active Research & Open Source
+
+Creator & Lead Researcher | Kinetic Prompt Dataset (KPD) Jan 2026 – Present
+
+* Developing the industry’s first "Prompt-to-PLC" vulnerability dataset, designed to benchmark Large Language Model (LLM) interactions with Industrial Control Systems (ICS).
+* Pioneered the "Kinetic Risk Mapping" framework, translating OWASP Agentic AI vulnerabilities (e.g., Goal Hijacking, Context Poisoning) into physical failure modes.
+* Engineering custom Python tooling to scrape and analyze arXiv research at the intersection of SCADA security and Generative AI.
+* Repository: [github.com/gregsurber/kinetic-prompt-dataset](https://github.com/gregsurber/kinetic-prompt-dataset)
 
 ---
 
@@ -62,11 +73,10 @@ _Functioned as the primary security lead for the organization, bridging the gap 
 
 ## Core Competencies & Technical Skills
 
-* **Cybersecurity Leadership:** Enterprise Security Program Development, Risk Management Strategy, Executive Communication, Strategic Road Mapping, Governance Frameworks.  
-* **Privacy & Compliance:** GDPR/CCPA/CPRA Compliance, HIPAA Security Programs, Privacy Impact Assessments (PIA), Data Subject Rights Management, Internal Audit & Third-Party Assessments.  
-* **Regulatory Standards:** PCI DSS, FISMA, NIST (CSF v1/v2, AI RMF, 800-Series, RMF), ISO 27001, SOC 1/2, DoD STIG, NERC CIP, SOX.  
-* **Enterprise Risk:** Quantitative Risk Management, Third-Party Risk Management (TPRM), Vendor Security Assessments, Business Continuity & Disaster Recovery (BC/DR).  
-* **Tools & Platforms:** Microsoft Purview (DLP/DSPM), SIEM, Vulnerability Management (Tenable Nessus, ACAS), GRC Platforms (Vanta), Risk Registers.
+* **Emerging Tech & OT:** AI & LLM Security (OWASP Top 10), OT/ICS Security (IEC 62443, NIST 800-82), Kinetic Risk Mapping, Intelligent Interaction Honeypots.
+* **Technical Stack:** Python (Data Analysis/Automation), Docker, Linux (Kali), GitHub/Gitflow, Jekyll.
+* **Governance & Risk:** Enterprise Risk Management (ERM), TPRM, NIST CSF 2.0, ISO 27001, Regulatory Compliance (SOX, GDPR, HIPAA).
+* **Leadership:** Security Architecture Strategy, Board-Level Reporting, Cross-Functional Team Leadership, Crisis Management.
 
 ---
 
