@@ -1,4 +1,4 @@
-name: Weekly Research Fetcher
+name: Weekly Research Fetcher # This will automatically update my research links on a weekly basis
 
 # Trigger:
 # 1. Schedule: Runs at 08:00 UTC every Monday
