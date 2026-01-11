@@ -1,5 +1,318 @@
 [
   {
+    "id": "http://arxiv.org/abs/2601.05215v1",
+    "title": "MineNPC-Task: Task Suite for Memory-Aware Minecraft Agents",
+    "authors": [
+      "Tamil Sudaravan Mohan Doss",
+      "Michael Xu",
+      "Sudha Rao",
+      "Andrew D. Wilson",
+      "Balasaravanan Thoravi Kumaravel"
+    ],
+    "summary": "We present \\textsc{MineNPC-Task}, a user-authored benchmark and evaluation harness for testing memory-aware, mixed-initiative LLM agents in open-world \\emph{Minecraft}. Rather than relying on synthetic prompts, tasks are elicited from formative and summative co-play with expert players, normalized into parametric templates with explicit preconditions and dependency structure, and paired with machine-checkable validators under a bounded-knowledge policy that forbids out-of-world shortcuts. The harness captures plan/act/memory events-including plan previews, targeted clarifications, memory reads and writes, precondition checks, and repair attempts and reports outcomes relative to the total number of attempted subtasks, derived from in-world evidence.   As an initial snapshot, we instantiate the framework with GPT-4o and evaluate \\textbf{216} subtasks across \\textbf{8} experienced players. We observe recurring breakdown patterns in code execution, inventory/tool handling, referencing, and navigation, alongside recoveries supported by mixed-initiative clarifications and lightweight memory. Participants rated interaction quality and interface usability positively, while highlighting the need for stronger memory persistence across tasks. We release the complete task suite, validators, logs, and harness to support transparent, reproducible evaluation of future memory-aware embodied agents.",
+    "link": "http://arxiv.org/abs/2601.05215v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05214v1",
+    "title": "Internal Representations as Indicators of Hallucinations in Agent Tool Selection",
+    "authors": [
+      "Kait Healy",
+      "Bharathi Srinivasan",
+      "Visakh Madathil",
+      "Jing Wu"
+    ],
+    "summary": "Large Language Models (LLMs) have shown remarkable capabilities in tool calling and tool usage, but suffer from hallucinations where they choose incorrect tools, provide malformed parameters and exhibit 'tool bypass' behavior by performing simulations and generating outputs instead of invoking specialized tools or external systems. This undermines the reliability of LLM based agents in production systems as it leads to inconsistent results, and bypasses security and audit controls. Such hallucinations in agent tool selection require early detection and error handling. Unlike existing hallucination detection methods that require multiple forward passes or external validation, we present a computationally efficient framework that detects tool-calling hallucinations in real-time by leveraging LLMs' internal representations during the same forward pass used for generation. We evaluate this approach on reasoning tasks across multiple domains, demonstrating strong detection performance (up to 86.4\\% accuracy) while maintaining real-time inference capabilities with minimal computational overhead, particularly excelling at detecting parameter-level hallucinations and inappropriate tool selections, critical for reliable agent deployment.",
+    "link": "http://arxiv.org/abs/2601.05214v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05192v1",
+    "title": "LELA: an LLM-based Entity Linking Approach with Zero-Shot Domain Adaptation",
+    "authors": [
+      "Samy Haffoudhi",
+      "Fabian M. Suchanek",
+      "Nils Holzenberger"
+    ],
+    "summary": "Entity linking (mapping ambiguous mentions in text to entities in a knowledge base) is a foundational step in tasks such as knowledge graph construction, question-answering, and information extraction. Our method, LELA, is a modular coarse-to-fine approach that leverages the capabilities of large language models (LLMs), and works with different target domains, knowledge bases and LLMs, without any fine-tuning phase. Our experiments across various entity linking settings show that LELA is highly competitive with fine-tuned approaches, and substantially outperforms the non-fine-tuned ones.",
+    "link": "http://arxiv.org/abs/2601.05192v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05187v1",
+    "title": "SimuAgent: An LLM-Based Simulink Modeling Assistant Enhanced with Reinforcement Learning",
+    "authors": [
+      "Yanchang Liang",
+      "Xiaowei Zhao"
+    ],
+    "summary": "Large language models (LLMs) have revolutionized text-based code automation, but their potential in graph-oriented engineering workflows remains under-explored. We introduce SimuAgent, an LLM-powered modeling and simulation agent tailored for Simulink. SimuAgent replaces verbose XML with a concise, dictionary-style Python representation, dramatically cutting token counts, improving interpretability, and enabling fast, in-process simulation. A lightweight plan-execute architecture, trained in two stages, equips the agent with both low-level tool skills and high-level design reasoning. To tackle sparse rewards in long-horizon tasks, we propose Reflection-GRPO (ReGRPO), which augments Group Relative Policy Optimization (GRPO) with self-reflection traces that supply rich intermediate feedback, accelerating convergence and boosting robustness. Experiments on SimuBench, our newly released benchmark comprising 5300 multi-domain modeling tasks, show that a Qwen2.5-7B model fine-tuned with SimuAgent converges faster and achieves higher modeling accuracy than standard RL baselines, and even surpasses GPT-4o when evaluated with few-shot prompting on the same benchmark. Ablations confirm that the two-stage curriculum and abstract-reconstruct data augmentation further enhance generalization. SimuAgent trains and runs entirely on-premise with modest hardware, delivering a privacy-preserving, cost-effective solution for industrial model-driven engineering. SimuAgent bridges the gap between LLMs and graphical modeling environments, offering a practical solution for AI-assisted engineering design in industrial settings.",
+    "link": "http://arxiv.org/abs/2601.05187v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05184v1",
+    "title": "Observations and Remedies for Large Language Model Bias in Self-Consuming Performative Loop",
+    "authors": [
+      "Yaxuan Wang",
+      "Zhongteng Cai",
+      "Yujia Bao",
+      "Xueru Zhang",
+      "Yang Liu"
+    ],
+    "summary": "The rapid advancement of large language models (LLMs) has led to growing interest in using synthetic data to train future models. However, this creates a self-consuming retraining loop, where models are trained on their own outputs and may cause performance drops and induce emerging biases. In real-world applications, previously deployed LLMs may influence the data they generate, leading to a dynamic system driven by user feedback. For example, if a model continues to underserve users from a group, less query data will be collected from this particular demographic of users. In this study, we introduce the concept of \\textbf{S}elf-\\textbf{C}onsuming \\textbf{P}erformative \\textbf{L}oop (\\textbf{SCPL}) and investigate the role of synthetic data in shaping bias during these dynamic iterative training processes under controlled performative feedback. This controlled setting is motivated by the inaccessibility of real-world user preference data from dynamic production systems, and enables us to isolate and analyze feedback-driven bias evolution in a principled manner. We focus on two types of loops, including the typical retraining setting and the incremental fine-tuning setting, which is largely underexplored. Through experiments on three real-world tasks, we find that the performative loop increases preference bias and decreases disparate bias. We design a reward-based rejection sampling strategy to mitigate the bias, moving towards more trustworthy self-improving systems.",
+    "link": "http://arxiv.org/abs/2601.05184v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05172v1",
+    "title": "CoV: Chain-of-View Prompting for Spatial Reasoning",
+    "authors": [
+      "Haoyu Zhao",
+      "Akide Liu",
+      "Zeyu Zhang",
+      "Weijie Wang",
+      "Feng Chen",
+      "Ruihan Zhu",
+      "Gholamreza Haffari",
+      "Bohan Zhuang"
+    ],
+    "summary": "Embodied question answering (EQA) in 3D environments often requires collecting context that is distributed across multiple viewpoints and partially occluded. However, most recent vision--language models (VLMs) are constrained to a fixed and finite set of input views, which limits their ability to acquire question-relevant context at inference time and hinders complex spatial reasoning. We propose Chain-of-View (CoV) prompting, a training-free, test-time reasoning framework that transforms a VLM into an active viewpoint reasoner through a coarse-to-fine exploration process. CoV first employs a View Selection agent to filter redundant frames and identify question-aligned anchor views. It then performs fine-grained view adjustment by interleaving iterative reasoning with discrete camera actions, obtaining new observations from the underlying 3D scene representation until sufficient context is gathered or a step budget is reached.   We evaluate CoV on OpenEQA across four mainstream VLMs and obtain an average +11.56\\% improvement in LLM-Match, with a maximum gain of +13.62\\% on Qwen3-VL-Flash. CoV further exhibits test-time scaling: increasing the minimum action budget yields an additional +2.51\\% average improvement, peaking at +3.73\\% on Gemini-2.5-Flash. On ScanQA and SQA3D, CoV delivers strong performance (e.g., 116 CIDEr / 31.9 EM@1 on ScanQA and 51.1 EM@1 on SQA3D). Overall, these results suggest that question-aligned view selection coupled with open-view search is an effective, model-agnostic strategy for improving spatial reasoning in 3D EQA without additional training.",
+    "link": "http://arxiv.org/abs/2601.05172v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05170v1",
+    "title": "Reverse-engineering NLI: A study of the meta-inferential properties of Natural Language Inference",
+    "authors": [
+      "Rasmus Blanck",
+      "Bill Noble",
+      "Stergios Chatzikyriakidis"
+    ],
+    "summary": "Natural Language Inference (NLI) has been an important task for evaluating language models for Natural Language Understanding, but the logical properties of the task are poorly understood and often mischaracterized. Understanding the notion of inference captured by NLI is key to interpreting model performance on the task. In this paper we formulate three possible readings of the NLI label set and perform a comprehensive analysis of the meta-inferential properties they entail. Focusing on the SNLI dataset, we exploit (1) NLI items with shared premises and (2) items generated by LLMs to evaluate models trained on SNLI for meta-inferential consistency and derive insights into which reading of the logical relations is encoded by the dataset.",
+    "link": "http://arxiv.org/abs/2601.05170v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05167v1",
+    "title": "RelayLLM: Efficient Reasoning via Collaborative Decoding",
+    "authors": [
+      "Chengsong Huang",
+      "Tong Zheng",
+      "Langlin Huang",
+      "Jinyuan Li",
+      "Haolin Liu",
+      "Jiaxin Huang"
+    ],
+    "summary": "Large Language Models (LLMs) for complex reasoning is often hindered by high computational costs and latency, while resource-efficient Small Language Models (SLMs) typically lack the necessary reasoning capacity. Existing collaborative approaches, such as cascading or routing, operate at a coarse granularity by offloading entire queries to LLMs, resulting in significant computational waste when the SLM is capable of handling the majority of reasoning steps. To address this, we propose RelayLLM, a novel framework for efficient reasoning via token-level collaborative decoding. Unlike routers, RelayLLM empowers the SLM to act as an active controller that dynamically invokes the LLM only for critical tokens via a special command, effectively \"relaying\" the generation process. We introduce a two-stage training framework, including warm-up and Group Relative Policy Optimization (GRPO) to teach the model to balance independence with strategic help-seeking. Empirical results across six benchmarks demonstrate that RelayLLM achieves an average accuracy of 49.52%, effectively bridging the performance gap between the two models. Notably, this is achieved by invoking the LLM for only 1.07% of the total generated tokens, offering a 98.2% cost reduction compared to performance-matched random routers.",
+    "link": "http://arxiv.org/abs/2601.05167v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05162v1",
+    "title": "GenAI-DrawIO-Creator: A Framework for Automated Diagram Generation",
+    "authors": [
+      "Jinze Yu",
+      "Dayuan Jiang"
+    ],
+    "summary": "Diagrams are crucial for communicating complex information, yet creating and modifying them remains a labor-intensive task. We present GenAI-DrawIO-Creator, a novel framework that leverages Large Language Models (LLMs) to automate diagram generation and manipulation in the structured XML format used by draw.io. Our system integrates Claude 3.7 to reason about structured visual data and produce valid diagram representations. Key contributions include a high-level system design enabling real-time diagram updates, specialized prompt engineering and error-checking to ensure well-formed XML outputs. We demonstrate a working prototype capable of generating accurate diagrams (such as network architectures and flowcharts) from natural language or code, and even replicating diagrams from images. Simulated evaluations show that our approach significantly reduces diagram creation time and produces outputs with high structural fidelity. Our results highlight the promise of Claude 3.7 in handling structured visual reasoning tasks and lay the groundwork for future research in AI-assisted diagramming applications.",
+    "link": "http://arxiv.org/abs/2601.05162v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05144v1",
+    "title": "Distilling the Thought, Watermarking the Answer: A Principle Semantic Guided Watermark for Large Reasoning Models",
+    "authors": [
+      "Shuliang Liu",
+      "Xingyu Li",
+      "Hongyi Liu",
+      "Yibo Yan",
+      "Bingchen Duan",
+      "Qi Zheng",
+      "Dong Fang",
+      "Lingfeng Su",
+      "Xuming Hu"
+    ],
+    "summary": "Reasoning Large Language Models (RLLMs) excelling in complex tasks present unique challenges for digital watermarking, as existing methods often disrupt logical coherence or incur high computational costs. Token-based watermarking techniques can corrupt the reasoning flow by applying pseudo-random biases, while semantic-aware approaches improve quality but introduce significant latency or require auxiliary models. This paper introduces ReasonMark, a novel watermarking framework specifically designed for reasoning-intensive LLMs. Our approach decouples generation into an undisturbed Thinking Phase and a watermarked Answering Phase. We propose a Criticality Score to identify semantically pivotal tokens from the reasoning trace, which are distilled into a Principal Semantic Vector (PSV). The PSV then guides a semantically-adaptive mechanism that modulates watermark strength based on token-PSV alignment, ensuring robustness without compromising logical integrity. Extensive experiments show ReasonMark surpasses state-of-the-art methods by reducing text Perplexity by 0.35, increasing translation BLEU score by 0.164, and raising mathematical accuracy by 0.67 points. These advancements are achieved alongside a 0.34% higher watermark detection AUC and stronger robustness to attacks, all with a negligible increase in latency. This work enables the traceable and trustworthy deployment of reasoning LLMs in real-world applications.",
+    "link": "http://arxiv.org/abs/2601.05144v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05114v1",
+    "title": "Evaluative Fingerprints: Stable and Systematic Differences in LLM Evaluator Behavior",
+    "authors": [
+      "Wajid Nasser"
+    ],
+    "summary": "LLM-as-judge systems promise scalable, consistent evaluation. We find the opposite: judges are consistent, but not with each other; they are consistent with themselves. Across 3,240 evaluations (9 judges x 120 unique video x pack items x 3 independent runs), inter-judge agreement is near-zero (Krippendorff's \u03b1 = 0.042). On two dimensions, judges disagree more than random noise would predict (\u03b1 < 0). Yet this disagreement isn't chaos; it's structured. A classifier identifies which judge produced an evaluation with 77.1% accuracy from rubric scores alone, rising to 89.9% with disposition features. Within model families, the signal is even stronger: GPT-4.1 and GPT-5.2 are distinguishable with 99.6% accuracy. We call this the reliability paradox: judges cannot agree on what constitutes quality, yet their disagreement patterns are so stable they function as fingerprints. Each judge implements a distinct, stable theory of quality: an \"evaluative disposition\" that shapes how it interprets any rubric. We characterize these dispositions along multiple axes: harshness/leniency, dimension emphasis, within-judge stability (ICC), and evidence behavior (receipt validity, semantic linkage via NLI, and shotgun index). The implication is stark: LLM judges are not interchangeable instruments measuring a shared construct. They are distinct measurement devices, each encoding its own implicit theory of quality. Averaging their scores produces a synthetic verdict that corresponds to no judge's actual values.",
+    "link": "http://arxiv.org/abs/2601.05114v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05111v1",
+    "title": "Agent-as-a-Judge",
+    "authors": [
+      "Runyang You",
+      "Hongru Cai",
+      "Caiqi Zhang",
+      "Qiancheng Xu",
+      "Meng Liu",
+      "Tiezheng Yu",
+      "Yongqi Li",
+      "Wenjie Li"
+    ],
+    "summary": "LLM-as-a-Judge has revolutionized AI evaluation by leveraging large language models for scalable assessments. However, as evaluands become increasingly complex, specialized, and multi-step, the reliability of LLM-as-a-Judge has become constrained by inherent biases, shallow single-pass reasoning, and the inability to verify assessments against real-world observations. This has catalyzed the transition to Agent-as-a-Judge, where agentic judges employ planning, tool-augmented verification, multi-agent collaboration, and persistent memory to enable more robust, verifiable, and nuanced evaluations. Despite the rapid proliferation of agentic evaluation systems, the field lacks a unified framework to navigate this shifting landscape. To bridge this gap, we present the first comprehensive survey tracing this evolution. Specifically, we identify key dimensions that characterize this paradigm shift and establish a developmental taxonomy. We organize core methodologies and survey applications across general and professional domains. Furthermore, we analyze frontier challenges and identify promising research directions, ultimately providing a clear roadmap for the next generation of agentic evaluation.",
+    "link": "http://arxiv.org/abs/2601.05111v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05109v1",
+    "title": "Nalar: An agent serving framework",
+    "authors": [
+      "Marco Laju",
+      "Donghyun Son",
+      "Saurabh Agarwal",
+      "Nitin Kedia",
+      "Myungjin Lee",
+      "Jayanth Srinivasa",
+      "Aditya Akella"
+    ],
+    "summary": "LLM-driven agentic applications increasingly automate complex, multi-step tasks, but serving them efficiently remains challenging due to heterogeneous components, dynamic and model-driven control flow, long-running state, and unpredictable latencies. Nalar is a ground-up agent-serving framework that cleanly separates workflow specification from execution while providing the runtime visibility and control needed for robust performance. Nalar preserves full Python expressiveness, using lightweight auto-generated stubs that turn agent and tool invocations into futures carrying dependency and context metadata. A managed state layer decouples logical state from physical placement, enabling safe reuse, migration, and consistent retry behavior. A two-level control architecture combines global policy computation with local event-driven enforcement to support adaptive routing, scheduling, and resource management across evolving workflows. Together, these mechanisms allow Nalar to deliver scalable, efficient, and policy-driven serving of heterogeneous agentic applications without burdening developers with orchestration logic. Across three agentic workloads, Nalar cuts tail latency by 34--74\\%, achieves up to $2.9\\times$ speedups, sustains 80 RPS where baselines fail, and scales to 130K futures with sub-500 ms control overhead.",
+    "link": "http://arxiv.org/abs/2601.05109v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05107v1",
+    "title": "Controllable Memory Usage: Balancing Anchoring and Innovation in Long-Term Human-Agent Interaction",
+    "authors": [
+      "Muzhao Tian",
+      "Zisu Huang",
+      "Xiaohua Wang",
+      "Jingwen Xu",
+      "Zhengkang Guo",
+      "Qi Qian",
+      "Yuanzhe Shen",
+      "Kaitao Song",
+      "Jiakang Yuan",
+      "Changze Lv",
+      "Xiaoqing Zheng"
+    ],
+    "summary": "As LLM-based agents are increasingly used in long-term interactions, cumulative memory is critical for enabling personalization and maintaining stylistic consistency. However, most existing systems adopt an ``all-or-nothing'' approach to memory usage: incorporating all relevant past information can lead to \\textit{Memory Anchoring}, where the agent is trapped by past interactions, while excluding memory entirely results in under-utilization and the loss of important interaction history. We show that an agent's reliance on memory can be modeled as an explicit and user-controllable dimension. We first introduce a behavioral metric of memory dependence to quantify the influence of past interactions on current outputs. We then propose \\textbf{Stee}rable \\textbf{M}emory Agent, \\texttt{SteeM}, a framework that allows users to dynamically regulate memory reliance, ranging from a fresh-start mode that promotes innovation to a high-fidelity mode that closely follows interaction history. Experiments across different scenarios demonstrate that our approach consistently outperforms conventional prompting and rigid memory masking strategies, yielding a more nuanced and effective control for personalized human-agent collaboration.",
+    "link": "http://arxiv.org/abs/2601.05107v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05106v1",
+    "title": "Token-Level LLM Collaboration via FusionRoute",
+    "authors": [
+      "Nuoya Xiong",
+      "Yuhang Zhou",
+      "Hanqing Zeng",
+      "Zhaorun Chen",
+      "Furong Huang",
+      "Shuchao Bi",
+      "Lizhu Zhang",
+      "Zhuokai Zhao"
+    ],
+    "summary": "Large language models (LLMs) exhibit strengths across diverse domains. However, achieving strong performance across these domains with a single general-purpose model typically requires scaling to sizes that are prohibitively expensive to train and deploy. On the other hand, while smaller domain-specialized models are much more efficient, they struggle to generalize beyond their training distributions. To address this dilemma, we propose FusionRoute, a robust and effective token-level multi-LLM collaboration framework in which a lightweight router simultaneously (i) selects the most suitable expert at each decoding step and (ii) contributes a complementary logit that refines or corrects the selected expert's next-token distribution via logit addition. Unlike existing token-level collaboration methods that rely solely on fixed expert outputs, we provide a theoretical analysis showing that pure expert-only routing is fundamentally limited: unless strong global coverage assumptions hold, it cannot in general realize the optimal decoding policy. By augmenting expert selection with a trainable complementary generator, FusionRoute expands the effective policy class and enables recovery of optimal value functions under mild conditions. Empirically, across both Llama-3 and Gemma-2 families and diverse benchmarks spanning mathematical reasoning, code generation, and instruction following, FusionRoute outperforms both sequence- and token-level collaboration, model merging, and direct fine-tuning, while remaining competitive with domain experts on their respective tasks.",
+    "link": "http://arxiv.org/abs/2601.05106v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05103v1",
+    "title": "Semantically Orthogonal Framework for Citation Classification: Disentangling Intent and Content",
+    "authors": [
+      "Changxu Duan",
+      "Zhiyin Tan"
+    ],
+    "summary": "Understanding the role of citations is essential for research assessment and citation-aware digital libraries. However, existing citation classification frameworks often conflate citation intent (why a work is cited) with cited content type (what part is cited), limiting their effectiveness in auto classification due to a dilemma between fine-grained type distinctions and practical classification reliability. We introduce SOFT, a Semantically Orthogonal Framework with Two dimensions that explicitly separates citation intent from cited content type, drawing inspiration from semantic role theory. We systematically re-annotate the ACL-ARC dataset using SOFT and release a cross-disciplinary test set sampled from ACT2. Evaluation with both zero-shot and fine-tuned Large Language Models demonstrates that SOFT enables higher agreement between human annotators and LLMs, and supports stronger classification performance and robust cross-domain generalization compared to ACL-ARC and SciCite annotation frameworks. These results confirm SOFT's value as a clear, reusable annotation standard, improving clarity, consistency, and generalizability for digital libraries and scholarly communication infrastructures. All code and data are publicly available on GitHub https://github.com/zhiyintan/SOFT.",
+    "link": "http://arxiv.org/abs/2601.05103v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05101v1",
+    "title": "Arabic Prompts with English Tools: A Benchmark",
+    "authors": [
+      "Konstantin Kubrak",
+      "Ahmed El-Moselhy",
+      "Ammar Alsulami",
+      "Remaz Altuwaim",
+      "Hassan Ismail Fawaz",
+      "Faisal Alsaby"
+    ],
+    "summary": "Large Language Models (LLMs) are now integral to numerous industries, increasingly serving as the core reasoning engine for autonomous agents that perform complex tasks through tool-use. While the development of Arabic-native LLMs is accelerating, the benchmarks for evaluating their capabilities lag behind, with most existing frameworks focusing on English. A critical and overlooked area is tool-calling, where the performance of models prompted in non-English languages like Arabic is poorly understood, especially since these models are often pretrained on predominantly English data. This paper addresses this critical gap by introducing the first dedicated benchmark for evaluating the tool-calling and agentic capabilities of LLMs in the Arabic language. Our work provides a standardized framework to measure the functional accuracy and robustness of models in Arabic agentic workflows. Our findings reveal a huge performance gap: when users interact in Arabic, tool-calling accuracy drops by an average of 5-10\\%, regardless of whether the tool descriptions themselves are in Arabic or English. By shedding light on these critical challenges, this benchmark aims to foster the development of more reliable and linguistically equitable AI agents for Arabic-speaking users.",
+    "link": "http://arxiv.org/abs/2601.05101v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05075v1",
+    "title": "SemPA: Improving Sentence Embeddings of Large Language Models through Semantic Preference Alignment",
+    "authors": [
+      "Ziyang Chen",
+      "Zhenxuan Huang",
+      "Yile Wang",
+      "Weiqin Wang",
+      "Lu Yin",
+      "Hui Huang"
+    ],
+    "summary": "Traditional sentence embedding methods employ token-level contrastive learning on non-generative pre-trained models. Recently, there have emerged embedding methods based on generative large language models (LLMs). These methods either rely on fixed prompt templates or involve modifications to the model architecture. The former lacks further optimization of the model and results in limited performance, while the latter alters the internal computational mechanisms of the model, thereby compromising its generative capabilities. We propose SemPA, a novel approach that boosts the sentence representations while preserving the generative ability of LLMs via semantic preference alignment. We leverage sentence-level Direct Preference Optimization (DPO) to efficiently optimize LLMs on a paraphrase generation task, where the model learns to discriminate semantically equivalent sentences while preserving inherent generative capacity. Theoretically, we establish a formal connection between DPO and contrastive learning under the Plackett-Luce model framework. Empirically, experimental results on both semantic textual similarity tasks and various benchmarks for LLMs show that SemPA achieves better semantic representations without sacrificing the inherent generation capability of LLMs.",
+    "link": "http://arxiv.org/abs/2601.05075v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05062v1",
+    "title": "Compositional Steering of Large Language Models with Steering Tokens",
+    "authors": [
+      "Gorjan Radevski",
+      "Kiril Gashteovski",
+      "Giwon Hong",
+      "Carolin Lawrence",
+      "Goran Glava\u0161"
+    ],
+    "summary": "Deploying LLMs in real-world applications requires controllable output that satisfies multiple desiderata at the same time. While existing work extensively addresses LLM steering for a single behavior, \\textit{compositional steering} -- i.e., steering LLMs simultaneously towards multiple behaviors -- remains an underexplored problem. In this work, we propose \\emph{compositional steering tokens} for multi-behavior steering. We first embed individual behaviors, expressed as natural language instructions, into dedicated tokens via self-distillation. Contrary to most prior work, which operates in the activation space, our behavior steers live in the space of input tokens, enabling more effective zero-shot composition. We then train a dedicated \\textit{composition token} on pairs of behaviors and show that it successfully captures the notion of composition: it generalizes well to \\textit{unseen} compositions, including those with unseen behaviors as well as those with an unseen \\textit{number} of behaviors. Our experiments across different LLM architectures show that steering tokens lead to superior multi-behavior control compared to competing approaches (instructions, activation steering, and LoRA merging). Moreover, we show that steering tokens complement natural language instructions, with their combination resulting in further gains.",
+    "link": "http://arxiv.org/abs/2601.05062v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.05053v1",
+    "title": "Reinforced Efficient Reasoning via Semantically Diverse Exploration",
+    "authors": [
+      "Ziqi Zhao",
+      "Zhaochun Ren",
+      "Jiahong Zou",
+      "Liu Yang",
+      "Zhiwei Xu",
+      "Xuri Ge",
+      "Zhumin Chen",
+      "Xinyu Ma",
+      "Daiting Shi",
+      "Shuaiqiang Wang",
+      "Dawei Yin",
+      "Xin Xin"
+    ],
+    "summary": "Reinforcement learning with verifiable rewards (RLVR) has proven effective in enhancing the reasoning of large language models (LLMs). Monte Carlo Tree Search (MCTS)-based extensions improve upon vanilla RLVR (e.g., GRPO) by providing tree-based reasoning rollouts that enable fine-grained and segment-level credit assignment. However, existing methods still suffer from limited exploration diversity and inefficient reasoning. To address the above challenges, we propose reinforced efficient reasoning via semantically diverse explorations, i.e., ROSE, for LLMs. To encourage more diverse reasoning exploration, our method incorporates a semantic-entropy-based branching strategy and an $\\varepsilon$-exploration mechanism. The former operates on already sampled reasoning rollouts to capture semantic uncertainty and select branching points with high semantic divergence to generate new successive reasoning paths, whereas the latter stochastically initiates reasoning rollouts from the root, preventing the search process from becoming overly local. To improve efficiency, we design a length-aware segment-level advantage estimator that rewards concise and correct reasoning while penalizing unnecessarily long reasoning chains. Extensive experiments on various mathematical reasoning benchmarks with Qwen and Llama models validate the effectiveness and efficiency of ROSE. Codes are available at https://github.com/ZiqiZhao1/ROSE-rl.",
+    "link": "http://arxiv.org/abs/2601.05053v1",
+    "date": "2026-01-08",
+    "fetched_at": "2026-01-11"
+  },
+  {
     "id": "http://arxiv.org/abs/2601.04170v1",
     "title": "Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions",
     "authors": [
