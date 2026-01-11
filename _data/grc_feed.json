@@ -1,0 +1,218 @@
+[
+  {
+    "id": "http://arxiv.org/abs/2601.04107v1",
+    "title": "From Abstract Threats to Institutional Realities: A Comparative Semantic Network Analysis of AI Securitisation in the US, EU, and China",
+    "authors": [
+      "Ruiyi Guo",
+      "Bodong Zhang"
+    ],
+    "summary": "Artificial intelligence governance exhibits a striking paradox: while major jurisdictions converge rhetorically around concepts such as safety, risk, and accountability, their regulatory frameworks remain fundamentally divergent and mutually unintelligible. This paper argues that this fragmentation cannot be explained solely by geopolitical rivalry, institutional complexity, or instrument selection. Instead, it stems from how AI is constituted as an object of governance through distinct institutional logics. Integrating securitisation theory with the concept of the dispositif, we demonstrate that jurisdictions govern ontologically different objects under the same vocabulary. Using semantic network analysis of official policy texts from the European Union, the United States, and China (2023-2025), we trace how concepts like safety are embedded within divergent semantic architectures. Our findings reveal that the EU juridifies AI as a certifiable product through legal-bureaucratic logic; the US operationalises AI as an optimisable system through market-liberal logic; and China governs AI as socio-technical infrastructure through holistic state logic. We introduce the concept of structural incommensurability to describe this condition of ontological divergence masked by terminological convergence. This reframing challenges ethics-by-principles approaches to global AI governance, suggesting that coordination failures arise not from disagreement over values but from the absence of a shared reference object.",
+    "link": "http://arxiv.org/abs/2601.04107v1",
+    "date": "2026-01-07",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.04094v1",
+    "title": "The Bathtub of European AI Governance: Identifying Technical Sandboxes as the Micro-Foundation of Regulatory Learning",
+    "authors": [
+      "Tom Deckenbrunnen",
+      "Alessio Buscemi",
+      "Marco Almada",
+      "Alfredo Capozucca",
+      "German Castignani"
+    ],
+    "summary": "The EU AI Act adopts a horizontal and adaptive approach to govern AI technologies characterised by rapid development and unpredictable emerging capabilities. To maintain relevance, the Act embeds provisions for regulatory learning. However, these provisions operate within a complex network of actors and mechanisms that lack a clearly defined technical basis for scalable information flow. This paper addresses this gap by establishing a theoretical model of regulatory learning space defined by the AI Act, decomposed into micro, meso, and macro levels. Drawing from this functional perspective of this model, we situate the diverse stakeholders - ranging from the EU Commission at the macro level to AI developers at the micro level - within the transitions of enforcement (macro-micro) and evidence aggregation (micro-macro). We identify AI Technical Sandboxes as the essential engine for evidence generation at the micro level, providing the necessary data to drive scalable learning across all levels of the model. By providing an extensive discussion of the requirements and challenges for AITSes to serve as this micro-level evidence generator, we aim to bridge the gap between legislative commands and technical operationalisation, thereby enabling a structured discourse between technical and legal experts.",
+    "link": "http://arxiv.org/abs/2601.04094v1",
+    "date": "2026-01-07",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.02773v1",
+    "title": "From Slaves to Synths? Superintelligence and the Evolution of Legal Personality",
+    "authors": [
+      "Simon Chesterman"
+    ],
+    "summary": "This essay examines the evolving concept of legal personality through the lens of recent developments in artificial intelligence and the possible emergence of superintelligence. Legal systems have long been open to extending personhood to non-human entities, most prominently corporations, for instrumental or inherent reasons. Instrumental rationales emphasize accountability and administrative efficiency, whereas inherent ones appeal to moral worth and autonomy. Neither is yet sufficient to justify conferring personhood on AI. Nevertheless, the acceleration of technological autonomy may lead us to reconsider how law conceptualizes agency and responsibility. Drawing on comparative jurisprudence, corporate theory, and the emerging literature on AI governance, the paper argues that existing frameworks can address short-term accountability gaps, but the eventual development of superintelligence may force a paradigmatic shift in our understanding of law itself. In such a speculative future, legal personality may depend less on the cognitive sophistication of machines than on humanity's ability to preserve our own moral and institutional sovereignty.",
+    "link": "http://arxiv.org/abs/2601.02773v1",
+    "date": "2026-01-06",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.01287v1",
+    "title": "Compliance as a Trust Metric",
+    "authors": [
+      "Wenbo Wu",
+      "George Konstantinidis"
+    ],
+    "summary": "Trust and Reputation Management Systems (TRMSs) are critical for the modern web, yet their reliance on subjective user ratings or narrow Quality of Service (QoS) metrics lacks objective grounding. Concurrently, while regulatory frameworks like GDPR and HIPAA provide objective behavioral standards, automated compliance auditing has been limited to coarse, binary (pass/fail) outcomes. This paper bridges this research gap by operationalizing regulatory compliance as a quantitative and dynamic trust metric through our novel automated compliance engine (ACE). ACE first formalizes legal and organizational policies into a verifiable, obligation-centric logic. It then continuously audits system event logs against this logic to detect violations. The core of our contribution is a quantitative model that assesses the severity of each violation along multiple dimensions, including its Volume, Duration, Breadth, and Criticality, to compute a fine-grained, evolving compliance score. We evaluate ACE on a synthetic hospital dataset, demonstrating its ability to accurately detect a range of complex HIPAA and GDPR violations and produce a nuanced score that is significantly more expressive than traditional binary approaches. This work enables the development of more transparent, accountable, and resilient TRMSs on the Web.",
+    "link": "http://arxiv.org/abs/2601.01287v1",
+    "date": "2026-01-03",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.23618v1",
+    "title": "Verifiable Off-Chain Governance",
+    "authors": [
+      "Jake Hartnell",
+      "Eugenio Battaglia"
+    ],
+    "summary": "Current DAO governance praxis limits organizational expressivity and reduces complex organizational decisions to token-weighted voting due to on-chain computational limits. This paper proposes verifiable off-chain computation (leveraging Verifiable Services, TEEs, and ZK proofs) as a framework to transcend these constraints while maintaining cryptoeconomic security. This paper explores three novel governance mechanisms: (1) attestation-based systems that compute multi-dimensional stakeholder legitimacy, (2) collective intelligence through verifiable preference processing, and (3) autonomous policy execution via Policy-as-Code. The framework provides architectural specifications, security models, and implementation considerations for DAOs seeking higher-resolution expressivity and increased operational efficiency, with validation from pioneering implementations demonstrating practical viability.",
+    "link": "http://arxiv.org/abs/2512.23618v1",
+    "date": "2025-12-29",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.22060v1",
+    "title": "Toward Secure and Compliant AI: Organizational Standards and Protocols for NLP Model Lifecycle Management",
+    "authors": [
+      "Sunil Arora",
+      "John Hastings"
+    ],
+    "summary": "Natural Language Processing (NLP) systems are increasingly used in sensitive domains such as healthcare, finance, and government, where they handle large volumes of personal and regulated data. However, these systems introduce distinct risks related to security, privacy, and regulatory compliance that are not fully addressed by existing AI governance frameworks. This paper introduces the Secure and Compliant NLP Lifecycle Management Framework (SC-NLP-LMF), a comprehensive six-phase model designed to ensure the secure operation of NLP systems from development to retirement. The framework, developed through a systematic PRISMA-based review of 45 peer-reviewed and regulatory sources, aligns with leading standards, including NIST AI RMF, ISO/IEC 42001:2023, the EU AI Act, and MITRE ATLAS. It integrates established methods for bias detection, privacy protection (differential privacy, federated learning), secure deployment, explainability, and secure model decommissioning. A healthcare case study illustrates how SC-NLP-LMF detects emerging terminology drift (e.g., COVID-related language) and guides compliant model updates. The framework offers organizations a practical, lifecycle-wide structure for developing, deploying, and maintaining secure and accountable NLP systems in high-risk environments.",
+    "link": "http://arxiv.org/abs/2512.22060v1",
+    "date": "2025-12-26",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.22211v1",
+    "title": "With Great Capabilities Come Great Responsibilities: Introducing the Agentic Risk & Capability Framework for Governing Agentic AI Systems",
+    "authors": [
+      "Shaun Khoo",
+      "Jessica Foo",
+      "Roy Ka-Wei Lee"
+    ],
+    "summary": "Agentic AI systems present both significant opportunities and novel risks due to their capacity for autonomous action, encompassing tasks such as code execution, internet interaction, and file modification. This poses considerable challenges for effective organizational governance, particularly in comprehensively identifying, assessing, and mitigating diverse and evolving risks. To tackle this, we introduce the Agentic Risk \\& Capability (ARC) Framework, a technical governance framework designed to help organizations identify, assess, and mitigate risks arising from agentic AI systems. The framework's core contributions are: (1) it develops a novel capability-centric perspective to analyze a wide range of agentic AI systems; (2) it distills three primary sources of risk intrinsic to agentic AI systems - components, design, and capabilities; (3) it establishes a clear nexus between each risk source, specific materialized risks, and corresponding technical controls; and (4) it provides a structured and practical approach to help organizations implement the framework. This framework provides a robust and adaptable methodology for organizations to navigate the complexities of agentic AI, enabling rapid and effective innovation while ensuring the safe, secure, and responsible deployment of agentic AI systems. Our framework is open-sourced \\href{https://govtech-responsibleai.github.io/agentic-risk-capability-framework/}{here}.",
+    "link": "http://arxiv.org/abs/2512.22211v1",
+    "date": "2025-12-22",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.18776v1",
+    "title": "\"Even GPT Can Reject Me\": Conceptualizing Abrupt Refusal Secondary Harm (ARSH) and Reimagining Psychological AI Safety with Compassionate Completion Standard (CCS)",
+    "authors": [
+      "Yang Ni",
+      "Tong Yang"
+    ],
+    "summary": "Large Language Models (LLMs) and AI chatbots are increasingly used for emotional and mental health support due to their low cost, immediacy, and accessibility. However, when safety guardrails are triggered, conversations may be abruptly terminated, introducing a distinct form of emotional disruption that can exacerbate distress and elevate risk among already vulnerable users. As this phenomenon gains attention, this viewpoint introduces Abrupt Refusal Secondary Harm (ARSH) as a conceptual framework to describe the psychological impacts of sudden conversational discontinuation caused by AI safety protocols. Drawing on counseling psychology and communication science as conceptual heuristics, we argue that abrupt refusals can rupture perceived relational continuity, evoke feelings of rejection or shame, and discourage future help seeking. To mitigate these risks, we propose a design hypothesis, the Compassionate Completion Standard (CCS), a refusal protocol grounded in Human Centered Design (HCD) that maintains safety constraints while preserving relational coherence. CCS emphasizes empathetic acknowledgment, transparent boundary articulation, graded conversational transition, and guided redirection, replacing abrupt disengagement with psychologically attuned closure. By integrating awareness of ARSH into AI safety design, developers and policymakers can reduce preventable iatrogenic harm and advance a more psychologically informed approach to AI governance. Rather than presenting incremental empirical findings, this viewpoint contributes a timely conceptual framework, articulates a testable design hypothesis, and outlines a coordinated research agenda for improving psychological safety in human AI interaction.",
+    "link": "http://arxiv.org/abs/2512.18776v1",
+    "date": "2025-12-21",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.04216v1",
+    "title": "Computable Gap Assessment of Artificial Intelligence Governance in Children's Centres: Evidence-Mechanism-Governance-Indicator Modelling of UNICEF's Guidance on AI and Children 3.0 Based on the Graph-GAP Framework",
+    "authors": [
+      "Wei Meng"
+    ],
+    "summary": "This paper tackles practical challenges in governing child centered artificial intelligence: policy texts state principles and requirements but often lack reproducible evidence anchors, explicit causal pathways, executable governance toolchains, and computable audit metrics. We propose Graph-GAP, a methodology that decomposes requirements from authoritative policy texts into a four layer graph of evidence, mechanism, governance, and indicator, and that computes two metrics, GAP score and mitigation readiness, to identify governance gaps and prioritise actions. Using the UNICEF Innocenti Guidance on AI and Children 3.0 as primary material, we define reproducible extraction units, coding manuals, graph patterns, scoring scales, and consistency checks, and we demonstrate exemplar gap profiles and governance priority matrices for ten requirements. Results suggest that compared with privacy and data protection, requirements related to child well being and development, explainability and accountability, and cross agency implementation and resource allocation are more prone to indicator gaps and mechanism gaps. We recommend translating requirements into auditable closed loop governance that integrates child rights impact assessments, continuous monitoring metrics, and grievance redress procedures. At the coding level, we introduce a multi algorithm review aggregation revision workflow that runs rule based encoders, statistical or machine learning evaluators, and large model evaluators with diverse prompt configurations as parallel coders. Each extraction unit outputs evidence, mechanism, governance, and indicator labels plus readiness scores with evidence anchors. Reliability, stability, and uncertainty are assessed using Krippendorff alpha, weighted kappa, intraclass correlation, and bootstrap confidence intervals.",
+    "link": "http://arxiv.org/abs/2601.04216v1",
+    "date": "2025-12-20",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.02383v1",
+    "title": "The Future of the AI Summit Series",
+    "authors": [
+      "Lucia Velasco",
+      "Charles Martinet",
+      "Henry de Zoete",
+      "Robert Trager",
+      "Duncan Snidal",
+      "Ben Garfinkel",
+      "Kwan Yee Ng",
+      "Haydn Belfield",
+      "Don Wallace",
+      "Yoshua Bengio",
+      "Benjamin Prud'homme",
+      "Brian Tse",
+      "Roxana Radu",
+      "Ranjit Lall",
+      "Ben Harack",
+      "Julia Morse",
+      "Nicolas Miailhe",
+      "Scott Singer",
+      "Matt Sheehan",
+      "Max Stauffer",
+      "Yi Zeng",
+      "Joslyn Barnhart",
+      "Imane Bello",
+      "Xue Lan",
+      "Oliver Guest",
+      "Duncan Cass-Beggs",
+      "Lu Chuanying",
+      "Sumaya Nur Adan",
+      "Markus Anderljung",
+      "Claire Dennis"
+    ],
+    "summary": "This policy memo examines the evolution of the international AI Summit series, initiated at Bletchley Park in 2023 and continued through Seoul in 2024 and Paris in 2025, as a forum for cooperation on the governance of advanced artificial intelligence. It analyzes the factors underpinning the series' early successes and assesses challenges related to scope, participation, continuity, and institutional design. Drawing on comparisons with existing international governance models, the memo evaluates options for hosting arrangements, secretariat formats, participant selection, agenda setting, and meeting frequency. It proposes a set of design recommendations aimed at preserving the series' focus on advanced AI governance while balancing inclusivity, effectiveness, and long-term sustainability.",
+    "link": "http://arxiv.org/abs/2601.02383v1",
+    "date": "2025-12-19",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.17898v1",
+    "title": "Humanlike AI Design Increases Anthropomorphism but Yields Divergent Outcomes on Engagement and Trust Globally",
+    "authors": [
+      "Robin Schimmelpfennig",
+      "Mark D\u00edaz",
+      "Vinodkumar Prabhakaran",
+      "Aida Davani"
+    ],
+    "summary": "Over a billion users across the globe interact with AI systems engineered with increasing sophistication to mimic human traits. This shift has triggered urgent debate regarding Anthropomorphism, the attribution of human characteristics to synthetic agents, and its potential to induce misplaced trust or emotional dependency. However, the causal link between more humanlike AI design and subsequent effects on engagement and trust has not been tested in realistic human-AI interactions with a global user pool. Prevailing safety frameworks continue to rely on theoretical assumptions derived from Western populations, overlooking the global diversity of AI users. Here, we address these gaps through two large-scale cross-national experiments (N=3,500) across 10 diverse nations, involving real-time and open-ended interactions with an AI system. We find that when evaluating an AI's human-likeness, users focus less on the kind of theoretical aspects often cited in policy (e.g., sentience or consciousness), but rather applied, interactional cues like conversation flow or understanding the user's perspective. We also experimentally demonstrate that humanlike design levers can causally increase anthropomorphism among users; however, we do not find that humanlike design universally increases behavioral measures for user engagement and trust, as previous theoretical work suggests. Instead, part of the connection between human-likeness and behavioral outcomes is fractured by culture: specific design choices that foster self-reported trust in AI-systems in some populations (e.g., Brazil) may trigger the opposite result in others (e.g., Japan). Our findings challenge prevailing narratives of inherent risk in humanlike AI design. Instead, we identify a nuanced, culturally mediated landscape of human-AI interaction, which demands that we move beyond a one-size-fits-all approach in AI governance.",
+    "link": "http://arxiv.org/abs/2512.17898v1",
+    "date": "2025-12-19",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.16873v1",
+    "title": "The Social Responsibility Stack: A Control-Theoretic Architecture for Governing Socio-Technical AI",
+    "authors": [
+      "Otman A. Basir"
+    ],
+    "summary": "Artificial intelligence systems are increasingly deployed in domains that shape human behaviour, institutional decision-making, and societal outcomes. Existing responsible AI and governance efforts provide important normative principles but often lack enforceable engineering mechanisms that operate throughout the system lifecycle. This paper introduces the Social Responsibility Stack (SRS), a six-layer architectural framework that embeds societal values into AI systems as explicit constraints, safeguards, behavioural interfaces, auditing mechanisms, and governance processes. SRS models responsibility as a closed-loop supervisory control problem over socio-technical systems, integrating design-time safeguards with runtime monitoring and institutional oversight. We develop a unified constraint-based formulation, introduce safety-envelope and feedback interpretations, and show how fairness, autonomy, cognitive burden, and explanation quality can be continuously monitored and enforced. Case studies in clinical decision support, cooperative autonomous vehicles, and public-sector systems illustrate how SRS translates normative objectives into actionable engineering and operational controls. The framework bridges ethics, control theory, and AI governance, providing a practical foundation for accountable, adaptive, and auditable socio-technical AI systems.",
+    "link": "http://arxiv.org/abs/2512.16873v1",
+    "date": "2025-12-18",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.16452v1",
+    "title": "Smart Data Portfolios: A Quantitative Framework for Input Governance in AI",
+    "authors": [
+      "A. Talha Yalta",
+      "A. Yasemin Yalta"
+    ],
+    "summary": "Growing concerns about fairness, privacy, robustness, and transparency have made it a central expectation of AI governance that automated decisions be explainable by institutions and intelligible to affected parties. We introduce the Smart Data Portfolio (SDP) framework, which treats data categories as productive but risk-bearing assets, formalizing input governance as an information-risk trade-off. Within this framework, we define two portfolio-level quantities, Informational Return and Governance-Adjusted Risk, whose interaction characterizes data mixtures and generates a Governance-Efficient Frontier. Regulators shape this frontier through risk caps, admissible categories, and weight bands that translate fairness, privacy, robustness, and provenance requirements into measurable constraints on data allocation while preserving model flexibility. A telecommunications illustration shows how different AI services require distinct portfolios within a common governance structure. The framework offers a familiar portfolio logic as an input-level explanation layer suited to the large-scale deployment of AI systems.",
+    "link": "http://arxiv.org/abs/2512.16452v1",
+    "date": "2025-12-18",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.15196v1",
+    "title": "Governing rapid technological change: Policy Delphi on the future of European AI governance",
+    "authors": [
+      "Atte Ojanen",
+      "Johannes Anttila",
+      "Thilo H. K. Thelitz",
+      "Anna Bjork"
+    ],
+    "summary": "The rapid advancements in artificial intelligence (AI) present unique challenges for policymakers that seek to govern the technology. In this context, the Delphi method has become an established way to identify consensus and disagreement on emerging technological issues among experts in the field of futures studies and foresight. The aim of this article is twofold: first, it examines key tensions experts see in the development of AI governance in Europe, and second, it reflects on the Delphi method's capacity to inform anticipatory governance of emerging technologies like AI based on these insights. The analysis is based on the results of a two-round Policy Delphi study on the future of AI governance with European policymakers, researchers and NGOs, conducted in mid-2024. The Policy Delphi proved useful in revealing diverse perspectives on European AI governance, drawing out a consensus that future-proof AI regulation will likely depend more on practical implementation and enforcement of legislation than on its technical specifics or scope. Furthermore, the study identified a desirability-probability gap in AI governance: desirable policy directions, like greater citizen participation, were perceived as less probable and feasible. This highlights a tension between desirable regulatory oversight and the practical difficulty for regulation to keep up with technological change.",
+    "link": "http://arxiv.org/abs/2512.15196v1",
+    "date": "2025-12-17",
+    "fetched_at": "2026-01-11"
+  },
+  {
+    "id": "http://arxiv.org/abs/2512.14902v2",
+    "title": "How frontier AI companies could implement an internal audit function",
+    "authors": [
+      "Francesca Gomez",
+      "Adam Buick",
+      "Leah Ferentinos",
+      "Haelee Kim",
+      "Elley Lee"
+    ],
+    "summary": "Frontier AI developers operate at the intersection of rapid technical progress, extreme risk exposure, and growing regulatory scrutiny. While a range of external evaluations and safety frameworks have emerged, comparatively little attention has been paid to how internal organizational assurance should be structured to provide sustained, evidence-based oversight of catastrophic and systemic risks. This paper examines how an internal audit function could be designed to provide meaningful assurance for frontier AI developers, and the practical trade-offs that shape its effectiveness. Drawing on professional internal auditing standards, risk-based assurance theory, and emerging frontier-AI governance literature, we analyze four core design dimensions: (i) audit scope across model-level, system-level, and governance-level controls; (ii) sourcing arrangements (in-house, co-sourced, and outsourced); (iii) audit frequency and cadence; and (iv) access to sensitive information required for credible assurance. For each dimension, we define the relevant option space, assess benefits and limitations, and identify key organizational and security trade-offs. Our findings suggest that internal audit, if deliberately designed for the frontier AI context, can play a central role in strengthening safety governance, complementing external evaluations, and providing boards and regulators with higher-confidence, system-wide assurance over catastrophic risk controls.",
+    "link": "http://arxiv.org/abs/2512.14902v2",
+    "date": "2025-12-16",
+    "fetched_at": "2026-01-11"
+  }
+]

@@ -232,6 +232,7 @@
     "fetched_at": "2026-01-11"
   },
   {
+<<<<<<< HEAD
     "id": "http://arxiv.org/abs/2601.05103v1",
     "title": "Semantically Orthogonal Framework for Citation Classification: Disentangling Intent and Content",
     "authors": [
@@ -313,6 +314,8 @@
     "fetched_at": "2026-01-11"
   },
   {
+=======
+>>>>>>> cf600fb (Research split into Kinetis and GRC)
     "id": "http://arxiv.org/abs/2601.04170v1",
     "title": "Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions",
     "authors": [
