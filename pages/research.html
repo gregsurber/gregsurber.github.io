@@ -1,25 +1,52 @@
 ---
 layout: archive
-title: "Kinetic AI Research Feed"
+title: "Research Dashboard"
 permalink: /research/
 author_profile: true
 ---
 
-<p>Scanning arXiv for intersection of <strong>LLMs</strong> and <strong>ICS/SCADA</strong>.</p>
+<p>Automated surveillance of arXiv for my core research tracks.</p>
+
+<h2 class="archive__subtitle">1. Kinetic AI Risk</h2>
+<p style="font-size: 0.9em; color: #666;">
+  <em>Scope: Intersection of Large Language Models (LLM) and ICS/SCADA.</em>
+</p>
 
 {% if site.data.kinetic_feed %}
-  {% for paper in site.data.kinetic_feed limit:10 %}
-    <article class="archive__item">
-      <h3 class="archive__item-title">
-        <a href="{{ paper.link }}" target="_blank">{{ paper.title }}</a>
-      </h3>
-      <p class="page__meta">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ paper.date }} | 
-        <i class="far fa-user" aria-hidden="true"></i> {{ paper.authors | join: ", " | truncate: 50 }}
-      </p>
-      <p class="archive__item-excerpt">{{ paper.summary | truncatewords: 40 }}</p>
-    </article>
-  {% endfor %}
+  <div style="height: 400px; overflow-y: auto; border: 1px solid #eee; padding: 15px; margin-bottom: 30px;">
+    {% for paper in site.data.kinetic_feed limit:20 %}
+      <article class="archive__item" style="margin-bottom: 15px;">
+        <h3 class="archive__item-title" style="font-size: 1em; margin-bottom: 5px;">
+          <a href="{{ paper.link }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a>
+        </h3>
+        <p class="page__meta" style="font-size: 0.7em; margin-bottom: 5px;">
+          <strong>{{ paper.date }}</strong> | {{ paper.authors | join: ", " | truncate: 40 }}
+        </p>
+      </article>
+    {% endfor %}
+  </div>
 {% else %}
-  <p>No research data found. Run the Python scanner to populate this feed.</p>
+  <p>No data yet.</p>
+{% endif %}
+
+<h2 class="archive__subtitle">2. GRC Engineering & AI Governance</h2>
+<p style="font-size: 0.9em; color: #666;">
+  <em>Scope: AI Governance, Policy as Code, and Compliance Engineering.</em>
+</p>
+
+{% if site.data.grc_feed %}
+  <div style="height: 400px; overflow-y: auto; border: 1px solid #eee; padding: 15px;">
+    {% for paper in site.data.grc_feed limit:20 %}
+      <article class="archive__item" style="margin-bottom: 15px;">
+        <h3 class="archive__item-title" style="font-size: 1em; margin-bottom: 5px;">
+          <a href="{{ paper.link }}" target="_blank" style="text-decoration: none;">{{ paper.title }}</a>
+        </h3>
+        <p class="page__meta" style="font-size: 0.7em; margin-bottom: 5px;">
+          <strong>{{ paper.date }}</strong> | {{ paper.authors | join: ", " | truncate: 40 }}
+        </p>
+      </article>
+    {% endfor %}
+  </div>
+{% else %}
+  <p>No data yet.</p>
 {% endif %}
