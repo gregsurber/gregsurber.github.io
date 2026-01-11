@@ -1,0 +1,42 @@
+name: Weekly Research Fetcher
+
+# Trigger:
+# 1. Schedule: Runs at 08:00 UTC every Monday
+# 2. Workflow Dispatch: Allows you to click a button to run it manually (for testing)
+on:
+  schedule:
+    - cron: '0 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-research:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Check out your repository code
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    # 2. Set up Python (Standard environment)
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    # 3. Run your script
+    # Since your script uses only standard libraries, no 'pip install' is needed.
+    - name: Run Fetch Script
+      run: python tools/fetch_research.py
+
+    # 4. Check for changes and push
+    - name: Commit and Push changes
+      run: |
+        git config user.name "Kinetic-Research-Bot"
+        git config user.email "actions@github.com"
+        git add _data/kinetic_feed.json
+        # The '|| exit 0' ensures the workflow doesn't 'fail' if there are no new papers to commit
+        git commit -m "Auto-update: New Kinetic AI research found" || exit 0
+        git push
