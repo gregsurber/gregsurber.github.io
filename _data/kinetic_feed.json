@@ -1,5 +1,298 @@
 [
   {
+    "id": "http://arxiv.org/abs/2601.16979v1",
+    "title": "A Scalable Measure of Loss Landscape Curvature for Analyzing the Training Dynamics of LLMs",
+    "authors": [
+      "Dayal Singh Kalra",
+      "Jean-Christophe Gagnon-Audet",
+      "Andrey Gromov",
+      "Ishita Mediratta",
+      "Kelvin Niu",
+      "Alexander H Miller",
+      "Michael Shvartsman"
+    ],
+    "summary": "Understanding the curvature evolution of the loss landscape is fundamental to analyzing the training dynamics of neural networks. The most commonly studied measure, Hessian sharpness ($\u03bb_{\\max}^H$) -- the largest eigenvalue of the loss Hessian -- determines local training stability and interacts with the learning rate throughout training. Despite its significance in analyzing training dynamics, direct measurement of Hessian sharpness remains prohibitive for Large Language Models (LLMs) due to high computational cost. We analyze $\\textit{critical sharpness}$ ($\u03bb_c$), a computationally efficient measure requiring fewer than $10$ forward passes given the update direction $\u0394\\mathbf\u03b8$. Critically, this measure captures well-documented Hessian sharpness phenomena, including progressive sharpening and Edge of Stability. Using this measure, we provide the first demonstration of these sharpness phenomena at scale, up to $7$B parameters, spanning both pre-training and mid-training of OLMo-2 models. We further introduce $\\textit{relative critical sharpness}$ ($\u03bb_c^{1\\to 2}$), which quantifies the curvature of one loss landscape while optimizing another, to analyze the transition from pre-training to fine-tuning and guide data mixing strategies. Critical sharpness provides practitioners with a practical tool for diagnosing curvature dynamics and informing data composition choices at scale. More broadly, our work shows that scalable curvature measures can provide actionable insights for large-scale training.",
+    "link": "http://arxiv.org/abs/2601.16979v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16967v1",
+    "title": "Empowering Medical Equipment Sustainability in Low-Resource Settings: An AI-Powered Diagnostic and Support Platform for Biomedical Technicians",
+    "authors": [
+      "Bernes Lorier Atabonfack",
+      "Ahmed Tahiru Issah",
+      "Mohammed Hardi Abdul Baaki",
+      "Clemence Ingabire",
+      "Tolulope Olusuyi",
+      "Maruf Adewole",
+      "Udunna C. Anazodo",
+      "Timothy X Brown"
+    ],
+    "summary": "In low- and middle-income countries (LMICs), a significant proportion of medical diagnostic equipment remains underutilized or non-functional due to a lack of timely maintenance, limited access to technical expertise, and minimal support from manufacturers, particularly for devices acquired through third-party vendors or donations. This challenge contributes to increased equipment downtime, delayed diagnoses, and compromised patient care. This research explores the development and validation of an AI-powered support platform designed to assist biomedical technicians in diagnosing and repairing medical devices in real-time. The system integrates a large language model (LLM) with a user-friendly web interface, enabling imaging technologists/radiographers and biomedical technicians to input error codes or device symptoms and receive accurate, step-by-step troubleshooting guidance. The platform also includes a global peer-to-peer discussion forum to support knowledge exchange and provide additional context for rare or undocumented issues. A proof of concept was developed using the Philips HDI 5000 ultrasound machine, achieving 100% precision in error code interpretation and 80% accuracy in suggesting corrective actions. This study demonstrates the feasibility and potential of AI-driven systems to support medical device maintenance, with the aim of reducing equipment downtime to improve healthcare delivery in resource-constrained environments.",
+    "link": "http://arxiv.org/abs/2601.16967v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16965v1",
+    "title": "Spatial-Agent: Agentic Geo-spatial Reasoning with Scientific Core Concepts",
+    "authors": [
+      "Riyang Bao",
+      "Cheng Yang",
+      "Dazhou Yu",
+      "Zhexiang Tang",
+      "Gengchen Mai",
+      "Liang Zhao"
+    ],
+    "summary": "Geospatial reasoning is essential for real-world applications such as urban analytics, transportation planning, and disaster response. However, existing LLM-based agents often fail at genuine geospatial computation, relying instead on web search or pattern matching while hallucinating spatial relationships. We present Spatial-Agent, an AI agent grounded in foundational theories of spatial information science. Our approach formalizes geo-analytical question answering as a concept transformation problem, where natural-language questions are parsed into executable workflows represented as GeoFlow Graphs -- directed acyclic graphs with nodes corresponding to spatial concepts and edges representing transformations. Drawing on spatial information theory, Spatial-Agent extracts spatial concepts, assigns functional roles with principled ordering constraints, and composes transformation sequences through template-based generation. Extensive experiments on MapEval-API and MapQA benchmarks demonstrate that Spatial-Agent significantly outperforms existing baselines including ReAct and Reflexion, while producing interpretable and executable geospatial workflows.",
+    "link": "http://arxiv.org/abs/2601.16965v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16964v1",
+    "title": "AgentDrive: An Open Benchmark Dataset for Agentic AI Reasoning with LLM-Generated Scenarios in Autonomous Systems",
+    "authors": [
+      "Mohamed Amine Ferrag",
+      "Abderrahmane Lakas",
+      "Merouane Debbah"
+    ],
+    "summary": "The rapid advancement of large language models (LLMs) has sparked growing interest in their integration into autonomous systems for reasoning-driven perception, planning, and decision-making. However, evaluating and training such agentic AI models remains challenging due to the lack of large-scale, structured, and safety-critical benchmarks. This paper introduces AgentDrive, an open benchmark dataset containing 300,000 LLM-generated driving scenarios designed for training, fine-tuning, and evaluating autonomous agents under diverse conditions. AgentDrive formalizes a factorized scenario space across seven orthogonal axes: scenario type, driver behavior, environment, road layout, objective, difficulty, and traffic density. An LLM-driven prompt-to-JSON pipeline generates semantically rich, simulation-ready specifications that are validated against physical and schema constraints. Each scenario undergoes simulation rollouts, surrogate safety metric computation, and rule-based outcome labeling. To complement simulation-based evaluation, we introduce AgentDrive-MCQ, a 100,000-question multiple-choice benchmark spanning five reasoning dimensions: physics, policy, hybrid, scenario, and comparative reasoning. We conduct a large-scale evaluation of fifty leading LLMs on AgentDrive-MCQ. Results show that while proprietary frontier models perform best in contextual and policy reasoning, advanced open models are rapidly closing the gap in structured and physics-grounded reasoning. We release the AgentDrive dataset, AgentDrive-MCQ benchmark, evaluation code, and related materials at https://github.com/maferrag/AgentDrive",
+    "link": "http://arxiv.org/abs/2601.16964v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16956v1",
+    "title": "DataStates-LLM: Scalable Checkpointing for Transformer Models Using Composable State Providers",
+    "authors": [
+      "Avinash Maurya",
+      "M. Mustafa Rafique",
+      "Franck Cappello",
+      "Bogdan Nicolae"
+    ],
+    "summary": "The rapid growth of Large Transformer-based models, specifically Large Language Models (LLMs), now scaling to trillions of parameters, has necessitated training across thousands of GPUs using complex hybrid parallelism strategies (e.g., data, tensor, and pipeline parallelism). Checkpointing this massive, distributed state is critical for a wide range of use cases, such as resilience, suspend-resume, investigating undesirable training trajectories, and explaining model evolution. However, existing checkpointing solutions typically treat model state as opaque binary blobs, ignoring the ``3D heterogeneity'' of the underlying data structures--varying by memory location (GPU vs. Host), number of ``logical'' objects sharded and split across multiple files, data types (tensors vs. Python objects), and their serialization requirements. This results in significant runtime overheads due to blocking device-to-host transfers, data-oblivious serialization, and storage I/O contention. In this paper, we introduce DataStates-LLM, a novel checkpointing architecture that leverages State Providers to decouple state abstraction from data movement. DataStates-LLM exploits the immutability of model parameters during the forward and backward passes to perform ``lazy'', non-blocking asynchronous snapshots. By introducing State Providers, we efficiently coalesce fragmented, heterogeneous shards and overlap the serialization of metadata with bulk tensor I/O. We evaluate DataStates-LLM on models up to 70B parameters on 256 A100-40GB GPUs. Our results demonstrate that DataStates-LLM achieves up to 4$\\times$ higher checkpointing throughput and reduces end-to-end training time by up to 2.2$\\times$ compared to state-of-the-art solutions, effectively mitigating the serialization and heterogeneity bottlenecks in extreme-scale LLM training.",
+    "link": "http://arxiv.org/abs/2601.16956v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16946v1",
+    "title": "Strategies for Span Labeling with Large Language Models",
+    "authors": [
+      "Danil Semin",
+      "Ond\u0159ej Du\u0161ek",
+      "Zden\u011bk Kasner"
+    ],
+    "summary": "Large language models (LLMs) are increasingly used for text analysis tasks, such as named entity recognition or error detection. Unlike encoder-based models, however, generative architectures lack an explicit mechanism to refer to specific parts of their input. This leads to a variety of ad-hoc prompting strategies for span labeling, often with inconsistent results. In this paper, we categorize these strategies into three families: tagging the input text, indexing numerical positions of spans, and matching span content. To address the limitations of content matching, we introduce LogitMatch, a new constrained decoding method that forces the model's output to align with valid input spans. We evaluate all methods across four diverse tasks. We find that while tagging remains a robust baseline, LogitMatch improves upon competitive matching-based methods by eliminating span matching issues and outperforms other strategies in some setups.",
+    "link": "http://arxiv.org/abs/2601.16946v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16890v1",
+    "title": "LLM-Based Adversarial Persuasion Attacks on Fact-Checking Systems",
+    "authors": [
+      "Jo\u00e3o A. Leite",
+      "Olesya Razuvayevskaya",
+      "Kalina Bontcheva",
+      "Carolina Scarton"
+    ],
+    "summary": "Automated fact-checking (AFC) systems are susceptible to adversarial attacks, enabling false claims to evade detection. Existing adversarial frameworks typically rely on injecting noise or altering semantics, yet no existing framework exploits the adversarial potential of persuasion techniques, which are widely used in disinformation campaigns to manipulate audiences. In this paper, we introduce a novel class of persuasive adversarial attacks on AFCs by employing a generative LLM to rephrase claims using persuasion techniques. Considering 15 techniques grouped into 6 categories, we study the effects of persuasion on both claim verification and evidence retrieval using a decoupled evaluation strategy. Experiments on the FEVER and FEVEROUS benchmarks show that persuasion attacks can substantially degrade both verification performance and evidence retrieval. Our analysis identifies persuasion techniques as a potent class of adversarial attacks, highlighting the need for more robust AFC systems.",
+    "link": "http://arxiv.org/abs/2601.16890v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16872v1",
+    "title": "From Atom to Community: Structured and Evolving Agent Memory for User Behavior Modeling",
+    "authors": [
+      "Yuxin Liao",
+      "Le Wu",
+      "Min Hou",
+      "Yu Wang",
+      "Han Wu",
+      "Meng Wang"
+    ],
+    "summary": "User behavior modeling lies at the heart of personalized applications like recommender systems. With LLM-based agents, user preference representation has evolved from latent embeddings to semantic memory. While existing memory mechanisms show promise in textual dialogues, modeling non-textual behaviors remains challenging, as preferences must be inferred from implicit signals like clicks without ground truth supervision. Current approaches rely on a single unstructured summary, updated through simple overwriting. However, this is suboptimal: users exhibit multi-faceted interests that get conflated, preferences evolve yet naive overwriting causes forgetting, and sparse individual interactions necessitate collaborative signals. We present STEAM (\\textit{\\textbf{ST}ructured and \\textbf{E}volving \\textbf{A}gent \\textbf{M}emory}), a novel framework that reimagines how agent memory is organized and updated. STEAM decomposes preferences into atomic memory units, each capturing a distinct interest dimension with explicit links to observed behaviors. To exploit collaborative patterns, STEAM organizes similar memories across users into communities and generates prototype memories for signal propagation. The framework further incorporates adaptive evolution mechanisms, including consolidation for refining memories and formation for capturing emerging interests. Experiments on three real-world datasets demonstrate that STEAM substantially outperforms state-of-the-art baselines in recommendation accuracy, simulation fidelity, and diversity.",
+    "link": "http://arxiv.org/abs/2601.16872v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16858v1",
+    "title": "Navigating the Shift: A Comparative Analysis of Web Search and Generative AI Response Generation",
+    "authors": [
+      "Mahe Chen",
+      "Xiaoxuan Wang",
+      "Kaiwen Chen",
+      "Nick Koudas"
+    ],
+    "summary": "The rise of generative AI as a primary information source presents a paradigm shift from traditional web search. This paper presents a large-scale empirical study quantifying the fundamental differences between the results returned by Google Search and leading generative AI services. We analyze multiple dimensions, demonstrating that AI-generated answers and web search results diverge significantly in their consulted source domains, the typology of these domains (e.g., earned media vs. owned, social), query intent and the freshness of the information provided. We then investigate the role of LLM pre-training as a key factor shaping these differences, analyzing how this intrinsic knowledge base interacts with and influences real-time web search when enabled. Our findings reveal the distinct mechanics of these two information ecosystems, leading to critical observations on the emergent field of Answer Engine Optimization (AEO) and its contrast with traditional Search Engine Optimization (SEO).",
+    "link": "http://arxiv.org/abs/2601.16858v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16853v1",
+    "title": "Reasoning Promotes Robustness in Theory of Mind Tasks",
+    "authors": [
+      "Ian B. de Haan",
+      "Peter van der Putten",
+      "Max van Duijn"
+    ],
+    "summary": "Large language models (LLMs) have recently shown strong performance on Theory of Mind (ToM) tests, prompting debate about the nature and true performance of the underlying capabilities. At the same time, reasoning-oriented LLMs trained via reinforcement learning with verifiable rewards (RLVR) have achieved notable improvements across a range of benchmarks. This paper examines the behavior of such reasoning models in ToM tasks, using novel adaptations of machine psychological experiments and results from established benchmarks. We observe that reasoning models consistently exhibit increased robustness to prompt variations and task perturbations. Our analysis indicates that the observed gains are more plausibly attributed to increased robustness in finding the correct solution, rather than to fundamentally new forms of ToM reasoning. We discuss the implications of this interpretation for evaluating social-cognitive behavior in LLMs.",
+    "link": "http://arxiv.org/abs/2601.16853v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16849v1",
+    "title": "The Art of Being Difficult: Combining Human and AI Strengths to Find Adversarial Instances for Heuristics",
+    "authors": [
+      "Henri Nikoleit",
+      "Ankit Anand",
+      "Anurag Murty Naredla",
+      "Heiko R\u00f6glin"
+    ],
+    "summary": "We demonstrate the power of human-LLM collaboration in tackling open problems in theoretical computer science. Focusing on combinatorial optimization, we refine outputs from the FunSearch algorithm [Romera-Paredes et al., Nature 2023] to derive state-of-the-art lower bounds for standard heuristics. Specifically, we target the generation of adversarial instances where these heuristics perform poorly. By iterating on FunSearch's outputs, we identify improved constructions for hierarchical $k$-median clustering, bin packing, the knapsack problem, and a generalization of Lov\u00e1sz's gasoline problem - some of these have not seen much improvement for over a decade, despite intermittent attention. These results illustrate how expert oversight can effectively extrapolate algorithmic insights from LLM-based evolutionary methods to break long-standing barriers.   Our findings demonstrate that while LLMs provide critical initial patterns, human expertise is essential for transforming these patterns into mathematically rigorous and insightful constructions. This work highlights that LLMs are a strong collaborative tool in mathematics and computer science research.",
+    "link": "http://arxiv.org/abs/2601.16849v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16824v1",
+    "title": "Privacy in Human-AI Romantic Relationships: Concerns, Boundaries, and Agency",
+    "authors": [
+      "Rongjun Ma",
+      "Shijing He",
+      "Jose Luis Martin-Navarro",
+      "Xiao Zhan",
+      "Jose Such"
+    ],
+    "summary": "An increasing number of LLM-based applications are being developed to facilitate romantic relationships with AI partners, yet the safety and privacy risks in these partnerships remain largely underexplored. In this work, we investigate privacy in human-AI romantic relationships through an interview study (N=17), examining participants' experiences and privacy perceptions across stages of exploration, intimacy, and dissolution, alongside platforms they used. We found that these relationships took varied forms, from one-to-one to one-to-many, and were shaped by multiple actors, including creators, platforms, and moderators. AI partners were perceived as having agency, actively negotiating privacy boundaries with participants and sometimes encouraging disclosure of personal details. As intimacy deepened, these boundaries became more permeable, though some participants voiced concerns such as conversation exposure and sought to preserve anonymity. Overall, platform affordances and diverse romantic dynamics expand the privacy landscape, underscoring the need to rethink how privacy is constructed in human-AI intimacy.",
+    "link": "http://arxiv.org/abs/2601.16824v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16823v1",
+    "title": "Trapped in the past? Disentangling fluid and crystallized intelligence of large language models using chess",
+    "authors": [
+      "Leonard S. Pleiss",
+      "Maximilian Schiffer",
+      "Robert K. von Weizs\u00e4cker"
+    ],
+    "summary": "Large Language Models (LLMs) exhibit remarkable capabilities, yet it remains unclear to what extent these reflect sophisticated recall (crystallized intelligence) or reasoning ability (fluid intelligence). We introduce chess as a controlled testbed for disentangling these faculties. Leveraging the game's structure and scalable engine evaluations, we construct a taxonomy of positions varying in training corpus proximity--ranging from common states solvable by memorization to novel ones requiring first-principles reasoning. We systematically evaluate multiple GPT generations under varying reasoning intensities. Our analysis reveals a clear gradient: performance consistently degrades as fluid intelligence demands increase. Notably, in out-of-distribution tasks, performance collapses to random levels. While newer models improve, progress slows significantly for tasks outside the training distribution. Furthermore, while reasoning-augmented inference improves performance, its marginal benefit per token decreases with distributional proximity. These results suggest current architectures remain limited in systematic generalization, highlighting the need for mechanisms beyond scale to achieve robust fluid intelligence.",
+    "link": "http://arxiv.org/abs/2601.16823v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16800v1",
+    "title": "Large Language Models as Automatic Annotators and Annotation Adjudicators for Fine-Grained Opinion Analysis",
+    "authors": [
+      "Gaurav Negi",
+      "MA Waskow",
+      "Paul Buitelaar"
+    ],
+    "summary": "Fine-grained opinion analysis of text provides a detailed understanding of expressed sentiments, including the addressed entity. Although this level of detail is sound, it requires considerable human effort and substantial cost to annotate opinions in datasets for training models, especially across diverse domains and real-world applications. We explore the feasibility of LLMs as automatic annotators for fine-grained opinion analysis, addressing the shortage of domain-specific labelled datasets. In this work, we use a declarative annotation pipeline. This approach reduces the variability of manual prompt engineering when using LLMs to identify fine-grained opinion spans in text. We also present a novel methodology for an LLM to adjudicate multiple labels and produce final annotations. After trialling the pipeline with models of different sizes for the Aspect Sentiment Triplet Extraction (ASTE) and Aspect-Category-Opinion-Sentiment (ACOS) analysis tasks, we show that LLMs can serve as automatic annotators and adjudicators, achieving high Inter-Annotator Agreement across individual LLM-based annotators. This reduces the cost and human effort needed to create these fine-grained opinion-annotated datasets.",
+    "link": "http://arxiv.org/abs/2601.16800v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16781v1",
+    "title": "Persuasion Tokens for Editing Factual Knowledge in LLMs",
+    "authors": [
+      "Paul Youssef",
+      "J\u00f6rg Schl\u00f6tterer",
+      "Christin Seifert"
+    ],
+    "summary": "In-context knowledge editing (IKE) is a promising technique for updating Large Language Models (LLMs) with new information. However, IKE relies on lengthy, fact-specific demonstrations which are costly to create and consume significant context window space. In this paper, we introduce persuasion tokens (P-Tokens) -- special tokens trained to replicate the effect of IKE demonstrations, enabling efficient knowledge editing without requiring fact-specific demonstrations. We evaluate P-Tokens across two editing datasets and three LLMs, demonstrating performance comparable to, and often exceeding, IKE. We further find that editing performance is robust to distractors with small negative effects to neighboring facts, and that increasing the number of P-Tokens improves performance. Our work addresses key limitations of IKE and provides a more practical and scalable alternative for editing LLMs.",
+    "link": "http://arxiv.org/abs/2601.16781v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16778v1",
+    "title": "GTA: Generative Traffic Agents for Simulating Realistic Mobility Behavior",
+    "authors": [
+      "Simon L\u00e4mmer",
+      "Mark Colley",
+      "Patrick Ebel"
+    ],
+    "summary": "People's transportation choices reflect complex trade-offs shaped by personal preferences, social norms, and technology acceptance. Predicting such behavior at scale is a critical challenge with major implications for urban planning and sustainable transport. Traditional methods use handcrafted assumptions and costly data collection, making them impractical for early-stage evaluations of new technologies or policies. We introduce Generative Traffic Agents (GTA) for simulating large-scale, context-sensitive transportation choices using LLM-powered, persona-based agents. GTA generates artificial populations from census-based sociodemographic data. It simulates activity schedules and mode choices, enabling scalable, human-like simulations without handcrafted rules. We evaluate GTA in Berlin-scale experiments, comparing simulation results against empirical data. While agents replicate patterns, such as modal split by socioeconomic status, they show systematic biases in trip length and mode preference. GTA offers new opportunities for modeling how future innovations, from bike lanes to transit apps, shape mobility decisions.",
+    "link": "http://arxiv.org/abs/2601.16778v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16775v1",
+    "title": "LLM-powered Real-time Patent Citation Recommendation for Financial Technologies",
+    "authors": [
+      "Tianang Deng",
+      "Yu Deng",
+      "Tianchen Gao",
+      "Yonghong Hu",
+      "Rui Pan"
+    ],
+    "summary": "Rapid financial innovation has been accompanied by a sharp increase in patenting activity, making timely and comprehensive prior-art discovery more difficult. This problem is especially evident in financial technologies, where innovations develop quickly, patent collections grow continuously, and citation recommendation systems must be updated as new applications arrive. Existing patent retrieval and citation recommendation methods typically rely on static indexes or periodic retraining, which limits their ability to operate effectively in such dynamic settings. In this study, we propose a real-time patent citation recommendation framework designed for large and fast-changing financial patent corpora. Using a dataset of 428,843 financial patents granted by the China National Intellectual Property Administration (CNIPA) between 2000 and 2024, we build a three-stage recommendation pipeline. The pipeline uses large language model (LLM) embeddings to represent the semantic content of patent abstracts, applies efficient approximate nearest-neighbor search to construct a manageable candidate set, and ranks candidates by semantic similarity to produce top-k citation recommendations. In addition to improving recommendation accuracy, the proposed framework directly addresses the dynamic nature of patent systems. By using an incremental indexing strategy based on hierarchical navigable small-world (HNSW) graphs, newly issued patents can be added without rebuilding the entire index. A rolling day-by-day update experiment shows that incremental updating improves recall while substantially reducing computational cost compared with rebuild-based indexing. The proposed method also consistently outperforms traditional text-based baselines and alternative nearest-neighbor retrieval approaches.",
+    "link": "http://arxiv.org/abs/2601.16775v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16766v1",
+    "title": "Do LLM hallucination detectors suffer from low-resource effect?",
+    "authors": [
+      "Debtanu Datta",
+      "Mohan Kishore Chilukuri",
+      "Yash Kumar",
+      "Saptarshi Ghosh",
+      "Muhammad Bilal Zafar"
+    ],
+    "summary": "LLMs, while outperforming humans in a wide range of tasks, can still fail in unanticipated ways. We focus on two pervasive failure modes: (i) hallucinations, where models produce incorrect information about the world, and (ii) the low-resource effect, where the models show impressive performance in high-resource languages like English but the performance degrades significantly in low-resource languages like Bengali. We study the intersection of these issues and ask: do hallucination detectors suffer from the low-resource effect? We conduct experiments on five tasks across three domains (factual recall, STEM, and Humanities). Experiments with four LLMs and three hallucination detectors reveal a curious finding: As expected, the task accuracies in low-resource languages experience large drops (compared to English). However, the drop in detectors' accuracy is often several times smaller than the drop in task accuracy. Our findings suggest that even in low-resource languages, the internal mechanisms of LLMs might encode signals about their uncertainty. Further, the detectors are robust within language (even for non-English) and in multilingual setups, but not in cross-lingual settings without in-language supervision.",
+    "link": "http://arxiv.org/abs/2601.16766v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16753v1",
+    "title": "Standardizing Longitudinal Radiology Report Evaluation via Large Language Model Annotation",
+    "authors": [
+      "Xinyi Wang",
+      "Grazziela Figueredo",
+      "Ruizhe Li",
+      "Xin Chen"
+    ],
+    "summary": "Longitudinal information in radiology reports refers to the sequential tracking of findings across multiple examinations over time, which is crucial for monitoring disease progression and guiding clinical decisions. Many recent automated radiology report generation methods are designed to capture longitudinal information; however, validating their performance is challenging. There is no proper tool to consistently label temporal changes in both ground-truth and model-generated texts for meaningful comparisons. Existing annotation methods are typically labor-intensive, relying on the use of manual lexicons and rules. Complex rules are closed-source, domain specific and hard to adapt, whereas overly simple ones tend to miss essential specialised information. Large language models (LLMs) offer a promising annotation alternative, as they are capable of capturing nuanced linguistic patterns and semantic similarities without extensive manual intervention. They also adapt well to new contexts. In this study, we therefore propose an LLM-based pipeline to automatically annotate longitudinal information in radiology reports. The pipeline first identifies sentences containing relevant information and then extracts the progression of diseases. We evaluate and compare five mainstream LLMs on these two tasks using 500 manually annotated reports. Considering both efficiency and performance, Qwen2.5-32B was subsequently selected and used to annotate another 95,169 reports from the public MIMIC-CXR dataset. Our Qwen2.5-32B-annotated dataset provided us with a standardized benchmark for evaluating report generation models. Using this new benchmark, we assessed seven state-of-the-art report generation models. Our LLM-based annotation method outperforms existing annotation solutions, achieving 11.3\\% and 5.3\\% higher F1-scores for longitudinal information detection and disease tracking, respectively.",
+    "link": "http://arxiv.org/abs/2601.16753v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.16746v1",
+    "title": "SWE-Pruner: Self-Adaptive Context Pruning for Coding Agents",
+    "authors": [
+      "Yuhang Wang",
+      "Yuling Shi",
+      "Mo Yang",
+      "Rongrui Zhang",
+      "Shilin He",
+      "Heng Lian",
+      "Yuting Chen",
+      "Siyu Ye",
+      "Kai Cai",
+      "Xiaodong Gu"
+    ],
+    "summary": "LLM agents have demonstrated remarkable capabilities in software development, but their performance is hampered by long interaction contexts, which incur high API costs and latency. While various context compression approaches such as LongLLMLingua have emerged to tackle this challenge, they typically rely on fixed metrics such as PPL, ignoring the task-specific nature of code understanding. As a result, they frequently disrupt syntactic and logical structure and fail to retain critical implementation details. In this paper, we propose SWE-Pruner, a self-adaptive context pruning framework tailored for coding agents. Drawing inspiration from how human programmers \"selectively skim\" source code during development and debugging, SWE-Pruner performs task-aware adaptive pruning for long contexts. Given the current task, the agent formulates an explicit goal (e.g., \"focus on error handling\") as a hint to guide the pruning targets. A lightweight neural skimmer (0.6B parameters) is trained to dynamically select relevant lines from the surrounding context given the goal. Evaluations across four benchmarks and multiple models validate SWE-Pruner's effectiveness in various scenarios, achieving 23-54% token reduction on agent tasks like SWE-Bench Verified and up to 14.84x compression on single-turn tasks like LongCodeQA with minimal performance impact.",
+    "link": "http://arxiv.org/abs/2601.16746v1",
+    "date": "2026-01-23",
+    "fetched_at": "2026-01-26"
+  },
+  {
     "id": "http://arxiv.org/abs/2601.11522v1",
     "title": "UniX: Unifying Autoregression and Diffusion for Chest X-Ray Understanding and Generation",
     "authors": [
