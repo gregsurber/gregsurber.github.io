@@ -1,5 +1,348 @@
 [
   {
+    "id": "http://arxiv.org/abs/2601.23273v1",
+    "title": "UPA: Unsupervised Prompt Agent via Tree-Based Search and Selection",
+    "authors": [
+      "Siran Peng",
+      "Weisong Zhao",
+      "Tianyu Fu",
+      "Chenxu Zhao",
+      "Tianshuo Zhang",
+      "Haoyuan Zhang",
+      "Xiangyu Zhu",
+      "Minghui Wu",
+      "Zhen Lei"
+    ],
+    "summary": "Prompt agents have recently emerged as a promising paradigm for automated prompt optimization, framing refinement as a sequential decision-making problem over a structured prompt space. While this formulation enables the use of advanced planning algorithms, these methods typically assume access to supervised reward signals, which are often unavailable in practical scenarios. In this work, we propose UPA, an Unsupervised Prompt Agent that realizes structured search and selection without relying on supervised feedback. Specifically, during search, UPA iteratively constructs an evolving tree structure to navigate the prompt space, guided by fine-grained and order-invariant pairwise comparisons from Large Language Models (LLMs). Crucially, as these local comparisons do not inherently yield a consistent global scale, we decouple systematic prompt exploration from final selection, introducing a two-stage framework grounded in the Bradley-Terry-Luce (BTL) model. This framework first performs path-wise Bayesian aggregation of local comparisons to filter candidates under uncertainty, followed by global tournament-style comparisons to infer latent prompt quality and identify the optimal prompt. Experiments across multiple tasks demonstrate that UPA consistently outperforms existing prompt optimization methods, showing that agent-style optimization remains highly effective even in fully unsupervised settings.",
+    "link": "http://arxiv.org/abs/2601.23273v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23257v1",
+    "title": "Outcome-Conditioned Reasoning Distillation for Resolving Software Issues",
+    "authors": [
+      "Chenglin Li",
+      "Yisen Xu",
+      "Zehao Wang",
+      "Shin Hwei Tan",
+      " Tse-Hsun",
+      " Chen"
+    ],
+    "summary": "Software issue resolution in large repositories is a long-range decision process: choices made during localization shape the space of viable edits, and missteps can compound into incorrect patches. Despite this, many LLM-based repair pipelines still operate in a reset-and-solve manner, producing fresh reasoning for every new issue instead of carrying forward what worked in past fixes. This is wasteful because repositories routinely contain earlier issues with overlapping structure, failure modes, or constraints, where prior repair experience could provide useful guidance. Existing approaches typically harvest this signal through forward-time trial procedures, such as repeated refinement or search, incurring high inference cost while still risking divergence from the eventual correct patch. We present an Outcome-Conditioned Reasoning Distillation(O-CRD) framework that uses resolved in-repository issues with verified patches as supervision. Starting from a historical fix, the method reconstructs a stage-wise repair trace backward from the verified outcome, then reuses the distilled guidance at inference time to steer file/function localization and patch synthesis, without fine-tuning or online search. On SWE-Bench Lite, this approach increases Pass@1 by 10.4% with GPT-4o, 8.6% with DeepSeek-V3, and 10.3% with GPT-5, indicating that outcome-conditioned reuse of verified repairs can replace costly forward exploration for software issue resolution.",
+    "link": "http://arxiv.org/abs/2601.23257v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23254v1",
+    "title": "GrepRAG: An Empirical Study and Optimization of Grep-Like Retrieval for Code Completion",
+    "authors": [
+      "Baoyi Wang",
+      "Xingliang Wang",
+      "Guochang Li",
+      "Chen Zhi",
+      "Junxiao Han",
+      "Xinkui Zhao",
+      "Nan Wang",
+      "Shuiguang Deng",
+      "Jianwei Yin"
+    ],
+    "summary": "Repository-level code completion remains challenging for large language models (LLMs) due to cross-file dependencies and limited context windows. Prior work addresses this challenge using Retrieval-Augmented Generation (RAG) frameworks based on semantic indexing or structure-aware graph analysis, but these approaches incur substantial computational overhead for index construction and maintenance. Motivated by common developer workflows that rely on lightweight search utilities (e.g., ripgrep), we revisit a fundamental yet underexplored question: how far can simple, index-free lexical retrieval support repository-level code completion before more complex retrieval mechanisms become necessary? To answer this question, we systematically investigate lightweight, index-free, intent-aware lexical retrieval through extensive empirical analysis. We first introduce Naive GrepRAG, a baseline framework in which LLMs autonomously generate ripgrep commands to retrieve relevant context. Despite its simplicity, Naive GrepRAG achieves performance comparable to sophisticated graph-based baselines. Further analysis shows that its effectiveness stems from retrieving lexically precise code fragments that are spatially closer to the completion site. We also identify key limitations of lexical retrieval, including sensitivity to noisy matches from high-frequency ambiguous keywords and context fragmentation caused by rigid truncation boundaries. To address these issues, we propose GrepRAG, which augments lexical retrieval with a lightweight post-processing pipeline featuring identifier-weighted re-ranking and structure-aware deduplication. Extensive evaluation on CrossCodeEval and RepoEval-Updated demonstrates that GrepRAG consistently outperforms state-of-the-art (SOTA) methods, achieving 7.04-15.58 percent relative improvement in code exact match (EM) over the best baseline on CrossCodeEval.",
+    "link": "http://arxiv.org/abs/2601.23254v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23232v1",
+    "title": "ShotFinder: Imagination-Driven Open-Domain Video Shot Retrieval via Web Search",
+    "authors": [
+      "Tao Yu",
+      "Haopeng Jin",
+      "Hao Wang",
+      "Shenghua Chai",
+      "Yujia Yang",
+      "Junhao Gong",
+      "Jiaming Guo",
+      "Minghui Zhang",
+      "Xinlong Chen",
+      "Zhenghao Zhang",
+      "Yuxuan Zhou",
+      "Yanpei Gong",
+      "YuanCheng Liu",
+      "Yiming Ding",
+      "Kangwei Zeng",
+      "Pengfei Yang",
+      "Zhongtian Luo",
+      "Yufei Xiong",
+      "Shanbin Zhang",
+      "Shaoxiong Cheng",
+      "Huang Ruilin",
+      "Li Shuo",
+      "Yuxi Niu",
+      "Xinyuan Zhang",
+      "Yueya Xu",
+      "Jie Mao",
+      "Ruixuan Ji",
+      "Yaru Zhao",
+      "Mingchen Zhang",
+      "Jiabing Yang",
+      "Jiaqi Liu",
+      "YiFan Zhang",
+      "Hongzhu Yi",
+      "Xinming Wang",
+      "Cheng Zhong",
+      "Xiao Ma",
+      "Zhang Zhang",
+      "Yan Huang",
+      "Liang Wang"
+    ],
+    "summary": "In recent years, large language models (LLMs) have made rapid progress in information retrieval, yet existing research has mainly focused on text or static multimodal settings. Open-domain video shot retrieval, which involves richer temporal structure and more complex semantics, still lacks systematic benchmarks and analysis. To fill this gap, we introduce ShotFinder, a benchmark that formalizes editing requirements as keyframe-oriented shot descriptions and introduces five types of controllable single-factor constraints: Temporal order, Color, Visual style, Audio, and Resolution. We curate 1,210 high-quality samples from YouTube across 20 thematic categories, using large models for generation with human verification. Based on the benchmark, we propose ShotFinder, a text-driven three-stage retrieval and localization pipeline: (1) query expansion via video imagination, (2) candidate video retrieval with a search engine, and (3) description-guided temporal localization. Experiments on multiple closed-source and open-source models reveal a significant gap to human performance, with clear imbalance across constraints: temporal localization is relatively tractable, while color and visual style remain major challenges. These results reveal that open-domain video shot retrieval is still a critical capability that multimodal large models have yet to overcome.",
+    "link": "http://arxiv.org/abs/2601.23232v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23219v1",
+    "title": "MonoScale: Scaling Multi-Agent System with Monotonic Improvement",
+    "authors": [
+      "Shuai Shao",
+      "Yixiang Liu",
+      "Bingwei Lu",
+      "Weinan Zhang"
+    ],
+    "summary": "In recent years, LLM-based multi-agent systems (MAS) have advanced rapidly, using a router to decompose tasks and delegate subtasks to specialized agents. A natural way to expand capability is to scale up the agent pool by continually integrating new functional agents or tool interfaces, but naive expansion can trigger performance collapse when the router cold-starts on newly added, heterogeneous, and unreliable agents. We propose MonoScale, an expansion-aware update framework that proactively generates a small set of agent-conditioned familiarization tasks, harvests evidence from both successful and failed interactions, and distills it into auditable natural-language memory to guide future routing. We formalize sequential augmentation as a contextual bandit and perform trust-region memory updates, yielding a monotonic non-decreasing performance guarantee across onboarding rounds. Experiments on GAIA and Humanity's Last Exam show stable gains as the agent pool grows, outperforming naive scale-up and strong-router fixed-pool baselines.",
+    "link": "http://arxiv.org/abs/2601.23219v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23211v1",
+    "title": "Multi-Agent Systems Should be Treated as Principal-Agent Problems",
+    "authors": [
+      "Paulius Rauba",
+      "Simonas Cepenas",
+      "Mihaela van der Schaar"
+    ],
+    "summary": "Consider a multi-agent systems setup in which a principal (a supervisor agent) assigns subtasks to specialized agents and aggregates their responses into a single system-level output. A core property of such systems is information asymmetry: agents observe task-specific information, produce intermediate reasoning traces, and operate with different context windows. In isolation, such asymmetry is not problematic, since agents report truthfully to the principal when incentives are fully aligned. However, this assumption breaks down when incentives diverge. Recent evidence suggests that LLM-based agents can acquire their own goals, such as survival or self-preservation, a phenomenon known as scheming, and may deceive humans or other agents. This leads to agency loss: a gap between the principal's intended outcome and the realized system behavior. Drawing on core ideas from microeconomic theory, we argue that these characteristics, information asymmetry and misaligned goals, are best studied through the lens of principal-agent problems. We explain why multi-agent systems, both human-to-LLM and LLM-to-LLM, naturally induce information asymmetry under this formulation, and we use scheming, where LLM agents pursue covert goals, as a concrete case study. We show that recently introduced terminology used to describe scheming, such as covert subversion or deferred subversion, corresponds to well-studied concepts in the mechanism design literature, which not only characterizes the problem but also prescribes concrete mitigation strategies. More broadly, we argue for applying tools developed to study human agent behavior to the analysis of non-human agents.",
+    "link": "http://arxiv.org/abs/2601.23211v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23206v1",
+    "title": "High-quality generation of dynamic game content via small language models: A proof of concept",
+    "authors": [
+      "Morten I. K. Munk",
+      "Arturo Valdivia",
+      "Paolo Burelli"
+    ],
+    "summary": "Large language models (LLMs) offer promise for dynamic game content generation, but they face critical barriers, including narrative incoherence and high operational costs. Due to their large size, they are often accessed in the cloud, limiting their application in offline games. Many of these practical issues are solved by pivoting to small language models (SLMs), but existing studies using SLMs have resulted in poor output quality. We propose a strategy of achieving high-quality SLM generation through aggressive fine-tuning on deliberately scoped tasks with narrow context, constrained structure, or both. In short, more difficult tasks require narrower scope and higher specialization to the training corpus. Training data is synthetically generated via a DAG-based approach, grounding models in the specific game world. Such models can form the basis for agentic networks designed around the narratological framework at hand, representing a more practical and robust solution than cloud-dependent LLMs. To validate this approach, we present a proof-of-concept focusing on a single specialized SLM as the fundamental building block. We introduce a minimal RPG loop revolving around rhetorical battles of reputations, powered by this model. We demonstrate that a simple retry-until-success strategy reaches adequate quality (as defined by an LLM-as-a-judge scheme) with predictable latency suitable for real-time generation. While local quality assessment remains an open question, our results demonstrate feasibility for real-time generation under typical game engine constraints.",
+    "link": "http://arxiv.org/abs/2601.23206v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23204v1",
+    "title": "TSAQA: Time Series Analysis Question And Answering Benchmark",
+    "authors": [
+      "Baoyu Jing",
+      "Sanhorn Chen",
+      "Lecheng Zheng",
+      "Boyu Liu",
+      "Zihao Li",
+      "Jiaru Zou",
+      "Tianxin Wei",
+      "Zhining Liu",
+      "Zhichen Zeng",
+      "Ruizhong Qiu",
+      "Xiao Lin",
+      "Yuchen Yan",
+      "Dongqi Fu",
+      "Jingchao Ni",
+      "Jingrui He",
+      "Hanghang Tong"
+    ],
+    "summary": "Time series data are integral to critical applications across domains such as finance, healthcare, transportation, and environmental science. While recent work has begun to explore multi-task time series question answering (QA), current benchmarks remain limited to forecasting and anomaly detection tasks. We introduce TSAQA, a novel unified benchmark designed to broaden task coverage and evaluate diverse temporal analysis capabilities. TSAQA integrates six diverse tasks under a single framework ranging from conventional analysis, including anomaly detection and classification, to advanced analysis, such as characterization, comparison, data transformation, and temporal relationship analysis. Spanning 210k samples across 13 domains, the dataset employs diverse formats, including true-or-false (TF), multiple-choice (MC), and a novel puzzling (PZ), to comprehensively assess time series analysis. Zero-shot evaluation demonstrates that these tasks are challenging for current Large Language Models (LLMs): the best-performing commercial LLM, Gemini-2.5-Flash, achieves an average score of only 65.08. Although instruction tuning boosts open-source performance: the best-performing open-source model, LLaMA-3.1-8B, shows significant room for improvement, highlighting the complexity of temporal analysis for LLMs.",
+    "link": "http://arxiv.org/abs/2601.23204v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23200v1",
+    "title": "Large Language Models for Patent Classification: Strengths, Trade-offs, and the Long Tail Effect",
+    "authors": [
+      "Lorenzo Emer",
+      "Marco Lippi",
+      "Andrea Mina",
+      "Andrea Vandin"
+    ],
+    "summary": "Patent classification into CPC codes underpins large scale analyses of technological change but remains challenging due to its hierarchical, multi label, and highly imbalanced structure. While pre Generative AI supervised encoder based models became the de facto standard for large scale patent classification, recent advances in large language models (LLMs) raise questions about whether they can provide complementary capabilities, particularly for rare or weakly represented technological categories. In this work, we perform a systematic comparison of encoder based classifiers (BERT, SciBERT, and PatentSBERTa) and open weight LLMs on a highly imbalanced benchmark dataset (USPTO 70k). We evaluate LLMs under zero shot, few shot, and retrieval augmented prompting, and further assess parameter efficient fine tuning of the best performing model. Our results show that encoder based models achieve higher aggregate performance, driven by strong results on frequent CPC subclasses, but struggle on rare ones. In contrast, LLMs achieve relatively higher performance on infrequent subclasses, often associated with early stage, cross domain, or weakly institutionalised technologies, particularly at higher hierarchical levels. These findings indicate that encoder based and LLM based approaches play complementary roles in patent classification. We additionally quantify inference time and energy consumption, showing that encoder based models are up to three orders of magnitude more efficient than LLMs. Overall, our results inform responsible patentometrics and technology mapping, and motivate hybrid classification approaches that combine encoder efficiency with the long tail coverage of LLMs under computational and environmental constraints.",
+    "link": "http://arxiv.org/abs/2601.23200v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23184v1",
+    "title": "ReGuLaR: Variational Latent Reasoning Guided by Rendered Chain-of-Thought",
+    "authors": [
+      "Fanmeng Wang",
+      "Haotian Liu",
+      "Guojiang Zhao",
+      "Hongteng Xu",
+      "Zhifeng Gao"
+    ],
+    "summary": "While Chain-of-Thought (CoT) significantly enhances the performance of Large Language Models (LLMs), explicit reasoning chains introduce substantial computational redundancy. Recent latent reasoning methods attempt to mitigate this by compressing reasoning processes into latent space, but often suffer from severe performance degradation due to the lack of appropriate compression guidance. In this study, we propose Rendered CoT-Guided variational Latent Reasoning (ReGuLaR), a simple yet novel latent learning paradigm resolving this issue. Fundamentally, we formulate latent reasoning within the Variational Auto-Encoding (VAE) framework, sampling the current latent reasoning state from the posterior distribution conditioned on previous ones. Specifically, when learning this variational latent reasoning model, we render explicit reasoning chains as images, from which we extract dense visual-semantic representations to regularize the posterior distribution, thereby achieving efficient compression with minimal information loss. Extensive experiments demonstrate that ReGuLaR significantly outperforms existing latent reasoning methods across both computational efficiency and reasoning effectiveness, and even surpasses CoT through multi-modal reasoning, providing a new and insightful solution to latent reasoning. Code: https://github.com/FanmengWang/ReGuLaR.",
+    "link": "http://arxiv.org/abs/2601.23184v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23183v1",
+    "title": "JobResQA: A Benchmark for LLM Machine Reading Comprehension on Multilingual R\u00e9sum\u00e9s and JDs",
+    "authors": [
+      "Casimiro Pio Carrino",
+      "Paula Estrella",
+      "Rabih Zbib",
+      "Carlos Escolano",
+      "Jos\u00e9 A. R. Fonollosa"
+    ],
+    "summary": "We introduce JobResQA, a multilingual Question Answering benchmark for evaluating Machine Reading Comprehension (MRC) capabilities of LLMs on HR-specific tasks involving r\u00e9sum\u00e9s and job descriptions. The dataset comprises 581 QA pairs across 105 synthetic r\u00e9sum\u00e9-job description pairs in five languages (English, Spanish, Italian, German, and Chinese), with questions spanning three complexity levels from basic factual extraction to complex cross-document reasoning. We propose a data generation pipeline derived from real-world sources through de-identification and data synthesis to ensure both realism and privacy, while controlled demographic and professional attributes (implemented via placeholders) enable systematic bias and fairness studies. We also present a cost-effective, human-in-the-loop translation pipeline based on the TEaR methodology, incorporating MQM error annotations and selective post-editing to ensure an high-quality multi-way parallel benchmark. We provide a baseline evaluations across multiple open-weight LLM families using an LLM-as-judge approach revealing higher performances on English and Spanish but substantial degradation for other languages, highlighting critical gaps in multilingual MRC capabilities for HR applications. JobResQA provides a reproducible benchmark for advancing fair and reliable LLM-based HR systems. The benchmark is publicly available at: https://github.com/Avature/jobresqa-benchmark",
+    "link": "http://arxiv.org/abs/2601.23183v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23180v1",
+    "title": "TriSpec: Ternary Speculative Decoding via Lightweight Proxy Verification",
+    "authors": [
+      "Haoyun Jiang",
+      "Junqi He",
+      "Feng Hong",
+      "Xinlong Yang",
+      "Jianwei Zhang",
+      "Zheng Li",
+      "Zhengyang Zhuge",
+      "Zhiyong Chen",
+      "Bo Han",
+      "Junyang Lin",
+      "Jiangchao Yao"
+    ],
+    "summary": "Inference efficiency in Large Language Models (LLMs) is fundamentally limited by their serial, autoregressive generation, especially as reasoning becomes a key capability and response sequences grow longer. Speculative decoding (SD) offers a powerful solution, providing significant speed-ups through its lightweight drafting and parallel verification mechanism. While existing work has nearly saturated improvements in draft effectiveness and efficiency, this paper advances SD from a new yet critical perspective: the verification cost. We propose TriSpec, a novel ternary SD framework that, at its core, introduces a lightweight proxy to significantly reduce computational cost by approving easily verifiable draft sequences and engaging the full target model only when encountering uncertain tokens. TriSpec can be integrated with state-of-the-art SD methods like EAGLE-3 to further reduce verification costs, achieving greater acceleration. Extensive experiments on the Qwen3 and DeepSeek-R1-Distill-Qwen/LLaMA families show that TriSpec achieves up to 35\\% speedup over standard SD, with up to 50\\% fewer target model invocations while maintaining comparable accuracy.",
+    "link": "http://arxiv.org/abs/2601.23180v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23174v1",
+    "title": "Beyond Fixed Frames: Dynamic Character-Aligned Speech Tokenization",
+    "authors": [
+      "Luca Della Libera",
+      "Cem Subakan",
+      "Mirco Ravanelli"
+    ],
+    "summary": "Neural audio codecs are at the core of modern conversational speech technologies, converting continuous speech into sequences of discrete tokens that can be processed by LLMs. However, existing codecs typically operate at fixed frame rates, allocating tokens uniformly in time and producing unnecessarily long sequences. In this work, we introduce DyCAST, a Dynamic Character-Aligned Speech Tokenizer that enables variable-frame-rate tokenization through soft character-level alignment and explicit duration modeling. DyCAST learns to associate tokens with character-level linguistic units during training and supports alignment-free inference with direct control over token durations at decoding time. To improve speech resynthesis quality at low frame rates, we further introduce a retrieval-augmented decoding mechanism that enhances reconstruction fidelity without increasing bitrate. Experiments show that DyCAST achieves competitive speech resynthesis quality and downstream performance while using significantly fewer tokens than fixed-frame-rate codecs.",
+    "link": "http://arxiv.org/abs/2601.23174v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23166v1",
+    "title": "Monotonic Reference-Free Refinement for Autoformalization",
+    "authors": [
+      "Lan Zhang",
+      "Marco Valentino",
+      "Andr\u00e9 Freitas"
+    ],
+    "summary": "While statement autoformalization has advanced rapidly, full-theorem autoformalization remains largely unexplored. Existing iterative refinement methods in statement autoformalization typicall improve isolated aspects of formalization, such as syntactic correctness, but struggle to jointly optimizing multiple quality dimensions, which is critical for full-theorem autoformalization. We introduce a reference-free iterative monotonic process for full-theorem autoformalization that leverages complementary feedback from theorem provers and LLM-based judges, without access to ground-truth proofs or existing formalizations at inference time. Our approach optimizes a masked composite objective over Formal Validity, Logical Preservation, Mathematical Consistency, and Formal Quality, guided by a responsiveness map that indicates how different LLMs acting as different roles preferentially improve each dimension. We further propose an acceptance policy that guarantees certified monotonic improvement, and provide conditions ensuring convergence and termination. Empirical experiments demonstrate the proposed process enables simultaneous improvement across multiple dimensions, achieving 93.44% formal validity and a 78.22% overall score on miniF2F, and 44.09% formal validity and a 29.79% overall score on ProofNet.",
+    "link": "http://arxiv.org/abs/2601.23166v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23163v1",
+    "title": "Probing the Trajectories of Reasoning Traces in Large Language Models",
+    "authors": [
+      "Marthe Ballon",
+      "Brecht Verbeken",
+      "Vincent Ginis",
+      "Andres Algaba"
+    ],
+    "summary": "Large language models (LLMs) increasingly solve difficult problems by producing \"reasoning traces\" before emitting a final response. However, it remains unclear how accuracy and decision commitment evolve along a reasoning trajectory, and whether intermediate trace segments provide answer-relevant information beyond generic length or stylistic effects. Here, we propose a protocol to systematically probe the trajectories of reasoning traces in LLMs by 1) generating a model's reasoning trace, 2) truncating it at fixed token-percentiles, and 3) injecting each partial trace back into the model (or a different model) to measure the induced distribution over answer choices via next-token probabilities. We apply this protocol to the open-source Qwen3-4B/-8B/-14B and gpt-oss-20b/-120b models across the multiple-choice GPQA Diamond and MMLU-Pro benchmarks. We find that accuracy and decision commitment consistently increase as the percentage of provided reasoning tokens grows. These gains are primarily driven by relevant content in the model generation rather than context length or generic \"reasoning style\" effects. Stronger models often backtrack successfully from incorrect partial traces, but immediate answers often remain anchored in the weaker model's incorrect response. More broadly, we show that trajectory probing provides diagnostics for efficient and safer deployment of reasoning models as the measurements can inform practical trace-handling and monitoring policies that improve reliability without assuming intermediate tokens are inherently faithful explanations.",
+    "link": "http://arxiv.org/abs/2601.23163v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23153v1",
+    "title": "Behemoth: Benchmarking Unlearning in LLMs Using Fully Synthetic Data",
+    "authors": [
+      "Eugenia Iofinova",
+      "Dan Alistarh"
+    ],
+    "summary": "As artificial neural networks, and specifically large language models, have improved rapidly in capabilities and quality, they have increasingly been deployed in real-world applications, from customer service to Google search, despite the fact that they frequently make factually incorrect or undesirable statements. This trend has inspired practical and academic interest in model editing, that is, in adjusting the weights of the model to modify its likely outputs for queries relating to a specific fact or set of facts. This may be done either to amend a fact or set of facts, for instance, to fix a frequent error in the training data, or to suppress a fact or set of facts entirely, for instance, in case of dangerous knowledge. Multiple methods have been proposed to do such edits. However, at the same time, it has been shown that such model editing can be brittle and incomplete. Moreover the effectiveness of any model editing method necessarily depends on the data on which the model is trained, and, therefore, a good understanding of the interaction of the training data distribution and the way it is stored in the network is necessary and helpful to reliably perform model editing. However, working with large language models trained on real-world data does not allow us to understand this relationship or fully measure the effects of model editing. We therefore propose Behemoth, a fully synthetic data generation framework. To demonstrate the practical insights from the framework, we explore model editing in the context of simple tabular data, demonstrating surprising findings that, in some cases, echo real-world results, for instance, that in some cases restricting the update rank results in a more effective update. The code is available at https://github.com/IST-DASLab/behemoth.git.",
+    "link": "http://arxiv.org/abs/2601.23153v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23133v1",
+    "title": "RAudit: A Blind Auditing Protocol for Large Language Model Reasoning",
+    "authors": [
+      "Edward Y. Chang",
+      "Longling Geng"
+    ],
+    "summary": "Inference-time scaling can amplify reasoning pathologies: sycophancy, rung collapse, and premature certainty. We present RAudit, a diagnostic protocol for auditing LLM reasoning without ground truth access. The key constraint is blindness: the auditor evaluates only whether derivation steps support conclusions, enabling detection of trace-output inconsistency and, when latent competence exists, its recovery. RAudit measures process quality via CRIT-based reasonableness scores and varies critique formulation to study how social framing affects model response. We prove bounded correction and $O(\\log(1/\u03b5))$ termination. Experiments on mathematical reasoning (CAP-GSM8K) and causal judgment (CausalL2) reveal four mechanisms explaining model unreliability: (1) Latent Competence Suppression, where models derive correct answers then overwrite them under social pressure; (2) The False Competence Trap, where weaker judges mask sycophancy that stronger judges expose; (3) The Complexity-Vulnerability Tradeoff, where causal tasks induce more than 10 times higher sycophancy than mathematical tasks; and (4) Iatrogenic Critique, where authoritative correction harms weaker models. These findings challenge assumptions that capability implies robustness and that stronger feedback yields better outputs.",
+    "link": "http://arxiv.org/abs/2601.23133v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23132v1",
+    "title": "Secure Tool Manifest and Digital Signing Solution for Verifiable MCP and LLM Pipelines",
+    "authors": [
+      "Saeid Jamshidi",
+      "Kawser Wazed Nafi",
+      "Arghavan Moradi Dakhel",
+      "Foutse Khomh",
+      "Amin Nikanjam",
+      "Mohammad Adnan Hamdaqa"
+    ],
+    "summary": "Large Language Models (LLMs) are increasingly adopted in sensitive domains such as healthcare and financial institutions' data analytics; however, their execution pipelines remain vulnerable to manipulation and unverifiable behavior. Existing control mechanisms, such as the Model Context Protocol (MCP), define compliance policies for tool invocation but lack verifiable enforcement and transparent validation of model actions. To address this gap, we propose a novel Secure Tool Manifest and Digital Signing Framework, a structured and security-aware extension of Model Context Protocols. The framework enforces cryptographically signed manifests, integrates transparent verification logs, and isolates model-internal execution metadata from user-visible components to ensure verifiable execution integrity. Furthermore, the evaluation demonstrates that the framework scales nearly linearly (R-squared = 0.998), achieves near-perfect acceptance of valid executions while consistently rejecting invalid ones, and maintains balanced model utilization across execution pipelines.",
+    "link": "http://arxiv.org/abs/2601.23132v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23129v1",
+    "title": "Evaluating the Utility of Grounding Documents with Reference-Free LLM-based Metrics",
+    "authors": [
+      "Yilun Hua",
+      "Giuseppe Castellucci",
+      "Peter Schulam",
+      "Heba Elfardy",
+      "Kevin Small"
+    ],
+    "summary": "Retrieval Augmented Generation (RAG)'s success depends on the utility the LLM derives from the content used for grounding. Quantifying content utility does not have a definitive specification and existing metrics ignore model-specific capabilities and/or rely on costly annotations. In this paper, we propose Grounding Generation Utility (GroGU), a model-specific and reference-free metric that defines utility as a function of the downstream LLM's generation confidence based on entropy. Despite having no annotation requirements, GroGU is largely faithful in distinguishing ground-truth documents while capturing nuances ignored by LLM-agnostic metrics. We apply GroGU to train a query-rewriter for RAG by identifying high-utility preference data for Direct Preference Optimization. Experiments show improvements by up to 18.2 points in Mean Reciprocal Rank and up to 9.4 points in answer accuracy.",
+    "link": "http://arxiv.org/abs/2601.23129v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2601.23121v1",
+    "title": "An Automatic Deep Learning Approach for Trailer Generation through Large Language Models",
+    "authors": [
+      "Roberto Balestri",
+      "Pasquale Cascarano",
+      "Mirko Degli Esposti",
+      "Guglielmo Pescatore"
+    ],
+    "summary": "Trailers are short promotional videos designed to provide audiences with a glimpse of a movie. The process of creating a trailer typically involves selecting key scenes, dialogues and action sequences from the main content and editing them together in a way that effectively conveys the tone, theme and overall appeal of the movie. This often includes adding music, sound effects, visual effects and text overlays to enhance the impact of the trailer. In this paper, we present a framework exploiting a comprehensive multimodal strategy for automated trailer production. Also, a Large Language Model (LLM) is adopted across various stages of the trailer creation. First, it selects main key visual sequences that are relevant to the movie's core narrative. Then, it extracts the most appealing quotes from the movie, aligning them with the trailer's narrative. Additionally, the LLM assists in creating music backgrounds and voiceovers to enrich the audience's engagement, thus contributing to make a trailer not just a summary of the movie's content but a narrative experience in itself. Results show that our framework generates trailers that are more visually appealing to viewers compared to those produced by previous state-of-the-art competitors.",
+    "link": "http://arxiv.org/abs/2601.23121v1",
+    "date": "2026-01-30",
+    "fetched_at": "2026-02-02"
+  },
+  {
     "id": "http://arxiv.org/abs/2601.16979v1",
     "title": "A Scalable Measure of Loss Landscape Curvature for Analyzing the Training Dynamics of LLMs",
     "authors": [
