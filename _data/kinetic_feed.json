@@ -1,5 +1,360 @@
 [
   {
+    "id": "http://arxiv.org/abs/2602.06964v1",
+    "title": "Learning a Generative Meta-Model of LLM Activations",
+    "authors": [
+      "Grace Luo",
+      "Jiahai Feng",
+      "Trevor Darrell",
+      "Alec Radford",
+      "Jacob Steinhardt"
+    ],
+    "summary": "Existing approaches for analyzing neural network activations, such as PCA and sparse autoencoders, rely on strong structural assumptions. Generative models offer an alternative: they can uncover structure without such assumptions and act as priors that improve intervention fidelity. We explore this direction by training diffusion models on one billion residual stream activations, creating \"meta-models\" that learn the distribution of a network's internal states. We find that diffusion loss decreases smoothly with compute and reliably predicts downstream utility. In particular, applying the meta-model's learned prior to steering interventions improves fluency, with larger gains as loss decreases. Moreover, the meta-model's neurons increasingly isolate concepts into individual units, with sparse probing scores that scale as loss decreases. These results suggest generative meta-models offer a scalable path toward interpretability without restrictive structural assumptions. Project page: https://generative-latent-prior.github.io.",
+    "link": "http://arxiv.org/abs/2602.06964v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06953v1",
+    "title": "DAWN: Dependency-Aware Fast Inference for Diffusion LLMs",
+    "authors": [
+      "Lizhuo Luo",
+      "Zhuoran Shi",
+      "Jiajun Luo",
+      "Zhi Wang",
+      "Shen Ren",
+      "Wenya Wang",
+      "Tianwei Zhang"
+    ],
+    "summary": "Diffusion large language models (dLLMs) have shown advantages in text generation, particularly due to their inherent ability for parallel decoding. However, constrained by the quality--speed trade-off, existing inference solutions adopt conservative parallel strategies, leaving substantial efficiency potential underexplored. A core challenge is that parallel decoding assumes each position can be filled independently, but tokens are often semantically coupled. Thus, the correct choice at one position constrains valid choices at others. Without modeling these inter-token dependencies, parallel strategies produce deteriorated outputs. Motivated by this insight, we propose DAWN, a training-free, dependency-aware decoding method for fast dLLM inference. DAWN extracts token dependencies and leverages two key motivations: (1) positions dependent on unmasked certain positions become more reliable, (2) simultaneously unmasking strongly coupled uncertain positions induces errors. Given those findings, DAWN leverages a dependency graph to select more reliable unmasking positions at each iteration, achieving high parallelism with negligible loss in generation quality. Extensive experiments across multiple models and datasets demonstrate that DAWN speedups the inference by 1.80-8.06x over baselines while preserving the generation quality. Code is released at https://github.com/lizhuo-luo/DAWN.",
+    "link": "http://arxiv.org/abs/2602.06953v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06932v1",
+    "title": "When RL Meets Adaptive Speculative Training: A Unified Training-Serving System",
+    "authors": [
+      "Junxiong Wang",
+      "Fengxiang Bie",
+      "Jisen Li",
+      "Zhongzhu Zhou",
+      "Zelei Shao",
+      "Yubo Wang",
+      "Yinghui Liu",
+      "Qingyang Wu",
+      "Avner May",
+      "Sri Yanamandra",
+      "Yineng Zhang",
+      "Ce Zhang",
+      "Tri Dao",
+      "Percy Liang",
+      "Ben Athiwaratkun",
+      "Shuaiwen Leon Song",
+      "Chenfeng Xu",
+      "Xiaoxia Wu"
+    ],
+    "summary": "Speculative decoding can significantly accelerate LLM serving, yet most deployments today disentangle speculator training from serving, treating speculator training as a standalone offline modeling problem. We show that this decoupled formulation introduces substantial deployment and adaptation lag: (1) high time-to-serve, since a speculator must be trained offline for a considerable period before deployment; (2) delayed utility feedback, since the true end-to-end decoding speedup is only known after training and cannot be inferred reliably from acceptance rate alone due to model-architecture and system-level overheads; and (3) domain-drift degradation, as the target model is repurposed to new domains and the speculator becomes stale and less effective.   To address these issues, we present Aurora, a unified training-serving system that closes the loop by continuously learning a speculator directly from live inference traces. Aurora reframes online speculator learning as an asynchronous reinforcement-learning problem: accepted tokens provide positive feedback, while rejected speculator proposals provide implicit negative feedback that we exploit to improve sample efficiency. Our design integrates an SGLang-based inference server with an asynchronous training server, enabling hot-swapped speculator updates without service interruption. Crucially, Aurora supports day-0 deployment: a speculator can be served immediately and rapidly adapted to live traffic, improving system performance while providing immediate utility feedback. Across experiments, Aurora achieves a 1.5x day-0 speedup on recently released frontier models (e.g., MiniMax M2.1 229B and Qwen3-Coder-Next 80B). Aurora also adapts effectively to distribution shifts in user traffic, delivering an additional 1.25x speedup over a well-trained but static speculator on widely used models (e.g., Qwen3 and Llama3).",
+    "link": "http://arxiv.org/abs/2602.06932v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06920v1",
+    "title": "Halluverse-M^3: A multitask multilingual benchmark for hallucination in LLMs",
+    "authors": [
+      "Samir Abdaljalil",
+      "Parichit Sharma",
+      "Erchin Serpedin",
+      "Hasan Kurban"
+    ],
+    "summary": "Hallucinations in large language models remain a persistent challenge, particularly in multilingual and generative settings where factual consistency is difficult to maintain. While recent models show strong performance on English-centric benchmarks, their behavior across languages, tasks, and hallucination types is not yet well understood. In this work, we introduce Halluverse-M^3, a dataset designed to enable systematic analysis of hallucinations across multiple languages, multiple generation tasks, and multiple hallucination categories. Halluverse-M^3 covers four languages, English, Arabic, Hindi, and Turkish, and supports two generation tasks: question answering and dialogue summarization. The dataset explicitly distinguishes between entity-level, relation-level, and sentence-level hallucinations. Hallucinated outputs are constructed through a controlled editing process and validated by human annotators, ensuring clear alignment between original content and hallucinated generations. Using this dataset, we evaluate a diverse set of contemporary open-source and proprietary language models on fine-grained hallucination detection. Our results show that question answering is consistently easier than dialogue summarization, while sentence-level hallucinations remain challenging even for the strongest models. Performance is highest in English and degrades in lower-resource languages, with Hindi exhibiting the lowest detection accuracy. Overall, Halluverse-M^3 provides a realistic and challenging benchmark for studying hallucinations in multilingual, multi-task settings. We release the dataset to support future research on hallucination detection and mitigation\\footnote{https://huggingface.co/datasets/sabdalja/HalluVerse-M3}.",
+    "link": "http://arxiv.org/abs/2602.06920v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06911v1",
+    "title": "TamperBench: Systematically Stress-Testing LLM Safety Under Fine-Tuning and Tampering",
+    "authors": [
+      "Saad Hossain",
+      "Tom Tseng",
+      "Punya Syon Pandey",
+      "Samanvay Vajpayee",
+      "Matthew Kowal",
+      "Nayeema Nonta",
+      "Samuel Simko",
+      "Stephen Casper",
+      "Zhijing Jin",
+      "Kellin Pelrine",
+      "Sirisha Rambhatla"
+    ],
+    "summary": "As increasingly capable open-weight large language models (LLMs) are deployed, improving their tamper resistance against unsafe modifications, whether accidental or intentional, becomes critical to minimize risks. However, there is no standard approach to evaluate tamper resistance. Varied data sets, metrics, and tampering configurations make it difficult to compare safety, utility, and robustness across different models and defenses. To this end, we introduce TamperBench, the first unified framework to systematically evaluate the tamper resistance of LLMs. TamperBench (i) curates a repository of state-of-the-art weight-space fine-tuning attacks and latent-space representation attacks; (ii) enables realistic adversarial evaluation through systematic hyperparameter sweeps per attack-model pair; and (iii) provides both safety and utility evaluations. TamperBench requires minimal additional code to specify any fine-tuning configuration, alignment-stage defense method, and metric suite while ensuring end-to-end reproducibility. We use TamperBench to evaluate 21 open-weight LLMs, including defense-augmented variants, across nine tampering threats using standardized safety and capability metrics with hyperparameter sweeps per model-attack pair. This yields novel insights, including effects of post-training on tamper resistance, that jailbreak-tuning is typically the most severe attack, and that Triplet emerges as a leading alignment-stage defense. Code is available at: https://github.com/criticalml-uw/TamperBench",
+    "link": "http://arxiv.org/abs/2602.06911v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06887v1",
+    "title": "Plato's Form: Toward Backdoor Defense-as-a-Service for LLMs with Prototype Representations",
+    "authors": [
+      "Chen Chen",
+      "Yuchen Sun",
+      "Jiaxin Gao",
+      "Yanwen Jia",
+      "Xueluan Gong",
+      "Qian Wang",
+      "Kwok-Yan Lam"
+    ],
+    "summary": "Large language models (LLMs) are increasingly deployed in security-sensitive applications, yet remain vulnerable to backdoor attacks. However, existing backdoor defenses are difficult to operationalize for Backdoor Defense-as-a-Service (BDaaS), as they require unrealistic side information (e.g., downstream clean data, known triggers/targets, or task domain specifics), and lack reusable, scalable purification across diverse backdoored models. In this paper, we present PROTOPURIFY, a backdoor purification framework via parameter edits under minimal assumptions. PROTOPURIFY first builds a backdoor vector pool from clean and backdoored model pairs, aggregates vectors into candidate prototypes, and selects the most aligned candidate for the target model via similarity matching. PROTOPURIFY then identifies a boundary layer through layer-wise prototype alignment and performs targeted purification by suppressing prototype-aligned components in the affected layers, achieving fine-grained mitigation with minimal impact on benign utility. Designed as a BDaaS-ready primitive, PROTOPURIFY supports reusability, customizability, interpretability, and runtime efficiency. Experiments across various LLMs on both classification and generation tasks show that PROTOPURIFY consistently outperforms 6 representative defenses against 6 diverse attacks, including single-trigger, multi-trigger, and triggerless backdoor settings. PROTOPURIFY reduces ASR to below 10%, and even as low as 1.6% in some cases, while incurring less than a 3% drop in clean utility. PROTOPURIFY further demonstrates robustness against adaptive backdoor variants and stability on non-backdoored models.",
+    "link": "http://arxiv.org/abs/2602.06887v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06875v1",
+    "title": "TraceCoder: A Trace-Driven Multi-Agent Framework for Automated Debugging of LLM-Generated Code",
+    "authors": [
+      "Jiangping Huang",
+      "Wenguang Ye",
+      "Weisong Sun",
+      "Jian Zhang",
+      "Mingyue Zhang",
+      "Yang Liu"
+    ],
+    "summary": "Large Language Models (LLMs) often generate code with subtle but critical bugs, especially for complex tasks. Existing automated repair methods typically rely on superficial pass/fail signals, offering limited visibility into program behavior and hindering precise error localization. In addition, without a way to learn from prior failures, repair processes often fall into repetitive and inefficient cycles. To overcome these challenges, we present TraceCoder, a collaborative multi-agent framework that emulates the observe-analyze-repair process of human experts. The framework first instruments the code with diagnostic probes to capture fine-grained runtime traces, enabling deep insight into its internal execution. It then conducts causal analysis on these traces to accurately identify the root cause of the failure. This process is further enhanced by a novel Historical Lesson Learning Mechanism (HLLM), which distills insights from prior failed repair attempts to inform subsequent correction strategies and prevent recurrence of similar mistakes. To ensure stable convergence, a Rollback Mechanism enforces that each repair iteration constitutes a strict improvement toward the correct solution. Comprehensive experiments across multiple benchmarks show that TraceCoder achieves up to a 34.43\\% relative improvement in Pass@1 accuracy over existing advanced baselines. Ablation studies verify the significance of each system component, with the iterative repair process alone contributing a 65.61\\% relative gain in accuracy. Furthermore, TraceCoder significantly outperforms leading iterative methods in terms of both accuracy and cost-efficiency.",
+    "link": "http://arxiv.org/abs/2602.06875v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06869v1",
+    "title": "Uncovering Cross-Objective Interference in Multi-Objective Alignment",
+    "authors": [
+      "Yining Lu",
+      "Meng Jiang"
+    ],
+    "summary": "We study a persistent failure mode in multi-objective alignment for large language models (LLMs): training improves performance on only a subset of objectives while causing others to degrade. We formalize this phenomenon as cross-objective interference and conduct the first systematic study across classic scalarization algorithms, showing that interference is pervasive and exhibits strong model dependence.   To explain this phenomenon, we derive a local covariance law showing that an objective improves at first order when its reward exhibits positive covariance with the scalarized score. We extend this analysis to clipped surrogate objectives used in modern alignment, demonstrating that the covariance law remains valid under mild conditions despite clipping. Building on this analysis, we propose Covariance Targeted Weight Adaptation (CTWA), a plug-and-play method that maintains positive covariance between objective rewards and the training signal to effectively mitigate cross-objective interference. Finally, we complement these local improvement conditions with a global convergence analysis under the Polyak--\u0141ojasiewicz condition, establishing when non-convex scalarized optimization achieves global convergence and how cross-objective interference depends on specific model geometric properties.",
+    "link": "http://arxiv.org/abs/2602.06869v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06855v1",
+    "title": "AIRS-Bench: a Suite of Tasks for Frontier AI Research Science Agents",
+    "authors": [
+      "Alisia Lupidi",
+      "Bhavul Gauri",
+      "Thomas Simon Foster",
+      "Bassel Al Omari",
+      "Despoina Magka",
+      "Alberto Pepe",
+      "Alexis Audran-Reiss",
+      "Muna Aghamelu",
+      "Nicolas Baldwin",
+      "Lucia Cipolina-Kun",
+      "Jean-Christophe Gagnon-Audet",
+      "Chee Hau Leow",
+      "Sandra Lefdal",
+      "Hossam Mossalam",
+      "Abhinav Moudgil",
+      "Saba Nazir",
+      "Emanuel Tewolde",
+      "Isabel Urrego",
+      "Jordi Armengol Estape",
+      "Amar Budhiraja",
+      "Gaurav Chaurasia",
+      "Abhishek Charnalia",
+      "Derek Dunfield",
+      "Karen Hambardzumyan",
+      "Daniel Izcovich",
+      "Martin Josifoski",
+      "Ishita Mediratta",
+      "Kelvin Niu",
+      "Parth Pathak",
+      "Michael Shvartsman",
+      "Edan Toledo",
+      "Anton Protopopov",
+      "Roberta Raileanu",
+      "Alexander Miller",
+      "Tatiana Shavrina",
+      "Jakob Foerster",
+      "Yoram Bachrach"
+    ],
+    "summary": "LLM agents hold significant promise for advancing scientific research. To accelerate this progress, we introduce AIRS-Bench (the AI Research Science Benchmark), a suite of 20 tasks sourced from state-of-the-art machine learning papers. These tasks span diverse domains, including language modeling, mathematics, bioinformatics, and time series forecasting. AIRS-Bench tasks assess agentic capabilities over the full research lifecycle -- including idea generation, experiment analysis and iterative refinement -- without providing baseline code. The AIRS-Bench task format is versatile, enabling easy integration of new tasks and rigorous comparison across different agentic frameworks. We establish baselines using frontier models paired with both sequential and parallel scaffolds. Our results show that agents exceed human SOTA in four tasks but fail to match it in sixteen others. Even when agents surpass human benchmarks, they do not reach the theoretical performance ceiling for the underlying tasks. These findings indicate that AIRS-Bench is far from saturated and offers substantial room for improvement. We open-source the AIRS-Bench task definitions and evaluation code to catalyze further development in autonomous scientific research.",
+    "link": "http://arxiv.org/abs/2602.06855v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06854v1",
+    "title": "SEMA: Simple yet Effective Learning for Multi-Turn Jailbreak Attacks",
+    "authors": [
+      "Mingqian Feng",
+      "Xiaodong Liu",
+      "Weiwei Yang",
+      "Jialin Song",
+      "Xuekai Zhu",
+      "Chenliang Xu",
+      "Jianfeng Gao"
+    ],
+    "summary": "Multi-turn jailbreaks capture the real threat model for safety-aligned chatbots, where single-turn attacks are merely a special case. Yet existing approaches break under exploration complexity and intent drift. We propose SEMA, a simple yet effective framework that trains a multi-turn attacker without relying on any existing strategies or external data. SEMA comprises two stages. Prefilling self-tuning enables usable rollouts by fine-tuning on non-refusal, well-structured, multi-turn adversarial prompts that are self-generated with a minimal prefix, thereby stabilizing subsequent learning. Reinforcement learning with intent-drift-aware reward trains the attacker to elicit valid multi-turn adversarial prompts while maintaining the same harmful objective. We anchor harmful intent in multi-turn jailbreaks via an intent-drift-aware reward that combines intent alignment, compliance risk, and level of detail. Our open-loop attack regime avoids dependence on victim feedback, unifies single- and multi-turn settings, and reduces exploration complexity. Across multiple datasets, victim models, and jailbreak judges, our method achieves state-of-the-art (SOTA) attack success rates (ASR), outperforming all single-turn baselines, manually scripted and template-driven multi-turn baselines, as well as our SFT (Supervised Fine-Tuning) and DPO (Direct Preference Optimization) variants. For instance, SEMA performs an average $80.1\\%$ ASR@1 across three closed-source and open-source victim models on AdvBench, 33.9% over SOTA. The approach is compact, reproducible, and transfers across targets, providing a stronger and more realistic stress test for large language model (LLM) safety and enabling automatic redteaming to expose and localize failure modes. Our code is available at: https://github.com/fmmarkmq/SEMA.",
+    "link": "http://arxiv.org/abs/2602.06854v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06852v1",
+    "title": "The Quantum Sieve Tracer: A Hybrid Framework for Layer-Wise Activation Tracing in Large Language Models",
+    "authors": [
+      "Jonathan Pan"
+    ],
+    "summary": "Mechanistic interpretability aims to reverse-engineer the internal computations of Large Language Models (LLMs), yet separating sparse semantic signals from high-dimensional polysemantic noise remains a significant challenge. This paper introduces the Quantum Sieve Tracer, a hybrid quantum-classical framework designed to characterize factual recall circuits. We implement a modular pipeline that first localizes critical layers using classical causal tracing, then maps specific attention head activations into an exponentially large quantum Hilbert space. Using open-weight models (Meta Llama-3.2-1B and Alibaba Qwen2.5-1.5B-Instruct), we perform a two-stage analysis that reveals a fundamental architectural divergence. While Qwen's layer 7 circuit functions as a classic Recall Hub, we discover that Llama's layer 9 acts as an Interference Suppression circuit, where ablating the identified heads paradoxically improves factual recall. Our results demonstrate that quantum kernels can distinguish between these constructive (recall) and reductive (suppression) mechanisms, offering a high-resolution tool for analyzing the fine-grained topology of attention.",
+    "link": "http://arxiv.org/abs/2602.06852v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06841v1",
+    "title": "From Features to Actions: Explainability in Traditional and Agentic AI Systems",
+    "authors": [
+      "Sindhuja Chaduvula",
+      "Jessee Ho",
+      "Kina Kim",
+      "Aravind Narayanan",
+      "Mahshid Alinoori",
+      "Muskan Garg",
+      "Dhanesh Ramachandram",
+      "Shaina Raza"
+    ],
+    "summary": "Over the last decade, explainable AI has primarily focused on interpreting individual model predictions, producing post-hoc explanations that relate inputs to outputs under a fixed decision structure. Recent advances in large language models (LLMs) have enabled agentic AI systems whose behaviour unfolds over multi-step trajectories. In these settings, success and failure are determined by sequences of decisions rather than a single output. While useful, it remains unclear how explanation approaches designed for static predictions translate to agentic settings where behaviour emerges over time. In this work, we bridge the gap between static and agentic explainability by comparing attribution-based explanations with trace-based diagnostics across both settings. To make this distinction explicit, we empirically compare attribution-based explanations used in static classification tasks with trace-based diagnostics used in agentic benchmarks (TAU-bench Airline and AssistantBench). Our results show that while attribution methods achieve stable feature rankings in static settings (Spearman $\u03c1= 0.86$), they cannot be applied reliably to diagnose execution-level failures in agentic trajectories. In contrast, trace-grounded rubric evaluation for agentic settings consistently localizes behaviour breakdowns and reveals that state tracking inconsistency is 2.7$\\times$ more prevalent in failed runs and reduces success probability by 49\\%. These findings motivate a shift towards trajectory-level explainability for agentic systems when evaluating and diagnosing autonomous AI behaviour.   Resources:   https://github.com/VectorInstitute/unified-xai-evaluation-framework https://vectorinstitute.github.io/unified-xai-evaluation-framework",
+    "link": "http://arxiv.org/abs/2602.06841v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06836v1",
+    "title": "LLM Active Alignment: A Nash Equilibrium Perspective",
+    "authors": [
+      "Tonghan Wang",
+      "Yuqi Pan",
+      "Xinyi Yang",
+      "Yanchen Jiang",
+      "Milind Tambe",
+      "David C. Parkes"
+    ],
+    "summary": "We develop a game-theoretic framework for predicting and steering the behavior of populations of large language models (LLMs) through Nash equilibrium (NE) analysis. To avoid the intractability of equilibrium computation in open-ended text spaces, we model each agent's action as a mixture over human subpopulations. Agents choose actively and strategically which groups to align with, yielding an interpretable and behaviorally substantive policy class. We derive closed-form NE characterizations, adopting standard concave-utility assumptions to enable analytical system-level predictions and give explicit, actionable guidance for shifting alignment targets toward socially desirable outcomes. The method functions as an active alignment layer on top of existing alignment pipelines such as RLHF. In a social-media setting, we show that a population of LLMs, especially reasoning-based models, may exhibit political exclusion, pathologies where some subpopulations are ignored by all LLM agents, which can be avoided by our method, illustrating the promise of applying the method to regulate multi-agent LLM dynamics across domains.",
+    "link": "http://arxiv.org/abs/2602.06836v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06822v1",
+    "title": "POP: Online Structural Pruning Enables Efficient Inference of Large Foundation Models",
+    "authors": [
+      "Yi Chen",
+      "Wonjin Shin",
+      "Shuhong Liu",
+      "Tho Mai",
+      "Jeongmo Lee",
+      "Chuanbo Hua",
+      "Kun Wang",
+      "Jun Liu",
+      "Joo-Young Kim"
+    ],
+    "summary": "Large foundation models (LFMs) achieve strong performance through scaling, yet current structural pruning methods derive fixed pruning decisions during inference, overlooking sparsity patterns that emerge in the autoregressive token generation. In this paper, we propose POP (Partition-guided Online Pruning), an efficient online structural pruning framework that enables context-conditioned dynamic pruning with minimal computational overhead. POP partitions model channels into retained, candidate, and pruned regions, where prefilling defines a coarse pruning partition, and the decoding stage generates a fine-grained mask within the candidate region, avoiding full-channel re-evaluation. The coarse pruning partition preserves consistently important weights, while the fine-grained masking provides context-conditioned variation during decoding. Moreover, POP is a lightweight, plug-and-play method that requires no preprocessing, including offline calibration, retraining, or learning predictors. Extensive evaluations across diverse LFMs, including large language models (LLMs), mixture-of-experts models (MoEs), and vision-language models (VLMs), demonstrate that POP consistently delivers higher accuracy than existing pruning approaches while incurring smaller computational overhead and minimizing inference latency.",
+    "link": "http://arxiv.org/abs/2602.06822v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06819v1",
+    "title": "Bridging 6G IoT and AI: LLM-Based Efficient Approach for Physical Layer's Optimization Tasks",
+    "authors": [
+      "Ahsan Mehmood",
+      "Naveed Ul Hassan",
+      "Ghassan M. Kraidy"
+    ],
+    "summary": "This paper investigates the role of large language models (LLMs) in sixth-generation (6G) Internet of Things (IoT) networks and proposes a prompt-engineering-based real-time feedback and verification (PE-RTFV) framework that perform physical-layer's optimization tasks through an iteratively process. By leveraging the naturally available closed-loop feedback inherent in wireless communication systems, PE-RTFV enables real-time physical-layer optimization without requiring model retraining. The proposed framework employs an optimization LLM (O-LLM) to generate task-specific structured prompts, which are provided to an agent LLM (A-LLM) to produce task-specific solutions. Utilizing real-time system feedback, the O-LLM iteratively refines the prompts to guide the A-LLM toward improved solutions in a gradient-descent-like optimization process. We test PE-RTFV approach on wireless-powered IoT testbed case study on user-goal-driven constellation design through semantically solving rate-energy (RE)-region optimization problem which demonstrates that PE-RTFV achieves near-genetic-algorithm performance within only a few iterations, validating its effectiveness for complex physical-layer optimization tasks in resource-constrained IoT networks.",
+    "link": "http://arxiv.org/abs/2602.06819v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06818v1",
+    "title": "Wild Guesses and Mild Guesses in Active Concept Learning",
+    "authors": [
+      "Anirudh Chari",
+      "Neil Pattanaik"
+    ],
+    "summary": "Human concept learning is typically active: learners choose which instances to query or test in order to reduce uncertainty about an underlying rule or category. Active concept learning must balance informativeness of queries against the stability of the learner that generates and scores hypotheses. We study this trade-off in a neuro-symbolic Bayesian learner whose hypotheses are executable programs proposed by a large language model (LLM) and reweighted by Bayesian updating. We compare a Rational Active Learner that selects queries to maximize approximate expected information gain (EIG) and the human-like Positive Test Strategy (PTS) that queries instances predicted to be positive under the current best hypothesis. Across concept-learning tasks in the classic Number Game, EIG is effective when falsification is necessary (e.g., compound or exception-laden rules), but underperforms on simple concepts. We trace this failure to a support mismatch between the EIG policy and the LLM proposal distribution: highly diagnostic boundary queries drive the posterior toward regions where the generator produces invalid or overly specific programs, yielding a support-mismatch trap in the particle approximation. PTS is information-suboptimal but tends to maintain proposal validity by selecting \"safe\" queries, leading to faster convergence on simple rules. Our results suggest that \"confirmation bias\" may not be a cognitive error, but rather a rational adaptation for maintaining tractable inference in the sparse, open-ended hypothesis spaces characteristic of human thought.",
+    "link": "http://arxiv.org/abs/2602.06818v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06799v1",
+    "title": "Visual Word Sense Disambiguation with CLIP through Dual-Channel Text Prompting and Image Augmentations",
+    "authors": [
+      "Shamik Bhattacharya",
+      "Daniel Perkins",
+      "Yaren Dogan",
+      "Vineeth Konjeti",
+      "Sudarshan Srinivasan",
+      "Edmon Begoli"
+    ],
+    "summary": "Ambiguity poses persistent challenges in natural language understanding for large language models (LLMs). To better understand how lexical ambiguity can be resolved through the visual domain, we develop an interpretable Visual Word Sense Disambiguation (VWSD) framework. The model leverages CLIP to project ambiguous language and candidate images into a shared multimodal space. We enrich textual embeddings using a dual-channel ensemble of semantic and photo-based prompts with WordNet synonyms, while image embeddings are refined through robust test-time augmentations. We then use cosine similarity to determine the image that best aligns with the ambiguous text. When evaluated on the SemEval-2023 VWSD dataset, enriching the embeddings raises the MRR from 0.7227 to 0.7590 and the Hit Rate from 0.5810 to 0.6220. Ablation studies reveal that dual-channel prompting provides strong, low-latency performance, whereas aggressive image augmentation yields only marginal gains. Additional experiments with WordNet definitions and multilingual prompt ensembles further suggest that noisy external signals tend to dilute semantic specificity, reinforcing the effectiveness of precise, CLIP-aligned prompts for visual word sense disambiguation.",
+    "link": "http://arxiv.org/abs/2602.06799v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06797v1",
+    "title": "Optimal Learning-Rate Schedules under Functional Scaling Laws: Power Decay and Warmup-Stable-Decay",
+    "authors": [
+      "Binghui Li",
+      "Zilin Wang",
+      "Fengling Chen",
+      "Shiyang Zhao",
+      "Ruiheng Zheng",
+      "Lei Wu"
+    ],
+    "summary": "We study optimal learning-rate schedules (LRSs) under the functional scaling law (FSL) framework introduced in Li et al. (2025), which accurately models the loss dynamics of both linear regression and large language model (LLM) pre-training. Within FSL, loss dynamics are governed by two exponents: a source exponent $s>0$ controlling the rate of signal learning, and a capacity exponent $\u03b2>1$ determining the rate of noise forgetting. Focusing on a fixed training horizon $N$, we derive the optimal LRSs and reveal a sharp phase transition. In the easy-task regime $s \\ge 1 - 1/\u03b2$, the optimal schedule follows a power decay to zero, $\u03b7^*(z) = \u03b7_{\\mathrm{peak}}(1 - z/N)^{2\u03b2- 1}$, where the peak learning rate scales as $\u03b7_{\\mathrm{peak}} \\eqsim N^{-\u03bd}$ for an explicit exponent $\u03bd= \u03bd(s,\u03b2)$. In contrast, in the hard-task regime $s < 1 - 1/\u03b2$, the optimal LRS exhibits a warmup-stable-decay (WSD) (Hu et al. (2024)) structure: it maintains the largest admissible learning rate for most of training and decays only near the end, with the decay phase occupying a vanishing fraction of the horizon.   We further analyze optimal shape-fixed schedules, where only the peak learning rate is tuned -- a strategy widely adopted in practiceand characterize their strengths and intrinsic limitations. This yields a principled evaluation of commonly used schedules such as cosine and linear decay. Finally, we apply the power-decay LRS to one-pass stochastic gradient descent (SGD) for kernel regression and show the last iterate attains the exact minimax-optimal rate, eliminating the logarithmic suboptimality present in prior analyses. Numerical experiments corroborate our theoretical predictions.",
+    "link": "http://arxiv.org/abs/2602.06797v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06795v1",
+    "title": "Generating Data-Driven Reasoning Rubrics for Domain-Adaptive Reward Modeling",
+    "authors": [
+      "Kate Sanders",
+      "Nathaniel Weir",
+      "Sapana Chaudhary",
+      "Kaj Bostrom",
+      "Huzefa Rangwala"
+    ],
+    "summary": "An impediment to using Large Language Models (LLMs) for reasoning output verification is that LLMs struggle to reliably identify errors in thinking traces, particularly in long outputs, domains requiring expert knowledge, and problems without verifiable rewards. We propose a data-driven approach to automatically construct highly granular reasoning error taxonomies to enhance LLM-driven error detection on unseen reasoning traces. Our findings indicate that classification approaches that leverage these error taxonomies, or \"rubrics\", demonstrate strong error identification compared to baseline methods in technical domains like coding, math, and chemical engineering. These rubrics can be used to build stronger LLM-as-judge reward functions for reasoning model training via reinforcement learning. Experimental results show that these rewards have the potential to improve models' task accuracy on difficult domains over models trained by general LLMs-as-judges by +45%, and approach performance of models trained by verifiable rewards while using as little as 20% as many gold labels. Through our approach, we extend the usage of reward rubrics from assessing qualitative model behavior to assessing quantitative model correctness on tasks typically learned via RLVR rewards. This extension opens the door for teaching models to solve complex technical problems without a full dataset of gold labels, which are often highly costly to procure.",
+    "link": "http://arxiv.org/abs/2602.06795v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.06791v1",
+    "title": "Rare Event Analysis of Large Language Models",
+    "authors": [
+      "Jake McAllister Dorman",
+      "Edward Gillman",
+      "Dominic C. Rose",
+      "Jamie F. Mair",
+      "Juan P. Garrahan"
+    ],
+    "summary": "Being probabilistic models, during inference large language models (LLMs) display rare events: behaviour that is far from typical but highly significant. By definition all rare events are hard to see, but the enormous scale of LLM usage means that events completely unobserved during development are likely to become prominent in deployment. Here we present an end-to-end framework for the systematic analysis of rare events in LLMs. We provide a practical implementation spanning theory, efficient generation strategies, probability estimation and error analysis, which we illustrate with concrete examples. We outline extensions and applications to other models and contexts, highlighting the generality of the concepts and techniques presented here.",
+    "link": "http://arxiv.org/abs/2602.06791v1",
+    "date": "2026-02-06",
+    "fetched_at": "2026-02-09"
+  },
+  {
     "id": "http://arxiv.org/abs/2601.23273v1",
     "title": "UPA: Unsupervised Prompt Agent via Tree-Based Search and Selection",
     "authors": [
