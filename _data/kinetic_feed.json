@@ -1,5 +1,300 @@
 [
   {
+    "id": "http://arxiv.org/abs/2602.18429v1",
+    "title": "VIRAASAT: Traversing Novel Paths for Indian Cultural Reasoning",
+    "authors": [
+      "Harshul Raj Surana",
+      "Arijit Maji",
+      "Aryan Vats",
+      "Akash Ghosh",
+      "Sriparna Saha",
+      "Amit Sheth"
+    ],
+    "summary": "Large Language Models (LLMs) have made significant progress in reasoning tasks across various domains such as mathematics and coding. However, their performance deteriorates in tasks requiring rich socio-cultural knowledge and diverse local contexts, particularly those involving Indian Culture. Existing Cultural benchmarks are (i) Manually crafted, (ii) contain single-hop questions testing factual recall, and (iii) prohibitively costly to scale, leaving this deficiency largely unmeasured. To address this, we introduce VIRAASAT, a novel, semi-automated multi-hop approach for generating cultural specific multi-hop Question-Answering dataset for Indian culture. VIRAASAT leverages a Knowledge Graph comprising more than 700 expert-curated cultural artifacts, covering 13 key attributes of Indian culture (history, festivals, etc). VIRAASAT spans all 28 states and 8 Union Territories, yielding more than 3,200 multi-hop questions that necessitate chained cultural reasoning. We evaluate current State-of-the-Art (SOTA) LLMs on VIRAASAT and identify key limitations in reasoning wherein fine-tuning on Chain-of-Thought(CoT) traces fails to ground and synthesize low-probability facts. To bridge this gap, we propose a novel framework named Symbolic Chain-of-Manipulation (SCoM). Adapting the Chain-of-Manipulation paradigm, we train the model to simulate atomic Knowledge Graph manipulations internally. SCoM teaches the model to reliably traverse the topological structure of the graph. Experiments on Supervised Fine-Tuning (SFT) demonstrate that SCoM outperforms standard CoT baselines by up to 20%. We release the VIRAASAT dataset along with our findings, laying a strong foundation towards building Culturally Aware Reasoning Models.",
+    "link": "http://arxiv.org/abs/2602.18429v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18420v1",
+    "title": "SPQ: An Ensemble Technique for Large Language Model Compression",
+    "authors": [
+      "Jiamin Yao",
+      "Eren Gultepe"
+    ],
+    "summary": "This study presents an ensemble technique, SPQ (SVD-Pruning-Quantization), for large language model (LLM) compression that combines variance-retained singular value decomposition (SVD), activation-based pruning, and post-training linear quantization. Each component targets a different source of inefficiency: i) pruning removes redundant neurons in MLP layers, ii) SVD reduces attention projections into compact low-rank factors, iii) and 8-bit quantization uniformly compresses all linear layers. At matched compression ratios, SPQ outperforms individual methods (SVD-only, pruning-only, or quantization-only) in perplexity, demonstrating the benefit of combining complementary techniques. Applied to LLaMA-2-7B, SPQ achieves up to 75% memory reduction while maintaining or improving perplexity (e.g., WikiText-2 5.47 to 4.91) and preserving accuracy on downstream benchmarks such as C4, TruthfulQA, and GSM8K. Compared to strong baselines like GPTQ and SparseGPT, SPQ offers competitive perplexity and accuracy while using less memory (6.86 GB vs. 7.16 GB for GPTQ). Moreover, SPQ improves inference throughput over GPTQ, achieving up to a 1.9x speedup, which further enhances its practicality for real-world deployment. The effectiveness of SPQ's robust compression through layer-aware and complementary compression techniques may provide practical deployment of LLMs in memory-constrained environments. Code is available at: https://github.com/JiaminYao/SPQ_LLM_Compression/",
+    "link": "http://arxiv.org/abs/2602.18420v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18415v1",
+    "title": "AI-Wrapped: Participatory, Privacy-Preserving Measurement of Longitudinal LLM Use In-the-Wild",
+    "authors": [
+      "Cathy Mengying Fang",
+      "Sheer Karny",
+      "Chayapatr Archiwaranguprok",
+      "Yasith Samaradivakara",
+      "Pat Pataranutaporn",
+      "Pattie Maes"
+    ],
+    "summary": "Alignment research on large language models (LLMs) increasingly depends on understanding how these systems are used in everyday contexts. yet naturalistic interaction data is difficult to access due to privacy constraints and platform control. We present AI-Wrapped, a prototype workflow for collecting naturalistic LLM usage data while providing participants with an immediate ``wrapped''-style report on their usage statistics, top topics, and safety-relevant behavioral patterns. We report findings from an initial deployment with 82 U.S.-based adults across 48,495 conversations from their 2025 histories. Participants used LLMs for both instrumental and reflective purposes, including creative work, professional tasks, and emotional or existential themes. Some usage patterns were consistent with potential over-reliance or perfectionistic refinement, while heavier users showed comparatively more reflective exchanges than primarily transactional ones. Methodologically, even with zero data retention and PII removal, participants may remain hesitant to share chat data due to perceived privacy and judgment risks, underscoring the importance of trust, agency, and transparent design when building measurement infrastructure for alignment research.",
+    "link": "http://arxiv.org/abs/2602.18415v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18372v1",
+    "title": "\"How Do I ...?\": Procedural Questions Predominate Student-LLM Chatbot Conversations",
+    "authors": [
+      "Alexandra Neagu",
+      "Marcus Messer",
+      "Peter Johnson",
+      "Rhodri Nelson"
+    ],
+    "summary": "Providing scaffolding through educational chatbots built on Large Language Models (LLM) has potential risks and benefits that remain an open area of research. When students navigate impasses, they ask for help by formulating impasse-driven questions. Within interactions with LLM chatbots, such questions shape the user prompts and drive the pedagogical effectiveness of the chatbot's response. This paper focuses on such student questions from two datasets of distinct learning contexts: formative self-study, and summative assessed coursework. We analysed 6,113 messages from both learning contexts, using 11 different LLMs and three human raters to classify student questions using four existing schemas. On the feasibility of using LLMs as raters, results showed moderate-to-good inter-rater reliability, with higher consistency than human raters. The data showed that 'procedural' questions predominated in both learning contexts, but more so when students prepare for summative assessment. These results provide a basis on which to use LLMs for classification of student questions. However, we identify clear limitations in both the ability to classify with schemas and the value of doing so: schemas are limited and thus struggle to accommodate the semantic richness of composite prompts, offering only partial understanding the wider risks and benefits of chatbot integration. In the future, we recommend an analysis approach that captures the nuanced, multi-turn nature of conversation, for example, by applying methods from conversation analysis in discursive psychology.",
+    "link": "http://arxiv.org/abs/2602.18372v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18364v1",
+    "title": "Quantum Maximum Likelihood Prediction via Hilbert Space Embeddings",
+    "authors": [
+      "Sreejith Sreekumar",
+      "Nir Weinberger"
+    ],
+    "summary": "Recent works have proposed various explanations for the ability of modern large language models (LLMs) to perform in-context prediction. We propose an alternative conceptual viewpoint from an information-geometric and statistical perspective. Motivated by Bach[2023], we model training as learning an embedding of probability distributions into the space of quantum density operators, and in-context learning as maximum-likelihood prediction over a specified class of quantum models. We provide an interpretation of this predictor in terms of quantum reverse information projection and quantum Pythagorean theorem when the class of quantum models is sufficiently expressive. We further derive non-asymptotic performance guarantees in terms of convergence rates and concentration inequalities, both in trace norm and quantum relative entropy. Our approach provides a unified framework to handle both classical and quantum LLMs.",
+    "link": "http://arxiv.org/abs/2602.18364v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18352v1",
+    "title": "Qualitative Coding Analysis through Open-Source Large Language Models: A User Study and Design Recommendations",
+    "authors": [
+      "Tung T. Ngo",
+      "Dai Nguyen Van",
+      "Anh-Minh Nguyen",
+      "Phuong-Anh Do",
+      "Anh Nguyen-Quoc"
+    ],
+    "summary": "Qualitative data analysis is labor-intensive, yet the privacy risks associated with commercial Large Language Models (LLMs) often preclude their use in sensitive research. To address this, we introduce ChatQDA, an on-device framework powered by open-source LLMs designed for privacy-preserving open coding. Our mixed-methods user study reveals that while participants rated the system highly for usability and perceived efficiency, they exhibited \"conditional trust\", valuing the tool for surface-level extraction while questioning its interpretive nuance and consistency. Furthermore, despite the technical security of local deployment, participants reported epistemic uncertainty regarding data protection, suggesting that invisible security measures are insufficient to foster trust. We conclude with design recommendations for local-first analysis tools that prioritize verifiable privacy and methodological rigor.",
+    "link": "http://arxiv.org/abs/2602.18352v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18307v1",
+    "title": "VeriSoftBench: Repository-Scale Formal Verification Benchmarks for Lean",
+    "authors": [
+      "Yutong Xin",
+      "Qiaochu Chen",
+      "Greg Durrett",
+      "I\u015fil Dillig"
+    ],
+    "summary": "Large language models have achieved striking results in interactive theorem proving, particularly in Lean. However, most benchmarks for LLM-based proof automation are drawn from mathematics in the Mathlib ecosystem, whereas proofs in software verification are developed inside definition-rich codebases with substantial project-specific libraries. We introduce VeriSoftBench, a benchmark of 500 Lean 4 proof obligations drawn from open-source formal-methods developments and packaged to preserve realistic repository context and cross-file dependencies. Our evaluation of frontier LLMs and specialized provers yields three observations. First, provers tuned for Mathlib-style mathematics transfer poorly to this repository-centric setting. Second, success is strongly correlated with transitive repository dependence: tasks whose proofs draw on large, multi-hop dependency closures are less likely to be solved. Third, providing curated context restricted to a proof's dependency closure improves performance relative to exposing the full repository, but nevertheless leaves substantial room for improvement. Our benchmark and evaluation suite are released at https://github.com/utopia-group/VeriSoftBench.",
+    "link": "http://arxiv.org/abs/2602.18307v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18306v1",
+    "title": "ReqElicitGym: An Evaluation Environment for Interview Competence in Conversational Requirements Elicitation",
+    "authors": [
+      "Dongming Jin",
+      "Zhi Jin",
+      "Zheng Fang",
+      "Linyu Li",
+      "XiaoTian Yang",
+      "Yuanpeng He",
+      "Xiaohong Chen"
+    ],
+    "summary": "With the rapid improvement of LLMs' coding capabilities, the bottleneck of LLM-based automated software development is shifting from generating correct code to eliciting users' requirements. Despite growing interest, the interview competence of LLMs in conversational requirements elicitation remains fully underexplored. Existing evaluations often depend on a few scenarios, real user interaction, and subjective human scoring, which hinders systematic and quantitative comparison. To address these challenges, we propose ReqElicitGym, an interactive and automatic evaluation environment for assessing interview competence in conversational requirements elicitation. Specifically, ReqElicitGym introduces a new evaluation dataset and designs both an interactive oracle user and a task evaluator. The dataset contains 101 website requirements elicitation scenarios spanning 10 application types. Both the oracle user and the task evaluator achieve high agreement with real users and expert judgment. Using our ReqElicitGym, any automated conversational requirements elicitation approach (e.g., LLM-based agents) can be evaluated in a reproducible and quantitative manner through interaction with the environment. Based on our ReqElicitGym, we conduct a systematic empirical study on seven representative LLMs, and the results show that current LLMs still exhibit limited interview competence in uncovering implicit requirements. Particularly, they elicit less than half of the users' implicit requirements, and their effective elicitation questions often emerge in later turns of the dialogue. Besides, we found LLMs can elicit interaction and content implicit requirements, but consistently struggle with style-related requirements. We believe ReqElicitGym will facilitate the evaluation and development of automated conversational requirements elicitation.",
+    "link": "http://arxiv.org/abs/2602.18306v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18301v1",
+    "title": "On the Semantic and Syntactic Information Encoded in Proto-Tokens for One-Step Text Reconstruction",
+    "authors": [
+      "Ivan Bondarenko",
+      "Egor Palkin",
+      "Fedor Tikunov"
+    ],
+    "summary": "Autoregressive large language models (LLMs) generate text token-by-token, requiring n forward passes to produce a sequence of length n. Recent work, Exploring the Latent Capacity of LLMs for One-Step Text Reconstruction (Mezentsev and Oseledets), shows that frozen LLMs can reconstruct hundreds of tokens from only two learned proto-tokens in a single forward pass, suggesting a path beyond the autoregressive paradigm. In this paper, we study what information these proto-tokens encode and how they behave under reconstruction and controlled constraints. We perform a series of experiments aimed at disentangling semantic and syntactic content in the two proto-tokens, analyzing stability properties of the e-token, and visualizing attention patterns to the e-token during reconstruction. Finally, we test two regularization schemes for \"imposing\" semantic structure on the e-token using teacher embeddings, including an anchor-based loss and a relational distillation objective. Our results indicate that the m-token tends to capture semantic information more strongly than the e-token under standard optimization; anchor-based constraints trade off sharply with reconstruction accuracy; and relational distillation can transfer batch-level semantic relations into the proto-token space without sacrificing reconstruction quality, supporting the feasibility of future non-autoregressive seq2seq systems that predict proto-tokens as an intermediate representation.",
+    "link": "http://arxiv.org/abs/2602.18301v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18297v1",
+    "title": "Analyzing and Improving Chain-of-Thought Monitorability Through Information Theory",
+    "authors": [
+      "Usman Anwar",
+      "Tim Bakker",
+      "Dana Kianfar",
+      "Cristina Pinneri",
+      "Christos Louizos"
+    ],
+    "summary": "Chain-of-thought (CoT) monitors are LLM-based systems that analyze reasoning traces to detect when outputs may exhibit attributes of interest, such as test-hacking behavior during code generation. In this paper, we use information-theoretic analysis to show that non-zero mutual information between CoT and output is a necessary but not sufficient condition for CoT monitorability. We identify two sources of approximation error that may undermine the performance of CoT monitors in practice: information gap, which measures the extent to which the monitor can extract the information available in CoT, and elicitation error, which measures the extent to which the monitor approximates the optimal monitoring function. We further demonstrate that CoT monitorability can be systematically improved through targeted training objectives. To this end, we propose two complementary approaches: (a) an oracle-based method that directly rewards the monitored model for producing CoTs that maximize monitor accuracy, and (b) a more practical, label-free approach that maximizes conditional mutual information between outputs and CoTs. Across multiple different environments, we show both methods significantly improve monitor accuracy while preventing CoT degeneration even when training against a monitor, thereby mitigating reward hacking when the task reward is imperfectly specified.",
+    "link": "http://arxiv.org/abs/2602.18297v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18296v1",
+    "title": "Context-Aware Mapping of 2D Drawing Annotations to 3D CAD Features Using LLM-Assisted Reasoning for Manufacturing Automation",
+    "authors": [
+      "Muhammad Tayyab Khana",
+      "Lequn Chen",
+      "Wenhe Feng",
+      "Seung Ki Moon"
+    ],
+    "summary": "Manufacturing automation in process planning, inspection planning, and digital-thread integration depends on a unified specification that binds the geometric features of a 3D CAD model to the geometric dimensioning and tolerancing (GD&T) callouts, datum definitions, and surface requirements carried by the corresponding 2D engineering drawing. Although Model-Based Definition (MBD) allows such specifications to be embedded directly in 3D models, 2D drawings remain the primary carrier of manufacturing intent in automotive, aerospace, shipbuilding, and heavy-machinery industries. Correctly linking drawing annotations to the corresponding 3D features is difficult because of contextual ambiguity, repeated feature patterns, and the need for transparent and traceable decisions. This paper presents a deterministic-first, context-aware framework that maps 2D drawing entities to 3D CAD features to produce a unified manufacturing specification. Drawing callouts are first semantically enriched and then scored against candidate features using an interpretable metric that combines type compatibility, tolerance-aware dimensional agreement, and conservative context consistency, along with engineering-domain heuristics. When deterministic scoring cannot resolve an ambiguity, the system escalates to multimodal and constrained large-language-model reasoning, followed by a single human-in-the-loop (HITL) review step. Experiments on 20 real CAD-drawing pairs achieve a mean precision of 83.67%, recall of 90.46%, and F1 score of 86.29%. An ablation study shows that each pipeline component contributes to overall accuracy, with the full system outperforming all reduced variants. By prioritizing deterministic rules, clear decision tracking, and retaining unresolved cases for human review, the framework provides a practical foundation for downstream manufacturing automation in real-world industrial environments.",
+    "link": "http://arxiv.org/abs/2602.18296v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18266v1",
+    "title": "A Probabilistic Framework for LLM-Based Model Discovery",
+    "authors": [
+      "Stefan Wahl",
+      "Raphaela Schenk",
+      "Ali Farnoud",
+      "Jakob H. Macke",
+      "Daniel Gedon"
+    ],
+    "summary": "Automated methods for discovering mechanistic simulator models from observational data offer a promising path toward accelerating scientific progress. Such methods often take the form of agentic-style iterative workflows that repeatedly propose and revise candidate models by imitating human discovery processes. However, existing LLM-based approaches typically implement such workflows via hand-crafted heuristic procedures, without an explicit probabilistic formulation. We recast model discovery as probabilistic inference, i.e., as sampling from an unknown distribution over mechanistic models capable of explaining the data. This perspective provides a unified way to reason about model proposal, refinement, and selection within a single inference framework. As a concrete instantiation of this view, we introduce ModelSMC, an algorithm based on Sequential Monte Carlo sampling. ModelSMC represents candidate models as particles which are iteratively proposed and refined by an LLM, and weighted using likelihood-based criteria. Experiments on real-world scientific systems illustrate that this formulation discovers models with interpretable mechanisms and improves posterior predictive checks. More broadly, this perspective provides a probabilistic lens for understanding and developing LLM-based approaches to model discovery.",
+    "link": "http://arxiv.org/abs/2602.18266v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18262v1",
+    "title": "Simplifying Outcomes of Language Model Component Analyses with ELIA",
+    "authors": [
+      "Aaron Louis Eidt",
+      "Nils Feldhus"
+    ],
+    "summary": "While mechanistic interpretability has developed powerful tools to analyze the internal workings of Large Language Models (LLMs), their complexity has created an accessibility gap, limiting their use to specialists. We address this challenge by designing, building, and evaluating ELIA (Explainable Language Interpretability Analysis), an interactive web application that simplifies the outcomes of various language model component analyses for a broader audience. The system integrates three key techniques -- Attribution Analysis, Function Vector Analysis, and Circuit Tracing -- and introduces a novel methodology: using a vision-language model to automatically generate natural language explanations (NLEs) for the complex visualizations produced by these methods. The effectiveness of this approach was empirically validated through a mixed-methods user study, which revealed a clear preference for interactive, explorable interfaces over simpler, static visualizations. A key finding was that the AI-powered explanations helped bridge the knowledge gap for non-experts; a statistical analysis showed no significant correlation between a user's prior LLM experience and their comprehension scores, suggesting that the system reduced barriers to comprehension across experience levels. We conclude that an AI system can indeed simplify complex model analyses, but its true power is unlocked when paired with thoughtful, user-centered design that prioritizes interactivity, specificity, and narrative guidance.",
+    "link": "http://arxiv.org/abs/2602.18262v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18249v1",
+    "title": "Dual-Tree LLM-Enhanced Negative Sampling for Implicit Collaborative Filtering",
+    "authors": [
+      "Jiayi Wu",
+      "Zhengyu Wu",
+      "Xunkai Li",
+      "Rong-Hua Li",
+      "Guoren Wang"
+    ],
+    "summary": "Negative sampling is a pivotal technique in implicit collaborative filtering (CF) recommendation, enabling efficient and effective training by contrasting observed interactions with sampled unobserved ones.   Recently, large language models (LLMs) have shown promise in recommender systems; however, research on LLM-empowered negative sampling remains underexplored.   Existing methods heavily rely on textual information and task-specific fine-tuning, limiting practical applicability.   To address this limitation, we propose a text-free and fine-tuning-free Dual-Tree LLM-enhanced Negative Sampling method (DTL-NS).   It consists of two modules: (i) an offline false negative identification module that leverages hierarchical index trees to transform collaborative structural and latent semantic information into structured item-ID encodings for LLM inference, enabling accurate identification of false negatives; and (ii) a multi-view hard negative sampling module that combines user-item preference scores with item-item hierarchical similarities from these encodings to mine high-quality hard negatives, thus improving models' discriminative ability.   Extensive experiments demonstrate the effectiveness of DTL-NS. For example, on the Amazon-sports dataset, DTL-NS outperforms the strongest baseline by 10.64% and 19.12% in Recall@20 and NDCG@20, respectively.   Moreover, DTL-NS can be integrated into various implicit CF models and negative sampling methods, consistently enhancing their performance.",
+    "link": "http://arxiv.org/abs/2602.18249v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18232v1",
+    "title": "Thinking by Subtraction: Confidence-Driven Contrastive Decoding for LLM Reasoning",
+    "authors": [
+      "Lexiang Tang",
+      "Weihao Gao",
+      "Bingchen Zhao",
+      "Lu Ma",
+      "Qiao jin",
+      "Bang Yang",
+      "Yuexian Zou"
+    ],
+    "summary": "Recent work on test-time scaling for large language model (LLM) reasoning typically assumes that allocating more inference-time computation uniformly improves correctness. However, prior studies show that reasoning uncertainty is highly localized: a small subset of low-confidence tokens disproportionately contributes to reasoning errors and unnecessary output expansion. Motivated by this observation, we propose Thinking by Subtraction, a confidence-driven contrastive decoding approach that improves reasoning reliability through targeted token-level intervention. Our method, Confidence-Driven Contrastive Decoding, detects low-confidence tokens during decoding and intervenes selectively at these positions. It constructs a contrastive reference by replacing high-confidence tokens with minimal placeholders, and refines predictions by subtracting this reference distribution at low-confidence locations. Experiments show that CCD significantly improves accuracy across mathematical reasoning benchmarks while substantially reducing output length, with minimal KV-cache overhead. As a training-free method, CCD enhances reasoning reliability through targeted low-confidence intervention without computational redundancy. Our code will be made available at: https://github.com/bolo-web/CCD.",
+    "link": "http://arxiv.org/abs/2602.18232v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18230v1",
+    "title": "[Re] Benchmarking LLM Capabilities in Negotiation through Scoreable Games",
+    "authors": [
+      "Jorge Carrasco Pollo",
+      "Ioannis Kapetangeorgis",
+      "Joshua Rosenthal",
+      "John Hua Yao"
+    ],
+    "summary": "Large Language Models (LLMs) demonstrate significant potential in multi-agent negotiation tasks, yet evaluation in this domain remains challenging due to a lack of robust and generalizable benchmarks. Abdelnabi et al. (2024) introduce a negotiation benchmark based on Scoreable Games, with the aim of developing a highly complex and realistic evaluation framework for LLMs. Our work investigates the reproducibility of claims in their benchmark, and provides a deeper understanding of its usability and generalizability. We replicate the original experiments on additional models, and introduce additional metrics to verify negotiation quality and evenness of evaluation. Our findings reveal that while the benchmark is indeed complex, model comparison is ambiguous, raising questions about its objectivity. Furthermore, we identify limitations in the experimental setup, particularly in information leakage detection and thoroughness of the ablation study. By examining and analyzing the behavior of a wider range of models on an extended version of the benchmark, we reveal insights that provide additional context to potential users. Our results highlight the importance of context in model-comparative evaluations.",
+    "link": "http://arxiv.org/abs/2602.18230v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18182v1",
+    "title": "Capabilities Ain't All You Need: Measuring Propensities in AI",
+    "authors": [
+      "Daniel Romero-Alvarado",
+      "Fernando Mart\u00ednez-Plumed",
+      "Lorenzo Pacchiardi",
+      "Hugo Save",
+      "Siddhesh Milind Pawar",
+      "Behzad Mehrbakhsh",
+      "Pablo Antonio Moreno Casares",
+      "Ben Slater",
+      "Paolo Bova",
+      "Peter Romero",
+      "Zachary R. Tyler",
+      "Jonathan Prunty",
+      "Luning Sun",
+      "Jose Hernandez-Orallo"
+    ],
+    "summary": "AI evaluation has primarily focused on measuring capabilities, with formal approaches inspired from Item Response Theory (IRT) being increasingly applied. Yet propensities - the tendencies of models to exhibit particular behaviours - play a central role in determining both performance and safety outcomes. However, traditional IRT describes a model's success on a task as a monotonic function of model capabilities and task demands, an approach unsuited to propensities, where both excess and deficiency can be problematic. Here, we introduce the first formal framework for measuring AI propensities by using a bilogistic formulation for model success, which attributes high success probability when the model's propensity is within an \"ideal band\". Further, we estimate the limits of the ideal band using LLMs equipped with newly developed task-agnostic rubrics. Applying our framework to six families of LLM models whose propensities are incited in either direction, we find that we can measure how much the propensity is shifted and what effect this has on the tasks. Critically, propensities estimated using one benchmark successfully predict behaviour on held-out tasks. Moreover, we obtain stronger predictive power when combining propensities and capabilities than either separately. More broadly, our framework showcases how rigorous propensity measurements can be conducted and how it yields gains over solely using capability evaluations to predict AI behaviour.",
+    "link": "http://arxiv.org/abs/2602.18182v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18181v1",
+    "title": "SeedFlood: A Step Toward Scalable Decentralized Training of LLMs",
+    "authors": [
+      "Jihun Kim",
+      "Namhoon Lee"
+    ],
+    "summary": "This work presents a new approach to decentralized training-SeedFlood-designed to scale for large models across complex network topologies and achieve global consensus with minimal communication overhead. Traditional gossip-based methods suffer from message communication costs that grow with model size, while information decay over network hops renders global consensus inefficient. SeedFlood departs from these practices by exploiting the seed-reconstructible structure of zeroth-order updates and effectively making the messages near-zero in size, allowing them to be flooded to every client in the network. This mechanism makes communication overhead negligible and independent of model size, removing the primary scalability bottleneck in decentralized training. Consequently, SeedFlood enables training in regimes previously considered impractical, such as billion-parameter models distributed across hundreds of clients. Our experiments on decentralized LLM fine-tuning demonstrate thatSeedFlood consistently outperforms gossip-based baselines in both generalization performance and communication efficiency, and even achieves results comparable to first-order methods in large scale settings.",
+    "link": "http://arxiv.org/abs/2602.18181v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18171v1",
+    "title": "Click it or Leave it: Detecting and Spoiling Clickbait with Informativeness Measures and Large Language Models",
+    "authors": [
+      "Wojciech Michaluk",
+      "Tymoteusz Urban",
+      "Mateusz Kubita",
+      "Soveatin Kuntur",
+      "Anna Wroblewska"
+    ],
+    "summary": "Clickbait headlines degrade the quality of online information and undermine user trust. We present a hybrid approach to clickbait detection that combines transformer-based text embeddings with linguistically motivated informativeness features. Using natural language processing techniques, we evaluate classical vectorizers, word embedding baselines, and large language model embeddings paired with tree-based classifiers. Our best-performing model, XGBoost over embeddings augmented with 15 explicit features, achieves an F1-score of 91\\%, outperforming TF-IDF, Word2Vec, GloVe, LLM prompt based classification, and feature-only baselines. The proposed feature set enhances interpretability by highlighting salient linguistic cues such as second-person pronouns, superlatives, numerals, and attention-oriented punctuation, enabling transparent and well-calibrated clickbait predictions. We release code and trained models to support reproducible research.",
+    "link": "http://arxiv.org/abs/2602.18171v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.18154v1",
+    "title": "FENCE: A Financial and Multimodal Jailbreak Detection Dataset",
+    "authors": [
+      "Mirae Kim",
+      "Seonghun Jeong",
+      "Youngjun Kwak"
+    ],
+    "summary": "Jailbreaking poses a significant risk to the deployment of Large Language Models (LLMs) and Vision Language Models (VLMs). VLMs are particularly vulnerable because they process both text and images, creating broader attack surfaces. However, available resources for jailbreak detection are scarce, particularly in finance. To address this gap, we present FENCE, a bilingual (Korean-English) multimodal dataset for training and evaluating jailbreak detectors in financial applications. FENCE emphasizes domain realism through finance-relevant queries paired with image-grounded threats. Experiments with commercial and open-source VLMs reveal consistent vulnerabilities, with GPT-4o showing measurable attack success rates and open-source models displaying greater exposure. A baseline detector trained on FENCE achieves 99 percent in-distribution accuracy and maintains strong performance on external benchmarks, underscoring the dataset's robustness for training reliable detection models. FENCE provides a focused resource for advancing multimodal jailbreak detection in finance and for supporting safer, more reliable AI systems in sensitive domains. Warning: This paper includes example data that may be offensive.",
+    "link": "http://arxiv.org/abs/2602.18154v1",
+    "date": "2026-02-20",
+    "fetched_at": "2026-02-23"
+  },
+  {
     "id": "http://arxiv.org/abs/2602.13194v1",
     "title": "Semantic Chunking and the Entropy of Natural Language",
     "authors": [
