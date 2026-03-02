@@ -1,5 +1,343 @@
 [
   {
+    "id": "http://arxiv.org/abs/2602.24288v1",
+    "title": "DARE-bench: Evaluating Modeling and Instruction Fidelity of LLMs in Data Science",
+    "authors": [
+      "Fan Shu",
+      "Yite Wang",
+      "Ruofan Wu",
+      "Boyi Liu",
+      "Zhewei Yao",
+      "Yuxiong He",
+      "Feng Yan"
+    ],
+    "summary": "The fast-growing demands in using Large Language Models (LLMs) to tackle complex multi-step data science tasks create an emergent need for accurate benchmarking. There are two major gaps in existing benchmarks: (i) the lack of standardized, process-aware evaluation that captures instruction adherence and process fidelity, and (ii) the scarcity of accurately labeled training data. To bridge these gaps, we introduce DARE-bench, a benchmark designed for machine learning modeling and data science instruction following. Unlike many existing benchmarks that rely on human- or model-based judges, all tasks in DARE-bench have verifiable ground truth, ensuring objective and reproducible evaluation. To cover a broad range of tasks and support agentic tools, DARE-bench consists of 6,300 Kaggle-derived tasks and provides both large-scale training data and evaluation sets. Extensive evaluations show that even highly capable models such as gpt-o4-mini struggle to achieve good performance, especially in machine learning modeling tasks. Using DARE-bench training tasks for fine-tuning can substantially improve model performance. For example, supervised fine-tuning boosts Qwen3-32B's accuracy by 1.83x and reinforcement learning boosts Qwen3-4B's accuracy by more than 8x. These significant improvements verify the importance of DARE-bench both as an accurate evaluation benchmark and critical training data.",
+    "link": "http://arxiv.org/abs/2602.24288v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24287v1",
+    "title": "Do LLMs Benefit From Their Own Words?",
+    "authors": [
+      "Jenny Y. Huang",
+      "Leshem Choshen",
+      "Ramon Astudillo",
+      "Tamara Broderick",
+      "Jacob Andreas"
+    ],
+    "summary": "Multi-turn interactions with large language models typically retain the assistant's own past responses in the conversation history. In this work, we revisit this design choice by asking whether large language models benefit from conditioning on their own prior responses. Using in-the-wild, multi-turn conversations, we compare standard (full-context) prompting with a user-turn-only prompting approach that omits all previous assistant responses, across three open reasoning models and one state-of-the-art model. To our surprise, we find that removing prior assistant responses does not affect response quality on a large fraction of turns. Omitting assistant-side history can reduce cumulative context lengths by up to 10x. To explain this result, we find that multi-turn conversations consist of a substantial proportion (36.4%) of self-contained prompts, and that many follow-up prompts provide sufficient instruction to be answered using only the current user turn and prior user turns. When analyzing cases where user-turn-only prompting substantially outperforms full context, we identify instances of context pollution, in which models over-condition on their previous responses, introducing errors, hallucinations, or stylistic artifacts that propagate across turns. Motivated by these findings, we design a context-filtering approach that selectively omits assistant-side context. Our findings suggest that selectively omitting assistant history can improve response quality while reducing memory consumption.",
+    "link": "http://arxiv.org/abs/2602.24287v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24286v1",
+    "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+    "authors": [
+      "Weinan Dai",
+      "Hanlin Wu",
+      "Qiying Yu",
+      "Huan-ang Gao",
+      "Jiahao Li",
+      "Chengquan Jiang",
+      "Weiqiang Lou",
+      "Yufan Song",
+      "Hongli Yu",
+      "Jiaze Chen",
+      "Wei-Ying Ma",
+      "Ya-Qin Zhang",
+      "Jingjing Liu",
+      "Mingxuan Wang",
+      "Xin Liu",
+      "Hao Zhou"
+    ],
+    "summary": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting.",
+    "link": "http://arxiv.org/abs/2602.24286v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24241v1",
+    "title": "UXSim: Towards a Hybrid User Search Simulation",
+    "authors": [
+      "Saber Zerhoudi",
+      "Michael Granitzer"
+    ],
+    "summary": "Simulating nuanced user experiences within complex interactive search systems poses distinct challenge for traditional methodologies, which often rely on static user proxies or, more recently, on standalone large language model (LLM) agents that may lack deep, verifiable grounding. The true dynamism and personalization inherent in human-computer interaction demand a more integrated approach. This work introduces UXSim, a novel framework that integrates both approaches. It leverages grounded data from traditional simulators to inform and constrain the reasoning of an adaptive LLM agent. This synthesis enables more accurate and dynamic simulations of user behavior while also providing a pathway for the explainable validation of the underlying cognitive processes.",
+    "link": "http://arxiv.org/abs/2602.24241v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24235v1",
+    "title": "SafeGen-LLM: Enhancing Safety Generalization in Task Planning for Robotic Systems",
+    "authors": [
+      "Jialiang Fan",
+      "Weizhe Xu",
+      "Mengyu Liu",
+      "Oleg Sokolsky",
+      "Insup Lee",
+      "Fangxin Kong"
+    ],
+    "summary": "Safety-critical task planning in robotic systems remains challenging: classical planners suffer from poor scalability, Reinforcement Learning (RL)-based methods generalize poorly, and base Large Language Models (LLMs) cannot guarantee safety. To address this gap, we propose safety-generalizable large language models, named SafeGen-LLM. SafeGen-LLM can not only enhance the safety satisfaction of task plans but also generalize well to novel safety properties in various domains. We first construct a multi-domain Planning Domain Definition Language 3 (PDDL3) benchmark with explicit safety constraints. Then, we introduce a two-stage post-training framework: Supervised Fine-Tuning (SFT) on a constraint-compliant planning dataset to learn planning syntax and semantics, and Group Relative Policy Optimization (GRPO) guided by fine-grained reward machines derived from formal verification to enforce safety alignment and by curriculum learning to better handle complex tasks. Extensive experiments show that SafeGen-LLM achieves strong safety generalization and outperforms frontier proprietary baselines across multi-domain planning tasks and multiple input formats (e.g., PDDLs and natural language).",
+    "link": "http://arxiv.org/abs/2602.24235v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24223v1",
+    "title": "Anansi: Scalable Characterization of Message-Based Job Scams",
+    "authors": [
+      "Abisheka Pitumpe",
+      "Amir Rahmati"
+    ],
+    "summary": "Job-based smishing scams, where victims are recruited under the guise of remote job opportunities, represent a rapidly growing and understudied threat within the broader landscape of online fraud. In this paper, we present Anansi, the first scalable, end-to-end measurement pipeline designed to systematically engage with, analyze, and characterize job scams in the wild. Anansi combines large language models (LLMs), automated browser agents, and infrastructure fingerprinting tools to collect over 29,000 scam messages, interact with more than 1900 scammers, and extract behavioral, financial, and infrastructural signals at scale. We detail the operational workflows of scammers, uncover extensive reuse of message templates, domains, and cryptocurrency wallets, and identify the social engineering tactics used to defraud victims. Our analysis reveals millions of dollars in cryptocurrency losses, highlighting the use of deceptive techniques such as domain fronting and impersonation of well-known brands. Anansi demonstrates the feasibility and value of automating the engagement with scammers and the analysis of infrastructure, offering a new methodological foundation for studying large-scale fraud ecosystems.",
+    "link": "http://arxiv.org/abs/2602.24223v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24176v1",
+    "title": "Beyond Explainable AI (XAI): An Overdue Paradigm Shift and Post-XAI Research Directions",
+    "authors": [
+      "Saleh Afroogh",
+      "Seyd Ishtiaque Ahmed",
+      "Petra Ahrweiler",
+      "David Alvarez-Melis",
+      "Mansur Maturidi Arief",
+      "Emilia Barakova",
+      "Falco J. Bargagli-Stoffi",
+      "Erdem Biyik",
+      "Hanjie Chen",
+      "Xiang 'Anthony' Chen",
+      "Robert Clements",
+      "Keeley Crockett",
+      "Amit Dhurandhar",
+      "Fethiye Irmak Dogan",
+      "Mollie Dollinger",
+      "Motahhare Eslami",
+      "Aldo A Faisal",
+      "Arya Farahi",
+      "Melanie Fernandez Pradie",
+      "Saadia Gabrie",
+      "Diego Garcia-Olano",
+      "Marzyeh Ghassemi",
+      "Shaona Ghosh",
+      "Hatice Gunes",
+      "Ehsan Hajiramezanali",
+      "Stefan Haufe",
+      "Biwei Huang",
+      "Angel Hwang",
+      "Md Tauhidul Islam",
+      "Junfeng Jiao",
+      "Amir-Hossein Karimi",
+      "Saber Kazeminasab",
+      "Anastasia Kuzminykh",
+      "William La Cava",
+      "Brian Y. Lim",
+      "Xiaofeng Liu",
+      "Mohammad R. K. Mofrad",
+      "Alicia Parrish",
+      "Maria Perez-Ortiz",
+      "Shriti Raj",
+      "Swabha Swayamdipta",
+      "Salmon Talebi",
+      "Kush R. Varshney",
+      "Mihaela Vorvoreanu",
+      "Lily Weng",
+      "Alice Xiang",
+      "Yiming Xu",
+      "Ding Zhao",
+      "Jieyu Zhao"
+    ],
+    "summary": "This study provides a cross-disciplinary examination of Explainable Artificial Intelligence (XAI) approaches-focusing on deep neural networks (DNNs) and large language models (LLMs)-and identifies empirical and conceptual limitations in current XAI. We discuss critical symptoms that stem from deeper root causes (i.e., two paradoxes, two conceptual confusions, and five false assumptions). These fundamental problems within the current XAI research field reveal three insights: experimentally, XAI exhibits significant flaws; conceptually, it is paradoxical; and pragmatically, further attempts to reform the paradoxical XAI might exacerbate its confusion-demanding fundamental shifts and new research directions. To move beyond XAI's limitations, we propose a four-pronged synthesized paradigm shift toward reliable and certified AI development. These four components include: verification-focused Interactive AI (IAI) to establish scientific community protocols for certifying AI system performance rather than attempting post-hoc explanations, AI Epistemology for rigorous scientific foundations, User-Sensible AI to create context-aware systems tailored to specific user communities, and Model-Centered Interpretability for faithful technical analysis-together offering comprehensive post-XAI research directions.",
+    "link": "http://arxiv.org/abs/2602.24176v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24173v1",
+    "title": "LemmaBench: A Live, Research-Level Benchmark to Evaluate LLM Capabilities in Mathematics",
+    "authors": [
+      "Antoine Peyronnet",
+      "Fabian Gloeckle",
+      "Amaury Hayat"
+    ],
+    "summary": "We present a new approach for benchmarking Large Language Model (LLM) capabilities on research-level mathematics. Existing benchmarks largely rely on static, hand-curated sets of contest or textbook-style problems as proxies for mathematical research. Instead, we establish an updatable benchmark evaluating models directly on the latest research results in mathematics. This consists of an automatic pipeline that extracts lemmas from arXiv and rewrites them into self-contained statements by making all assumptions and required definitions explicit. It results in a benchmark that can be updated regularly with new problems taken directly from human mathematical research, while previous instances can be used for training without compromising future evaluations. We benchmark current state-of-the-art LLMs, which obtain around 10-15$\\%$ accuracy in theorem proving (pass@1) depending on the model, showing that there is currently a large margin of progression for LLMs to reach human-level proving capabilities in a research context.",
+    "link": "http://arxiv.org/abs/2602.24173v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24172v1",
+    "title": "ArgLLM-App: An Interactive System for Argumentative Reasoning with Large Language Models",
+    "authors": [
+      "Adam Dejl",
+      "Deniz Gorur",
+      "Francesca Toni"
+    ],
+    "summary": "Argumentative LLMs (ArgLLMs) are an existing approach leveraging Large Language Models (LLMs) and computational argumentation for decision-making, with the aim of making the resulting decisions faithfully explainable to and contestable by humans. Here we propose a web-based system implementing ArgLLM-empowered agents for binary tasks. ArgLLM-App supports visualisation of the produced explanations and interaction with human users, allowing them to identify and contest any mistakes in the system's reasoning. It is highly modular and enables drawing information from trusted external sources. ArgLLM-App is publicly available at https://argllm.app, with a video demonstration at https://youtu.be/vzwlGOr0sPM.",
+    "link": "http://arxiv.org/abs/2602.24172v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24119v1",
+    "title": "Terminology Rarity Predicts Catastrophic Failure in LLM Translation of Low-Resource Ancient Languages: Evidence from Ancient Greek",
+    "authors": [
+      "James L. Zainaldin",
+      "Cameron Pattison",
+      "Manuela Marai",
+      "Jacob Wu",
+      "Mark J. Schiefsky"
+    ],
+    "summary": "This study presents the first systematic, reference-free human evaluation of large language model (LLM) machine translation (MT) for Ancient Greek (AG) technical prose. We evaluate translations by three commercial LLMs (Claude, Gemini, ChatGPT) of twenty paragraph-length passages from two works by the Greek physician Galen of Pergamum (ca. 129-216 CE): On Mixtures, which has two published English translations, and On the Composition of Drugs according to Kinds, which has never been fully translated into English. We assess translation quality using both standard automated evaluation metrics (BLEU, chrF++, METEOR, ROUGE-L, BERTScore, COMET, BLEURT) and expert human evaluation via a modified Multidimensional Quality Metrics (MQM) framework applied to all 60 translations by a team of domain specialists. On the previously translated expository text, LLMs achieved high translation quality (mean MQM score 95.2/100), with performance approaching expert level. On the untranslated pharmacological text, aggregate quality was lower (79.9/100) but with high variance driven by two passages presenting extreme terminological density; excluding these, scores converged to within 4 points of the translated text. Terminology rarity, operationalized via corpus frequency in the literary Diorisis Ancient Greek Corpus, emerged as a strong predictor of translation failure (r = -.97 for passage-level quality on the untranslated text). Automated metrics showed moderate correlation with human judgment overall on the text with a wide quality spread (Composition), but no metric discriminated among high-quality translations. We discuss implications for the use of LLMs in Classical scholarship and for the design of automated evaluation pipelines for low-resource ancient languages.",
+    "link": "http://arxiv.org/abs/2602.24119v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24109v1",
+    "title": "ARGUS: Seeing the Influence of Narrative Features on Persuasion in Argumentative Texts",
+    "authors": [
+      "Sara Nabhani",
+      "Federico Pianzola",
+      "Khalid Al-Khatib",
+      "Malvina Nissim"
+    ],
+    "summary": "Can narratives make arguments more persuasive? And to this end, which narrative features matter most? Although stories are often seen as powerful tools for persuasion, their specific role in online, unstructured argumentation remains underexplored. To address this gap, we present ARGUS, a framework for studying the impact of narration on persuasion in argumentative discourse. ARGUS introduces a new ChangeMyView corpus annotated for story presence and six key narrative features, integrating insights from two established theoretical frameworks that capture both textual narrative features and their effects on recipients. Leveraging both encoder-based classifiers and zero-shot large language models (LLMs), ARGUS identifies stories and narrative features and applies them at scale to examine how different narrative dimensions influence persuasion success in online argumentation.",
+    "link": "http://arxiv.org/abs/2602.24109v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24086v1",
+    "title": "The Subjectivity of Monoculture",
+    "authors": [
+      "Nathanael Jo",
+      "Nikhil Garg",
+      "Manish Raghavan"
+    ],
+    "summary": "Machine learning models -- including large language models (LLMs) -- are often said to exhibit monoculture, where outputs agree strikingly often. But what does it actually mean for models to agree too much? We argue that this question is inherently subjective, relying on two key decisions.   First, the analyst must specify a baseline null model for what \"independence\" should look like. This choice is inherently subjective, and as we show, different null models result in dramatically different inferences about excess agreement. Second, we show that inferences depend on the population of models and items under consideration. Models that seem highly correlated in one context may appear independent when evaluated on a different set of questions, or against a different set of peers. Experiments on two large-scale benchmarks validate our theoretical findings. For example, we find drastically different inferences when using a null model with item difficulty compared to previous works that do not. Together, our results reframe monoculture evaluation not as an absolute property of model behavior, but as a context-dependent inference problem.",
+    "link": "http://arxiv.org/abs/2602.24086v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24082v1",
+    "title": "Preference Packing: Efficient Preference Optimization for Large Language Models",
+    "authors": [
+      "Jaekyung Cho"
+    ],
+    "summary": "Resource-efficient training optimization techniques are becoming increasingly important as the size of large language models (LLMs) continues to grow. In particular, batch packing is commonly used in pre-training and supervised fine-tuning to achieve resource-efficient training. We propose preference packing, a method to enhance resource efficiency in training techniques that use data with different responses for the same input prompt, such as reward models or Direct Preference Optimization (DPO). Preference packing improves resource efficiency by reducing the attention operations for duplicate input prompts and decreasing KV cache memory usage. We conducted experiments on text-only datasets and image-included datasets and achieved at least 37% reduction in training time. Notably, this method can be applied alongside existing optimization techniques such as batch sorting, resulting in a 3.22x speedup.",
+    "link": "http://arxiv.org/abs/2602.24082v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24068v1",
+    "title": "A Novel Hierarchical Multi-Agent System for Payments Using LLMs",
+    "authors": [
+      "Joon Kiat Chua",
+      "Donghao Huang",
+      "Zhaoxia Wang"
+    ],
+    "summary": "Large language model (LLM) agents, such as OpenAI's Operator and Claude's Computer Use, can automate workflows but unable to handle payment tasks. Existing agentic solutions have gained significant attention; however, even the latest approaches face challenges in implementing end-to-end agentic payment workflows. To address this gap, this research proposes the Hierarchical Multi-Agent System for Payments (HMASP), which provides an end-to-end agentic method for completing payment workflows. The proposed HMASP leverages either open-weight or proprietary LLMs and employs a modular architecture consisting of the Conversational Payment Agent (CPA - first agent level), Supervisor agents (second agent level), Routing agents (third agent level), and the Process summary agent (fourth agent level). The CPA serves as the central entry point, handling all external requests and coordinating subsequent tasks across hierarchical levels. HMASP incorporates architectural patterns that enable modular task execution across agents and levels for payment operations, including shared state variables, decoupled message states, and structured handoff protocols that facilitate coordination across agents and workflows. Experimental results demonstrate the feasibility of the proposed HMASP. To our knowledge, HMASP is the first LLM-based multi-agent system to implement end-to-end agentic payment workflows. This work lays a foundation for extending agentic capabilities into the payment domain.",
+    "link": "http://arxiv.org/abs/2602.24068v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24060v1",
+    "title": "Task Complexity Matters: An Empirical Study of Reasoning in LLMs for Sentiment Analysis",
+    "authors": [
+      "Donghao Huang",
+      "Zhaoxia Wang"
+    ],
+    "summary": "Large language models (LLMs) with reasoning capabilities have fueled a compelling narrative that reasoning universally improves performance across language tasks. We test this claim through a comprehensive evaluation of 504 configurations across seven model families--including adaptive, conditional, and reinforcement learning-based reasoning architectures--on sentiment analysis datasets of varying granularity (binary, five-class, and 27-class emotion). Our findings reveal that reasoning effectiveness is strongly task-dependent, challenging prevailing assumptions: (1) Reasoning shows task-complexity dependence--binary classification degrades up to -19.9 F1 percentage points (pp), while 27-class emotion recognition gains up to +16.0pp; (2) Distilled reasoning variants underperform base models by 3-18 pp on simpler tasks, though few-shot prompting enables partial recovery; (3) Few-shot learning improves over zero-shot in most cases regardless of model type, with gains varying by architecture and task complexity; (4) Pareto frontier analysis shows base models dominate efficiency-performance trade-offs, with reasoning justified only for complex emotion recognition despite 2.1x-54x computational overhead. We complement these quantitative findings with qualitative error analysis revealing that reasoning degrades simpler tasks through systematic over-deliberation, offering mechanistic insight beyond the high-level overthinking hypothesis.",
+    "link": "http://arxiv.org/abs/2602.24060v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24044v1",
+    "title": "Data Driven Optimization of GPU efficiency for Distributed LLM Adapter Serving",
+    "authors": [
+      "Ferran Agullo",
+      "Joan Oliveras",
+      "Chen Wang",
+      "Alberto Gutierrez-Torre",
+      "Olivier Tardieu",
+      "Alaa Youssef",
+      "Jordi Torres",
+      "Josep Ll. Berral"
+    ],
+    "summary": "Large Language Model (LLM) adapters enable low-cost model specialization, but introduce complex caching and scheduling challenges in distributed serving systems where hundreds of adapters must be hosted concurrently. While prior work has largely focused on latency minimization, resource efficiency through throughput maximization remains underexplored. This paper presents a data-driven pipeline that, for a given workload, computes an adapter placement that serves the workload with the minimum number of GPUs while avoiding request starvation and GPU memory errors. To that end, the approach identifies the maximum feasible throughput attainable on each GPU by leveraging accurate performance predictions learned from real serving behavior. The proposed pipeline integrates three components: (i) a Digital Twin (DT) tailored to LLM-adapter serving, (ii) a distilled machine learning (ML) model trained on DT-generated data, and (iii) a greedy placement algorithm that exploits ML-based performance estimates to maximize GPU efficiency. The DT emulates real system dynamics with high fidelity, achieving below 5% throughput estimation error while executing up to 90 times faster than full LLM benchmarking across both predictable and unpredictable workloads. The learned ML models further accelerate performance estimation with marginal accuracy degradation, enabling scalable optimization. Experimental results demonstrate that the pipeline substantially improves GPU efficiency by reducing the number of GPUs required to sustain target workloads. Beyond GPU efficiency, the pipeline can be adapted to alternative objectives, such as latency minimization, highlighting its versatility for future large-scale LLM serving infrastructures.",
+    "link": "http://arxiv.org/abs/2602.24044v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24040v1",
+    "title": "RewardUQ: A Unified Framework for Uncertainty-Aware Reward Models",
+    "authors": [
+      "Daniel Yang",
+      "Samuel Stante",
+      "Florian Redhardt",
+      "Lena Libon",
+      "Parnian Kassraie",
+      "Ido Hakimi",
+      "Barna P\u00e1sztor",
+      "Andreas Krause"
+    ],
+    "summary": "Reward models are central to aligning large language models (LLMs) with human preferences. Yet most approaches rely on pointwise reward estimates that overlook the epistemic uncertainty in reward models arising from limited human feedback. Recent work suggests that quantifying this uncertainty can reduce the costs of human annotation via uncertainty-guided active learning and mitigate reward overoptimization in LLM post-training. However, uncertainty-aware reward models have so far been adopted without thorough comparison, leaving them poorly understood. This work introduces a unified framework, RewardUQ, to systematically evaluate uncertainty quantification for reward models. We compare common methods along standard metrics measuring accuracy and calibration, and we propose a new ranking strategy incorporating both dimensions for a simplified comparison. Our experimental results suggest that model size and initialization have the most meaningful impact on performance, and most prior work could have benefited from alternative design choices. To foster the development and evaluation of new methods and aid the deployment in downstream applications, we release our open-source framework as a Python package. Our code is available at https://github.com/lasgroup/rewarduq.",
+    "link": "http://arxiv.org/abs/2602.24040v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24036v1",
+    "title": "Designing AI Tutors for Interest-Based Learning: Insights from Human Instructors",
+    "authors": [
+      "Abhishek Kulkarni",
+      "Sharon Lynn Chu"
+    ],
+    "summary": "Interest-based learning (IBL) is a paradigm of instruction in which educational content is contextualized using learners' interests to enhance content relevance. IBL has been shown to result in improved learning outcomes. Unfortunately, high effort is needed for instructors to design and deliver IBL content for individual students. LLMs in the form of AI tutors may allow for IBL to scale across many students. Designing an AI tutor for IBL, however, first requires an understanding of how IBL is implemented in teaching scenarios. This paper presents a study that seeks to derive this understanding from an analysis of how human instructors design and deliver IBL content. We studied 14 one-to-one online tutoring sessions (28 participants) in which tutors designed and delivered a lesson tailored to a student's self-identified interest. Using lesson artifacts, tutoring transcripts, interviews, and questionnaires, findings include themes on how tutors integrate interests during instruction and why. Finally, actionable design implications are presented for LLM-powered AI tutors that aim to deliver IBL at scale.",
+    "link": "http://arxiv.org/abs/2602.24036v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24021v1",
+    "title": "Steering and Rectifying Latent Representation Manifolds in Frozen Multi-modal LLMs for Video Anomaly Detection",
+    "authors": [
+      "Zhaolin Cai",
+      "Fan Li",
+      "Huiyu Duan",
+      "Lijun He",
+      "Guangtao Zhai"
+    ],
+    "summary": "Video anomaly detection (VAD) aims to identify abnormal events in videos. Traditional VAD methods generally suffer from the high costs of labeled data and full training, thus some recent works have explored leveraging frozen multi-modal large language models (MLLMs) in a tuning-free manner to perform VAD. However, their performance is limited as they directly inherit pre-training biases and cannot adapt internal representations to specific video contexts, leading to difficulties in handling subtle or ambiguous anomalies. To address these limitations, we propose a novel intervention framework, termed SteerVAD, which advances MLLM-based VAD by shifting from passively reading to actively steering and rectifying internal representations. Our approach first leverages the gradient-free representational separability analysis (RSA) to identify top attention heads as latent anomaly experts (LAEs) which are most discriminative for VAD. Then a hierarchical meta-controller (HMC) generates dynamic rectification signals by jointly conditioning on global context and these LAE outputs. The signals execute targeted, anisotropic scaling directly upon the LAE representation manifolds, amplifying anomaly-relevant dimensions while suppressing inherent biases. Extensive experiments on mainstream benchmarks demonstrate our method achieves state-of-the-art performance among tuning-free approaches requiring only 1% of training data, establishing it as a powerful new direction for video anomaly detection. The code will be released upon the publication.",
+    "link": "http://arxiv.org/abs/2602.24021v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
+    "id": "http://arxiv.org/abs/2602.24009v1",
+    "title": "Jailbreak Foundry: From Papers to Runnable Attacks for Reproducible Benchmarking",
+    "authors": [
+      "Zhicheng Fang",
+      "Jingjie Zheng",
+      "Chenxu Fu",
+      "Wei Xu"
+    ],
+    "summary": "Jailbreak techniques for large language models (LLMs) evolve faster than benchmarks, making robustness estimates stale and difficult to compare across papers due to drift in datasets, harnesses, and judging protocols. We introduce JAILBREAK FOUNDRY (JBF), a system that addresses this gap via a multi-agent workflow to translate jailbreak papers into executable modules for immediate evaluation within a unified harness. JBF features three core components: (i) JBF-LIB for shared contracts and reusable utilities; (ii) JBF-FORGE for the multi-agent paper-to-module translation; and (iii) JBF-EVAL for standardizing evaluations. Across 30 reproduced attacks, JBF achieves high fidelity with a mean (reproduced-reported) attack success rate (ASR) deviation of +0.26 percentage points. By leveraging shared infrastructure, JBF reduces attack-specific implementation code by nearly half relative to original repositories and achieves an 82.5% mean reused-code ratio. This system enables a standardized AdvBench evaluation of all 30 attacks across 10 victim models using a consistent GPT-4o judge. By automating both attack integration and standardized evaluation, JBF offers a scalable solution for creating living benchmarks that keep pace with the rapidly shifting security landscape.",
+    "link": "http://arxiv.org/abs/2602.24009v1",
+    "date": "2026-02-27",
+    "fetched_at": "2026-03-02"
+  },
+  {
     "id": "http://arxiv.org/abs/2602.18429v1",
     "title": "VIRAASAT: Traversing Novel Paths for Indian Cultural Reasoning",
     "authors": [
