@@ -1,5 +1,316 @@
 [
   {
+    "id": "http://arxiv.org/abs/2603.13220v1",
+    "title": "A Generative Model of Conspicuous Consumption and Status Signaling",
+    "authors": [
+      "Logan Cross",
+      "Jordi Grau-Moya",
+      "William A. Cunningham",
+      "Alexander Sasha Vezhnevets",
+      "Joel Z. Leibo"
+    ],
+    "summary": "Status signaling drives human behavior and the allocation of scarce resources such as mating opportunities, yet the generative mechanisms governing how specific goods, signals, or behaviors acquire prestige remain a puzzle. Classical frameworks, such as Costly Signaling Theory, treat preferences as fixed and struggle to explain how semiotic meaning changes based on context or drifts dynamically over time, occasionally reaching tipping points. In this work, we propose a computational theory of status grounded in the theory of appropriateness, positing that status symbols emerge endogenously through a feedback loop of social observation and predictive pattern completion. We validate this theory using simulations of groups of Large Language Model (LLM)-based agents in the Concordia framework. By experimentally manipulating social visibility within naturalistic agent daily routines, we demonstrate that social interactions transform functional demand into status-seeking behavior. We observe the emergence of price run-ups and positive price elasticity (Veblen effects) for both real-world luxury items and procedurally generated synthetic goods, ruling out pretraining bias as the sole driver. Furthermore, we demonstrate that \"influencer\" agents can drive the endogenous formation of distinct subcultures through targeted sanctioning, and find that similar social influence effects generalize to non-monetary signaling behaviors. This work provides a generative bridge between micro-level cognition and macro-level economic and sociological phenomena, offering a new methodology for forecasting how cultural conventions emerge from interaction.",
+    "link": "http://arxiv.org/abs/2603.13220v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13201v1",
+    "title": "Neuron-Aware Data Selection In Instruction Tuning For Large Language Models",
+    "authors": [
+      "Xin Chen",
+      "Junchao Wu",
+      "Shu Yang",
+      "Runzhe Zhan",
+      "Zeyu Wu",
+      "Min Yang",
+      "Shujian Huang",
+      "Lidia S. Chao",
+      "Derek F. Wong"
+    ],
+    "summary": "Instruction Tuning (IT) has been proven to be an effective approach to unlock the powerful capabilities of large language models (LLMs). Recent studies indicate that excessive IT data can degrade LLMs performance, while carefully selecting a small subset of high-quality IT data can significantly enhance their capabilities. Therefore, identifying the most efficient subset data from the IT dataset to effectively develop either specific or general abilities in LLMs has become a critical challenge. To address this, we propose a novel and efficient framework called NAIT. NAIT evaluates the impact of IT data on LLMs performance by analyzing the similarity of neuron activation patterns between the IT dataset and the target domain capability. Specifically, NAIT captures neuron activation patterns from in-domain datasets of target domain capabilities to construct reusable and transferable neuron activation features. It then evaluates and selects optimal samples based on the similarity between candidate samples and the expected activation features of the target capabilities. Experimental results show that training on the 10\\% Alpaca-GPT4 IT data subset selected by NAIT consistently outperforms methods that rely on external advanced models or uncertainty-based features across various tasks. Our findings also reveal the transferability of neuron activation features across different capabilities of LLMs. In particular, IT data with more logical reasoning and programmatic features possesses strong general transferability, enabling models to develop stronger capabilities across multiple tasks, while a stable core subset of data is sufficient to consistently activate fundamental model capabilities and universally improve performance across diverse tasks.",
+    "link": "http://arxiv.org/abs/2603.13201v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13191v1",
+    "title": "From Experiments to Expertise: Scientific Knowledge Consolidation for AI-Driven Computational Research",
+    "authors": [
+      "Haonan Huang"
+    ],
+    "summary": "While large language models (LLMs) have transformed AI agents into proficient executors of computational materials science, performing a hundred simulations does not make a researcher. What distinguishes research from routine execution is the progressive accumulation of knowledge -- learning which approaches fail, recognizing patterns across systems, and applying understanding to new problems. However, the prevailing paradigm in AI-driven computational science treats each execution in isolation, largely discarding hard-won insights between runs. Here we present QMatSuite, an open-source platform closing this gap. Agents record findings with full provenance, retrieve knowledge before new calculations, and in dedicated reflection sessions correct erroneous findings and synthesize observations into cross-compound patterns. In benchmarks on a six-step quantum-mechanical simulation workflow, accumulated knowledge reduces reasoning overhead by 67% and improves accuracy from 47% to 3% deviation from literature -- and when transferred to an unfamiliar material, achieves 1% deviation with zero pipeline failures.",
+    "link": "http://arxiv.org/abs/2603.13191v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13189v1",
+    "title": "LLM Constitutional Multi-Agent Governance",
+    "authors": [
+      "J. de Curt\u00f2",
+      "I. de Zarz\u00e0"
+    ],
+    "summary": "Large Language Models (LLMs) can generate persuasive influence strategies that shift cooperative behavior in multi-agent populations, but a critical question remains: does the resulting cooperation reflect genuine prosocial alignment, or does it mask erosion of agent autonomy, epistemic integrity, and distributional fairness? We introduce Constitutional Multi-Agent Governance (CMAG), a two-stage framework that interposes between an LLM policy compiler and a networked agent population, combining hard constraint filtering with soft penalized-utility optimization that balances cooperation potential against manipulation risk and autonomy pressure. We propose the Ethical Cooperation Score (ECS), a multiplicative composite of cooperation, autonomy, integrity, and fairness that penalizes cooperation achieved through manipulative means. In experiments on scale-free networks of 80 agents under adversarial conditions (70% violating candidates), we benchmark three regimes: full CMAG, naive filtering, and unconstrained optimization. While unconstrained optimization achieves the highest raw cooperation (0.873), it yields the lowest ECS (0.645) due to severe autonomy erosion (0.867) and fairness degradation (0.888). CMAG attains an ECS of 0.741, a 14.9% improvement, while preserving autonomy at 0.985 and integrity at 0.995, with only modest cooperation reduction to 0.770. The naive ablation (ECS = 0.733) confirms that hard constraints alone are insufficient. Pareto analysis shows CMAG dominates the cooperation-autonomy trade-off space, and governance reduces hub-periphery exposure disparities by over 60%. These findings establish that cooperation is not inherently desirable without governance: constitutional constraints are necessary to ensure that LLM-mediated influence produces ethically stable outcomes rather than manipulative equilibria.",
+    "link": "http://arxiv.org/abs/2603.13189v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13173v1",
+    "title": "Semantic Invariance in Agentic AI",
+    "authors": [
+      "I. de Zarz\u00e0",
+      "J. de Curt\u00f2",
+      "Jordi Cabot",
+      "Pietro Manzoni",
+      "Carlos T. Calafate"
+    ],
+    "summary": "Large Language Models (LLMs) increasingly serve as autonomous reasoning agents in decision support, scientific problem-solving, and multi-agent coordination systems. However, deploying LLM agents in consequential applications requires assurance that their reasoning remains stable under semantically equivalent input variations, a property we term semantic invariance.Standard benchmark evaluations, which assess accuracy on fixed, canonical problem formulations, fail to capture this critical reliability dimension. To address this shortcoming, in this paper we present a metamorphic testing framework for systematically assessing the robustness of LLM reasoning agents, applying eight semantic-preserving transformations (identity, paraphrase, fact reordering, expansion, contraction, academic context, business context, and contrastive formulation) across seven foundation models spanning four distinct architectural families: Hermes (70B, 405B), Qwen3 (30B-A3B, 235B-A22B), DeepSeek-R1, and gpt-oss (20B, 120B). Our evaluation encompasses 19 multi-step reasoning problems across eight scientific domains. The results reveal that model scale does not predict robustness: the smaller Qwen3-30B-A3B achieves the highest stability (79.6% invariant responses, semantic similarity 0.91), while larger models exhibit greater fragility.",
+    "link": "http://arxiv.org/abs/2603.13173v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13168v1",
+    "title": "Developing and evaluating a chatbot to support maternal health care",
+    "authors": [
+      "Smriti Jha",
+      "Vidhi Jain",
+      "Jianyu Xu",
+      "Grace Liu",
+      "Sowmya Ramesh",
+      "Jitender Nagpal",
+      "Gretchen Chapman",
+      "Benjamin Bellows",
+      "Siddhartha Goyal",
+      "Aarti Singh",
+      "Bryan Wilder"
+    ],
+    "summary": "The ability to provide trustworthy maternal health information using phone-based chatbots can have a significant impact, particularly in low-resource settings where users have low health literacy and limited access to care. However, deploying such systems is technically challenging: user queries are short, underspecified, and code-mixed across languages, answers require regional context-specific grounding, and partial or missing symptom context makes safe routing decisions difficult.   We present a chatbot for maternal health in India developed through a partnership between academic researchers, a health tech company, a public health nonprofit, and a hospital. The system combines (1) stage-aware triage, routing high-risk queries to expert templates, (2) hybrid retrieval over curated maternal/newborn guidelines, and (3) evidence-conditioned generation from an LLM. Our core contribution is an evaluation workflow for high-stakes deployment under limited expert supervision. Targeting both component-level and end-to-end testing, we introduce: (i) a labeled triage benchmark (N=150) achieving 86.7% emergency recall, explicitly reporting the missed-emergency vs. over-escalation trade-off; (ii) a synthetic multi-evidence retrieval benchmark (N=100) with chunk-level evidence labels; (iii) LLM-as-judge comparison on real queries (N=781) using clinician-codesigned criteria; and (iv) expert validation. Our findings show that trustworthy medical assistants in multilingual, noisy settings require defense-in-depth design paired with multi-method evaluation, rather than any single model and evaluation method choice.",
+    "link": "http://arxiv.org/abs/2603.13168v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13154v1",
+    "title": "ESG-Bench: Benchmarking Long-Context ESG Reports for Hallucination Mitigation",
+    "authors": [
+      "Siqi Sun",
+      "Ben Peng Wu",
+      "Mali Jin",
+      "Peizhen Bai",
+      "Hanpei Zhang",
+      "Xingyi Song"
+    ],
+    "summary": "As corporate responsibility increasingly incorporates environmental, social, and governance (ESG) criteria, ESG reporting is becoming a legal requirement in many regions and a key channel for documenting sustainability practices and assessing firms' long-term and ethical performance. However, the length and complexity of ESG disclosures make them difficult to interpret and automate the analysis reliably. To support scalable and trustworthy analysis, this paper introduces ESG-Bench, a benchmark dataset for ESG report understanding and hallucination mitigation in large language models (LLMs). ESG-Bench contains human-annotated question-answer (QA) pairs grounded in real-world ESG report contexts, with fine-grained labels indicating whether model outputs are factually supported or hallucinated. Framing ESG report analysis as a QA task with verifiability constraints enables systematic evaluation of LLMs' ability to extract and reason over ESG content and provides a new use case: mitigating hallucinations in socially sensitive, compliance-critical settings. We design task-specific Chain-of-Thought (CoT) prompting strategies and fine-tune multiple state-of-the-art LLMs on ESG-Bench using CoT-annotated rationales. Our experiments show that these CoT-based methods substantially outperform standard prompting and direct fine-tuning in reducing hallucinations, and that the gains transfer to existing QA benchmarks beyond the ESG domain.",
+    "link": "http://arxiv.org/abs/2603.13154v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13131v1",
+    "title": "Steve-Evolving: Open-World Embodied Self-Evolution via Fine-Grained Diagnosis and Dual-Track Knowledge Distillation",
+    "authors": [
+      "Zhengwei Xie",
+      "Zhisheng Chen",
+      "Ziyan Weng",
+      "Tingyu Wu",
+      "Chenglong Li",
+      "Vireo Zhang",
+      "Kun Wang"
+    ],
+    "summary": "Open-world embodied agents must solve long-horizon tasks where the main bottleneck is not single-step planning quality but how interaction experience is organized and evolved. To this end, we present Steve-Evolving, a non-parametric self-evolving framework that tightly couples fine-grained execution diagnosis with dual-track knowledge distillation in a closed loop. The method follows three phases: Experience Anchoring, Experience Distillation, and Knowledge-Driven Closed-Loop Control. In detail, Experience Anchoring solidifies each subgoal attempt into a structured experience tuple with a fixed schema (pre-state, action, diagnosis-result, and post-state) and organizes it in a three-tier experience space with multi-dimensional indices (e.g., condition signatures, spatial hashing, and semantic tags) plus rolling summarization for efficient and auditable recall. To ensure sufficient information density for attribution, the execution layer provides compositional diagnosis signals beyond binary outcomes, including state-difference summaries, enumerated failure causes, continuous indicators, and stagnation/loop detection. Moreover, successful trajectories of Experience Distillation are generalized into reusable skills with explicit preconditions and verification criteria, while failures are distilled into executable guardrails that capture root causes and forbid risky operations at both subgoal and task granularities. Besides, Knowledge-Driven Closed-Loop Control retrieved skills and guardrails are injected into an LLM planner, and diagnosis-triggered local replanning updates the active constraints online, forming a continual evolution process without any model parameter updates. Experiments on the long-horizon suite of Minecraft MCU demonstrate consistent improvements over static-retrieval baselines.",
+    "link": "http://arxiv.org/abs/2603.13131v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13126v1",
+    "title": "Developing the PsyCogMetrics AI Lab to Evaluate Large Language Models and Advance Cognitive Science -- A Three-Cycle Action Design Science Study",
+    "authors": [
+      "Zhiye Jin",
+      "Yibai Li",
+      "K. D. Joshi",
+      " Xuefei",
+      " Deng",
+      " Xiaobing",
+      " Li"
+    ],
+    "summary": "This study presents the development of the PsyCogMetrics AI Lab (psycogmetrics.ai), an integrated, cloud-based platform that operationalizes psychometric and cognitive-science methodologies for Large Language Model (LLM) evaluation. Framed as a three-cycle Action Design Science study, the Relevance Cycle identifies key limitations in current evaluation methods and unfulfilled stakeholder needs. The Rigor Cycle draws on kernel theories such as Popperian falsifiability, Classical Test Theory, and Cognitive Load Theory to derive deductive design objectives. The Design Cycle operationalizes these objectives through nested Build-Intervene-Evaluate loops. The study contributes a novel IT artifact, a validated design for LLM evaluation, benefiting research at the intersection of AI, psychology, cognitive science, and the social and behavioral sciences.",
+    "link": "http://arxiv.org/abs/2603.13126v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13110v1",
+    "title": "AgentRM: An OS-Inspired Resource Manager for LLM Agent Systems",
+    "authors": [
+      "Jianshu She"
+    ],
+    "summary": "Large Language Model (LLM) agent systems have experienced rapid adoption across diverse domains, yet they suffer from critical user experience problems that limit their practical deployment. Through an empirical analysis of over 40,000 GitHub issues from six major agent frameworks (OpenClaw, AutoGen, CrewAI, LangGraph, Codex, Claude Code), we identify two fundamental resource management challenges: (1) scheduling failures leading to system unresponsiveness due to blocking, zombie processes, and rate limit cascades, and (2) context degradation causing agent \"amnesia\" from unbounded memory growth and poor retention policies. Drawing inspiration from decades of operating systems research, we present AgentRM, a middleware resource manager that treats agent resources analogously to OS resources. AgentRM employs a Multi-Level Feedback Queue (MLFQ) scheduler with zombie reaping and rate-limit-aware admission control, coupled with a three-tier Context Lifecycle Manager that implements adaptive compaction and hibernation mechanisms. Our evaluation demonstrates significant improvements: AgentRM-MLFQ reduces P95 latency by 86%, decreases lane waste by 96%, and increases throughput by 168% while eliminating zombie agents (0 vs. 29 baseline). AgentRM-CLM achieves 100% key information retention with 95% quality score compared to 65.1% retention and 87% quality for existing approaches, albeit with higher compaction costs (34,330 vs. 17,212 tokens).",
+    "link": "http://arxiv.org/abs/2603.13110v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13083v1",
+    "title": "Human-in-the-Loop LLM Grading for Handwritten Mathematics Assessments",
+    "authors": [
+      "Arne Vanhoyweghen",
+      "Vincent Holst",
+      "Melika Mobini",
+      "Lukas Van de Voorde",
+      "Tibo Vanleke",
+      "Bert Verbruggen",
+      "Brecht Verbeken",
+      "Andres Algaba",
+      "Sam Verboven",
+      "Marie-Anne Guerry",
+      "Filip Van Droogenbroeck",
+      "Vincent Ginis"
+    ],
+    "summary": "Providing timely and individualised feedback on handwritten student work is highly beneficial for learning but difficult to achieve at scale. This challenge has become more pressing as generative AI undermines the reliability of take-home assessments, shifting emphasis toward supervised, in-class evaluation. We present a scalable, end-to-end workflow for LLM-assisted grading of short, pen-and-paper assessments. The workflow spans (1) constructing solution keys, (2) developing detailed rubric-style grading keys used to guide the LLM, and (3) a grading procedure that combines automated scanning and anonymisation, multi-pass LLM scoring, automated consistency checks, and mandatory human verification. We deploy the system in two undergraduate mathematics courses using six low-stakes in-class tests. Empirically, LLM assistance reduces grading time by approximately 23% while achieving agreement comparable to, and in several cases tighter than, fully manual grading. Occasional model errors occur but are effectively contained by the hybrid design. Overall, our results show that carefully embedded human-in-the-loop LLM grading can substantially reduce workload while maintaining fairness and accuracy.",
+    "link": "http://arxiv.org/abs/2603.13083v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13045v1",
+    "title": "Mending the Holes: Mitigating Reward Hacking in Reinforcement Learning for Multilingual Translation",
+    "authors": [
+      "Yifeng Liu",
+      "Siqi Ouyang",
+      "Yatish Hosmane Revanasiddappa",
+      "Lei Li"
+    ],
+    "summary": "Large Language Models (LLMs) have demonstrated remarkable capability in machine translation on high-resource language pairs, yet their performance on low-resource translation still lags behind. Existing post-training methods rely heavily on high-quality parallel data, which are often scarce or unavailable for low-resource languages. In this paper, we introduce WALAR, a reinforcement training method using only monolingual text to elevate LLMs' translation capabilities on massive low-resource languages while retaining their performance on high-resource languages. Our key insight is based on the observation of failure modes (or \"holes\") in existing source-based multilingual quality estimation (QE) models. Reinforcement learning (RL) using these QE models tends to amplify such holes, resulting in poorer multilingual LLMs. We develop techniques including word alignment and language alignment to mitigate such holes in WALAR's reward for RL training. We continually trained an LLM supporting translation of 101 languages using WALAR. The experiments show that our new model outperforms LLaMAX, one of the strongest open-source multilingual LLMs by a large margin on 1400 language directions on Flores-101 dataset.",
+    "link": "http://arxiv.org/abs/2603.13045v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13043v1",
+    "title": "Before and After ChatGPT: Revisiting AI-Based Dialogue Systems for Emotional Support",
+    "authors": [
+      "Daeun Lee",
+      "Dongje Yoo",
+      "Migyeong Yang",
+      "Jihyun An",
+      "Christine B. Cha",
+      "Jinyoung Han"
+    ],
+    "summary": "Mental health remains a major public health concern, while access to timely psychological support is often limited. AI-based dialogue systems have emerged as promising tools to address these barriers, and recent advances in large language models (LLMs) have significantly transformed this research area. However, a systematic understanding of this technological transition is still limited. This study reviews the technological evolution of AI-driven dialogue systems for mental health, focusing on the shift from task-specific deep learning models to LLM-based approaches. We conducted a bibliometric analysis and qualitative trend review of studies published between 2020 and May 2024 using Web of Science, Scopus, and the ACM Digital Library. The qualitative analysis compared research conducted before and after the widespread adoption of LLMs. Pre-LLM research was represented by highly cited studies and work based on the ESConv dataset, while post-LLM research included highly cited dialogue systems built on LLMs. A total of 146 studies met the inclusion criteria, showing a steady growth in publications over time. Before the widespread use of LLMs, empathetic response generation mainly relied on task-specific deep learning models. Highly cited and ESConv-based studies commonly focused on multi-task learning and the integration of external knowledge. In contrast, recent LLM-based dialogue systems demonstrate improved linguistic flexibility and generalization for emotional support. However, these systems also raise concerns related to reliability and safety in mental health applications. This review highlights the technological transition of AI-based dialogue systems for mental health in the LLM era. By identifying current research trends and limitations, the findings provide guidance for developing more effective and reliable AI-driven counseling systems.",
+    "link": "http://arxiv.org/abs/2603.13043v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13036v1",
+    "title": "Interrogating Design Homogenization in Web Vibe Coding",
+    "authors": [
+      "Donghoon Shin",
+      "Alice Gao",
+      "Rock Yuren Pang",
+      "Jaewook Lee",
+      "Katharina Reinecke",
+      "Emily Tseng"
+    ],
+    "summary": "Generative AI is known for its tendency to homogenize, often reproducing dominant style conventions found in training data. However, it remains unclear how these homogenizing effects extend to complex structural tasks like web design. As lay creators increasingly turn to LLMs to 'vibe-code' websites -- prompting for aesthetic and functional goals rather than writing code -- they may inadvertently narrow the diversity of their designs, and limit creative expression throughout the internet. In this paper, we interrogate the possibility of design homogenization in web vibe coding. We first characterize the vibe coding lifecycle, pinpointing stages where homogenization risks may arise. We then conduct a sociotechnical risk analysis unpacking the potential harms of web vibe coding and their interaction with design homogenization. We identify that the push for frictionless generation can exacerbate homogenization and its harms. Finally, we propose a mitigation framework centered on the idea of productive friction. Through case studies at the micro, meso, and macro levels, we show how centering productive friction can empower creators to challenge default outputs and preserve diverse expression in AI-mediated web design.",
+    "link": "http://arxiv.org/abs/2603.13036v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13026v1",
+    "title": "PISmith: Reinforcement Learning-based Red Teaming for Prompt Injection Defenses",
+    "authors": [
+      "Chenlong Yin",
+      "Runpeng Geng",
+      "Yanting Wang",
+      "Jinyuan Jia"
+    ],
+    "summary": "Prompt injection poses serious security risks to real-world LLM applications, particularly autonomous agents. Although many defenses have been proposed, their robustness against adaptive attacks remains insufficiently evaluated, potentially creating a false sense of security. In this work, we propose PISmith, a reinforcement learning (RL)-based red-teaming framework that systematically assesses existing prompt-injection defenses by training an attack LLM to optimize injected prompts in a practical black-box setting, where the attacker can only query the defended LLM and observe its outputs. We find that directly applying standard GRPO to attack strong defenses leads to sub-optimal performance due to extreme reward sparsity -- most generated injected prompts are blocked by the defense, causing the policy's entropy to collapse before discovering effective attack strategies, while the rare successes cannot be learned effectively. In response, we introduce adaptive entropy regularization and dynamic advantage weighting to sustain exploration and amplify learning from scarce successes. Extensive evaluation on 13 benchmarks demonstrates that state-of-the-art prompt injection defenses remain vulnerable to adaptive attacks. We also compare PISmith with 7 baselines across static, search-based, and RL-based attack categories, showing that PISmith consistently achieves the highest attack success rates. Furthermore, PISmith achieves strong performance in agentic settings on InjecAgent and AgentDojo against both open-source and closed-source LLMs (e.g., GPT-4o-mini and GPT-5-nano). Our code is available at https://github.com/albert-y1n/PISmith.",
+    "link": "http://arxiv.org/abs/2603.13026v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13019v1",
+    "title": "ARL-Tangram: Unleash the Resource Efficiency in Agentic Reinforcement Learning",
+    "authors": [
+      "Bangjun Xiao",
+      "Yihao Zhao",
+      "Xiangwei Deng",
+      "Shihua Yu",
+      "Yuxing Xiang",
+      "Huaqiu Liu",
+      "Qiying Wang",
+      "Liang Zhao",
+      "Hailin Zhang",
+      "Xuanzhe Liu",
+      "Xin Jin",
+      "Fuli Luo"
+    ],
+    "summary": "Agentic reinforcement learning (RL) has emerged as a transformative workload in cloud clusters, enabling large language models (LLMs) to solve complex problems through interactions with real world. However, unlike traditional RL, agentic RL demands substantial external cloud resources, e.g., CPUs for code execution and GPUs for reward models, that exist outside the primary training cluster. Existing agentic RL framework typically rely on static over-provisioning, i.e., resources are often tied to long-lived trajectories or isolated by tasks, which leads to severe resource inefficiency.   We propose the action-level orchestration, and incorporate it into ARL-Tangram, a unified resource management system that enables fine-grained external resource sharing and elasticity. ARL-Tangram utilizes a unified action-level formulation and an elastic scheduling algorithm to minimize action completion time (ACT) while satisfying heterogeneous resource constraints. Further, heterogeneous resource managers are tailored to efficiently support the action-level execution on resources with heterogeneous characteristics and topologies. Evaluation on real-world agentic RL tasks demonstrates that ARL-Tangram improves average ACT by up to 4.3$\\times$, speeds up the step duration of RL training by up to 1.5$\\times$, and saves the external resources by up to 71.2$\\%$. This system has been deployed to support the training of the MiMo series models.",
+    "link": "http://arxiv.org/abs/2603.13019v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.13017v1",
+    "title": "Structured Distillation for Personalized Agent Memory: 11x Token Reduction with Retrieval Preservation",
+    "authors": [
+      "Sydney Lewis"
+    ],
+    "summary": "Long conversations with an AI agent create a simple problem for one user: the history is useful, but carrying it verbatim is expensive. We study personalized agent memory: one user's conversation history with an agent, distilled into a compact retrieval layer for later search. Each exchange is compressed into a compound object with four fields (exchange_core, specific_context, thematic room_assignments, and regex-extracted files_touched). The searchable distilled text averages 38 tokens per exchange. Applied to 4,182 conversations (14,340 exchanges) from 6 software engineering projects, the method reduces average exchange length from 371 to 38 tokens, yielding 11x compression. We evaluate whether personalized recall survives that compression using 201 recall-oriented queries, 107 configurations spanning 5 pure and 5 cross-layer search modes, and 5 LLM graders (214,519 consensus-graded query-result pairs). The best pure distilled configuration reaches 96% of the best verbatim MRR (0.717 vs 0.745). Results are mechanism-dependent. All 20 vector search configurations remain non-significant after Bonferroni correction, while all 20 BM25 configurations degrade significantly (effect sizes |d|=0.031-0.756). The best cross-layer setup slightly exceeds the best pure verbatim baseline (MRR 0.759). Structured distillation compresses single-user agent memory without uniformly sacrificing retrieval quality. At 1/11 the context cost, thousands of exchanges fit within a single prompt while the verbatim source remains available for drill-down. We release the implementation and analysis pipeline as open-source software.",
+    "link": "http://arxiv.org/abs/2603.13017v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.12996v1",
+    "title": "Dependency-Aware Parallel Decoding via Attention for Diffusion LLMs",
+    "authors": [
+      "Bumjun Kim",
+      "Dongjae Jeon",
+      "Moongyu Jeon",
+      "Albert No"
+    ],
+    "summary": "Parallel decoding for diffusion LLMs (dLLMs) is difficult because each denoising step provides only token-wise marginal distributions, while unmasking multiple tokens simultaneously requires accounting for inter-token dependencies. We propose Dependency-Aware Parallel Decoding (DAPD), a simple, training-free decoding method that uses self-attention to induce a conditional dependency graph over masked tokens. At each iteration, edges in this graph capture strong token interactions, while non-edges indicate weak dependence. Parallel decoding is then reduced to selecting an independent set on the graph and unmasking the selected tokens in parallel. This avoids co-updating strongly coupled tokens without auxiliary models or retraining. Experiments on LLaDA and Dream show that DAPD improves the accuracy-steps trade-off over existing methods and enables more globally distributed parallel updates that better exploit the any-order generation capability of dLLMs.",
+    "link": "http://arxiv.org/abs/2603.12996v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.12983v1",
+    "title": "Is Human Annotation Necessary? Iterative MBR Distillation for Error Span Detection in Machine Translation",
+    "authors": [
+      "Boxuan Lyu",
+      "Haiyue Song",
+      "Zhi Qu"
+    ],
+    "summary": "Error Span Detection (ESD) is a crucial subtask in Machine Translation (MT) evaluation, aiming to identify the location and severity of translation errors. While fine-tuning models on human-annotated data improves ESD performance, acquiring such data is expensive and prone to inconsistencies among annotators. To address this, we propose a novel self-evolution framework based on Minimum Bayes Risk (MBR) decoding, named Iterative MBR Distillation for ESD, which eliminates the reliance on human annotations by leveraging an off-the-shelf LLM to generate pseudo-labels.Extensive experiments on the WMT Metrics Shared Task datasets demonstrate that models trained solely on these self-generated pseudo-labels outperform both unadapted base model and supervised baselines trained on human annotations at the system and span levels, while maintaining competitive sentence-level performance.",
+    "link": "http://arxiv.org/abs/2603.12983v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.12953v1",
+    "title": "Delta1 with LLM: symbolic and neural integration for credible and explainable reasoning",
+    "authors": [
+      "Yang Xu",
+      "Jun Liu",
+      "Shuwei Chen",
+      "Chris Nugent",
+      "Hailing Guo"
+    ],
+    "summary": "Neuro-symbolic reasoning increasingly demands frameworks that unite the formal rigor of logic with the interpretability of large language models (LLMs). We introduce an end to end explainability by construction pipeline integrating the Automated Theorem Generator Delta1 based on the full triangular standard contradiction (FTSC) with LLMs. Delta1 deterministically constructs minimal unsatisfiable clause sets and complete theorems in polynomial time, ensuring both soundness and minimality by construction. The LLM layer verbalizes each theorem and proof trace into coherent natural language explanations and actionable insights. Empirical studies across health care, compliance, and regulatory domains show that Delta1 and LLM enables interpretable, auditable, and domain aligned reasoning. This work advances the convergence of logic, language, and learning, positioning constructive theorem generation as a principled foundation for neuro-symbolic explainable AI.",
+    "link": "http://arxiv.org/abs/2603.12953v1",
+    "date": "2026-03-13",
+    "fetched_at": "2026-03-16"
+  },
+  {
     "id": "http://arxiv.org/abs/2603.06576v1",
     "title": "BEVLM: Distilling Semantic Knowledge from LLMs into Bird's-Eye View Representations",
     "authors": [
