@@ -122,7 +122,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # Result: /Users/greg/site/_data
 DATA_DIR = os.path.join(SCRIPT_DIR, "..", "_data")
 
-OUTPUT_FILENAME = "kinetic_feed.json"
+OUTPUT_FILENAME = "grc_feed.json"
 
 def fetch_arxiv_papers():
     """Queries arXiv and returns a list of dictionaries."""
