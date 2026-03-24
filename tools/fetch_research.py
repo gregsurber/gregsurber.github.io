@@ -109,18 +109,20 @@ import xml.etree.ElementTree as ET
 import json
 import os
 from datetime import datetime, timedelta
-
 # --- Configuration ---
-SEARCH_QUERY = 'all:"LLM" OR all:"Large Language Model" AND all:"GRC" OR all:"Governance" OR all:"Risk" OR all:"Compliance" OR all:"Policy as Code" OR all:"Compliance Engineer"'
-MAX_RESULTS = 20
+# Logic: (LLM OR AI) AND (Governance OR Risk OR Compliance OR Ethics OR Policy-as-Code)
+# We use abs: (abstract) to ensure the paper is actually ABOUT these topics, not just mentioning them.
+SEARCH_QUERY = (
+    '(abs:LLM OR abs:"Large Language Model" OR abs:"Artificial Intelligence") '
+    'AND (abs:governance OR abs:risk OR abs:compliance OR abs:ethics '
+    'OR abs:"policy as code" OR abs:"compliance engineering")'
+)
+MAX_RESULTS = 25  # Bumped slightly to account for the more specific filter
 
 # --- FIX: ROBUST PATHING ---
-# 1. Get the absolute path to the folder containing this script (e.g., /Users/greg/site/tools)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# 2. Go up one level to the Project Root, then into _data
-# Result: /Users/greg/site/_data
 DATA_DIR = os.path.join(SCRIPT_DIR, "..", "_data")
+
 
 OUTPUT_FILENAME = "grc_feed.json"
 
