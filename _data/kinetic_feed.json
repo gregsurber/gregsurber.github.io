@@ -1,5 +1,339 @@
 [
   {
+    "id": "http://arxiv.org/abs/2603.26664v1",
+    "title": "Learning to Commit: Generating Organic Pull Requests via Online Repository Memory",
+    "authors": [
+      "Mo Li",
+      "L. H. Xu",
+      "Qitai Tan",
+      "Ting Cao",
+      "Yunxin Liu"
+    ],
+    "summary": "Large language model (LLM)-based coding agents achieve impressive results on controlled benchmarks yet routinely produce pull requests that real maintainers reject. The root cause is not functional incorrectness but a lack of organicity: generated code ignores project-specific conventions, duplicates functionality already provided by internal APIs, and violates implicit architectural constraints accumulated over years of development. Simply exposing an agent to the latest repository snapshot is not enough: the snapshot reveals the final state of the codebase, but not the repository-specific change patterns by which that state was reached. We introduce Learning to Commit, a framework that closes this gap through Online Repository Memory. Given a repository with a strict chronological split, the agent performs supervised contrastive reflection on earlier commits: it blindly attempts to resolve each historical issue, compares its prediction against the oracle diff, and distils the gap into a continuously growing set of skills-reusable patterns capturing coding style, internal API usage, and architectural invariants. When a new PR description arrives, the agent conditions its generation on these accumulated skills, producing changes grounded in the project's own evolution rather than generic pretraining priors. Evaluation is conducted on genuinely future, merged pull requests that could not have been seen during the skill-building phase, and spans multiple dimensions including functional correctness, code-style consistency, internal API reuse rate, and modified-region plausibility. Experiments on an expert-maintained repository with rich commit history show that Online Repository Memory effectively improves organicity scores on held-out future tasks.",
+    "link": "http://arxiv.org/abs/2603.26664v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26663v1",
+    "title": "Weight Tying Biases Token Embeddings Towards the Output Space",
+    "authors": [
+      "Antonio Lopardo",
+      "Avyukth Harish",
+      "Catherine Arnett",
+      "Akshat Gupta"
+    ],
+    "summary": "Weight tying, i.e. sharing parameters between input and output embedding matrices, is common practice in language model design, yet its impact on the learned embedding space remains poorly understood. In this paper, we show that tied embedding matrices align more closely with output (unembedding) matrices than with input embeddings of comparable untied models, indicating that the shared matrix is shaped primarily for output prediction rather than input representation. This unembedding bias arises because output gradients dominate early in training. Using tuned lens analysis, we show this negatively affects early-layer computations, which contribute less effectively to the residual stream. Scaling input gradients during training reduces this bias, providing causal evidence for the role of gradient imbalance. This is mechanistic evidence that weight tying optimizes the embedding matrix for output prediction, compromising its role in input representation. These results help explain why weight tying can harm performance at scale and have implications for training smaller LLMs, where the embedding matrix contributes substantially to total parameter count.",
+    "link": "http://arxiv.org/abs/2603.26663v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26635v1",
+    "title": "Deception and Communication in Autonomous Multi-Agent Systems: An Experimental Study with Among Us",
+    "authors": [
+      "Maria Milkowski",
+      "Tim Weninger"
+    ],
+    "summary": "As large language models are deployed as autonomous agents, their capacity for strategic deception raises core questions for coordination, reliability, and safety in multi-goal, multi-agent systems. We study deception and communication in L2LM agents through the social deduction game Among Us, a cooperative-competitive environment. Across 1,100 games, autonomous agents produced over one million tokens of meeting dialogue. Using speech act theory and interpersonal deception theory, we find that all agents rely mainly on directive language, while impostor agents shift slightly toward representative acts such as explanations and denials. Deception appears primarily as equivocation rather than outright lies, increasing under social pressure but rarely improving win rates. Our contributions are a large-scale analysis of role-conditioned deceptive behavior in LLM agents and empirical evidence that current agents favor low-risk ambiguity that is linguistically subtle yet strategically limited, revealing a fundamental tension between truthfulness and utility in autonomous communication.",
+    "link": "http://arxiv.org/abs/2603.26635v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26603v1",
+    "title": "Sustainability Is Not Linear: Quantifying Performance, Energy, and Privacy Trade-offs in On-Device Intelligence",
+    "authors": [
+      "Eziyo Ehsani",
+      "Luca Giamattei",
+      "Ivano Malavolta",
+      "Roberto Pietrantuono"
+    ],
+    "summary": "The migration of Large Language Models (LLMs) from cloud clusters to edge devices promises enhanced privacy and offline accessibility, but this transition encounters a harsh reality: the physical constraints of mobile batteries, thermal limits, and, most importantly, memory constraints. To navigate this landscape, we constructed a reproducible experimental pipeline to profile the complex interplay between energy consumption, latency, and quality. Unlike theoretical studies, we captured granular power metrics across eight models ranging from 0.5B to 9B parameters without requiring root access, ensuring our findings reflect realistic user conditions. We harness this pipeline to conduct an empirical case study on a flagship Android device, the Samsung Galaxy S25 Ultra, establishing foundational hypotheses regarding the trade-offs between generation quality, performance, and resource consumption. Our investigation uncovered a counter-intuitive quantization-energy paradox. While modern importance-aware quantization successfully reduces memory footprints to fit larger models into RAM, we found it yields negligible energy savings compared to standard mixed-precision methods. This proves that for battery life, the architecture of the model, not its quantization scheme, is the decisive factor. We further identified that Mixture-of-Experts (MoE) architectures defy the standard size-energy trend, offering the storage capacity of a 7B model while maintaining the lower energy profile of a 1B to 2B model. Finally, an analysis of these multi-objective trade-offs reveals a pragmatic sweet spot of mid-sized models, such as Qwen2.5-3B, that effectively balance response quality with sustainable energy consumption.",
+    "link": "http://arxiv.org/abs/2603.26603v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26567v1",
+    "title": "Beyond Code Snippets: Benchmarking LLMs on Repository-Level Question Answering",
+    "authors": [
+      "Yoseph Berhanu Alebachew",
+      "Hunter Leary",
+      "Swanand Vaishampayan",
+      "Chris Brown"
+    ],
+    "summary": "Large Language Models (LLMs) have shown impressive capabilities across software engineering tasks, including question answering (QA). However, most studies and benchmarks focus on isolated functions or single-file snippets, overlooking the challenges of real-world program comprehension, which often spans multiple files and system-level dependencies. In this work, we introduce StackRepoQA, the first multi-project, repository-level question answering dataset constructed from 1,318 real developer questions and accepted answers across 134 open-source Java projects. Using this dataset, we systematically evaluate two widely used LLMs (Claude 3.5 Sonnet and GPT-4o) under both direct prompting and agentic configurations. We compare baseline performance with retrieval-augmented generation methods that leverage file-level retrieval and graph-based representations of structural dependencies. Our results show that LLMs achieve moderate accuracy at baseline, with performance improving when structural signals are incorporated. Nonetheless, overall accuracy remains limited for repository-scale comprehension. The analysis reveals that high scores often result from verbatim reproduction of Stack Overflow answers rather than genuine reasoning. To our knowledge, this is the first empirical study to provide such evidence in repository-level QA. We release StackRepoQA to encourage further research into benchmarks, evaluation protocols, and augmentation strategies that disentangle memorization from reasoning, advancing LLMs as reliable tool for repository-scale program comprehension.",
+    "link": "http://arxiv.org/abs/2603.26567v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26557v1",
+    "title": "MemBoost: A Memory-Boosted Framework for Cost-Aware LLM Inference",
+    "authors": [
+      "Joris K\u00f6ster",
+      "Zixuan Liu",
+      "Siavash Khajavi",
+      "Zizhan Zheng"
+    ],
+    "summary": "Large Language Models (LLMs) deliver strong performance but incur high inference cost in real-world services, especially under workloads with repeated or near-duplicate queries across users and sessions. In this work, we propose MemBoost, a memory-boosted LLM serving framework that enables a lightweight model to reuse previously generated answers and retrieve relevant supporting information for cheap inference, while selectively escalating difficult or uncertain queries to a stronger model. Unlike standard retrieval-augmented generation, which primarily grounds a single response, MemBoost is designed for interactive settings by supporting answer reuse, continual memory growth, and cost-aware routing. Experiments across multiple models under simulated workloads show that MemBoost substantially reduces expensive large-model invocations and overall inference cost, while maintaining high answer quality comparable to the strong model baseline.",
+    "link": "http://arxiv.org/abs/2603.26557v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26522v1",
+    "title": "Shaping Credibility Judgments in Human-GenAI Partnership via Weaker LLMs: A Transactive Memory Perspective on AI Literacy",
+    "authors": [
+      "Md Touhidul Islam",
+      "Mahir Akgun",
+      "Syed Billah"
+    ],
+    "summary": "Generative AI (GenAI) is increasingly used as a knowledge partner in higher education, raising the need for instructional designs that emphasize AI literacy practices such as evaluating output credibility and maintaining human accountability. Existing AI literacy frameworks focus more on what learners should do than on how these practices are enacted in routine student-GenAI collaboration. We address this gap by framing student-GenAI interaction as a transactive memory partnership, where credibility regulates reliance and verification. To make this process visible during coursework, we used a weaker large language model (LLM): small enough to run on most students' computers during class, helpful enough to support learning, but not so capable that it removes the need for verification. In an undergraduate STEM course, students were randomly assigned to one of three conditions across repeated activities: reflection-first (think first, then consult AI), verification-required (use AI, then evaluate the output), or control (unrestricted use). Students completed a transactive memory survey at three time points (N = 42). Weighted credibility diverged by condition over time. ANCOVA controlling for baseline credibility showed a condition effect at mid-semester, F(2, 38) = 4.02, p = .026, partial eta squared = .175, and a stronger effect at post-intervention, F(2, 38) = 5.48, p = .008, partial eta squared = .224; adjusted means were lowest in reflection-first, intermediate in verification-required, and highest in control. Parallel analyses of specialization and coordination were not significant. These findings suggest that workflow sequencing, deliberate use of weaker LLMs, and accountability cues embedded in assignment instructions can recalibrate students' credibility judgments in GenAI use, with reflection-first producing the strongest downward shift in reliance.",
+    "link": "http://arxiv.org/abs/2603.26522v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26516v1",
+    "title": "ALBA: A European Portuguese Benchmark for Evaluating Language and Linguistic Dimensions in Generative LLMs",
+    "authors": [
+      "In\u00eas Vieira",
+      "In\u00eas Calvo",
+      "Iago Paulo",
+      "James Furtado",
+      "Rafael Ferreira",
+      "Diogo Tavares",
+      "Diogo Gl\u00f3ria-Silva",
+      "David Semedo",
+      "Jo\u00e3o Magalh\u00e3es"
+    ],
+    "summary": "As Large Language Models (LLMs) expand across multilingual domains, evaluating their performance in under-represented languages becomes increasingly important. European Portuguese (pt-PT) is particularly affected, as existing training data and benchmarks are mainly in Brazilian Portuguese (pt-BR). To address this, we introduce ALBA, a linguistically grounded benchmark designed from the ground up to assess LLM proficiency in linguistic-related tasks in pt-PT across eight linguistic dimensions, including Language Variety, Culture-bound Semantics, Discourse Analysis, Word Plays, Syntax, Morphology, Lexicology, and Phonetics and Phonology. ALBA is manually constructed by language experts and paired with an LLM-as-a-judge framework for scalable evaluation of pt-PT generated language. Experiments on a diverse set of models reveal performance variability across linguistic dimensions, highlighting the need for comprehensive, variety-sensitive benchmarks that support further development of tools in pt-PT.",
+    "link": "http://arxiv.org/abs/2603.26516v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26512v1",
+    "title": "CADSmith: Multi-Agent CAD Generation with Programmatic Geometric Validation",
+    "authors": [
+      "Jesse Barkley",
+      "Rumi Loghmani",
+      "Amir Barati Farimani"
+    ],
+    "summary": "Existing methods for text-to-CAD generation either operate in a single pass with no geometric verification or rely on lossy visual feedback that cannot resolve dimensional errors. We present CADSmith, a multi-agent pipeline that generates CadQuery code from natural language. It then undergoes an iterative refinement process through two nested correction loops: an inner loop that resolves execution errors and an outer loop grounded in programmatic geometric validation. The outer loop combines exact measurements from the OpenCASCADE kernel (bounding box dimensions, volume, solid validity) with holistic visual assessment from an independent vision-language model Judge. This provides both the numerical precision and the high-level shape awareness needed to converge on the correct geometry. The system uses retrieval-augmented generation over API documentation rather than fine-tuning, maintaining a current database as the underlying CAD library evolves. We evaluate on a custom benchmark of 100 prompts in three difficulty tiers (T1 through T3) with three ablation configurations. Against a zero-shot baseline, CADSmith achieves a 100% execution rate (up from 95%), improves the median F1 score from 0.9707 to 0.9846, the median IoU from 0.8085 to 0.9629, and reduces the mean Chamfer Distance from 28.37 to 0.74, demonstrating that closed-loop refinement with programmatic geometric feedback substantially improves the quality and reliability of LLM-generated CAD models.",
+    "link": "http://arxiv.org/abs/2603.26512v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26511v1",
+    "title": "AMALIA Technical Report: A Fully Open Source Large Language Model for European Portuguese",
+    "authors": [
+      "Afonso Simpl\u00edcio",
+      "Gon\u00e7alo Vinagre",
+      "Miguel Moura Ramos",
+      "Diogo Tavares",
+      "Rafael Ferreira",
+      "Giuseppe Attanasio",
+      "Duarte M. Alves",
+      "In\u00eas Calvo",
+      "In\u00eas Vieira",
+      "Rui Guerra",
+      "James Furtado",
+      "Beatriz Canaverde",
+      "Iago Paulo",
+      "Vasco Ramos",
+      "Diogo Gl\u00f3ria-Silva",
+      "Miguel Faria",
+      "Marcos Treviso",
+      "Daniel Gomes",
+      "Pedro Gomes",
+      "David Semedo",
+      "Andr\u00e9 Martins",
+      "Jo\u00e3o Magalh\u00e3es"
+    ],
+    "summary": "Despite rapid progress in open large language models (LLMs), European Portuguese (pt-PT) remains underrepresented in both training data and native evaluation, with machine-translated benchmarks likely missing the variant's linguistic and cultural nuances. We introduce AMALIA, a fully open LLM that prioritizes pt-PT by using more high-quality pt-PT data during both the mid- and post-training stages. To evaluate pt-PT more faithfully, we release a suite of pt-PT benchmarks that includes translated standard tasks and four new datasets targeting pt-PT generation, linguistic competence, and pt-PT/pt-BR bias. Experiments show that AMALIA matches strong baselines on translated benchmarks while substantially improving performance on pt-PT-specific evaluations, supporting the case for targeted training and native benchmarking for European Portuguese.",
+    "link": "http://arxiv.org/abs/2603.26511v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26510v1",
+    "title": "Clinical named entity recognition in the Portuguese language: a benchmark of modern BERT models and LLMs",
+    "authors": [
+      "Vinicius Anjos de Almeida",
+      "Sandro Saorin da Silva",
+      "Josimar Chire",
+      "Leonardo Vicenzi",
+      "N\u00edcolas Henrique Borges",
+      "Helena Kociolek",
+      "Sarah Miri\u00e3 de Castro Rocha",
+      "Frederico Nassif Gomes",
+      "J\u00falia Cristina Ferreira",
+      "Oge Marques",
+      "Lucas Emanuel Silva e Oliveira"
+    ],
+    "summary": "Clinical notes contain valuable unstructured information. Named entity recognition (NER) enables the automatic extraction of medical concepts; however, benchmarks for Portuguese remain scarce. In this study, we aimed to evaluate BERT-based models and large language models (LLMs) for clinical NER in Portuguese and to test strategies for addressing multilabel imbalance. We compared BioBERTpt, BERTimbau, ModernBERT, and mmBERT with LLMs such as GPT-5 and Gemini-2.5, using the public SemClinBr corpus and a private breast cancer dataset. Models were trained under identical conditions and evaluated using precision, recall, and F1-score. Iterative stratification, weighted loss, and oversampling were explored to mitigate class imbalance. The mmBERT-base model achieved the best performance (micro F1 = 0.76), outperforming all other models. Iterative stratification improved class balance and overall performance. Multilingual BERT models, particularly mmBERT, perform strongly for Portuguese clinical NER and can run locally with limited computational resources. Balanced data-splitting strategies further enhance performance.",
+    "link": "http://arxiv.org/abs/2603.26510v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26499v1",
+    "title": "AIRA_2: Overcoming Bottlenecks in AI Research Agents",
+    "authors": [
+      "Karen Hambardzumyan",
+      "Nicolas Baldwin",
+      "Edan Toledo",
+      "Rishi Hazra",
+      "Michael Kuchnik",
+      "Bassel Al Omari",
+      "Thomas Simon Foster",
+      "Anton Protopopov",
+      "Jean-Christophe Gagnon-Audet",
+      "Ishita Mediratta",
+      "Kelvin Niu",
+      "Michael Shvartsman",
+      "Alisia Lupidi",
+      "Alexis Audran-Reiss",
+      "Parth Pathak",
+      "Tatiana Shavrina",
+      "Despoina Magka",
+      "Hela Momand",
+      "Derek Dunfield",
+      "Nicola Cancedda",
+      "Pontus Stenetorp",
+      "Carole-Jean Wu",
+      "Jakob Nicolaus Foerster",
+      "Yoram Bachrach",
+      "Martin Josifoski"
+    ],
+    "summary": "Existing research has identified three structural performance bottlenecks in AI research agents: (1) synchronous single-GPU execution constrains sample throughput, limiting the benefit of search; (2) a generalization gap where validation-based selection causes performance to degrade over extended search horizons; and (3) the limited capability of fixed, single-turn LLM operators imposes a ceiling on search performance. We introduce AIRA$_2$, which addresses these bottlenecks through three architectural choices: an asynchronous multi-GPU worker pool that increases experiment throughput linearly; a Hidden Consistent Evaluation protocol that delivers a reliable evaluation signal; and ReAct agents that dynamically scope their actions and debug interactively. On MLE-bench-30, AIRA$_2$ achieves a mean Percentile Rank of 71.8% at 24 hours - surpassing the previous best of 69.9% - and steadily improves to 76.0% at 72 hours. Ablation studies reveal that each component is necessary and that the \"overfitting\" reported in prior work was driven by evaluation noise rather than true data memorization.",
+    "link": "http://arxiv.org/abs/2603.26499v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26498v1",
+    "title": "Rocks, Pebbles and Sand: Modality-aware Scheduling for Multimodal Large Language Model Inference",
+    "authors": [
+      "Konstantinos Papaioannou",
+      "Thaleia Dimitra Doudali"
+    ],
+    "summary": "Multimodal Large Language Models (MLLMs) power platforms like ChatGPT, Gemini, and Copilot, enabling richer interactions with text, images, and videos. These heterogeneous workloads introduce additional inference stages, such as vision preprocessing and encoding, that inflate latency and memory demand. Existing LLM serving systems, optimized for text-only workloads, fail under multimodality: large requests (e.g., videos) monopolize resources, causing severe head-of-line blocking and performance degradation. Our key insight is that multimodal requests differ by orders of magnitude in resource demands, which we capture through a simple abstraction: videos behave like rocks, images like pebbles, and text like sand. We design RPS-Serve, a modality-aware scheduler that lets sand flow quickly through pebbles and rocks, ensuring interactive responsiveness while avoiding starvation. RPS-Serve classifies requests, prioritizes them dynamically, and applies aging to avoid starvation. Evaluation across state-of-the-art MLLMs shows that RPS-Serve reduces, on average, time-to-first-token (TTFT) by 54% overall, and by 78.5% for latency-critical requests, compared to current systems. RPS-Serve delivers LLM-like responsiveness for MLLMs, with modality-aware scheduling and by making the most efficient use of the available resources.",
+    "link": "http://arxiv.org/abs/2603.26498v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26497v1",
+    "title": "Reentrancy Detection in the Age of LLMs",
+    "authors": [
+      "Dalila Ressi",
+      "Alvise Span\u00f2",
+      "Matteo Rizzo",
+      "Lorenzo Benetollo",
+      "Sabina Rossi"
+    ],
+    "summary": "Reentrancy remains one of the most critical classes of vulnerabilities in Ethereum smart contracts, yet widely used detection tools and datasets continue to reflect outdated patterns and obsolete Solidity versions. This paper adopts a dependability-oriented perspective on reentrancy detection in Solidity 0.8+, assessing how reliably state-of-the-art static analyzers and AI-based techniques operate on modern code by putting them to the test on two fronts. We construct two manually verified benchmarks: an Aggregated Benchmark of 432 real-world contracts, consolidated and relabeled from prior datasets, and a Reentrancy Scenarios Dataset (RSD) of \\chadded{143} handcrafted minimal working examples designed to isolate and stress-test individual reentrancy patterns. We then evaluate 12 formal-methods-based tools, 10 machine-learning models, and 9 large language models. On the Aggregated Benchmark, traditional tools and ML models achieve up to 0.87 F1, while the best LLMs reach 0.96 in a zero-shot setting. On the RSD, most tools fail on multiple scenarios, the top performer achieving an F1 of 0.76, whereas the strongest model attains 0.82. Overall, our results indicate that leading LLMs outperform the majority of existing detectors, highlighting concerning gaps in the robustness and maintainability of current reentrancy-analysis tools.",
+    "link": "http://arxiv.org/abs/2603.26497v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26496v1",
+    "title": "Innovation Discovery System for Networking Research",
+    "authors": [
+      "Mengrui Zhang",
+      "Bang Huang",
+      "Yunxin Xu",
+      "Haiying Huang",
+      "Luxi Zhao",
+      "Mochun Long",
+      "Qingyu Song",
+      "Qiao Xiang",
+      "Xue Liu",
+      "Jiwu Shu"
+    ],
+    "summary": "As networking systems become increasingly complex, achieving disruptive innovation grows more challenging. At the same time, recent progress in Large Language Models (LLMs) has shown strong potential for scientific hypothesis formation and idea generation. Nevertheless, applying LLMs effectively to networking research remains difficult for two main reasons: standalone LLMs tend to generate ideas by recombining existing solutions, and current open-source networking resources do not provide the structured, idea-level knowledge necessary for data-driven scientific discovery.   To bridge this gap, we present SciNet, a research idea generation system specifically designed for networking. SciNet is built upon three key components: (1) constructing a networking-oriented scientific discovery dataset from top-tier networking conferences, (2) simulating the human idea discovery workflow through problem setting, inspiration retrieval, and idea generation, and (3) developing an idea evaluation method that jointly measures novelty and practicality. Experimental results show that \\system consistently produces practical and novel networking research ideas across multiple LLM backbones, and outperforms standalone LLM-based generation in overall idea quality.",
+    "link": "http://arxiv.org/abs/2603.26496v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26434v1",
+    "title": "Automating Clinical Information Retrieval from Finnish Electronic Health Records Using Large Language Models",
+    "authors": [
+      "Mikko Saukkoriipi",
+      "Nicole Hernandez",
+      "Jaakko Sahlsten",
+      "Kimmo Kaski",
+      "Otso Arponen"
+    ],
+    "summary": "Clinicians often need to retrieve patient-specific information from electronic health records (EHRs), a task that is time-consuming and error-prone. We present a locally deployable Clinical Contextual Question Answering (CCQA) framework that answers clinical questions directly from EHRs without external data transfer. Open-source large language models (LLMs) ranging from 4B to 70B parameters were benchmarked under fully offline conditions using 1,664 expert-annotated question-answer pairs derived from records of 183 patients. The dataset consisted predominantly of Finnish clinical text. In free-text generation, Llama-3.1-70B achieved 95.3% accuracy and 97.3% consistency across semantically equivalent question variants, while the smaller Qwen3-30B-A3B-2507 model achieved comparable performance. In a multiple-choice setting, models showed similar accuracy but variable calibration. Low-precision quantization (4-bit and 8-bit) preserved predictive performance while reducing GPU memory requirements and improving deployment feasibility. Clinical evaluation identified clinically significant errors in 2.9% of outputs, and semantically equivalent questions occasionally yielded discordant responses, including instances where one formulation was correct and the other contained a clinically significant error (0.96% of cases). These findings demonstrate that locally hosted open-source LLMs can accurately retrieve patient-specific information from EHRs using natural-language queries, while highlighting the need for validation and human oversight in clinical deployment.",
+    "link": "http://arxiv.org/abs/2603.26434v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26412v1",
+    "title": "Generalizable task-oriented object grasping through LLM-guided ontology and similarity-based planning",
+    "authors": [
+      "Hao Chen",
+      "Takuya Kiyokawa",
+      "Weiwei Wan",
+      "Kensuke Harada"
+    ],
+    "summary": "Task-oriented grasping (TOG) is more challenging than simple object grasping because it requires precise identification of object parts and careful selection of grasping areas to ensure effective and robust manipulation. While recent approaches have trained large-scale vision-language models to integrate part-level object segmentation with task-aware grasp planning, their instability in part recognition and grasp inference limits their ability to generalize across diverse objects and tasks. To address this issue, we introduce a novel, geometry-centric strategy for more generalizable TOG that does not rely on semantic features from visual recognition, effectively overcoming the viewpoint sensitivity of model-based approaches. Our main proposals include: 1) an object-part-task ontology for functional part selection based on intuitive human commands, constructed using a Large Language Model (LLM); 2) a sampling-based geometric analysis method for identifying the selected object part from observed point clouds, incorporating multiple point distribution and distance metrics; and 3) a similarity matching framework for imitative grasp planning, utilizing similar known objects with pre-existing segmentation and grasping knowledge as references to guide the planning for unknown targets. We validate the high accuracy of our approach in functional part selection, identification, and grasp generation through real-world experiments. Additionally, we demonstrate the method's generalization capabilities to novel-category objects by extending existing ontological knowledge, showcasing its adaptability to a broad range of objects and tasks.",
+    "link": "http://arxiv.org/abs/2603.26412v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26364v1",
+    "title": "LLaDA-TTS: Unifying Speech Synthesis and Zero-Shot Editing via Masked Diffusion Modeling",
+    "authors": [
+      "Xiaoyu Fan",
+      "Huizhi Xie",
+      "Wei Zou",
+      "Yunzhang Chen"
+    ],
+    "summary": "Large language model (LLM)-based text-to-speech (TTS) systems achieve remarkable naturalness via autoregressive (AR) decoding, but require N sequential steps to generate N speech tokens. We present LLaDA-TTS, which replaces the AR LLM with a masked diffusion model that completes generation in a fixed number of parallel steps, decoupling inference latency from sequence length. Remarkably, using only 50 hours of fine-tuning data, we successfully transfer a pretrained AR checkpoint to the masked diffusion paradigm via bidirectional attention. At 64 steps, LLaDA-TTS achieves 0.98% CER (zh) and 1.96% WER (en) on Seed-TTS-Eval, matching the original CosyVoice 3 baseline performance while delivering a 2x LLM-stage speedup--a notable acceleration achieved despite the absence of KV cache, an optimization the AR baseline heavily relies on. Beyond acceleration, the bidirectional architecture naturally enables zero-shot speech editing--including word-level insertion, deletion, and substitution--without any additional training. Theoretically, we prove that AR-pretrained weights are near-optimal for bidirectional masked prediction under the locality property of acoustic tokens, explaining this rapid convergence. This general method modifies only the attention mask and objective, applying seamlessly to any LLM-based AR TTS system. Code and audio samples will be available at https://deft-piroshki-b652b5.netlify.app/.",
+    "link": "http://arxiv.org/abs/2603.26364v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26363v1",
+    "title": "A Formal Framework for Uncertainty Analysis of Text Generation with Large Language Models",
+    "authors": [
+      "Steffen Herbold",
+      "Florian Lemmerich"
+    ],
+    "summary": "The generation of texts using Large Language Models (LLMs) is inherently uncertain, with sources of uncertainty being not only the generation of texts, but also the prompt used and the downstream interpretation. Within this work, we provide a formal framework for the measurement of uncertainty that takes these different aspects into account. Our framework models prompting, generation, and interpretation as interconnected autoregressive processes that can be combined into a single sampling tree. We introduce filters and objective functions to describe how different aspects of uncertainty can be expressed over the sampling tree and demonstrate how to express existing approaches towards uncertainty through these functions. With our framework we show not only how different methods are formally related and can be reduced to a common core, but also point out additional aspects of uncertainty that have not yet been studied.",
+    "link": "http://arxiv.org/abs/2603.26363v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
+    "id": "http://arxiv.org/abs/2603.26329v1",
+    "title": "Large Language Models for Software Testing Education: an Experience Report",
+    "authors": [
+      "Peng Yang",
+      "Yunfeng Zhu",
+      "Chao Chang",
+      "Shengcheng Yu",
+      "Zhenyu Chen",
+      "Yong Tang"
+    ],
+    "summary": "The rapid integration of Large Language Models (LLMs) into software engineering practice is reshaping how software testing activities are performed. LLMs are increasingly used to support software testing. Consequently, software testing education must evolve to prepare students for this new paradigm. However, while students have already begun to use LLMs in an ad hoc manner for testing tasks, there is limited empirical understanding of how such usage influences their testing behaviors, judgment, and learning outcomes. It is necessary to conduct a systematic investigation into how students learn to evaluate, control, and refine LLM-assisted testing results.   This paper presents a mixed-methods, two-phase exploratory study on human-LLM collaboration in software testing education. In Phase I, we analyze classroom learning artifacts and interaction records from 15 students, together with a large-scale survey conducted in a national software testing competition (337 valid responses), to identify recurring prompt-related difficulties across testing tasks. The results reveal systematic interaction breakdowns, including missing contextual information, insufficient constraints, rigid one-shot prompting, and limited strategy-driven iteration, with automated test script generation emerging as a particularly heterogeneous and effort-intensive interaction context. Building on these findings, Phase II conducts an illustrative classroom practice that operationalizes the observed breakdowns into a lightweight, stage-aware prompt scaffold for test script generation, guiding students to explicitly articulate execution-relevant information such as environmental assumptions, interaction grounding, synchronization, and validation intent, and reporting descriptive shifts in students' testing-related articulation when interacting with LLMs.",
+    "link": "http://arxiv.org/abs/2603.26329v1",
+    "date": "2026-03-27",
+    "fetched_at": "2026-03-30"
+  },
+  {
     "id": "http://arxiv.org/abs/2603.22282v1",
     "title": "UniMotion: A Unified Framework for Motion-Text-Vision Understanding and Generation",
     "authors": [
