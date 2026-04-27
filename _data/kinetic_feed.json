@@ -1,5 +1,363 @@
 [
   {
+    "id": "http://arxiv.org/abs/2604.22750v1",
+    "title": "How Do AI Agents Spend Your Money? Analyzing and Predicting Token Consumption in Agentic Coding Tasks",
+    "authors": [
+      "Longju Bai",
+      "Zhemin Huang",
+      "Xingyao Wang",
+      "Jiao Sun",
+      "Rada Mihalcea",
+      "Erik Brynjolfsson",
+      "Alex Pentland",
+      "Jiaxin Pei"
+    ],
+    "summary": "The wide adoption of AI agents in complex human workflows is driving rapid growth in LLM token consumption. When agents are deployed on tasks that require a significant amount of tokens, three questions naturally arise: (1) Where do AI agents spend the tokens? (2) Which models are more token-efficient? and (3) Can agents predict their token usage before task execution? In this paper, we present the first systematic study of token consumption patterns in agentic coding tasks. We analyze trajectories from eight frontier LLMs on SWE-bench Verified and evaluate models' ability to predict their own token costs before task execution. We find that: (1) agentic tasks are uniquely expensive, consuming 1000x more tokens than code reasoning and code chat, with input tokens rather than output tokens driving the overall cost; (2) token usage is highly variable and inherently stochastic: runs on the same task can differ by up to 30x in total tokens, and higher token usage does not translate into higher accuracy; instead, accuracy often peaks at intermediate cost and saturates at higher costs; (3) models vary substantially in token efficiency: on the same tasks, Kimi-K2 and Claude-Sonnet-4.5, on average, consume over 1.5 million more tokens than GPT-5; (4) task difficulty rated by human experts only weakly aligns with actual token costs, revealing a fundamental gap between human-perceived complexity and the computational effort agents actually expend; and (5) frontier models fail to accurately predict their own token usage (with weak-to-moderate correlations, up to 0.39) and systematically underestimate real token costs. Our study offers new insights into the economics of AI agents and can inspire future research in this direction.",
+    "link": "http://arxiv.org/abs/2604.22750v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22749v1",
+    "title": "Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities",
+    "authors": [
+      "Ilana Nguyen",
+      "Harini Suresh",
+      "Thema Monroe-White",
+      "Evan Shieh"
+    ],
+    "summary": "Large language models (LLMs) are increasingly used for text generation tasks from everyday use to high-stakes enterprise and government applications, including simulated interviews with asylum seekers. While many works highlight the new potential applications of LLMs, there are risks of LLMs encoding and perpetuating harmful biases about non-dominant communities across the globe. To better evaluate and mitigate such harms, more research examining how LLMs portray diverse individuals is needed. In this work, we study how national origin identities are portrayed by widely-adopted LLMs in response to open-ended narrative generation prompts. Our findings demonstrate the presence of persistent representational harms by national origin, including harmful stereotypes, erasure, and one-dimensional portrayals of Global Majority identities. Minoritized national identities are simultaneously underrepresented in power-neutral stories and overrepresented in subordinated character portrayals, which are over fifty times more likely to appear than dominant portrayals. The degree of harm is amplified when US nationality cues (e.g., ``American'') are present in input prompts. Notably, we find that the harms we identify cannot be explained away via sycophancy, as US-centric biases persist even when replacing US nationality cues with non-US national identities in the prompts. Based on our findings, we call for further exploration of cultural harms in LLMs through methodologies that center Global Majority perspectives and challenge the uncritical adoption of US-based LLMs for the classification, surveillance, and misrepresentation of the majority of our planet.",
+    "link": "http://arxiv.org/abs/2604.22749v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22747v1",
+    "title": "Code for All: Educational Applications of the \"Vibe Coding\" Hackathon in Programming Education across All Skill Levels",
+    "authors": [
+      "Ashley J. Chen",
+      "Yijia Cao",
+      "Minghao Shao",
+      "Ramesh Karri",
+      "Muhammad Shafique"
+    ],
+    "summary": "The emergence of large language models has enabled vibe coding, a natural language approach to programming in which users describe intent and AI generates or revises code, potentially broadening access to programming while preserving meaningful learning outcomes. We investigate its educational value through a month-long online hackathon that welcomed participants from multiple countries, ranging from complete beginners to experienced developers. The hackathon offered three tracks with increasing technical demands. Spark emphasized basic frontend functionality and dynamic features such as buttons, forms, and API calls. Build required backend or database integration. Launch targeted production ready web applications, including deployment. Participants were required to develop projects using only LLM generated code without manual edits and submitted complete chat histories, source code, demo videos, and functionality reports. We assessed educational effectiveness with a mixed methods design that combined standardized project evaluations across functionality, user interface and user experience design, impact, prompt quality, and code readability, along with post-hackathon surveys of perceived learning outcomes and thematic analysis of open-ended feedback. Our findings describe how participants with different backgrounds engage with vibe coding as task complexity increases, how the no manual editing constraint shapes prompting and debugging practices, and what these patterns imply for integrating AI assisted development into programming education and competitive learning environments.",
+    "link": "http://arxiv.org/abs/2604.22747v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22722v1",
+    "title": "Aligning Dense Retrievers with LLM Utility via DistillationAligning Dense Retrievers with LLM Utility via Distillation",
+    "authors": [
+      "Rajinder Sandhu",
+      "Di Mu",
+      "Cheng Chang",
+      "Md Shahriar Tasjid",
+      "Himanshu Rai",
+      "Maksims Volkovs",
+      "Ga Wu"
+    ],
+    "summary": "Dense vector retrieval is the practical backbone of Retrieval- Augmented Generation (RAG), but similarity search can suffer from precision limitations. Conversely, utility-based approaches leveraging LLM re-ranking often achieve superior performance but are computationally prohibitive and prone to noise inherent in perplexity estimation. We propose Utility-Aligned Embeddings (UAE), a framework designed to merge these advantages into a practical, high-performance retrieval method. We formulate retrieval as a distribution matching problem, training a bi-encoder to imitate a utility distribution derived from perplexity reduction using a Utility-Modulated InfoNCE objective. This approach injects graded utility signals directly into the embedding space without requiring test-time LLM inference. On the QASPER benchmark, UAE improves retrieval Recall@1 by 30.59%, MAP by 30.16% and Token F1 by 17.3% over the strong semantic baseline BGE-Base. Crucially, UAE is over 180x faster than the efficient LLM re-ranking methods preserving competitive performance, demonstrating that aligning retrieval with generative utility yields reliable contexts at scale.",
+    "link": "http://arxiv.org/abs/2604.22722v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22708v1",
+    "title": "Seeing the Whole Elephant: A Benchmark for Failure Attribution in LLM-based Multi-Agent Systems",
+    "authors": [
+      "Mengzhuo Chen",
+      "Junjie Wang",
+      "Fangwen Mu",
+      "Yawen Wang",
+      "Zhe Liu",
+      "Huanxiang Feng",
+      "Qing Wang"
+    ],
+    "summary": "Failure attribution, i.e., identifying the responsible agent and decisive step of a failure, is particularly challenging in LLM-based multi-agent systems (MAS) due to their natural-language reasoning, nondeterministic outputs, and intricate interaction dynamics. A reliable benchmark is therefore essential to guide and evaluate attribution techniques. Yet existing benchmarks rely on partially observable traces that capture only agent outputs, omitting the inputs and context that developers actually use when debugging. We argue that failure attribution should be studied under full execution observability, aligning with real-world developer-facing scenarios where complete traces, rather than only outputs, are accessible for diagnosis. To this end, we introduce TraceElephant, a benchmark designed for failure attribution with full execution traces and reproducible environments. We then systematically evaluate failure attribution techniques across various configurations. Specifically, full traces improve attribution accuracy by up to 76\\% over a partial-observation counterpart, confirming that missing inputs obscure many failure causes. TraceElephant provides a foundation for follow-up failure attribution research, promoting evaluation practices that reflect real-world debugging and supporting the development of more transparent MASs.",
+    "link": "http://arxiv.org/abs/2604.22708v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22661v1",
+    "title": "Can QPP Choose the Right Query Variant? Evaluating Query Variant Selection for RAG Pipelines",
+    "authors": [
+      "Negar Arabzadeh",
+      "Andrew Drozdov",
+      "Michael Bendersky",
+      "Matei Zaharia"
+    ],
+    "summary": "Large Language Models (LLMs) have made query reformulation ubiquitous in modern retrieval and Retrieval-Augmented Generation (RAG) pipelines, enabling the generation of multiple semantically equivalent query variants. However, executing the full pipeline for every reformulation is computationally expensive, motivating selective execution: can we identify the best query variant before incurring downstream retrieval and generation costs? We investigate Query Performance Prediction (QPP) as a mechanism for variant selection across ad-hoc retrieval and end-to-end RAG. Unlike traditional QPP, which estimates query difficulty across topics, we study intra-topic discrimination - selecting the optimal reformulation among competing variants of the same information need. Through large-scale experiments on TREC-RAG using both sparse and dense retrievers, we evaluate pre- and post-retrieval predictors under correlation- and decision-based metrics. Our results reveal a systematic divergence between retrieval and generation objectives: variants that maximize ranking metrics such as nDCG often fail to produce the best generated answers, exposing a \"utility gap\" between retrieval relevance and generation fidelity. Nevertheless, QPP can reliably identify variants that improve end-to-end quality over the original query. Notably, lightweight pre-retrieval predictors frequently match or outperform more expensive post-retrieval methods, offering a latency-efficient approach to robust RAG.",
+    "link": "http://arxiv.org/abs/2604.22661v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22659v1",
+    "title": "RealBench: A Repo-Level Code Generation Benchmark Aligned with Real-World Software Development Practices",
+    "authors": [
+      "Jia Li",
+      "Hongyi Deng",
+      "Yiran Zhang",
+      "Kechi Zhang",
+      "Tianqi Shao",
+      "Tiankuo Zhao",
+      "Weinan Wang",
+      "Zhi Jin",
+      "Ge Li",
+      "Yang Liu",
+      "Yingtao Fang",
+      "Yihong Dong"
+    ],
+    "summary": "Writing code requires significant time and effort in software development. To automate this process, researchers have made substantial progress using Large Language Models (LLMs) for code generation. Many benchmarks like HumanEval and EvoCodeBench have been created to evaluate LLMs by requiring them to generate code from natural language requirements. However, in enterprise applications and team development, developers typically write code based on structured designs or specifications rather than raw natural language descriptions. This gap between existing benchmarks and real industry development practices means that current benchmark scores may not accurately reflect how much code generation can help automate software development tasks.   To address this gap, we propose RealBench, a repository-level code generation benchmark aligned with real-world industry software development practices. Each example includes both natural language requirements and UML diagrams as system design, matching how developers typically receive specifications. Based on the constructed benchmarks, we conduct a systematic evaluation of advanced LLMs' code generation capabilities when provided with structured system designs. The experimental results reveal key insights in current LLMs' capabilities for repo-level code generation aligned with real-world software development practices. First, we notice that regarding repo-level code generation, LLMs show much worse performance and there are significant performance gaps among LLMs. Second, LLMs are good at finding and creating modules defined in UML diagrams, but the quality of generated modules is often poor due to grammar and logic errors. Third, generating the entire repository at once is the best generation strategy on smaller repositories, while generating a complex repository with the module-by-module strategy works better compared to other strategies.",
+    "link": "http://arxiv.org/abs/2604.22659v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22606v1",
+    "title": "Dharma, Data and Deception: An LLM-Powered Rhetorical Analysis of Cow-Urine Health Claims on YouTube",
+    "authors": [
+      "Sheza Munir",
+      "Ratna Kandala",
+      "Anamta Khan",
+      " Deepti",
+      "Joyojeet Pal"
+    ],
+    "summary": "Health misinformation remains one of the most pressing challenges on social media, particularly when cultural traditions intersect with scientific-sounding claims. These dynamics are not only global but also deeply local, manifesting in culturally specific controversies that require careful analysis. Motivated by this, we examine 100 YouTube transcripts that promote or debunk cow urine (gomutra) as a health remedy, focusing on rhetorical strategies such as appeals to authority, efficacy appeals, and conspiracy framing. We employ large language models (LLMs) including GPT-4, GPT-4o, GPT-4.1, GPT-5, Gemini 2.5 Pro, and Mistral Medium 3 to annotate transcripts using a 14-category taxonomy of persuasive tactics. Our analysis reveals that promoters predominantly rely on efficacy appeals and social proof, while debunkers emphasize authority and rebuttal. Human evaluation of a subset of annotations yielded 90.1\\% inter-annotator agreement, confirming the reliability of our taxonomy and validation process. This work advances computational methods for misinformation analysis and demonstrates how LLMs can support large-scale studies of cultural discourse online.",
+    "link": "http://arxiv.org/abs/2604.22606v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22601v1",
+    "title": "From Natural Language to Verified Code: Toward AI Assisted Problem-to-Code Generation with Dafny-Based Formal Verification",
+    "authors": [
+      "Md Erfan",
+      "Md Kamal Hossain Chowdhury",
+      "Ahmed Ryan",
+      "Md Rayhanur Rahman"
+    ],
+    "summary": "Large Language Models (LLMs) show promise in automated software engineering, yet their guarantee of correctness is frequently undermined by erroneous or hallucinated code. To enforce model honesty, formal verification requires LLMs to synthesize implementation logic alongside formal specifications that are subsequently proven correct by a mathematical verifier. However, the transition from informal natural language to precise formal specification remains an arduous task. Our work addresses this by providing the NaturalLanguage2VerifiedCode (NL2VC)-60 dataset: a collection of 60 complex algorithmic problems. We evaluate 11 randomly selected problem sets across seven open-weight LLMs using a tiered prompting strategy: contextless prompts, signature prompts providing structural anchors, and self-healing prompts utilizing iterative feedback from the Dafny verifier. To address vacuous verification, where models satisfy verifiers with trivial specifications, we integrate the uDebug platform to ensure functional validation. Our results show that while contextless prompting leads to near-universal failure, structural signatures and iterative self-healing facilitate a dramatic performance turnaround. Specifically, Gemma 4-31B achieved a 90.91\\% verification success rate, while GPT-OSS 120B rose from zero to 81.82\\% success with signature-guided feedback. These findings indicate that formal verification is now attainable for open-weight LLMs, which serve as effective apprentices for synthesizing complex annotations and facilitating high-assurance software development.",
+    "link": "http://arxiv.org/abs/2604.22601v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22597v1",
+    "title": "Rethinking Math Reasoning Evaluation: A Robust LLM-as-a-Judge Framework Beyond Symbolic Rigidity",
+    "authors": [
+      "Erez Yosef",
+      "Oron Anschel",
+      "Shunit Haviv Hakimi",
+      "Asaf Gendler",
+      "Adam Botach",
+      "Nimrod Berman",
+      "Igor Kviatkovsky"
+    ],
+    "summary": "Recent advancements in large language models have led to significant improvements across various tasks, including mathematical reasoning, which is used to assess models' intelligence in logical reasoning and problem-solving. Models are evaluated on mathematical reasoning benchmarks by verifying the correctness of the final answer against a ground truth answer. A common approach for this verification is based on symbolic mathematics comparison, which fails to generalize across diverse mathematical representations and solution formats. In this work, we offer a robust and flexible alternative to rule-based symbolic mathematics comparison. We propose an LLM-based evaluation framework for evaluating model-generated answers, enabling accurate evaluation across diverse mathematical representations and answer formats. We present failure cases of symbolic evaluation in two popular frameworks, Lighteval and SimpleRL, and compare them to our approach, demonstrating clear improvements over commonly used methods. Our framework enables more reliable evaluation and benchmarking, leading to more accurate performance monitoring, which is important for advancing mathematical problem-solving and intelligent systems.",
+    "link": "http://arxiv.org/abs/2604.22597v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22575v1",
+    "title": "SpikingBrain2.0: Brain-Inspired Foundation Models for Efficient Long-Context and Cross-Platform Inference",
+    "authors": [
+      "Yuqi Pan",
+      "Jinghao Zhuang",
+      "Yupeng Feng",
+      "Fangzhi Zhong",
+      "Siyu Ding",
+      "Xuerui Qiu",
+      "Shaowei Gu",
+      "Bohan Sun",
+      "Zhiyong Qin",
+      "Yibo Zhong",
+      "Lingtao Ouyang",
+      "Kun Yang",
+      "Zehao Liu",
+      "Yuhong Chou",
+      "Shurong Wang",
+      "Anjie Hu",
+      "Han Xu",
+      "Bo Xu",
+      "Guoqi Li"
+    ],
+    "summary": "Scaling context length is reshaping large-model development, yet full-attention Transformers suffer from prohibitive computation and inference bottlenecks at long sequences. A key challenge is to design foundation models that maintain performance and long-context efficiency with minimal training overhead. We introduce SpikingBrain2.0 (SpB2.0), a 5B model that advances both architecture and training efficiency of its predecessor.   Our contributions are two-fold. (1) Architectural Innovation: We propose Dual-Space Sparse Attention (DSSA), an inter-layer hybrid of Sparse Softmax Attention (MoBA) and Sparse Linear Attention (SSE), achieving an improved performance-efficiency trade-off for long-context modeling. SpB2.0 further supports dual quantization paths: INT8-Spiking coding enables sparse event-driven computation, while FP8 coding accelerates inference on modern GPUs. (2) Enhanced Training Strategy: We develop an optimized Transformer-to-Hybrid (T2H) pipeline with dual conversion paths for LLMs and VLMs using curated open-source data.   Empirically, SpB2.0-5B and SpB2.0-VL-5B recover most of the base Transformer (Qwen3-4B) capability with under 7k A100 GPU hours. SpB2.0 achieves a 10.13x TTFT speedup at 4M context and supports over 10M tokens on 8 A100 GPUs under vLLM, where full-attention models exceed memory limits. It also demonstrates strong cross-platform compatibility, enabling FP8 GPU inference (2.52x speedup at 250k) and efficient neuromorphic execution (64.31% sparsity, with 70.6% and 46.5% area and power reduction at 500MHz).   Overall, SpikingBrain2.0 provides a practical pathway for lightweight, multimodal, spiking foundation models, highlighting the potential of combining brain-inspired mechanisms with efficient architectures for resource-constrained and edge scenarios.",
+    "link": "http://arxiv.org/abs/2604.22575v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22571v1",
+    "title": "LARA: Validation-Driven Agentic Supercomputer Workflows for Atomistic Modeling",
+    "authors": [
+      "William Dawson",
+      "Louis Beal",
+      "Yoann Cur\u00e9",
+      "Giuseppe Fisicaro",
+      "Dorian Rolland",
+      "Luigi Genovese"
+    ],
+    "summary": "Large language models (LLMs) and agentic systems have recently demonstrated potential for automating scientific workflows, including atomistic simulations. However, their deployment in high-performance computing (HPC) environments remains limited by the lack of mechanisms ensuring correctness, reproducibility, and safe interaction with computational resources. Generated workflows suffer from inconsistencies, incorrect API usage, or invalid physical configurations - leading to failed or unreliable simulations. In this work, we introduce LARA-HPC, a validation-driven agentic framework to enable reliable workflow generation for atomistic modeling on HPC systems. Our approach is based on three key components: (i) a controlled execution layer that mediates all interactions with HPC resources; (ii) simulation-native validation through dry-run capabilities, enabling execution-level verification without incurring resource cost; and (iii) a multi-phase agentic pipeline combining retrieval-augmented generation and iterative refinement. We demonstrate the effectiveness of this approach performing an end-to-end atomistic simulation workflow on HPC by applying LARA-HPC to Density Functional Theory simulations. The results show that validation-driven generation significantly improves robustness and enables iterative correction of both syntactic and physical inconsistencies. More broadly, this work advocates for a shift from generation-first to validation-first paradigms in Artificial Intelligence (AI) assisted scientific computing. We argue that the future task of the computational physics community is to develop domain specific agentic systems based on structured tooling to realize an HPC enabled co-piloted research ecosystem.",
+    "link": "http://arxiv.org/abs/2604.22571v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22565v1",
+    "title": "Learning Evidence Highlighting for Frozen LLMs",
+    "authors": [
+      "Shaoang Li",
+      "Yanhang Shi",
+      "Yufei Li",
+      "Mingfu Liang",
+      "Xiaohan Wei",
+      "Yunchen Pu",
+      "Fei Tian",
+      "Chonglin Sun",
+      "Frank Shyu",
+      "Luke Simon",
+      "Sandeep Pandey",
+      "Xi Liu",
+      "Jian Li"
+    ],
+    "summary": "Large Language Models (LLMs) can reason well, yet often miss decisive evidence when it is buried in long, noisy contexts. We introduce HiLight, an Evidence Emphasis framework that decouples evidence selection from reasoning for frozen LLM solvers. HiLight avoids compressing or rewriting the input, which can discard or distort evidence, by training a lightweight Emphasis Actor to insert minimal highlight tags around pivotal spans in the unaltered context. A frozen Solver then performs downstream reasoning on the emphasized input. We cast highlighting as a weakly supervised decision-making problem and optimize the Actor with reinforcement learning using only the Solver's task reward, requiring no evidence labels and no access to or modification of the Solver. Across sequential recommendation and long-context question answering, HiLight consistently improves performance over strong prompt-based and automated prompt-optimization baselines. The learned emphasis policy transfers zero-shot to both smaller and larger unseen Solver families, including an API-based Solver, suggesting that the Actor captures genuine, reusable evidence structure rather than overfitting to a single backbone.",
+    "link": "http://arxiv.org/abs/2604.22565v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22549v1",
+    "title": "ASPIRE: Make Spectral Graph Collaborative Filtering Great Again via Adaptive Filter Learning",
+    "authors": [
+      "Yunhang He",
+      "Cong Xu",
+      "Zhangchi Zhu",
+      "Hongzhi Yin",
+      "Wei Zhang"
+    ],
+    "summary": "Graph filter design is central to spectral collaborative filtering, yet most existing methods rely on manually tuned hyperparameters rather than fully learnable filters. We show that this challenge stems from a bias in traditional recommendation objectives, which induces a spectral phenomenon termed low-frequency explosion, thereby fundamentally hindering the effective learning of graph filters. To overcome this limitation, we propose a novel adaptive spectral graph collaborative filtering framework (ASPIRE) based on a bi-level optimization objective. Guided by our theoretical analysis, we disentangle the filter learning objective, which in turn leads to excellent recommendation performance, spectral adaptivity, and training stability in practice. Extensive experiments show our learned filters match the performance of carefully engineered task-specific designs. Furthermore, ASPIRE is equally effective in LLM-powered collaborative filtering. Our findings demonstrate that graph filter learning is viable and generalizable, paving the way for more expressive graph neural networks in collaborative filtering.",
+    "link": "http://arxiv.org/abs/2604.22549v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22542v1",
+    "title": "Controllable Spoken Dialogue Generation: An LLM-Driven Grading System for K-12 Non-Native English Learners",
+    "authors": [
+      "Haidong Yuan",
+      "Haokun Zhao",
+      "Wanshi Xu",
+      "Songjun Cao",
+      "Qingyu Zhou",
+      "Long Ma",
+      "Hongjie Fan"
+    ],
+    "summary": "Large language models (LLMs) often fail to meet the pedagogical needs of K-12 English learners in non-native contexts due to a proficiency mismatch. To address this widespread challenge, we introduce a proficiency-aligned framework that adapts LLM outputs to learner abilities, using China's national curriculum (CSE) as a representative case. Our framework enables precise control over lexical complexity through a four-tier grading system, supported by a comprehensive suite of new resources: graded vocabulary lists and a multi-turn dialogue corpus.   Our core technical contribution is the \\textbf{DDPO} algorithm,Diversity Driven Policy Optimization, a multi-turn GRPO-based approach designed to preserve dialogue diversity while holistically optimizing dialogue quality. This method significantly outperforms conventional approaches, achieving low out-of-vocabulary rates and high diversity while enhancing conversational naturalness and pedagogical value. While grounded in the CSE, our framework is designed for flexibility and can be readily adapted to other educational standards. Our models, data, and code will all be open-sourced, providing a scalable platform for personalized English speaking practice that effectively addresses the unique challenges faced by K-12 learners in non-immersive environments.",
+    "link": "http://arxiv.org/abs/2604.22542v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22541v1",
+    "title": "Dr.Sai: An agentic AI for real-world physics analysis at BESIII",
+    "authors": [
+      "Mingfeng He",
+      "Fayu Jiang",
+      "Junkun Jiao",
+      "Mingrun Li",
+      "Ke Li",
+      "Yipu Liao",
+      "Beijiang Liu",
+      "Tong Liu",
+      "Fazhi Qi",
+      "Zijie Shang",
+      "Weimin Song",
+      "Yue Sun",
+      "Xiongfei Wang",
+      "Hong Wang",
+      "Dongbo Xiong",
+      "Changzheng Yuan",
+      "Bolun Zhang",
+      "Zhengde Zhang",
+      "Xuliang Zhu"
+    ],
+    "summary": "High Energy Physics (HEP) experiments like BESIII produce petabyte-scale data. Extracting physics results requires complex workflows (simulation, reconstruction, statistical analysis, etc.) that traditionally take experts months or years. Current manual methods are labor-intensive, prone to bias, and limit large-scale systematic scans. As data grows, this paradigm slows discovery. Large Language Models (LLMs) offer a solution. Their natural language understanding and code generation capabilities allow them to interpret scientific tasks and integrate with HEP tools (e.g., ROOT, BOSS) to act as an \"AI partner\" for autonomous analysis. We present Dr.Sai, an LLM-powered multi-agent system that translates natural language into rigorous physics workflows. As validation, Dr.Sai performed large-scale re-measurements of ten J/psi decay branching fractions - without manual coding. It successfully navigated the real BESIII computing environment and produced results matching established benchmarks. The article details Dr.Sai's architecture, the validation results, and performance evaluation. This work provides a blueprint for autonomous discovery, with relevance to other data-intensive fields like astronomy and genomics.",
+    "link": "http://arxiv.org/abs/2604.22541v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22534v1",
+    "title": "FeatEHR-LLM: Leveraging Large Language Models for Feature Engineering in Electronic Health Records",
+    "authors": [
+      "Hojjat Karami",
+      "David Atienza",
+      "Jean-Philippe Thiran",
+      "Anisoara Ionescu"
+    ],
+    "summary": "Feature engineering for Electronic Health Records (EHR) is complicated by irregular observation intervals, variable measurement frequencies, and structural sparsity inherent to clinical time series. Existing automated methods either lack clinical domain awareness or assume clean, regularly sampled inputs, limiting their applicability to real-world EHR data. We present \\textbf{FeatEHR-LLM}, a framework that leverages Large Language Models (LLMs) to generate clinically meaningful tabular features from irregularly sampled EHR time series. To limit patient privacy exposure, the LLM operates exclusively on dataset schemas and task descriptions rather than raw patient records. A tool-augmented generation mechanism equips the LLM with specialized routines for querying irregular temporal data, enabling it to produce executable feature-extraction code that explicitly handles uneven observation patterns and informative sparsity. FeatEHR-LLM supports both univariate and multivariate feature generation through an iterative, validation-in-the-loop pipeline. Evaluated on eight clinical prediction tasks across four ICU datasets, our framework achieves the highest mean AUROC on 7 out of 8 tasks, with improvements of up to 6 percentage points over strong baselines. Code is available at github.com/hojjatkarami/FeatEHR-LLM.",
+    "link": "http://arxiv.org/abs/2604.22534v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22520v1",
+    "title": "RouteLMT: Learned Sample Routing for Hybrid LLM Translation Deployment",
+    "authors": [
+      "Yingfeng Luo",
+      "Hongyu Liu",
+      "Dingyang Lin",
+      "Kaiyan Chang",
+      "Chenglong Wang",
+      "Bei Li",
+      "Quan Du",
+      "Tong Xiao",
+      "Jingbo Zhu"
+    ],
+    "summary": "Large Language Models (LLMs) have achieved remarkable performance in Machine Translation (MT), but deploying them at scale remains prohibitively expensive. A widely adopted remedy is the hybrid system paradigm, which balances cost and quality by serving most requests with a small model and selectively routing a fraction to a large model. However, existing routing strategies often rely on heuristics, external predictors, or absolute quality estimation, which fail to capture whether the large model actually provides a worthwhile improvement over the small one. In this paper, we formulate routing as a budget allocation problem and identify marginal gain, i.e., the large model's improvement over the small model, as the optimal signal for budgeted decisions. Building on this, we propose \\textbf{RouteLMT} (routing for LLM-based MT), an efficient in-model router that predicts this expected gain by probing the small translators prompt-token representation, without requiring external models or hypothesis decoding. Extensive experiments demonstrate that our RouteLMT outperforms heuristics, quality/difficulty estimation baselines, achieving a superior quality-budget Pareto frontier. Furthermore, we analyze regression risks and show that a simple guarded variant can mitigate severe quality losses.",
+    "link": "http://arxiv.org/abs/2604.22520v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22517v1",
+    "title": "Aggregate vs. Personalized Judges in Business Idea Evaluation: Evidence from Expert Disagreement",
+    "authors": [
+      "Wataru Hirota",
+      "Tomoki Taniguchi",
+      "Tomoko Ohkuma",
+      "Kosuke Takahashi",
+      "Takahiro Omi",
+      "Kosuke Arima",
+      "Takuto Asakura",
+      "Chung-Chi Chen",
+      "Tatsuya Ishigaki"
+    ],
+    "summary": "Evaluating LLM-generated business ideas is often harder to scale than generating them. Unlike standard NLP benchmarks, business idea evaluation relies on multi-dimensional criteria such as feasibility, novelty, differentiation, user need, and market size, and expert judgments often disagree. This paper studies a methodological question raised by such disagreement: should an automatic judge approximate an aggregate consensus, or model evaluators individually? We introduce PBIG-DATA, a dataset of approximately 3,000 individual scores across 300 patent-grounded product ideas, provided by domain experts on six business-oriented dimensions: specificity, technical validity, innovativeness, competitive advantage, need validity, and market size. Analyses show substantial expert disagreement on fine-grained ordinal scores, while agreement is higher under coarse selection, suggesting structured heterogeneity rather than random noise. We then compare three judge configurations: a rubric-only zero-shot judge, an aggregate judge conditioned on mixed evaluator histories, and a personalized judge conditioned on the target evaluator's scoring history. Across dimensions and model sizes, personalized judges align more closely with the corresponding evaluator than aggregate judges, and evaluator agreement correlates with similarity of judge-generated reasoning only under personalized conditioning. These results indicate that pooled labels can be a fragile target in pluralistic evaluation settings and motivate evaluator-conditioned judge designs for business idea assessment.",
+    "link": "http://arxiv.org/abs/2604.22517v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
+    "id": "http://arxiv.org/abs/2604.22513v1",
+    "title": "Benchmarking LLM-Driven Network Configuration Repair",
+    "authors": [
+      "Ioannis Protogeros",
+      "Rufat Asadli",
+      "Benjamin Hoffman",
+      "Laurent Vanbever"
+    ],
+    "summary": "There is a rapidly growing interest in using Large Language Models (LLMs) to automate complex network operations, but their reliable adoption requires rigorous assessment of their effectiveness and safety. Existing benchmarks do not address whether LLMs can successfully resolve errors in large-scale, interdependent network configurations without introducing new disruptions. Developing such a benchmark is challenging: scenarios must be diverse and increasingly complex, yet their evaluation must be straightforward and meaningful. In this paper, we present Cornetto, the first benchmark to evaluate LLM-driven network configuration repair functionally and at scale. Cornetto features a generation pipeline that synthesizes representative and plausible misconfiguration scenarios, coupled with an evaluation framework that uses formal verification to assess functional correctness of proposed fixes against ground-truth specifications. Using this pipeline, we synthesize a dataset of 231 problems for fixing configurations across varying network topologies (20--754 nodes) and diverse protocols. We evaluate 9 state-of-the-art LLMs and find that while they show promise, they often introduce regressions and their performance degrades at scale. Our results indicate that reliable LLM-powered network automation requires integrating LLMs into iterative workflows guided by formal verification.",
+    "link": "http://arxiv.org/abs/2604.22513v1",
+    "date": "2026-04-24",
+    "fetched_at": "2026-04-27"
+  },
+  {
     "id": "http://arxiv.org/abs/2604.09547v1",
     "title": "Tango: Taming Visual Signals for Efficient Video Large Language Models",
     "authors": [
