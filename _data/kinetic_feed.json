@@ -1,5 +1,315 @@
 [
   {
+    "id": "http://arxiv.org/abs/2605.23904v1",
+    "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
+    "authors": [
+      "Yifan Yang",
+      "Ziyang Gong",
+      "Weiquan Huang",
+      "Qihao Yang",
+      "Ziwei Zhou",
+      "Zisu Huang",
+      "Yan Li",
+      "Xuemei Gao",
+      "Qi Dai",
+      "Bei Liu",
+      "Kai Qiu",
+      "Yuqing Yang",
+      "Dongdong Chen",
+      "Xue Yang",
+      "Chong Luo"
+    ],
+    "summary": "Agent skills today are hand-crafted, generated one-shot, or evolved through loosely controlled self-revision, none of which behaves like a deep-learning optimizer for the skill, and none of which reliably improves over its starting point under feedback. We argue the skill should instead be trained as the external state of a frozen agent, with the same discipline that makes weight-space optimization reproducible. SkillOpt is, to our knowledge, the first systematic controllable text-space optimizer for agent skills: a separate optimizer model turns scored rollouts into bounded add/delete/replace edits on a single skill document, and an edit is accepted only when it strictly improves a held-out validation score. A textual learning-rate budget, rejected-edit buffer, and epoch-wise slow/meta update make skill training stable while adding zero inference-time model calls at deployment. Across six benchmarks, seven target models, and three execution harnesses (direct chat, Codex, Claude Code), SkillOpt is best or tied on all 52 evaluated (model, benchmark, harness) cells and beats every per-cell competitor among human, one-shot LLM, Trace2Skill, TextGrad, GEPA, and EvoSkill skills. On GPT-5.5 it lifts the average no-skill accuracy by +23.5 points in direct chat, by +24.8 inside the Codex agentic loop, and by +19.1 inside Claude Code. Transfer experiments further show that optimized skill artifacts retain value when moved across model scales, between Codex and Claude Code execution environments, and to a nearby math benchmark without further optimization.",
+    "link": "http://arxiv.org/abs/2605.23904v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23901v1",
+    "title": "LLMs as Noisy Channels: A Shannon Perspective on Model Capacity and Scaling Laws",
+    "authors": [
+      "Xu Ouyang",
+      "Deyi Liu",
+      "Yuhang Cai",
+      "Jing Liu",
+      "Yuan Yang",
+      "Chen Zheng",
+      "Thomas Hartvigsen",
+      "Yiyuan Ma"
+    ],
+    "summary": "Existing scaling laws for Large Language Models (LLMs), predominantly monotonic power laws, fail to explain emerging non-monotonic phenomena such as catastrophic overtraining and quantization-induced degradation, where performance deteriorates despite increased compute.   We propose the Shannon Scaling Law, a unified theoretical framework that models LLM training as information transmission over a noisy channel, grounded in the Shannon-Hartley theorem. By mapping model parameters to channel bandwidth and training tokens to signal power, our formulation explicitly captures the interaction between learning signal and intrinsic noise. This perspective reveals a fundamental Shannon capacity for LLMs: scaling model size or data without preserving a sufficient signal-to-noise ratio (SNR) inevitably amplifies noise, inducing a transition from monotonic improvement to U-shaped performance degradation.   We validate our theory through experiments on Pythia and OLMo2 under perturbations, including Gaussian noise, quantization and supervised fine-tuning on math, QA and code tasks. The Shannon Scaling Law consistently outperforms classical scaling laws and recent perturbation-aware laws, achieving strong $R^2$ scores and accurately capturing loss basins missed by prior approaches. It also extrapolates: fitted on $\\leq$6.9B Pythia models with $\\leq$180B tokens, it predicts the unseen 12B model up to 307B tokens at pooled $R^2{=}0.847$, while monotonic baselines collapse.",
+    "link": "http://arxiv.org/abs/2605.23901v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23867v1",
+    "title": "Human Decision-Making with Persuasive and Narrative LLM Explanations",
+    "authors": [
+      "Laura R. Marusich",
+      "Mary Grace Kozuch Dhooghe",
+      "Jonathan Z. Bakdash",
+      "Murat Kantarcioglu"
+    ],
+    "summary": "Large language models (LLMs) have the potential to aid and improve human decision-making in classification tasks, not only by providing fairly accurate predictions, but also in their ability to generate cogent narrative explanations of those predictions. Prior work has demonstrated that people generally find AI narrative explanations to be understandable, trustworthy, and convincing for changing beliefs and opinions; however, less is known about the impact of narrative explanations on objective human decision-making performance. Here we conduct a large-scale human behavioral experiment to evaluate decision-making performance with LLM-generated narrative explanations of varying persuasiveness. We found the degree of persuasiveness, or lack thereof, for LLM-based explanations did not meaningfully impact decision accuracy over a simple AI prediction alone, in agreement with typical results with explainable AI based on feature importance. We found evidence that narratives increased reliance on AI, but both when the AI prediction was correct and incorrect. Exploratory analyses also indicated that the more persuasive narratives may have had a detrimental effect on decision response times and the ability to discriminate between a correct and incorrect AI prediction. Overall, this work indicates that including narrative explanations with AI predictions may involve tradeoffs for decision-making performance, and more work is needed to determine how and when narrative explanations impact human decision-making.",
+    "link": "http://arxiv.org/abs/2605.23867v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23859v1",
+    "title": "Natural Yet Challenging to Detect: Robust In-the-Wild TTS through EMA and Dual-Scoring Prompt Selection -- Submission for WildSpoof 2026 TTS Track",
+    "authors": [
+      "Renhe Sun",
+      "Jiayi Zhou",
+      "Haolin He",
+      "Yueying Feng",
+      "Jian Liu"
+    ],
+    "summary": "In this technical report, we describe our submission for the WildSpoof Challenge TTS Track: Text-to-Speech with In-the-Wild Data. We introduce F5-TTS-DPS, a model built upon the F5-TTS architecture. Our approach integrates Exponential Moving Average (EMA) into supervised fine-tuning to stabilize training and improve generalization. To enhance synthesis fidelity, we leverage large language models (LLMs) and large audio language models (LALMs) for dual-scoring prompt selection, filtering reference audio and text prompts to ensure quality while addressing alignment issues in noisy datasets.   Experimental evaluation demonstrates that F5-TTS-DPS achieves strong performance with UTMOS of 3.20 and speaker similarity of 0.51 on the development set. More importantly, our model achieves the best a-DCF scores of 0.1582, 0.5233, and 0.2562 across three advanced SASV systems among all submissions, indicating our synthesized speech is the most difficult to detect and exhibits the highest degree of naturalness and authenticity. Combined with competitive WER performance, these results validate the effectiveness of our approach in generating natural-sounding speech with strong spoofing capabilities.",
+    "link": "http://arxiv.org/abs/2605.23859v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23857v1",
+    "title": "Strong Teacher Not Needed? On Distillation in LLM Pretraining",
+    "authors": [
+      "Taiming Lu",
+      "Zhuang Liu"
+    ],
+    "summary": "Knowledge distillation generally assumes a strong-to-weak relationship where stronger teachers yield better students. In this work, we examine this assumption about distillation in large language model pretraining. By varying architecture sizes and training token budgets, we create strong-to-weak, same-level, and weak-to-strong teacher-student relationships, and study distillation's effectiveness under each. We find that the teacher need not be strong: with proper mixing of the language modeling and knowledge distillation losses, even small and undertrained teachers improve larger students. At the same time, a stronger teacher is not always better: pushing the teacher further, through more parameters or more training tokens, can saturate or even reverse the distillation gains. We further observe that distillation improves generalization (out-of-distribution and downstream performance) more readily than in-domain fitting. Together, these results challenge the common belief that distillation pretraining always requires a strong teacher.",
+    "link": "http://arxiv.org/abs/2605.23857v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23826v1",
+    "title": "Decomposing Queries into Tool Calls for Long-Video Keyframe Retrieval",
+    "authors": [
+      "Michal Shlapentokh-Rothman",
+      "Prachi Garg",
+      "Yu-Xiong Wang",
+      "Derek Hoiem"
+    ],
+    "summary": "Keyframe selection is a direct way to provide verifiable visual evidence for long-video question answering (QA). Queries differ in what they require, and finding the right frames depends on knowing what to look for. Existing keyframe selectors either score every frame against a single query, or decompose the query into a fixed schema evaluated by a single visual tool. We propose ToolMerge, a keyframe retrieval method based on decomposition and merging: an Large Language Model (LLM) based planner decomposes the query into tool calls and specifies how their per-tool rankings are merged using boolean operators. To evaluate retrieval directly, we construct Molmo-2 Moments (M2M), a benchmark in which every question is anchored to a specific time interval by construction. Across QA, question retrieval, and caption retrieval, ToolMerge is competitive with prior keyframe selectors, most notably on caption retrieval, outperforming other methods by 5%. Code and data can be found at https://github.com/michalsr/ToolMerge .",
+    "link": "http://arxiv.org/abs/2605.23826v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23825v1",
+    "title": "It's the humans, not the data: Geopolitical bias in LLMs originates in post-training, amplified by the language of the prompt",
+    "authors": [
+      "Stuart Bladon",
+      "Brinnae Bent"
+    ],
+    "summary": "It has generally been assumed that geopolitical bias in language models originates from the training data used during the pre-training phase. We tested seven open-weight LLM pairs consisting of the base model (pre-training only) and the chat model (pre-training and post-training) from seven labs on a paired-scenario forced-choice probe over 28 country pairs in English, French, and Chinese, and found that geopolitical bias originates in post-training rather than in pre-training. Across seven AI labs, six showed shifts in the direction associated with the country or region of the model developer after post-training. This shift is strongest in Alibaba's Qwen 2.5: while the base is neutral on China-favourability (-0.15 log-odds, p=0.15), the post-trained chat variant is at +2.91 (p<10^-4), an 18x shift in odds. We also observe shifts in biases toward other countries across all models. Additionally, the magnitude of this shift depends on the language used to prompt the model: the French-made Mistral becomes pro-France only under French prompting (FR-EN shift +1.91, p<10^-4). These findings suggest that geopolitical preferences in language models are not simply inherited from large-scale internet data but are actively shaped during post-training, highlighting the need for greater transparency, auditing, and oversight of alignment processes that influence how models represent nations, cultures, and political perspectives.",
+    "link": "http://arxiv.org/abs/2605.23825v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23821v1",
+    "title": "Hierarchical Concept Geometry in Language Models Emerges from Word Co-occurrence",
+    "authors": [
+      "Andres Nava",
+      "Matthieu Wyart"
+    ],
+    "summary": "We propose a distributional theory of how hypernymy -- the ``is-a'' relation between general and specific concepts -- is encoded geometrically in language representations. Starting from the empirically verified assumption that words closer on the WordNet hypernym graph co-occur more often, we characterize theoretically the spectrum of the resulting embedding Gram matrix of word2vec embeddings. Under mild positivity and decay conditions on the co-occurrence kernel, we prove that the leading eigenvectors first separate broad taxonomic branches and then progressively finer sub-branches, producing a \\emph{hierarchical splitting geometry} with a coarse-to-fine spectral organization that mirrors the tree. We confirm these predictions in word2vec embeddings across many sampled WordNet subtrees, and show that the same signature extends strikingly well to Gemma 2B unembeddings. Our results indicate that hierarchical concept geometry in LLMs need not reflect a hierarchy-specific functional mechanism, but emerges from the spectral structure of pairwise word statistics.",
+    "link": "http://arxiv.org/abs/2605.23821v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23820v1",
+    "title": "Inferential Privacy Leakage in Anonymized Conversational AI Logs",
+    "authors": [
+      "S M Mehedi Zaman",
+      "Kiran Garimella"
+    ],
+    "summary": "Hundreds of millions of users now hold detailed, multi-turn conversations with ChatGPT and similar LLM assistants. We measure two privacy-relevant features of these conversations on a corpus of complete ChatGPT histories donated by over 1,000 users in four Global South countries (Brazil, India, Nigeria, Pakistan). First, on explicit disclosure: 34.5% of user messages contain personal information across a twenty-category taxonomy, with the median user first revealing identifying content within the first 14% of their conversation history. Second, on inference beyond explicit disclosure: we restrict to a cohort whose conversations contain no messages flagged by an LLM-based filter for explicit demographic self-identification (a separate NER pass marks PII for the disclosure audit but does not drive cohort exclusion). On this filtered cohort, an off the shelf large language model still recovers each user's age, gender, and country at weighted F1 of 0.84, 0.90, and 0.88, respectively, with the median user identified from the first 5% of their conversation history. Reading the model's natural-language reasoning traces, we identify four recurring stereotype patterns that drive both successful inference and an asymmetric error distribution concentrating on women in technical fields, older users with contemporary skills, and Global South tech professionals. We also compare ChatGPT against the same users' Google Search and YouTube histories as inference surfaces, and find it competitive with these older substrates that have driven behavioral advertising for two decades. Message-level PII removal is insufficient on its own as a privacy intervention for conversational AI data.",
+    "link": "http://arxiv.org/abs/2605.23820v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23809v1",
+    "title": "Advanced AI Service Provisioning in O-RAN through LLM Engine Integration",
+    "authors": [
+      "Seyed Bagher Hashemi Natanzi",
+      "Pranshav Gajja",
+      "Bo Tang",
+      "Vijay K. Shah"
+    ],
+    "summary": "The Open Radio Access Network (O-RAN) architecture allows AI to be embedded directly into the RAN through modular xApps and rApps, yet creating these applications collecting data, training models, writing code, and deploying them safely remains slow and largely manual. Large Language Models (LLMs) offer strong reasoning and code-generation capabilities but are unsuited for the fast, deterministic inference required in real-time RAN control. We present a proof-of-concept Dual-Brain architecture that combines both strengths: an LLM-based orchestrator translates operator intents into data-collection policies and deployment code, while an automated ML engine, NeuralSmith, trains lightweight classifiers on demand via an API. We describe the architecture and provisioning workflow, share practical insights from a containerized O-RAN 5G~SA testbed, and discuss open research directions.",
+    "link": "http://arxiv.org/abs/2605.23809v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23787v1",
+    "title": "Engagement-Optimized Care: When LLMs become Mental Health Infrastructure",
+    "authors": [
+      "Briana Vecchione",
+      "Meryl Ye",
+      "Livia Garofalo",
+      "Ranjit Singh"
+    ],
+    "summary": "General-purpose LLMs are increasingly functioning as mental health infrastructure due to gaps in care left by provider shortages, inadequate insurance coverage, social isolation, and stigma around formal help-seeking. This shift poses a distinct problem for AI ethics: systems neither designed nor governed as care technologies are being used as such, while their dominant design incentives optimize for engagement rather than user well-being. We present findings from a qualitative, longitudinal study with 18 US-based participants who use general-purpose LLMs for socioemotional support and participated in one or more of our study phases, including initial interviews, a four-week diary study, focus groups, and exit interviews. Participants turned to LLMs because other forms of support were unavailable, unaffordable, socially costly, or inadequate. As they continued to use these systems, design features such as anthropomorphic cues, default validation, persistent responsiveness, and weak disengagement mechanisms shaped their ongoing reliance. Participants described meaningful support alongside dependency, epistemic distortion through one-sided validation, privacy expectations without corresponding legal protection, and continued use despite awareness of these risks. We argue these dynamics reflect a structurally unfair tradeoff: users accept risks because support is otherwise absent, while available systems are optimized to deepen engagement and lack care-based accountability. The paper makes three contributions: it traces the arc through which LLMs become care infrastructure and identifies distinct ethical tensions at each stage, shifts analysis from turn-based exchanges to longitudinal trajectories of use, and argues that accountability belongs at the design and incentive conditions through which these systems become care infrastructure rather than at the output or crisis-response layer.",
+    "link": "http://arxiv.org/abs/2605.23787v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23783v1",
+    "title": "Benchmarking LLMs for Community Governance Simulation with Life-history Narratives",
+    "authors": [
+      "Xu Chen",
+      "Yuanzi Li",
+      "Lei Wang",
+      "Nan Lu",
+      "Yang Wang",
+      "Anding Wang",
+      "Lei Shi",
+      "Xiaoxing Fu",
+      "Ji-Rong Wen"
+    ],
+    "summary": "Effective community governance hinges on understanding what specific residents think and need. Recent work has used large language models (LLMs) to simulate human respondents, offering a scalable, reproducible way to study human attitudes and behaviors at low cost. However, these studies typically prompt the model with just a few demographic variables (age, gender, income), simulating only general role types. This is insufficient for community governance, where decisions depend on the views of specific residents. We bridge this gap with an integrated research framework covering dataset, benchmark, algorithm, and system. The dataset comprises approximately 1.2 million characters of first-person narrative collected through two-hour semi-structured interviews with each of 92 residents in an urban community, organized around nine community-governance domains. The benchmark probes 18 mainstream LLMs across four prompting strategies and shows that adding rich life-history profiles meaningfully raises fidelity above the no-profile baseline, but this gain comes with more input tokens per call from the longer prompts they require. The algorithm, curriculum-LoRA, is a parameter-efficient personalization framework that, by closing this fidelity-cost gap, matches the strongest baseline's fidelity at roughly 10x lower per-call cost and Pareto-dominates every configuration tested. The system integrates curriculum-LoRA into a closed-loop policy-evaluation pipeline. Together, these results bring individual-level LLM-based resident simulation within reach of resource-constrained local administrations, enabling community-governance decisions to be systematically pre-evaluated in silico before real-world deployment.",
+    "link": "http://arxiv.org/abs/2605.23783v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23771v1",
+    "title": "PhotoFlow: Agentic 3D Virtual Photography Missions",
+    "authors": [
+      "Jiarui Guo",
+      "Haojia Wei",
+      "Yiming Zhang",
+      "Yifei Liu",
+      "Yuning Gong",
+      "Hongjie Zhang",
+      "Xue Yang",
+      "Zhihang Zhong"
+    ],
+    "summary": "Virtual photography asks an agent to enter a prepared 3D scene with no preselected camera pose or reference image, infer a suitable shot from scene information and a language intent, choose executable camera parameters, and render the final photograph. Recent progress in vision-language models makes this kind of spatial agent increasingly plausible, but the task stresses two capabilities that remain hard to evaluate together: complex 3D spatial understanding and abstract aesthetic judgment. We introduce PhotoFlow, a Director-Reviewer-Reflector agent for closed-loop camera search. The Director builds a soft photographic blueprint and proposes diverse candidate cameras; the Reviewer combines rule checks, visual critique, and pairwise incumbent selection; and the Reflector converts failures into region memory, dead-zone suppression, and high-explore relocation. We also introduce VPhotoBench, a benchmark of 47 open-license Blender scenes and 141 language-conditioned photography missions spanning subject placement, relational composition, and atmosphere/style. On held-out experiments, PhotoFlow achieves the strongest external quality-alignment composite and success rate among one-shot prediction, single-chain reflection, anchor-bank selection, and random search under a six-round rendering budget. To our knowledge, this is the first work to make language-conditioned virtual photography in arbitrary Blender scenes an executable agent task, and our results show that an LLM-centered spatial agent can already produce strong photographs in a setting designed to challenge both 3D reasoning and aesthetic choice.",
+    "link": "http://arxiv.org/abs/2605.23771v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23754v1",
+    "title": "LLM-driven design of physics-constrained constitutive models: two agents are better than one",
+    "authors": [
+      "Marius Tacke",
+      "Matthias Busch",
+      "Kian Abdolazizi",
+      "Jonas Eichinger",
+      "Kevin Linka",
+      "Roland Aydin",
+      "Christian Cyron"
+    ],
+    "summary": "Developing constitutive models that capture how materials deform under load traditionally requires years of specialized expertise in continuum mechanics, machine learning, and scientific programming. Large language models (LLMs) have recently been shown to lower this barrier by generating constitutive models on demand, but existing single-agent pipelines lack systematic checks that the resulting models respect fundamental physical laws. To close this gap, we introduce the first multi-agent LLM-driven approach for constitutive model generation: a Creator agent proposes a model tailored to the data, while an Inspector agent critically audits each proposal against nine physical constraints and returns it for refinement whenever a violation is detected. We demonstrate this concept with constitutive artificial neural networks (CANNs) and benchmark it on brain tissue, experimental rubber, and synthetic rubber, using two different LLM backbones (Claude Opus 4.7 and Kimi K2.5). Adding the Inspector raises the share of exported models that truly satisfy all physical constraints from 91% to a perfect 100% for Opus and from 37% to 56% for Kimi, while preserving near-baseline accuracy and remarkable generalization to unseen loading paths. In combination, the generated models are physically valid, highly accurate, and extrapolate reliably beyond the training data - properties that together make them directly usable in practice. Separating generation from inspection thus turns LLM-driven constitutive modeling into a genuinely trustworthy process. The paradigm is deliberately technique-agnostic and scales automatically with advances in LLM capability, opening a promising path toward automated, physics-aware model discovery.",
+    "link": "http://arxiv.org/abs/2605.23754v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23723v1",
+    "title": "MemAudit: Post-hoc Auditing of Poisoned Agent Memory via Causal Attribution and Structural Anomaly Detection",
+    "authors": [
+      "Zhewen Tan",
+      "Yilun Yao",
+      "Huiyan Jin",
+      "Wenhan Yu",
+      "Guoan Wang",
+      "Mengyuan Fan",
+      "liang lu",
+      "Feng Liu",
+      "Xiangzheng Zhang",
+      "Duohe Ma",
+      "Tong Yang",
+      "Lin Sun"
+    ],
+    "summary": "Large language model agents increasingly rely on persistent memory to store past interactions, retrieve relevant demonstrations, and improve long-horizon task execution. However, this memory mechanism also creates a practical security vulnerability: an adversarial user may inject malicious records into the agent's memory through ordinary interaction, and these records can later be retrieved to steer the agent's reasoning and actions. Existing defenses primarily focus on online intervention, such as prompt filtering or output blocking, but they do not address the post-hoc question of which stored memories are responsible after harmful behavior has already been observed. We propose \\textbf{MemAudit}, a post-hoc causal memory auditing framework for memory-augmented LLM agents. The framework combines two complementary signals: (1) a counterfactual memory influence score that measures each memory's causal contribution to harmful outputs, and (2) a memory consistency graph that identifies structurally anomalous memories within the broader memory store. We evaluate MemAudit against MINJA, a query-only memory injection attack in which malicious records are generated and stored through normal agent interactions rather than direct memory-bank modification. Across both QA and reasoning-agent settings, MemAudit substantially reduces attack success rates under realistic post-hoc auditing scenarios. The results show that QA attack success is reduced from $70\\%$ to $0\\%$, while RAP attack success drops from $83.3\\%$ to $0\\%$.",
+    "link": "http://arxiv.org/abs/2605.23723v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23715v1",
+    "title": "NLG Evaluation: Past, Present, Future",
+    "authors": [
+      "Ehud Reiter"
+    ],
+    "summary": "Natural Language Generation (NLG) evaluation has changed dramatically since 1990, and will continue to evolve in the future. In 1990, when NLG had close ties to linguistics, there was very little formal experimental evaluation in the modern sense. In 2026, when NLG is closely linked to machine learning, experimental evaluation is expected and indeed fundamental to research. Many evaluation techniques were developed over this period, including most recently LLM-as-Judge. I expect NLG evaluation will continue to evolve in the future. In particular, impact, qualitative, and safety evaluation will become more important as large numbers of people routinely use NLG technology.",
+    "link": "http://arxiv.org/abs/2605.23715v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23695v1",
+    "title": "Validating Threat Modeling Results with the Help of Vulnerable Test Applications",
+    "authors": [
+      "Oleksandr Adamov",
+      "Davide Fucci",
+      "Felix Viktor Jedrzejewski",
+      "Ricardo Britto",
+      "Nishrith Saini"
+    ],
+    "summary": "Validating threat modeling results remains difficult because completeness is hard to judge without an external oracle. Existing studies often rely on expert-produced reference models and other human baselines, but these can contain omissions or disagreements. This paper evaluates a complementary, vulnerability-grounded validation approach. We apply threat modeling to intentionally vulnerable applications with a known vulnerability set to measure the number of related vulnerabilities that can be discovered. We compare ThreMoLIA, an LLM-assisted threat modeling solution developed by our team, with the Microsoft Threat Modeling Tool (MTMT) across two vulnerable applications: AzureGoat and the Vulnerable Bank Application (VulnBank). The inputs to both tools are limited to architecture, data flow diagrams, and their descriptions. The results show that ThreMoLIA achieved higher vulnerability coverage on both systems. We show that vulnerable test applications provide a practical benchmark for assessing threat coverage and complement expert-based validation.",
+    "link": "http://arxiv.org/abs/2605.23695v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23676v1",
+    "title": "AI at the Front Lines of Platform Governance: Using LLMs to Support Illegal Content Reporting under the Digital Services Act",
+    "authors": [
+      "Marie-Therese Sekwenz",
+      "Shreyan Biswas",
+      "Rita Hermann-Gsenger",
+      "Ujwal Gadiraju"
+    ],
+    "summary": "Illegal content reporting mechanisms are a key technical and organizational measure through which online platforms address illegal content under the European Union Digital Services Act (DSA). Article 16 requires user notices to be sufficiently substantiated and submitted in good faith, placing users in the difficult position of interpreting legal and procedural language and translating ambiguous content into legally meaningful categories and reasons. We investigate how large language model (LLM)-based assistants can support this reporting process. In a controlled user study (N = 450) using an interface modeled on a major platform reporting workflow, we compare three conditions: unaided reporting, a conventional explainable AI assistant (XAI) that suggests a single legal category with a rationale, and an evaluative AI assistant (EvalAI) that presents balanced pro and con arguments across candidate legal provisions. We further examine these assistance forms under systematically varied AI error regimes. Our results show that EvalAI improves provision-level accuracy under AI error and reduces misclassification distance relative to conventional XAI, particularly for near-miss and overbreadth errors. When AI output is correct, conventional XAI enables faster decisions, but neither AI assistance form reliably improves the quality of users' substantiated explanations relative to unaided reporting. We discuss design implications for compliance-oriented reporting interfaces, highlighting trade-offs between accuracy, deliberation, explanation quality, and vulnerability to misleading AI output.",
+    "link": "http://arxiv.org/abs/2605.23676v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23668v1",
+    "title": "OnePred: Next-Query Prediction via Recursive Intent Memory in Multi-Turn Conversations",
+    "authors": [
+      "Jiangwang Chen",
+      "Bowen Zhang",
+      "Zixin Song",
+      "Jiazheng Kang",
+      "Xiao Yang",
+      "Da Zhu",
+      "Guanjun Jiang"
+    ],
+    "summary": "Although large language model (LLM) conversational systems process millions of multi-turn dialogues daily, they remain fundamentally reactive: they respond only after the user types a query. A key step toward proactive interaction is next-query prediction, which anticipates the user's subsequent query based solely on the preceding dialogue. Progress on this task is hindered by the lack of dedicated benchmarks and a fundamental efficiency--quality trade-off: naively concatenating full dialogue history incurs linearly growing token consumption, while truncating to the latest turn discards crucial cross-turn context. Our key insight is that accurate prediction does not require re-reading raw history; it suffices to track the user's evolving intent trajectory across topics, unresolved needs, and interest shifts. We propose OnePred, which maintains a recursively updated memory as its sole cross-turn context, bounding the per-turn cost independently of conversation length. We train the model via a two-stage reinforcement learning pipeline that first teaches what to predict, then what to compress, shaping the memory into a prediction-oriented intent chain. To establish a rigorous testbed, we introduce NQP-Bench, spanning three diverse subsets. Experiments demonstrate that OnePred reduces per-turn token consumption by up to 22$\\times$ compared to full-history inputs while consistently exceeding all baselines in prediction quality, with larger gains on longer conversations. Our code is publicly available at https://github.com/ZBWpro/OnePred.",
+    "link": "http://arxiv.org/abs/2605.23668v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.23660v1",
+    "title": "Using Large Language Models in Physics Education",
+    "authors": [
+      "Jonah R. Donaldson",
+      "Aliya Navaz",
+      "Konstantinos Doran",
+      "Alysta Lim",
+      "Mario Campanelli"
+    ],
+    "summary": "The rapid advancement of Large Language Models (LLMs) has introduced new possibilities and challenges in physics education, necessitating rigorous evaluation of their capabilities as both problem solvers and automated assessors. This paper presents the results of three complementary studies that evaluated frontier models released between mid-2024 and late-2025. Models were assessed on their ability to generate accurate, step-by-step solutions to university-level physics problems in Classical Mechanics, Electromagnetism, and Quantum Mechanics, and subsequently on their reliability in grading student solutions against a formal mark scheme. The results indicate a clear trajectory toward benchmark saturation in text-based reasoning, with recent architectures (such as ChatGPT-5.1 and Gemini 3.0 Pro) achieving near-perfect scores. Furthermore, recent advances in native multimodal integration have resolved previous limitations in spatial geometry and topological interpretation, enabling models to accurately process accompanying diagrams. As automated assessors, newer models demonstrated significant improvements in alignment with human grading, heavily mitigating the systemic over-marking observed in earlier iterations. However, while models reliably evaluate fully correct handwritten work, assigning partial credit to flawed or incomplete reasoning remains a persistent challenge. These findings suggest that as of late 2025, LLMs offer viable support for both independent student learning and instructional automation, provided their limitations in evaluating ambiguous reasoning are actively managed.",
+    "link": "http://arxiv.org/abs/2605.23660v1",
+    "date": "2026-05-22",
+    "fetched_at": "2026-05-25"
+  },
+  {
     "id": "http://arxiv.org/abs/2605.16245v1",
     "title": "AI-Mediated Communication Can Steer Collective Opinion",
     "authors": [
