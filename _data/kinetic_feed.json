@@ -1,5 +1,316 @@
 [
   {
+    "id": "http://arxiv.org/abs/2605.31586v1",
+    "title": "Language Models Learn Constructional Semantics, Not To Mention Syntax: Investigating LM Understanding of Paired-Focus Constructions",
+    "authors": [
+      "Wesley Scivetti",
+      "Ethan Wilcox",
+      "Nathan Schneider",
+      "Kanishka Misra",
+      "Leonie Weissweiler"
+    ],
+    "summary": "Grasping the semantics of rare constructions (form-meaning pairings) has been shown to be a challenging problem that has currently only been solved by the largest LLMs. It remains an open question if open-source models have robust constructional understanding, and if so, what learning dynamics underlie the acquisition of this knowledge. Focusing on a set of rare Paired-Focus constructions in English (e.g. \"let alone\", \"much less\"), we construct a novel dataset to test their meanings using both scalar adjectival semantics and general world knowledge. Testing a wide range of models differing in parameter count, architecture, and pretraining dataset size, we find that several modestly sized models are sensitive to both the forms and the meanings of Paired-Focus constructions, though models trained on human-scale data fail at all meaning evaluations. Turning to training dynamics for a set of open-checkpoint models, we find that Paired-Focus understanding emerges later in training than Paired-Focus syntactic knowledge, and that learning of Paired-Focus semantics is correlated with gains in some domains of world knowledge. Overall, our empirical results support the conclusion that modestly sized open-source models can grasp the rare Paired-Focus constructions, and demonstrate a connection between knowledge of Paired-Focus constructions and other meaning domains.",
+    "link": "http://arxiv.org/abs/2605.31586v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31584v1",
+    "title": "LongTraceRL: Learning Long-Context Reasoning from Search Agent Trajectories with Rubric Rewards",
+    "authors": [
+      "Nianyi Lin",
+      "Jiajie Zhang",
+      "Lei Hou",
+      "Juanzi Li"
+    ],
+    "summary": "Long-context reasoning remains a central challenge for large language models, which often fail to locate and integrate key information in extensive distracting content. Reinforcement learning with verifiable rewards (RLVR) has shown promise for this task, yet existing methods are limited by low-confusability distractors and sparse, outcome-only reward signals that cannot supervise intermediate reasoning steps. To address these issues, we introduce \\textsc{LongTraceRL}. For data construction, we generate multi-hop questions via knowledge graph random walks and leverage search agent trajectories to build \\emph{tiered distractors}: documents the agent read but did not cite (high confusability) and documents that appeared in search results but were never opened (low confusability), producing training contexts that are far more challenging than those built by random sampling or one-shot search. For reward design, we propose a \\emph{rubric reward} that uses the gold entities along each reasoning chain as fine-grained, entity-level process supervision. This rubric reward is applied only to responses with correct final answers (positive-only strategy), distinguishing the reasoning quality among correct responses and preventing reward hacking. Experiments on three reasoning LLMs (4B--30B) across five long-context benchmarks demonstrate that \\textsc{LongTraceRL} consistently outperforms strong baselines and encourages comprehensive, evidence-grounded reasoning. Codes, datasets and models are available at \\href{https://github.com/THU-KEG/LongTraceRL}{https://github.com/THU-KEG/LongTraceRL}.",
+    "link": "http://arxiv.org/abs/2605.31584v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31574v1",
+    "title": "Can Generative AI help people navigate Radical Moral Disagreements? The CONSIDER prototype",
+    "authors": [
+      "William Hohnen-Ford",
+      "Sarah Chen",
+      "Kathryn B. Francis",
+      "Madeline G. Reinecke",
+      "Ilina Singh",
+      "David Lyreskog"
+    ],
+    "summary": "Radical Moral Disagreements (RMDs) are highly polarising topics that are increasingly censored in everyday life, with growing evidence suggesting that this polarisation carries measurable costs to public mental health. To address these challenges, some researchers have proposed Large Language Models (LLMs) as a means to support more democratic deliberation and better moral reasoning. Yet existing tools are poorly calibrated to help people navigate RMDs, because of their intense and divisive characteristics. This paper introduces CONSIDER, a prototype for a one-to-one AI tool for RMD navigation. Drawing on Mill's account of the epistemic value of disagreement, CONSIDER aims at value clarification through structured disagreement with an opposing LLM-generated opinion. We describe CONSIDER's design logic and analyse potential risks posed by such tools to guide future development.",
+    "link": "http://arxiv.org/abs/2605.31574v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31564v1",
+    "title": "What Gets Unmasked First? Trajectory Analysis of Diffusion Models for Graph-to-Text Generation",
+    "authors": [
+      "Qing Wang",
+      "Jacob Devasier",
+      "Chengkai Li"
+    ],
+    "summary": "We present the first systematic study of masked diffusion language models (MDLMs) for graph-to-text generation. We analyze MDLM generation trajectories -- the order in which tokens are unmasked during iterative decoding -- and find that, unlike autoregressive LLMs which generate text linearly, MDLMs naturally prioritize entities first, followed by relational and function words, with structural tokens resolved last. We further identify a previously undocumented failure mode of supervised fine-tuning: SFT disrupts this strategy by prematurely anchoring structural sentence-ending tokens early in the decoding trajectory, effectively fixing the output length which can lead to omitted or hallucinated information. To address this, we propose lambda-scaled structural decoding, a training-free inference-time modification that downweights structural token confidence and recovers +9.4 BLEU-4. Finally, we introduce Graph-LLaDA, which integrates a Graph Transformer encoder into LLaDA's decoding process to explicitly incorporate relational graph structure. Cross-dataset evaluation on LAGRANGE reveals that previous baselines overfit to dataset-specific patterns, while LLM- and MDLM-based approaches generalize significantly better.",
+    "link": "http://arxiv.org/abs/2605.31564v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31561v1",
+    "title": "What Am I Missing? Question-Answering as Hidden State Probing",
+    "authors": [
+      "Chu Fei Luo",
+      "Samuel Dahan",
+      "Xiaodan Zhu"
+    ],
+    "summary": "Test-time reasoning has become a significant field of study since the introduction of chain-of-thought reasoning in large language models (LLMs). However, the mechanisms of this reasoning process are still under-explored -- from the same input prompt, and even the same partial solution, LLMs can produce varied answers if sampled multiple times. We propose to leverage question-asking as an inference-time intervention that articulates information about the model's hidden state. To achieve that, we present a student-teacher setting where a student asks questions to a teacher. We train a probe on the student's hidden state before and after asking a question and find it is predictive of the trajectory's final correctness, even before generating the teacher's answer. This suggests there is a meaningful signal from the self-diagnosis that occurs during question generation rather than information transfer from the teacher. We then frame question-asking as a sequential decision problem, using this probe as a quality score, and define a gating policy to ask questions that maximize likelihood of correctness. We find that the success of question-asking as an intervention is largely dependent on the model's self-consistency. Our empirical results show a gap between detection and recovery; while our gating policy captures model correctness and uncertainty, interventions are equally likely to harm correct trajectories as they are to recover incorrect ones. This gap between diagnosis and correction has broader implications on language models' capacity for self-refinement under uncertainty.",
+    "link": "http://arxiv.org/abs/2605.31561v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31545v1",
+    "title": "Preference-Aware Rubric Learning for Personalized Evaluation",
+    "authors": [
+      "Yilun Qiu",
+      "Xiaoyan Zhao",
+      "Yang Zhang",
+      "Yuxin Chen",
+      "Cilin Yan",
+      "Jiayin Cai",
+      "Xiaolong Jiang",
+      "Yao Hu",
+      "Yoko Yamakata",
+      "Tat-Seng Chua"
+    ],
+    "summary": "As Large Language Models (LLMs) evolve from general-purpose assistants to user-centric agents, personalization has become central to aligning model behavior with individual preferences, making the evaluation of personalized alignment a critical bottleneck. Existing evaluation methods-ranging from automatic metrics to LLM-as-a-judge approaches-fail to capture subjective, user-specific preferences embedded in long-term interaction histories. We identify three essential principles for reliable and effective personalized evaluation: Representativeness, User-Consistency, and Discriminativeness. To address these principles, we introduce Personalized Evaluation as Learning, a paradigm that formulates personalized evaluation as a learning problem rather than a static judgment. Under this paradigm, we propose PARL (Preference-Aware Rubric Learning for Personalized Evaluation), a framework that learns to induce preference-aware evaluation rubrics directly from raw user histories and performs a self-validation mechanism to ensure consistency with the user's preferences. PARL integrates rubric induction with a discriminative reinforcement learning objective that contrasts user-authored responses against competitive personalized model outputs, enabling the learned rubrics to capture precise, user-specific decision boundaries. Experiments on real-world personalized text generation tasks show that PARL consistently induces high-fidelity rubrics that reliably identify user-aligned responses and generalize across users and tasks, while capturing stable stylistic preferences and fine-grained evaluative patterns. To ensure reproducibility, our code is available at https://github.com/SnowCharmQ/PARL.",
+    "link": "http://arxiv.org/abs/2605.31545v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31530v1",
+    "title": "UNISON: A Unified Sound Generation and Editing Framework via Deep LLM Fusion",
+    "authors": [
+      "Zhaoqing Li",
+      "Haoning Xu",
+      "Jingran Su",
+      "Yaofang Liu",
+      "Zhefan Rao",
+      "Huimeng Wang",
+      "Jiajun Deng",
+      "Tianzi Wang",
+      "Zengrui Jin",
+      "Rui Liu",
+      "Haoxuan Che",
+      "Xunying Liu"
+    ],
+    "summary": "We present UNISON, a latent diffusion framework that unifies speech generation, sound generation, and audio editing within a single model. A single model handles text-to-audio, text-to-speech, zero-shot speaker cloning, mixed speech-and-sound generation, scene-level audio editing, speech-in-scene editing, and timed temporal composition, all of which share a single set of weights. Our architecture features two core designs: (1) Layer-wise deep LLM fusion, which injects hidden states from uniformly sampled layers of a frozen MLLM into corresponding MM-DiT blocks via learned projections, providing depth-matched semantic conditioning that improves instruction following over single-layer baselines; and (2) a unified multi-task architecture where task identity is encoded solely by a channel-wise mask and source audio is provided through VAE-encoded channel concatenation. Training is stabilized by an online GPU-side multi-task data synthesis pipeline with task-homogeneous batching and a two-stage curriculum. With 621M--732M trainable parameters, UNISON achieves results competitive with or exceeding task-specialist models across evaluated domains, while being roughly $4\\times$ smaller than comparable unified systems.",
+    "link": "http://arxiv.org/abs/2605.31530v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31521v1",
+    "title": "UniAudio-Token: Empowering Semantic Speech Tokenizers with General Audio Perception",
+    "authors": [
+      "Yuhan Song",
+      "Linhao Zhang",
+      "Aiwei Liu",
+      "Chuhan Wu",
+      "Sijun Zhang",
+      "Wei Jia",
+      "Yuan Liu",
+      "Houfeng Wang",
+      "Xiao Zhou"
+    ],
+    "summary": "Semantic speech tokenizers have become a widely used interface for Audio-LLMs, owing to their compact single-codebook design and strong linguistic alignment. However, their focus on linguistic abstraction induces acoustic blindness, limiting their applicability beyond speech-centric tasks. We propose UniAudio-Token, a framework that empowers semantic tokenizers with general audio perception without compromising speech ability. Instead of altering the semantic paradigm, UniAudio-Token mitigates its information loss through two key innovations: (1) Semantic-Acoustic Primitives (SAP) provide structured supervision by decomposing audio into linguistic content, vocal attributes, and auditory-scene primitives; and (2) Semantic-Acoustic Equilibrium (SAE) introduces a content-aware gating mechanism that adaptively restores fine-grained acoustic details from shallow layers. Extensive evaluations show that UniAudio-Token learns comprehensive universal representations while preserving high-fidelity speech generation. When integrated with downstream LLMs, it outperforms all single-codebook baseline tokenizers on both understanding and generation tasks, effectively serving as a unified audio interface. We publicly release all our code, including training and inference scripts, together with the model checkpoints at https://github.com/Tencent/Universal_Audio_Tokenizer.",
+    "link": "http://arxiv.org/abs/2605.31521v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31514v1",
+    "title": "If LLMs Have Human-Like Attributes, Then So Does Age of Empires II",
+    "authors": [
+      "Adrian de Wynter"
+    ],
+    "summary": "Much research has been carried out on large language models (LLMs) and LLM-powered agentic workflows. However, many works within the field state emergence of, ascribe to, or assume, generalised anthropomorphic attributes to them (e.g., morality or understanding of natural language). Our goal is not to argue in favour or against the existence of these attributes, but to point out that these conclusions could be incorrect. For this we build and train a simple neural network on the videogame Age of Empires II, and note that any entity in a sufficiently-powerful substrate, such as LEGO or the Greater Boston Area, could also present such attributes. Hence, the purported anthropomorphic attributes of LLMs are empirically non-unique: although some properties (e.g., responses to prompts) could remain constant, others, such as the interpretation of their perceived behaviour, might change with the substrate. Thus, any empirically-grounded discussion requires explicit measurement criteria; otherwise the interpretation is left to the representation. We then show that assuming that these attributes exist or not in a system, independent of the substrate and in a generalised way, leads to either circular or uninformative conclusions, regardless of the experimenter's viewpoint on the subject. Finally we propose a 'null' assumption, where one assumes LLM non-uniqueness instead of assuming anthropomorphic attributes to set up an experiment, along with examples of it. We also discuss potential objections to our work, briefly survey the field, and prove that \\textit{Age of Empires II} is functionally- and Turing-complete.",
+    "link": "http://arxiv.org/abs/2605.31514v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31512v1",
+    "title": "Reliable Multilingual Orthopedic Decision Support from Clinical Narratives: Language-Aware Adaptation and Verification-Guided Deferral",
+    "authors": [
+      "Danish Ali",
+      "Li Xiaojian",
+      "Sundas Iqbal",
+      "Farrukh Zaidi"
+    ],
+    "summary": "Multilingual orthopedic decision support remains challenging in low-resource healthcare settings, where clinical narratives contain specialized terminology, mixed scripts, incomplete evidence, label imbalance and language-dependent documentation patterns. This article presents a reliability-oriented framework for classifying free-text orthopedic notes in English, Hindi and Punjabi. We compare task-aligned multilingual transformer encoders, a task-fine-tuned DistilBERT baseline, zero-shot instruction-tuned large language models (LLMs) and a domain-adaptive encoder, IndicBERT-HPA. IndicBERT-HPA augments IndicBERT with language-aware orthopedic adapter heads to support clinically relevant multilingual representation learning. Evaluation extends beyond aggregate accuracy to per-class performance, ROC-AUC, AUPRC, expected calibration error, cross-language stability and robustness under controlled balanced and natural-prevalence distributions. The evaluated zero-shot LLMs remain substantially less effective than task-adapted encoders for closed-set classification, with language-dependent instability. Under natural clinical prevalence, IndicBERT-HPA achieves the strongest overall performance, reaching an averaged Macro-F1 of 0.8792, Macro-AUROC of 0.894 and AUPRC of 0.902. We further implement a deterministic selective-verification layer combining confidence gating, evidence-consistency checking and language-risk screening. On a randomly selected held-out 5,000-record subset, it achieves 84.4% selective accuracy and 0.76 selective Macro-F1 at 72.3% coverage, compared with 71.5% accuracy and 0.65 Macro-F1 for accept-all prediction. These results support reliability-oriented multilingual clinical decision support with explicit deferral.",
+    "link": "http://arxiv.org/abs/2605.31512v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31495v1",
+    "title": "General-purpose LLMs as Constrained Crystal Composition Generators",
+    "authors": [
+      "Hedda Oschinski",
+      "Maximilian L. Ach",
+      "Konstantin S. Jakob",
+      "Christian Carbogno",
+      "Karsten Reuter"
+    ],
+    "summary": "The targeted discovery of inorganic materials remains challenging due to the vastness of compositional design spaces and the high cost of exhaustive screening. Task-specific generative artificial intelligence represents a particularly efficient alternative to screening, yet demands tedious collection of training data before providing real benefit. General-purpose large language models (LLMs) have recently shown tremendous potential for the targeted generation of single, optimal materials compositions without the need for task-specific fine-tuning. However, it is unclear whether LLMs generally pose an advantage compared to specialized generative models, in particular in large design spaces. Here, we demonstrate that such models are capable of covering entire regions of the targeted property space effectively and systematically. Using Elpasolite materials as an established benchmark for generative tasks in large chemical spaces, we find that an iterative prompt-and-response framework is able to recover on average 96% of all low-energy Elpasolites in the target region. This performance, driven mainly by iterative in-context learning, surpasses the generative abilities of previous, task-specific models. Our results establish general-purpose LLMs as flexible and accessible components for inverse materials design workflows.",
+    "link": "http://arxiv.org/abs/2605.31495v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31494v1",
+    "title": "Consolidating Rewarded Perturbations for LLM Post-Training",
+    "authors": [
+      "Zheyu Zhang",
+      "Shuo Yang",
+      "Gjergji Kasneci"
+    ],
+    "summary": "Post-training of language models is commonly framed as a sample-score-update loop implemented by gradient descent. A recent line of work, exemplified by RandOpt, relocates this loop to weight space, sampling Gaussian perturbations around a pretrained model and ensembling the top-K rewarded specialists at inference. While competitive with PPO and GRPO under matched training compute, this prediction-level ensemble incurs K forward passes per test example and does not extend cleanly to free-form generation. We ask whether the rewarded population can instead be folded into a single deployable model, replacing the inference-time ensemble with one consolidated update. A split-half analysis over 25 model-task pairs reveals reproducible low-rank structure in every case. We turn this geometry into CoRP (Consolidating Rewarded Perturbations), a gradient-free operator that combines reward-weighted aggregation, compatibility-aware reweighting, and a held-out validation gate, with no gradient flowing through the language model. Across five language models from 0.5B to 8B and five tasks covering math, code, and creative writing, CoRP improves the base model by 8.1 points on average. Using one tenth of RandOpt's perturbation budget, CoRP exceeds single-inference RandOpt by 6.5 points and recovers more than half of the gain of the 50-pass majority-vote ensemble, at one forward pass per test example.",
+    "link": "http://arxiv.org/abs/2605.31494v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31492v1",
+    "title": "LinTree: Improving LLM Reasoning with Explicitly Structured Search Histories",
+    "authors": [
+      "Liwei Kang",
+      "Yee Whye Teh",
+      "Wee Sun Lee"
+    ],
+    "summary": "Large language models (LLMs) often solve reasoning problems by generating intermediate traces that explore and revise partial solutions. From a search perspective, these traces can be viewed as linearized search trees, where the model extends a partial solution, abandons it when it fails, and backtracks to try alternatives. Compared with traditional heuristic-guided search, such a policy has a potential advantage: it conditions on the whole search trace rather than only on the current local state. We first test whether LLMs utilize this advantage by comparing trace-conditioned reasoning policies against best-first search equipped with an LLM heuristic that only observes the current local state. Across three controlled reasoning environments, Blocks World, grid Navigation, and Sokoban, we find that raw access to search history alone is not enough to reliably outperform heuristic search. We then study one possible reason: in LLM reasoning traces, the underlying search tree is only implicitly represented, and when the model backtracks or switches branches, the trace does not explicitly identify which earlier search state is being revisited. We show that adding simple parent pointers to explicitly represent the linearized tree (LinTree) structure improves both task performance and search efficiency relative to implicit reasoning models and LLM-heuristic-guided search. These results suggest that search history becomes most useful when its tree structure is made explicit, motivating more structure-aware representations for LLM reasoning.",
+    "link": "http://arxiv.org/abs/2605.31492v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31483v1",
+    "title": "BenHalluEval: A Multi-Task Hallucination Evaluation Framework for Large Language Models on Bengali",
+    "authors": [
+      "Shefayat E Shams Adib",
+      "Ahmed Alfey Sani",
+      "Ekramul Alam Esham",
+      "Ajwad Abrar",
+      "Ishmam Tashdeed",
+      "Md Taukir Azam Chowdhury"
+    ],
+    "summary": "Despite Bengali being the sixth most spoken language in the world, no prior work has systematically evaluated hallucination in large language models (LLMs) for Bengali. We introduce BenHalluEval, a fine-grained hallucination evaluation framework for Bengali covering four tasks: Generative Question Answering (GQA), Bangla-English Code-Mixed QA, Summarization, and Reasoning. We construct 12,000 hallucinated candidates using GPT-5.4 across twelve task-specific hallucination types, drawn from three existing Bengali datasets, and evaluate seven LLMs spanning reasoning-oriented, multilingual, and Bengali-centric categories under a dual-track protocol that independently measures false-positive rate on ground-truth instances (Track A) and hallucination detection rate on hallucinated candidates (Track B). To jointly penalise both failure modes and prevent inflated scores from uniform response bias, we propose BenHalluScore, a dual-track calibration metric that ranges from 7.72% to 55.42% across models and tasks, revealing substantial variation in hallucination calibration. Chain-of-thought prompting, applied as a mitigation strategy, shifts response distributions without consistently improving hallucination discrimination. BenHalluEval establishes the first dedicated hallucination benchmark for Bengali and highlights the inadequacy of single-track and prompting-only evaluation approaches for low-resource language settings. The dataset and code are available at https://anonymous.4open.science/r/BanglaHalluEval-EB77.",
+    "link": "http://arxiv.org/abs/2605.31483v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31480v1",
+    "title": "Language Models Can Resolve Reference Compositionally, But It's Not Their Native Strength: The Case of the Personal Relation Task",
+    "authors": [
+      "Bart Evelo",
+      "Meaghan Fowlie",
+      "Denis Paperno"
+    ],
+    "summary": "Do neural models, such as Large Language Models, genuinely acquire compositional abilities for interpretation of natural language? When we talk about semantic interpretation, we can distinguish two complementary aspects: establishing what an expression refers to in the world (which we call the Extensional task) and representing its sense in a structured way (which we call the Intensional task). We evaluate LLMs and humans on both tasks in the setting of the Personal Relation Task (Paperno 2022) in which, given a universe of people and their relationships with each other, one is asked to interpret a noun phrase such as \"Amber's parent's friend\". Here, for the Intensional task, the answer is the formula \"friend(parent(amber))\", and for the Extensional task, the person. We find that humans and LLMs show opposite strengths: humans perform better on Extensional than Intensional tasks, and LLMs vice versa. Our methodology brings greater nuance to the understanding of compositional abilities in modern machine learning models. Our results support the notion that the lack of referential grounding in LLM training is a crucial missing component in mimicking human-like language understanding.",
+    "link": "http://arxiv.org/abs/2605.31480v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31478v1",
+    "title": "Knowledge Boundary Probing and Demand-Guided Intervention for LLM-Based Power System Code Generation",
+    "authors": [
+      "Hui Wu",
+      "Xiaoyang Wang",
+      "Zhong Fan"
+    ],
+    "summary": "Large language models (LLMs) are increasingly used to automate power-system analysis, but many utilities and energy-research labs require on-premise serving for confidentiality, regulatory, reproducibility, and cost reasons. This makes the reliability of open-weight models a deployment issue. We show that first-pass failures in power-system code generation are dominated not by reasoning alone, but by structured API-knowledge boundary errors: hallucinated function names, misused parameters, and mishandled result tables in versioned simulation libraries.   We introduce PowerCodeBench, an execution-validated benchmark generator that pairs natural-language operator queries with pandapower code and numerical ground truth; an L0-L3 documentation-driven probing procedure that measures per-model API knowledge profiles; and a boundary-aware intervention that combines query-side API demand estimation with targeted proactive documentation injection and routed reactive correction.   On a 2,000-task frozen release, we evaluate ten open-weight LLMs (1.5B-480B parameters) and four commercial mid-tier APIs. The intervention improves every evaluated open-weight model of at least 7B parameters and every commercial API by 32 to 56 accuracy points. Open-weight models in the 70B-120B range match the commercial mid-tier accuracy range, while Llama-3.1-405B and Qwen3-Coder-480B lead the panel. The targeted prompts preserve the full-context accuracy ceiling while using 41% of the prompt-token cost. The result is an accuracy-side, deployment-time path toward reliable on-premise LLM assistance for grid-analysis workflows without fine-tuning or cloud inference.",
+    "link": "http://arxiv.org/abs/2605.31478v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31468v1",
+    "title": "AutoSci: A Memory-Centric Agentic System for the Full Scientific Research Lifecycle",
+    "authors": [
+      "Weitong Qian",
+      "Beicheng Xu",
+      "Zhongao Xie",
+      "Bowen Fan",
+      "Guozheng Tang",
+      "Jiale Chen",
+      "Xinzhe Wu",
+      "Mingtian Yang",
+      "Chenyang Di",
+      "Jiajun Li",
+      "Lingching Tung",
+      "Peichao Lai",
+      "Yifei Xia",
+      "Ziyi Guo",
+      "Yanwei Xu",
+      "Yanzhao Qin",
+      "Shaoduo Gan",
+      "Xupeng Miao",
+      "Bin Cui"
+    ],
+    "summary": "Scientific research has traditionally been human-intensive, requiring researchers to coordinate literature, ideas, experiments, manuscripts, and review responses across long project cycles. The rise of LLM-based scientific agents creates an opportunity to automate this process. Such a system must support the full research lifecycle, maintain structured persistent memory across projects, and improve its own research procedures over time. However, existing systems either partially satisfy or fail to satisfy these requirements, leaving a gap for a unified automated scientific research system. As a result, we present AutoSci, a memory-centric agentic system for the full scientific research lifecycle. AutoSci is organized around four modules. SciMem provides schema-governed research memory, separating Long-Term Knowledge Memory for reusable scientific knowledge from Active Research Memory for project-level artifacts such as ideas, experiments, manuscripts, and reviews. SciFlow executes a five-stage lifecycle from literature understanding to rebuttal through a harness that controls state, context, verification, feedback, and orchestration. SciDAG augments difficult skills with DAG-shaped multi-agent operators and reusable stage-specific templates. SciEvolve converts feedback signals from users, experiments, reviews, and external environments into versioned updates to SciMem organization, SciFlow skills, and SciDAG templates. Together, these modules make AutoSci a persistent research environment that can execute, remember, and evolve across research projects. The code repository is available at https://github.com/skyllwt/AutoSci.",
+    "link": "http://arxiv.org/abs/2605.31468v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31464v1",
+    "title": "GPU Forecasters: Language Models as Selective Surrogates for Kernel Runtime Optimization",
+    "authors": [
+      "Zaid Khan",
+      "Justin Chih-Yao Chen",
+      "Jaemin Cho",
+      "Elias Stengel-Eskin",
+      "Mohit Bansal"
+    ],
+    "summary": "GPU kernels are the workhorse of modern deep learning, and optimizing them (via evolutionary search or coding agents) usually requires repeated measurement on target hardware. While these measurements provide the ground-truth signal necessary for kernel search, they are costly, because each evaluation of a kernel requires compilation and repeated execution on a GPU. As improvements in LLM inference reduce the cost of writing novel kernels and LLM-driven searches scale to large search budgets, on-device evaluation becomes a bottleneck. To address this, we study how LLMs can serve as selective GPU surrogates for kernel evaluation, by forecasting the performance of proposed kernels. A useful surrogate should be accurate, and it should be selective, by knowing when it could be wrong, and deferring to the GPU. To evaluate surrogates, we measure whether their forecasts are accurate, calibrated, and practically useful for recovering fast kernels under limited GPU-measurement budgets. Next, we study whether reinforcement learning can improve forecast accuracy and confidence calibration. Our experiments demonstrate that LLMs can accurately forecast relative kernel performance, that their utility can be improved through reinforcement learning. Used inside a kernel search, the surrogate lets the search consider several times as many candidates under the same GPU evaluation budget, and that leads to finding faster kernels than an equal-budget baseline. These results suggest that LLMs can play a broader role in kernel optimization, by acting as virtual models of a GPU rather than solely as kernel generators for search.",
+    "link": "http://arxiv.org/abs/2605.31464v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31458v1",
+    "title": "Ladder Logic Translation using Large Language Models in Industrial Automation",
+    "authors": [
+      "Oluwatosin Ogundare",
+      "Promise Ekpo",
+      "Nathanial Wiggins"
+    ],
+    "summary": "Ladder logic translation is an important problem in industrial automation because without it, it is difficult to switch Programmable Logic Controller (PLC) vendors. The prevailing translation problem highlights mismatched programming environments, incompatible ladder logic constructs, limitations in terms of differences in the semantic expressiveness of the vendor formalisms and integrated black-box proprietary engineering tools which are exemplified in our example case; Rockwell to Siemens PLC code translation. This work presents a mathematical formulation of the problem, the detailed architecture of a solution which supports XML extraction, structural normalization, constrained generative function (LLM), and system integration via the TIA Portal Openness API as rigorously engineered pipeline for automated translation of Rockwell Ladder Programs to Siemens S7 ladder programs. Finally, we present results that show that the translations retain high semantic consistency across instruction categories.",
+    "link": "http://arxiv.org/abs/2605.31458v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
+    "id": "http://arxiv.org/abs/2605.31452v1",
+    "title": "Translation Analytics for Freelancers II: Benchmarking Local LLMs for Confidential Translation Workflows",
+    "authors": [
+      "Yuri Balashov",
+      "Rex VanHorn",
+      "Mingxi Xu",
+      "Austin Downes"
+    ],
+    "summary": "Building on our previous work, this paper develops practical, low-barrier methods for freelance translators and smaller language service providers to evaluate translation technologies using rigorous yet accessible analytic methods. Here we address a high-stakes, specialized need: offline translation for confidentiality-sensitive domains in which privacy constraints preclude the use of cloud-based engines and commercial LLMs. We expand the Reeve Foundation Trilingual Corpus (RFTC) used in our previous work into a multilingual corpus (RFMC) by adding sentence-aligned German and Simplified Chinese reference translations. We then benchmark several locally runnable language models (via Ollama) across four language directions on 1000+ sentences selected from this corpus. We use consistent single-prompt calls without fine-tuning or domain adaptation, comparing local LLM outputs against commercial NMTs (DeepL, Baidu), a frontier LLM (GPT-5.2), and professional-grade local NMT systems (OPUS-CAT, NeuralDesktop, Promt). Automatic evaluation is conducted with MATEO. Results reveal substantial variation in local LLM performance across language directions and model sizes. The best local LLMs match or surpass local NMT systems and a frontier LLM, though they remain behind top commercial NMTs. These findings underscore the viability of carefully selected local LLM translation for privacy-constrained professionals and inform future research on model scaling and multilingual capability.",
+    "link": "http://arxiv.org/abs/2605.31452v1",
+    "date": "2026-05-29",
+    "fetched_at": "2026-06-01"
+  },
+  {
     "id": "http://arxiv.org/abs/2605.23904v1",
     "title": "SkillOpt: Executive Strategy for Self-Evolving Agent Skills",
     "authors": [
