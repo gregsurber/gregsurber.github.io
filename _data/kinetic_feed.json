@@ -1,5 +1,318 @@
 [
   {
+    "id": "http://arxiv.org/abs/2606.07516v1",
+    "title": "Counterintuitive problems in discrete probability",
+    "authors": [
+      "Luca Avena",
+      "Gianmarco Bet",
+      "Bernardo Busoni"
+    ],
+    "summary": "This manuscript contains a collection of counterintuitive problems in discrete probability, together with detailed solutions. The dataset was constructed as part of a broader research project investigating the capabilities of the latest-generation Large Language Models (LLMs) in solving discrete probability problems, in order to assess whether LLMs tend to make systematic reasoning errors associated with known cognitive biases. The problems collected here are specifically designed to challenge heuristic reasoning strategies that often lead to intuitively appealing but mathematically incorrect conclusions. The dataset combines several types of problems. Some are adapted from classical probabilistic paradoxes and cognitive-bias literature, while others originate from recreational mathematics sources or were developed by ourselves following similar principles. The primary purpose of this document is to provide a transparent and publicly accessible reference for the problems used in our experimental evaluation of language models, as well as providing detailed human-made solutions. At the same time, we believe that this collection may also prove useful for future research on probabilistic reasoning, cognitive biases, and the evaluation of reasoning capabilities in artificial intelligence systems.",
+    "link": "http://arxiv.org/abs/2606.07516v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07515v1",
+    "title": "How reliable are LLMs when it comes to playing dice?",
+    "authors": [
+      "Luca Avena",
+      "Gianmarco Bet",
+      "Bernardo Busoni"
+    ],
+    "summary": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuitive ones. We further provide empirical evidence of token bias: performance drops by over 20% when canonical formulations are replaced by disguised variants. Embedding misleading suggestions in the prompt reduces performance by up to 34%, with no model proving immune. Taken together, the reported findings suggest that current LLMs are not yet genuine probabilistic reasoners, despite their success in advanced mathematical problems.",
+    "link": "http://arxiv.org/abs/2606.07515v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07513v1",
+    "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies",
+    "authors": [
+      "Xintao Wang",
+      "Sirui Zheng",
+      "Hongqiu Wu",
+      "Weiyuan Li",
+      "Jen-tse Huang",
+      "Minghao Zhu",
+      "Can Zu",
+      "Qi Deng",
+      "Jiawei Wang",
+      "Qianyu He",
+      "Heng Wang",
+      "Xiaojian Wu",
+      "Yunzhe Tao"
+    ],
+    "summary": "Humans learn from social life. Simulating this process with LLM-powered agents represents a promising research direction, raising a natural question: whether LLMs can learn from such simulated social experience to better understand and replicate human behavior. However, prior agent society simulations typically operate at the scale of days, limiting the depth of social interactions and long-term growth. In this paper, we study long-term life simulation and LLM learning in agent societies, with two goals: (1) investigating social behaviors that emerge from life-long simulation, and (2) developing anthropomorphic capabilities in LLMs, particularly intelligence in social life, through years of simulated social experience. Specifically, we present Agentopia, a comprehensive framework for long-term life simulation in multi-agent societies, where 100 agents autonomously pursue personal growth, develop social relationships, and fulfill their needs and goals over 10 simulated years. We define life reward to mirror human well-being, and leverage this reward to train LLMs via rejection sampling. Extensive experiments show that agents exhibit rich emergent social behaviors. Furthermore, life reward training effectively enhances the underlying LLM, which leads to improved agent well-being in simulation, and generalizes to downstream role-playing benchmarks with +15.6% improvement.",
+    "link": "http://arxiv.org/abs/2606.07513v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07502v1",
+    "title": "Your UnEmbedding Matrix is Secretly a Feature Lens for Text Embeddings",
+    "authors": [
+      "Songhao Wu",
+      "Zhongxin Chen",
+      "Yuxuan Liu",
+      "Heng Cui",
+      "Cong Li",
+      "Rui Yan"
+    ],
+    "summary": "Large language models exhibit impressive zero-shot capabilities across a wide range of downstream tasks. However, they struggle to function as off-the-shelf embedding models, leading to suboptimal performance on massive text embedding benchmarks. In this paper, we identify a potential cause underlying this deficiency. Our motivation stems from an unexpected observation: text embeddings tend to align with frequent but uninformative tokens when projected onto the vocabulary space. We argue that this excessive expression of high-frequency tokens suppresses the model's ability to capture nuanced semantics. To address this, we introduce EmbedFilter, a simple linear transformation designed to refine text embeddings derived from LLMs directly. Specifically, we uncover that the unembedding matrix within LLMs encodes a latent space that is actively writing these frequent tokens into embedding space. By filtering out this subspace, EmbedFilter suppress the influence of high-frequency tokens, thereby enhancing semantic representations. As a compelling byproduct, this enables an inherent dimensionality reduction, lowering index storage and speedup retrieval while fully preserving the refined embedding quality. Our experiments across multiple LLM backbones demonstrate that LLMs equipped with EmbedFilter achieve superior zero-shot downstream performance even with significantly reduced embedding dimensions. We hope our findings provide deeper insights into the mechanisms of LLM-based representations and inspire more principled designs to improve text embeddings training. Our code is available at https://github.com/CentreChen/EmbFilter.",
+    "link": "http://arxiv.org/abs/2606.07502v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07500v1",
+    "title": "Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning",
+    "authors": [
+      "Fatema Siddika",
+      "Md Anwar Hossen",
+      "Tanwi Mallick",
+      "Ali Jannesari"
+    ],
+    "summary": "Continual learning in Large Language Models (LLMs) is hindered by the plasticity-stability dilemma, where acquiring new capabilities often leads to catastrophic forgetting of previous knowledge. Existing methods typically treat parameters uniformly, failing to distinguish between specific task knowledge and shared capabilities. We introduce Mixture of Sparse Experts for Task Agnostic Continual Learning (SETA), a framework that resolves the plasticity-stability conflict through adaptive sparse subspace decomposition into task-specific expert modules. Unlike standard updates, where tasks compete for the same parameters, SETA separates knowledge into unique experts, designed to isolate task-specific patterns, and shared experts, responsible for capturing common features. This structure is maintained through adaptive elastic anchoring and a routing-aware regularization that jointly protect shared knowledge at both the weight and routing levels and enable a unified gating network to automatically retrieve the correct expert combination during inference. Extensive experiments across diverse domain-specific benchmarks demonstrate that SETA achieves competitive or superior overall performance relative to state-of-the-art continual learning baselines, with particularly strong retention of early-task knowledge and improved backward transfer on LLaMA-2 7B and Qwen3-4B.",
+    "link": "http://arxiv.org/abs/2606.07500v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07486v1",
+    "title": "OPENPATH: A Supervisor--Specialist Agent System for Personalized, Accessible, and Multi-stop Urban Trip Planning",
+    "authors": [
+      "Ziyang Xiong",
+      "He Zong",
+      "Zhiyuan Xue",
+      "Manxi Wu"
+    ],
+    "summary": "Urban trip-planning systems are commonly optimized for travel time and cost, but they offer limited support for the heterogeneous needs that real travelers bring, such as personalized preferences, multi-stop itinerary construction, and end-to-end wheelchair accessibility. We present openpaths, a supervisor-specialist multi-agent system that handles all of these tasks within a single architecture. openpaths adopts a deliberate division of labor: LLM agents parse natural-language input, classify request intent, and orchestrate execution, while classical algorithms perform route optimization over curated mobility and accessibility data. This design ensures that the resulting trip honors heterogeneous user preferences and enforces strict accessibility requirements when requested. Beyond per-user planning, openpaths doubles as a measurement instrument for city-scale accessibility analysis: applied to NYC, the system reveals substantial ADA infrastructure gaps and quantifies their effect on job accessibility for wheelchair users. Overall, this study shows how a supervisor-specialist LLM agentic framework can support heterogeneous trip planning and transparent, equitable transportation analysis in real urban environments.",
+    "link": "http://arxiv.org/abs/2606.07486v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07479v1",
+    "title": "Supervision versus Demonstration-Based In-Context Learning for Multiword Expression Classification",
+    "authors": [
+      "Sercan Karaka\u015f",
+      "Yusuf \u015eim\u015fek"
+    ],
+    "summary": "Turkish idiomatic light verb constructions (LVCs) are challenging for multiword expression processing because they often share the same surface form as fully literal verb-object combinations while functioning as a single, partially idiomatic predicate. We frame Turkish LVC detection as a binary classification task (literal meaning vs. idiomatic meaning) and evaluate on a manually created controlled set (N=147) with matched negatives: out-of-domain random sentences and in-domain literal controls (NLVC), alongside LVC positives. We compare a supervised Turkish encoder baseline (BERTurk with a classifier head) to three instruction-tuned LLMs from different families under zero-shot, one-shot, and few-shot prompting, and analyze how demonstrations shift error profiles. In zero-shot, LLMs perform well on negatives but show very low LVC recall. One-shot prompting sharply improves LVC detection but can induce strong, model-specific biases, leading models to overpredict or underpredict LVCs. A richer few-shot prompt improves calibration and yields robust overall performance for GPT-OSS-20B and Qwen 2.5-14B. Overall, the results highlight substantial prompt sensitivity in Turkish metalinguistic classification: the supervised baseline remains competitive, while prompted LLMs can match or exceed it on LVCs with carefully constructed demonstrations.",
+    "link": "http://arxiv.org/abs/2606.07479v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07462v1",
+    "title": "Act As a Real Researcher: A Suite of Benchmarks Evaluating Frontier LLMs and Agentic Harnesses in Research Lifecycle",
+    "authors": [
+      "Jiayu Wang",
+      "Weijiang Lv",
+      "Bowen Fu",
+      "Jing Fu",
+      "Jiayi Song",
+      "Lingyu Zhang",
+      "Lanxuan Xue",
+      "Luodi Chen",
+      "Zepeng Xin",
+      "Kaiyu Li",
+      "Xiangyong Cao"
+    ],
+    "summary": "As foundation models advance and agent scaffolding becomes increasingly sophisticated, agents have demonstrated remarkable proficiency in complex, long-horizon coding tasks and even autonomous experiment execution. Despite their evolution from research assistants into autonomous research agents, these systems still exhibit significant limitations in field sensitivity, research ethics, and nuanced scientific judgment. Consequently, frontier agents remain unable to fully replace human researchers. To bridge this gap, we conceptualize the AARR (Act As a Real Researcher) benchmark series. Unlike existing benchmarks that primarily assess macro-level execution capabilities, AARR focuses on whether agents can emulate the professionalism, thoroughness, and nuanced reasoning that characterize human researchers in granular research scenarios. In this work, we propose AARRI-Bench (Act As a Real Research Intern), the first benchmark in this series. We conduct extensive experiments across frontier models and agentic systems, revealing that even the best-performing configuration (Mini-SWE-Agent with Claude Opus 4.7) achieves only 68.3\\% success rate, frequently overlooking subtle yet critical details that are obvious to real human researchers. Our results indicate that developing researcher-like AI requires further exploration of research behavior, rather than merely complex scaffolding. Our data is released at https://github.com/AARR-bench/AARRI-bench.",
+    "link": "http://arxiv.org/abs/2606.07462v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07441v1",
+    "title": "Sycophantic Praise: Evaluating Excessive Praise in Language Models",
+    "authors": [
+      "Daniel Vennemeyer",
+      "Phan Anh Duong",
+      "Meryl Ye",
+      "Ruihong Huang",
+      "Tianyu Jiang"
+    ],
+    "summary": "Sycophancy in language models is typically studied as excessive agreement or validation, while explicit praise and flattery have received comparatively little attention. We argue that sycophantic praise is a distinct alignment problem that cannot be reliably measured using current methods. We introduce a parameterized framework that measures whether praise is excessive relative to contribution quality and expected user ability. We show that our framework substantially outperforms generic LLM judges in agreement with human annotations, and that sycophantic praise occurs far more frequently in social and interpretive domains than in objective reasoning settings. Together, these findings position praise calibration as a distinct alignment challenge.",
+    "link": "http://arxiv.org/abs/2606.07441v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07434v1",
+    "title": "Evidence Markets",
+    "authors": [
+      "Safwan Hossain",
+      "Gabriel Andrade",
+      "Chengqi Zang",
+      "Yiling Chen"
+    ],
+    "summary": "Modern prediction markets face two limitations that restrict their applicability in a range of settings:~(i)~they reveal what the crowd believes but not the evidence or reasoning behind those beliefs, and~(ii)~they require an event with an external ground truth that resolves at a known future date. We address these twin challenges by introducing evidence markets, a generalization of prediction markets that incentivizes the submission of evidence alongside beliefs and can be endogenously resolved using the crowd-sourced evidence if external resolution is not possible. At its core, the market uses a logarithmic market scoring rule whose liquidity parameter changes dynamically with the accumulated evidence quality. We prove that platform loss is bounded, evidence is rewarded proportional to the current market uncertainty, and can be equivalently implemented through an automated market maker. In the case where the marker resolves endogenously based on submitted evidence, we characterize how withholding evidence shifts a trader's belief about resolution and use it to prove truthful belief and evidence reporting is a always an $\\varepsilon$-dominant strategy incentive compatible (DSIC) strategy. To address operational considerations, we propose evidence verification via an LLM-as-a-Judge framework with staking and give an asynchronous execution algorithm that is not bottle-necked by verification. Throughout the work, we use LLM evaluations -- determining which model is best for a given task -- as a salient and representative running example for our proposed market.",
+    "link": "http://arxiv.org/abs/2606.07434v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07433v1",
+    "title": "Watch, Remember, Reason: Human-View Video Understanding with MLLMs",
+    "authors": [
+      "Jiahao Meng",
+      "Yue Tan",
+      "Qi Xu",
+      "Kuan Gao",
+      "Weisong Liu",
+      "Yanwei Li",
+      "Jason Li",
+      "Lingdong Kong",
+      "Haochen Wang",
+      "Qianyu Zhou",
+      "Jiangning Zhang",
+      "Guangliang Cheng",
+      "Yunhai Tong",
+      "Lu Qi",
+      "Minghsuan Yang"
+    ],
+    "summary": "Video understanding is being rapidly transformed by multimodal large language models (MLLMs), as research moves from short clips to long, multimodal, and knowledge-intensive video scenarios. These scenarios require models to handle sparse evidence, long-range dependencies, multimodal alignment, and reliable inference under limited computational budgets. This work presents a human-view perspective on LLM-based video understanding, organized around three functional abilities: watching, remembering, and reasoning. Rather than treating video tasks as isolated benchmarks, this view provides a unified structure for analyzing how video MLLMs acquire evidence, preserve context, and produce grounded outputs. We introduce a formulation that characterizes video understanding systems by their perceptual representations, memory states, reasoning traces, and final predictions. Based on this formulation, we identify challenges in spatio-temporal perception, efficient long-video processing, memory modeling, streaming understanding, and faithful reasoning. Representative methods are organized by their roles in video MLLM systems. Watching covers fine-grained, comprehensive, audio-visual, and efficient perception. Remembering includes offline and streaming memory, while reasoning covers text-only reasoning and thinking with videos. We further examine application domains such as egocentric, sports, instructional, medical, and narrative videos, and cover training datasets and evaluation benchmarks across task types, supervision formats, modalities, and capability dimensions. Finally, we outline open problems and future directions for scalable, memory-aware, and evidence-grounded video intelligence. Related works will be continuously traced at https://github.com/marinero4972/Awesome-HumanView-VideoUnderstanding.",
+    "link": "http://arxiv.org/abs/2606.07433v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07422v1",
+    "title": "The Masked Advantage: Uncovering Local-Language Access to Cultural Knowledge in LLMs",
+    "authors": [
+      "Yang Zhang",
+      "Xiao Fei",
+      "Amr Mohamed",
+      "Sarah Almeida Carneiro",
+      "Mersin Konomi",
+      "Mingmeng Geng",
+      "Ahmed Asaad",
+      "Guokan Shang",
+      "Michalis Vazirgiannis"
+    ],
+    "summary": "Large language models are increasingly used to answer culturally grounded questions across languages, yet it remains unclear whether local cultural knowledge is better accessed through English or the local language. Existing evaluations face two key limitations: many rely on parallel template-based questions that may not reflect how cultural knowledge naturally appears, and raw accuracy conflates general language proficiency with language-conditioned knowledge access. We address these issues with a controlled framework built on real-world cultural questions collected from regional benchmarks and local sources. By crossing question type (culture-agnostic vs. culture-specific) with query language (English vs. local language), and estimating ability with a shared 1PL item response theory model, we separate proficiency from localized knowledge access. Across 13 locales and roughly 80 models, we find a consistent English advantage on culture-agnostic questions, indicating stronger English proficiency. However, after accounting for this proficiency gap, local languages show a positive knowledge-access advantage in nearly all locale-model settings. This advantage is often masked in raw accuracy but becomes more visible for frontier, regionally aligned, or language-adapted models. Our results suggest that weaker local-language performance does not necessarily imply weaker cultural knowledge; rather, local cultural knowledge may be more accessible through the local language but hidden by limited language proficiency.",
+    "link": "http://arxiv.org/abs/2606.07422v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07412v1",
+    "title": "Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills",
+    "authors": [
+      "Chuan Xiao",
+      "Zhengbo Jiao",
+      "Shaobo Wang",
+      "Wei Wang",
+      "Bing Zhao",
+      "Hu Wei",
+      "Linfeng Zhang",
+      "Lin Qu"
+    ],
+    "summary": "LLM-driven software engineering agents have become a central testbed for real-world language-model capability, yet their training remains limited by the availability of high-quality SWE tasks. Existing synthetic data methods typically create tasks through fixed mutation or bug-injection procedures, making the resulting distributions largely independent of the agent's own weaknesses and training progress. We introduce Socratic-SWE, a closed-loop self-evolution framework that reuses the agent's historical solving traces as a source of training signal. Rather than treating traces only as evidence for reward computation, Socratic-SWE distills them into structured agent skills that summarize recurring failures and effective repair patterns. These skills then guide the generation of targeted repair tasks in real repositories. Candidate tasks are checked through execution-based validation and scored with a solver-gradient alignment reward, so that the retained tasks are both verifiable and useful for improving the Solver. The updated Solver produces new traces, enabling the task curriculum to adapt over successive rounds. Across SWE-bench Verified, SWE-bench Lite, SWE-bench Pro, and Terminal-Bench 2.0, Socratic-SWE consistently improves over self-evolving baselines under the same compute budget, reaching 50.40% on SWE-bench Verified after three iterations. These results suggest that solving traces can serve as a scalable substrate for self-evolving SWE agents.",
+    "link": "http://arxiv.org/abs/2606.07412v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07410v1",
+    "title": "A Comprehensive Anatomy of Human and DeepSeek-R1 LLM Mathematical Reasoning",
+    "authors": [
+      "Yuxiang Chen",
+      "Jun Wang"
+    ],
+    "summary": "The emergence of \"Aha moments\" in large language models, particularly DeepSeek-R1-0120, has raised the question of whether these systems genuinely reason or merely imitate the appearance of reasoning. We conduct a comprehensive empirical comparison between model and human reasoning across all 30 problems from AIME 2025, exhaustively annotating 10,247 reasoning steps into five functional categories: Analysis, Inference, Branch, Backtrace, and Reflection. We find a clear structural difference. Human solutions maintain a compact alternation between analysis and deduction, whereas DeepSeek-R1 frequently revisits intermediate results, performs shallow and often unnecessary verification, and loops through local checks without meaningful logical progress. We describe this as topological mimicry: reproducing the surface form of reasoning without its functional role. Despite this, we identify two signals of genuine reasoning. First, successful traces exhibit stable use of branching and backtracking, while failed traces either underuse or overuse exploratory actions. Second, reflection is only effective when placed within deductive inference; reflections trapped in analysis loops focus on local numerical details while missing global logical errors. These findings suggest that current long-CoT models may be rewarded more for the appearance of reasoning than for genuine deductive progress. We discuss directions for improving evaluation and training, including measuring cross-trace stability, penalising \"spinning-wheel\" traces, encouraging deeper logical correction, and reallocating inference-time compute toward deduction and backtracking. Overall, reasoning quality depends not simply on how much reflection occurs, but on whether reflection appears consistently and at the appropriate logical scale.",
+    "link": "http://arxiv.org/abs/2606.07410v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07404v1",
+    "title": "Reversible Foundations: Training a 120B Sparse MoE through State-Preserving Scaling",
+    "authors": [
+      "Rohan Shravan"
+    ],
+    "summary": "This paper reports on training a hundred-billion-parameter sparse mixture of experts on a single eight-GPU node, end to end. LightningLM 0.1V is a recurrence-backbone language model family grown in four stages from a small dense seed, through a 5B and a 9B mixture of experts, to a 120B model with 460 routed experts under top-12 routing. Each larger model is grown from the trained weights of the smaller one; active parameters rise monotonically from 1.78B at the dense seed to 5.93B at 120B (about 5% of the 118.67B stored). The full lineage runs on single nodes, the larger stages at 8K context, reaching a released training loss of 1.78 at 120B scale.   This is a systems and experience report. It is organized around three disciplines. Reversibility: a reversible recurrence stack reconstructs activations in the backward pass instead of storing them, holding activation memory flat as the model grows. State-preserving growth: each expansion (dense to MoE, shallow to deep, few experts to many) is given as a reproducible principle paired with the failure that results from getting it wrong; several failures are silent. Single-node economics: the 120B trains through TQP, a strategy of quantized base expert weights and trained low-rank adapters that carries optimizer state on 2.26B adapter parameters rather than 100B+ resident in routed experts, cutting expert-path optimizer state by a factor of ~45.   What is new is the integration of known primitives, not any primitive in isolation: one grown lineage running end to end on a single node, documented at practitioner level, with per-domain held-out loss as evidence that targeted capabilities (multilingual Indic competence, code) were learned by construction. Model family, tokenizer, and training code are released.",
+    "link": "http://arxiv.org/abs/2606.07404v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07392v1",
+    "title": "Online Pandora's Box for Contextual LLM Cascading",
+    "authors": [
+      "Alexandre Belloni",
+      "Yan Chen",
+      "Yehua Wei"
+    ],
+    "summary": "Motivated by Large Language Model (LLM) cascading, we propose an online contextual Pandora's Box model for adaptively querying and selecting LLM APIs. In each period, a decision-maker observes a request context and faces a two-phase decision problem. In the query phase, the decision-maker sequentially queries APIs, where each query reveals a generated output and the decision-maker incurs an (output-dependent) cost. In the selection phase, the decision-maker selects one of the generated outputs to deploy and observes only the downstream reward of the deployed output. This output-mediated feedback structure differs from classical online contextual Pandora's Box models, in which opening a box directly reveals its reward.   Rather than estimating the full conditional output and cost distributions of each API, we directly model the reservation index and develop a learning approach for the query phase. Specifically, we impose a parametric structure on the contextual reservation index functions induced by the classical Weitzman's policy. Our policy combines generalized method of moments (GMM) type estimation of these reservation indices with UCB-style confidence bounds for both these indices and the shared output-level reward evaluator. Under regularity conditions, we prove that the resulting policy achieves dimension-dependent $\\widetilde O(\\sqrt T)$ cumulative regret over a horizon of $T$ periods.",
+    "link": "http://arxiv.org/abs/2606.07392v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07367v1",
+    "title": "Self-evolving LLM agents with in-distribution Optimization",
+    "authors": [
+      "Yudi Zhang",
+      "Meng Fang",
+      "Zhenfang Chen",
+      "Mykola Pechenizkiy"
+    ],
+    "summary": "Large Language Models (LLMs) have recently emerged as powerful controllers for interactive agents in complex environments, yet training them to perform reliable long-horizon decision making remains a fundamental challenge. A key difficulty lies in credit assignment: agents often receive delayed rewards only at the end of episodes. In this paper, we propose Q-Evolve, a self-evolving framework for LLM agents that unifies automatic process-reward labeling and policy learning within a principled in-distribution reinforcement learning paradigm. In each evolving iteration, our method learns an in-distribution critic from a hybrid off-policy dataset that combines expert demonstrations with agent-generated trajectories, stabilizing Bellman backups in sparse-reward settings via a weighted Implicit Q-Learning objective. The learned value function is then used to derive step-wise process rewards through advantage estimation, enabling dense and reliable supervision without environment backtracking or human annotation. Leveraging these signals, we perform behavior-proximal policy optimization that evolves the agent over the data used for process reward labeling, allowing iterative self-improvement without exacerbating distribution shift. We evaluate our method on AlfWorld, WebShop, and ScienceWorld, showing Q-Evolve outperforms strong baselines in sample efficiency, robustness, and overall task performance. Our results demonstrate that stable agent self-evolution is achievable through the co-evolution of process-level supervision and policy, both grounded within a shared in-distribution learning loop.",
+    "link": "http://arxiv.org/abs/2606.07367v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07363v1",
+    "title": "On the Shoulders of Giants: Empowering Automated Smart Contract Auditing via the GiAnt Corpus",
+    "authors": [
+      "Xiaoting Zhang",
+      "Zhipeng Gao",
+      "Yiran Lv",
+      "Xing Hu",
+      "Feifei Niu",
+      "Xin Xia"
+    ],
+    "summary": "High-quality smart contract auditing datasets are crucial for evaluating security tools and advancing smart contract security research. Two major limitations of existing datasets are the manual-induced scalability bottleneck and the deficiency in data granularity and diversity. To address these limitations, we propose GiANT, an automated framework designed to curate smart contract auditing datasets by distilling vulnerability insights from real-world auditing reports. GiANT employs a divide-and-conquer strategy coupled with the Chain-of-Thought technique to extract structured vulnerability information from Code4rena reports, followed by an LLM-as-a-judge mechanism to perform rigorous quality assurance. To evaluate GiANT's effectiveness, we run it on 388 real-world audit reports and generate the GiAnt Corpus comprising 7,711 vulnerability findings across five severity levels. Manual assessment of the dataset demonstrates exceptional reliability in information extraction, achieving a mean quality score of $4.76\\pm0.37$ (out of 5) with inter-rater agreement $\u03ba$ of 0.88. We further validate the practicality of our dataset by benchmarking 4 state-of-the-art LLMs on vulnerability detection, code summarization, mitigation recommendation, and automated gas optimization tasks, to establish performance baselines, thereby providing a valuable data foundation for future research in automated smart contract auditing.",
+    "link": "http://arxiv.org/abs/2606.07363v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07342v1",
+    "title": "LLM-Guided Evolution for Medical Decision Pipelines",
+    "authors": [
+      "Ivan Sviridov",
+      "Artem Oskin",
+      "Ivan Panin",
+      "Iaroslav Bespalov",
+      "Dmitry Dylov",
+      "Ivan Oseledets",
+      "Aleksandr Nesterov"
+    ],
+    "summary": "Adapting large language models (LLMs) to clinical workflows often requires costly fine-tuning or manual prompt and pipeline engineering. We study LLM-guided MAP-Elites evolution as an inference-time alternative for discovering medical decision strategies and provide an implementation repository at https://github.com/univanxx/llm_guided_evo_medical. We formulate urgency triage, interactive consultation, and medical image classification as evolutionary searches over executable artifacts optimized by task-specific fitness functions.   Across all three settings, evolution improves over manually designed baselines under practical constraints. In triage, evolved programs increase Semigran accuracy from $77.3\\%$ to $87.1\\%$ and emergency recall from $0.60$ to $0.97$, while improving safety-weighted held-out MIMIC-ESI performance. In interactive consultation, evolved policies improve the accuracy--cost frontier across Llama-3, Qwen-3.5, and Gemma-4 and transfer to held-out iCRAFTMD. In PneumoniaMNIST, prompt-only evolution improves frozen MedGemma VLMs while preserving strict JSON outputs. Qualitative analysis shows that the gains come from interpretable program-level mechanisms, calibrated triage boundaries, targeted evidence acquisition, selective commitment, and finding-oriented visual decision rules, rather than superficial prompt rewording alone.",
+    "link": "http://arxiv.org/abs/2606.07342v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.07341v1",
+    "title": "Empirical Evaluation of Large Language Models for Migration of Code Fragments to Post-Quantum Cryptography",
+    "authors": [
+      "Javier Pallar\u00e9s de Bonrostro",
+      "Ana I. Gonz\u00e1lez-Tablas",
+      "Mar\u00eda Isabel Gonz\u00e1lez Vasco"
+    ],
+    "summary": "The transition to post-quantum cryptography (PQC) requires not only replacing vulnerable cryptographic primitives, but also refactoring the surrounding software logic. While existing PQC migration frameworks provide organizational guidance, practical code-level remediation remains largely manual and error-prone. This paper evaluates whether large language models (LLMs) can be trained to assist in the migration of pre-quantum cryptographic code fragments to post-quantum counterparts while preserving functional correctness. To this end, we introduce a reproducible experimental framework built around a synthetic dataset of 800 paired Python code fragments covering six cryptographic families and combined multi-primitive cases. Each pair is validated through category-specific functional tests, enabling both dataset quality control and objective evaluation of model-generated migrations. Four models are assessed: GPT-4.1 in a zero-shot setting, and fine-tuned versions of GPT-3.5-turbo, GPT-4.1-mini, and CodeLlama-7B-Instruct. The results show that domain-specific fine-tuning is essential for reliable cryptographic migration. The fine-tuned GPT-4.1-mini model achieves the best overall performance, with a mean static similarity of 0.9072 and a dynamic functional correctness rate of 92.5%, substantially outperforming the zero-shot baseline. A complementary validation on six open-source repositories further shows that the approach can produce useful migrations in localized cryptographic modules, while also revealing limitations in larger projects with complex dependencies and cross-module interactions. These findings suggest that fine-tuned LLMs can serve as practical components in future crypto-agile migration pipelines, provided they are coupled with automated verification and dependency-aware validation.",
+    "link": "http://arxiv.org/abs/2606.07341v1",
+    "date": "2026-06-05",
+    "fetched_at": "2026-06-08"
+  },
+  {
     "id": "http://arxiv.org/abs/2605.31586v1",
     "title": "Language Models Learn Constructional Semantics, Not To Mention Syntax: Investigating LM Understanding of Paired-Focus Constructions",
     "authors": [
