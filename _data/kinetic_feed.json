@@ -1,5 +1,354 @@
 [
   {
+    "id": "http://arxiv.org/abs/2606.28294v1",
+    "title": "Democratic ICAI: Debating Our Way to Steering Principles from Preferences",
+    "authors": [
+      "Kevin Kingslin",
+      "Anish Natekar",
+      "Ashutosh Ranjan",
+      "Vivek Srivastava",
+      "Savita Bhat",
+      "Shirish Karande"
+    ],
+    "summary": "Preference-based alignment often struggles to capture the reasoning that underlies human judgments. Many evaluations rely on multiple interacting criteria, yet pairwise labels reveal only the final choice rather than the considerations that shape preferences. Inverse Constitutional AI (ICAI) improves interpretability in decision making by summarizing preferences into natural-language principles, but its single-pass explanations miss much of the nuance involved in complex decisions. We introduce Democratic ICAI, a novel approach that gathers multiple competing rationales through structured persona debate, offering a broader and more expressive account of the factors influencing each comparison. From these richer signals, we derive clearer and more comprehensive steering principles and use them to guide decision modeling through both LLM-based and decision-tree judges. Experiments on creative preference benchmarks, MuCE-Pref and LiTBench, across multiple creative task categories show that Democratic ICAI yields a more faithful preference structure. It improves average preference prediction across tasks relative to deliberative prompting and principle-based baselines, while producing constitutions that LLM annotators prefer.",
+    "link": "http://arxiv.org/abs/2606.28294v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28249v1",
+    "title": "HPRO: Hierarchical Progressive Reward Optimization via Preference Extraction for Emotional Text-to-Speech",
+    "authors": [
+      "Sihang Nie",
+      "Xiaofen Xing",
+      "Rui Xing",
+      "Haoming Li",
+      "Ruitong Xiao",
+      "Jingyuan Xing",
+      "Baiji Liu",
+      "Xiangmin Xu"
+    ],
+    "summary": "Recently, Large Language Model (LLM)-based Text-to-Speech (TTS) models have achieved remarkable naturalness. However, the standard Supervised Fine-Tuning paradigm often converges to statistically averaged prosody, limiting emotional expressiveness. While preference-driven optimization offers a promising alternative, existing approaches suffer from two structural mismatches: information conflict, where content and emotion in a shared latent space produce conflicting gradients, leading to reward hacking and semantic degradation; and scale gap, where sparse sentence-level rewards struggle to guide dense frame-level generation. To overcome these challenges, we propose HPRO, a hierarchical progressive reward optimization framework. Within HPRO, we introduce the HD-Emo codec as a novel differentiable reward model to resolve the information conflict. It extracts speech into distinct content and style preference tokens, structurally isolating emotional optimization from semantic content. Building upon this structured preference space, HPRO bridges the scale gap by progressively aligning frame-, word- and sentence-level objectives. Experiments demonstrate that HPRO significantly enhances emotional expressiveness, while effectively preserving linguistic intelligibility. The code and audio samples are publicly available at https://xxh333.github.io/hpro-demo/.",
+    "link": "http://arxiv.org/abs/2606.28249v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28237v1",
+    "title": "Unleashing Infinite Motion: Scaling Expressive Quadrupedal Motion via Generative Video Priors",
+    "authors": [
+      "Youzhi Liu",
+      "Li Gao",
+      "Yifei Qian",
+      "Liu Liu",
+      "Yang Cai",
+      "Ziqiao Li"
+    ],
+    "summary": "Quadruped robots have achieved remarkable locomotion, yet their behavioral repertoire remains confined to a few gaits--far from the expressive, companion-like presence long envisioned for them. Attempts to import the humanoid recipe of large-scale motion data have inherited one tacit assumption: that robot motion must first pass through an animal body, making data collection dependent on cooperative animals, reconstruction fragile across species, and retargeting ill-posed across incompatible morphologies. We propose Uni-Mo, a fully automated pipeline that removes the animal from the loop by reframing data scarcity as a generation problem: an LLM proposes motion prompts, a video diffusion model synthesizes the corresponding robot behaviors, and the generated videos are lifted into 3D reference trajectories used to train tracking policies deployed on a real Unitree Go2. To make naively-drifting generations reliably extractable, we introduce an Identity Consistency Loss that enforces appearance coherence across frames. We release Quad-Imaginarium at https://github.com/GaoLii/Quad-Imaginarium.git, the resulting open-source dataset of 7,488 language-annotated quadruped motions (18.5 hours) spanning acrobatic and performative behaviors. We validate 392 randomly sampled motions on a real Unitree Go2 with a 96.7% deployment success rate, complemented by a 97.6% success rate across the full dataset in simulation.",
+    "link": "http://arxiv.org/abs/2606.28237v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28229v1",
+    "title": "Humanizing Automatically Generated Unit Test Suites with LLM-Based Refactoring",
+    "authors": [
+      "Wendk\u00fbuni C. Ou\u00e9draogo",
+      "Yinghua Li",
+      "Xueqi Dang",
+      "Pawe\u0142 Borsukiewicz",
+      "Lingfeng Bao",
+      "Anil Koyuncu",
+      "Jacques Klein",
+      "David Lo",
+      "Tegawend\u00e9 F. Bissyand\u00e9"
+    ],
+    "summary": "Search-based test generation tools such as EvoSuite produce compilable and high-coverage unit tests at scale, but their suites are often hard to read and maintain. LLMs can generate more natural tests, yet direct generation remains brittle, with compilation rates of only 51-78% in our study. We introduce TestHumanizer, a hybrid SBST+LLM approach that uses LLMs as controlled refactoring layers over compilable SBST suites to improve naming, structure, and developer-oriented clarity while preserving behavior and compilation validity. We evaluate TestHumanizer on 350 classes from Defects4J and SF110. EvoSuite generates 15 suites per class, and each suite is refactored under three context configurations using gpt-4o and mistral-large-2407, yielding 31,500 refactorings. TestHumanizer reaches 88-98% compilation rates, close to EvoSuite's 100% baseline and clearly above direct LLM generation. Structural coverage is largely preserved, typically within 1-2 percentage points, and 86-95% of refactorings satisfy a composite faithful-refactoring threshold. Refactored suites also improve predicted readability, reduce control-flow and cognitive complexity, and mitigate structural smells. The summary-based setting offers the most robust trade-off, while long code-centric prompts are more prone to hallucination-induced failures. A developer study on 30 classes and 444 test methods confirms significant gains in perceived readability and willingness to adopt, with Wilcoxon p less than 0.01 and substantial inter-rater agreement. Overall, LLMs are most effective not as standalone generators but as validation-gated refinement layers over robust SBST outputs.",
+    "link": "http://arxiv.org/abs/2606.28229v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28187v1",
+    "title": "GBC: Gradient-Based Connections for Optimizing Multi-Agent Systems",
+    "authors": [
+      "Xiaocheng Yang",
+      "Abdulrahman Alrabah",
+      "Dilek Hakkani-T\u00fcr",
+      "Gokhan Tur"
+    ],
+    "summary": "Multi-agent systems (MAS) built on large language models (LLMs) provide a promising framework for solving complex tasks through role specialization and structured interaction. However, their performance is often limited by miscoordination and, more fundamentally, the lack of fine-grained credit assignment across agents. Existing approaches typically rely on coarse-grained feedback, making it difficult to identify which agents or interaction steps are responsible for errors. We propose Gradient-Based Connections (GBC), an approach for fine-grained attribution and optimization of multi-agent systems. GBC models a MAS as a computational graph and introduces gradient-based connection weights to quantify the influence of each agent's output on downstream agents at the token level. By constructing an attribution graph and propagating task-specific loss signals backward, our method enables precise identification of error sources and targeted prompt optimization. We further develop AgentChord, an efficient implementation that leverages prefix-based gradient computation. Experiments on MultiWOZ and \u03c4-bench show that GBC improves multi-agent performance and outperforms strong single-agent and multi-agent baselines, and higher attribution quality is associated with greater optimization effectiveness. Code is available at: https://github.com/yxc-cyber/AgentChord.",
+    "link": "http://arxiv.org/abs/2606.28187v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28186v1",
+    "title": "Cognitive Episodes in LLM Reasoning Traces Enable Interpretable Human Item Difficulty Prediction",
+    "authors": [
+      "Chenguang Wang",
+      "Ming Li",
+      "Xinyue Zeng",
+      "Zhuochun Li",
+      "Hong Jiao",
+      "Tianyi Zhou",
+      "Dawei Zhou"
+    ],
+    "summary": "Predicting human item difficulty is central to educational assessment, where reliable estimates support fairness and effective test construction. Existing methods often depend on costly human calibration or item-level textual representations, providing limited evidence about the cognitive processes that make items difficult. We argue that difficulty should be viewed not only as a property of item text, but also as an observable consequence of the problem-solving burden an item induces. Large Reasoning Models (LRMs) offer scalable process evidence through reasoning traces, but such evidence must be structured to support interpretable modeling. To this end, we introduce Epi2Diff (Episode to Difficulty), a framework that maps LRM reasoning traces into cognitively grounded episode sequences. These episodes group trace segments into functional problem-solving states, enabling difficulty to be modeled through reasoning scale, effort allocation, and state transitions. Epi2Diff extracts compact episode-dynamic features and combines them with semantic item representations for human difficulty prediction. Experiments on four real-world human difficulty datasets show that Epi2Diff consistently outperforms strong baselines, including fine-tuned small language models, LLM in-context learning, and supervised LLM adaptation. On SAT-derived classification benchmarks, Epi2Diff achieves an 8.1% average relative gain over supervised LLM fine-tuning baselines. Further analyses show that harder items induce more effortful, iterative, and implementation-centered episode dynamics, rather than merely longer responses. These results demonstrate that cognitive episodes in LRM reasoning traces provide a predictive and interpretable process representation for human item difficulty, offering a new lens for educational measurement with reasoning models.",
+    "link": "http://arxiv.org/abs/2606.28186v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28182v1",
+    "title": "LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior",
+    "authors": [
+      "Qinhong Zhou",
+      "Chuang Gan",
+      "Anoop Cherian"
+    ],
+    "summary": "Embodied agents operating in decentralized and partially observable environments have attracted growing attention in recent years. However, existing large language model (LLM)-based agents often exhibit behaviors that are misaligned with their partners or inconsistent with the environment state, leading to inefficient cooperation and poor task success. To address this challenge, we propose a novel framework, Learning Laws of Cooperation (LLawCo), that enables embodied agents to autonomously align with both their partners and task objectives. Our framework allows agents to reflect on past failures to extract misaligned behavioral patterns, which are used to derive high-level behavioral laws, such as \"Talk when necessary\" and \"Wait for partner.\" These laws are explicitly incorporated into the agents' chains of thought via supervised fine-tuning, aligning their reasoning with task requirements and the behavior of other agents. To evaluate our approach, we introduce PARTNR-Dialog, a large-scale multi-agent communicative and cooperative planning benchmark built on the PARTNR environment. Experiments on existing tasks and our new benchmark demonstrate significant improvements in cooperative efficiency and task success rates. Across four backbone LLMs, our method achieves average success rate improvements of 4.5% on the PARTNR-Dialog benchmark and 6.8% on the TDW-MAT benchmark over state-of-the-art open-source communicative agent frameworks. See the LLawCo project page for details: https://www.merl.com/research/highlights/LLawCo",
+    "link": "http://arxiv.org/abs/2606.28182v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28153v1",
+    "title": "Robust Harmful Features Under Jailbreak Attacks: Mechanistic Evidence from Attention Head Specialization in Large Language Models",
+    "authors": [
+      "Yanchen Yin",
+      "Dongqi Han",
+      "Linghui Li"
+    ],
+    "summary": "Jailbreak attacks bypass LLM safety alignment, yet their mechanisms remain poorly understood. We provide evidence that attacks do not comprehensively eliminate safety features, but instead selectively suppress specific attention heads. We identify two functionally differentiated types: Adversarially Compromised Heads (ACHs) concentrated in early layers, which are suppressed under attacks, and Safety-Aligned Heads (SAHs) in mid-layers, which maintain robust activations even when attacks succeed. Ablation studies support the causal role of ACHs and the contribution of SAHs to robust activations: suppressing a small number of ACHs is sufficient to induce jailbreak-like behavior on normally refused inputs, while removing SAHs substantially weakens mid-layer safety activations. Token-level attribution further shows that ACH suppression is driven specifically by attack-template tokens, providing a mechanistic account of why attacks can bypass refusal decisions through ACH suppression while leaving internal safety signals sustained by SAHs -- a phenomenon we term Robust Harmful Features. To validate the practical significance of this robustness, we show that simply reading these persistent activations -- without any training -- yields competitive aggregate detection performance with strong adversarial robustness.",
+    "link": "http://arxiv.org/abs/2606.28153v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28127v1",
+    "title": "From Tokens to States: LLMs as a Special Case of World Models and the Continuous Path Beyond",
+    "authors": [
+      "Paul Dubois"
+    ],
+    "summary": "The AI community has framed the relationship between large language models (LLMs) and world models as a dichotomy: LLMs predict tokens; world models simulate reality. Yann LeCun argues in 2022 that reaching general intelligence requires abandoning autoregressive token prediction in favour of latent-space architectures. This framing is unnecessarily binary. Two claims will be defended. First, LLMs are a degenerate special case of world models: the state space is the set of all token sequences, the only action is appending one token, and world models are therefore a strict generalisation of LLMs, not a replacement. Second, there is a natural continuous spectrum from NTP to JEPA, with multi-token prediction, future-summary prediction, and next-latent prediction as intermediate stations already populated by current research. Moving along this spectrum relaxes the LLM constraints one by one. It also progressively surrenders the two practical advantages that make LLMs trainable at scale: internet-scale self-supervised data, and a transformer architecture co-designed for discrete token prediction. Both are examined as open research questions: the data question (the cliff from self-supervised text to instrumented action-labelled environments) and the architecture question (whether the transformer generalises to continuous-state prediction, or whether a new primitive is needed).",
+    "link": "http://arxiv.org/abs/2606.28127v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28116v1",
+    "title": "Mechanism-Driven Monitors for Preemptive Detection of LLM Training Instability",
+    "authors": [
+      "Ruixuan Huang",
+      "Yipei Wang",
+      "Wenyi Fang",
+      "Hantao Huang",
+      "Yifan Huang",
+      "Ansheng You",
+      "Zhenxing Zhang",
+      "Shuai Wang",
+      "Fan Wu",
+      "Yang Zheng"
+    ],
+    "summary": "Frontier large language model training consumes massive accelerator fleets and long wall-clock computation, making stability failures costly when they occur. After a numerical or a hyperparameter fault has already destabilized the training dynamics, it may continue for thousands of steps while loss and gradient norms still appear normal. We study mechanism-driven detection of training instability by deriving internal monitors from the functional role of each critical module and from the earliest computational sites where failures are expected to produce measurable signatures. For low-precision flash attention, we monitor the spectral entropy of a QK bilinear decomposition, whose first-order term becomes abnormal before the loss fully collapses. For MoE routers, we derive indicators from their role in expert selection. Our fault-injection experiments on low-precision attention, large learning-rate, and combined faults show that these signals provide distinct signatures for different failures, triggering thousands of steps before loss divergence.",
+    "link": "http://arxiv.org/abs/2606.28116v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28090v1",
+    "title": "Typing Behavior in Human-LLM Interaction: Keystroke Dynamics Reveal Cognitive Effort During Prompting",
+    "authors": [
+      "Laura Sch\u00fctz",
+      "Yousri Cherif",
+      "Clara Sayffaerth",
+      "Thomas Weber",
+      "Francesco Chiossi"
+    ],
+    "summary": "As Large Language Models (LLMs) become increasingly integrated into daily routines, understanding how users interact with these systems is crucial for effective human-AI collaboration. This work investigates keystroke dynamics as a behavioral measure of user mental effort and perceived output usefulness in human-LLM interaction. We conducted a user study (N = 36) to examine how task difficulty (easy vs. hard) and device type (desktop vs. mobile) influence typing behavior and workload (NASA-TLX) during interactions. Our results indicate that hard tasks led to significantly more keystrokes, slower typing, increased pauses, and higher self-reported workload. Device type had weaker effects, with mobile use slightly reducing input length and typing speed. While keystrokes captured differences in cognitive effort, they did not predict perceived LLM output usefulness. These findings highlight the potential of keystroke dynamics as real-time indicators of cognitive effort during LLM prompting, while also showing their limitations in capturing perceived collaboration success.",
+    "link": "http://arxiv.org/abs/2606.28090v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28081v1",
+    "title": "Context-Aware Explanations for Spatialized Document Layouts",
+    "authors": [
+      "Wei Liu",
+      "John Wenskovitch",
+      "Chris North",
+      "Rebecca Faust"
+    ],
+    "summary": "Spatialized document layouts are widely used for exploratory analysis of text corpora, but interpreting the spatial organization of documents and the relationships between regions remains challenging. Existing approaches primarily summarize document content or explain how layouts are generated, providing limited support for understanding spatial relationships within the layout itself. We present CAPE, a context-aware explanation framework that generates natural-language explanations grounded in both document semantics and layout-derived spatial context. CAPE identifies salient spatial patterns (e.g., clusters, subgroups, outliers, and bridging documents) and constructs multi-level contextual representations to guide LLM-based explanation generation. It supports both AI-guided overview and user-driven exploration, with explanations available at multiple levels of detail. We demonstrate CAPE on news and scholarly document layouts and evaluate it in a controlled user study against keyword-based and content-only LLM baselines. Our results suggest that spatially grounded explanations are perceived as more helpful than content-only baselines for interpreting the spatial organization of document layouts.",
+    "link": "http://arxiv.org/abs/2606.28081v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28070v1",
+    "title": "JD Oxygen AI Item Center (Oxygen AIIC) V1: An Industrial-Scale LLM/VLM-Centric Solution for Item Understanding, Management, and Applications",
+    "authors": [
+      "Oxygen AIIC",
+      "Chan Long",
+      "Chao Liu",
+      "Chaofan Chen",
+      "Chaohui Dong",
+      "Chunyuan Guo",
+      "Danping Liu",
+      "Debin Liu",
+      "Deping Xiang",
+      "Fulai Xu",
+      "Guangyue Liu",
+      "Hao Li",
+      "Huichun Hu",
+      "Jian Yang",
+      "Jianan Wang",
+      "Jianbo Zhao",
+      "Jiaoyang Li",
+      "Jiaxing Wang",
+      "Jinglong Li",
+      "Jinjin Guo",
+      "Jun Fang",
+      "Jun Liu",
+      "Kai Zhou",
+      "Li Wang",
+      "Lili Gao",
+      "Liying Chen",
+      "Luning Yang",
+      "Mengdi Zhou",
+      "Pengzhang Liu",
+      "Qi Lv",
+      "Qianyun Wang",
+      "Qixia Jiang",
+      "Ruyue Li",
+      "Shimu Liang",
+      "Shuxing Wang",
+      "Sijie Zhang",
+      "Siqi Li",
+      "Tianhao Gao",
+      "Wang Ke",
+      "Weihu Huang",
+      "Wencan Lai",
+      "Wenjie Zhang",
+      "Xiaohui Zhang",
+      "Xiaojing Dong",
+      "Ya Liu",
+      "Yifeng Zhang",
+      "Yixiang Wang",
+      "Yongtai Zhang",
+      "Yongyi Liao",
+      "Zhaoru Chen",
+      "Zhen Chen",
+      "Zhiyong Ma",
+      "Zhiyuan Liu",
+      "Zhongwei Liu",
+      "Ziyan Xing"
+    ],
+    "summary": "JD.com, one of the world's largest e-commerce platforms, serves over 700 million active users and millions of merchants, with a catalog of tens of billions of SKUs. At this scale, high-quality, structured item knowledge underpins a better consumer experience, lower management costs, and higher operational efficiency-yet producing and serving it poses three industrial-scale challenges: fast-emerging concepts, high-quality knowledge production for massive SKUs, and diverse downstream requirements. To address these challenges, we present the JD Oxygen AI Item Center (Oxygen AIIC), an industrial-scale platform built on LLMs/VLMs for item-knowledge production and service. Oxygen AIIC is built around four core pillars: (i) ontology engineering driven by efficient human-AI collaboration, which supports the dynamic evolution and agile expansion of an ontology with millions of entries; (ii) a \"Semantic Search then Discrimination\"(S2D) knowledge identification architecture that, combined with throughput improvement strategies, enables scalable, extensible, and high-throughput AI Item Library production for tens of billions of SKUs; (iii) self-evolving item-understanding LLMs/VLMs that improve in a stable and controllable manner, enabling knowledge production with 94.2% precision and 82.8% recall; and (iv) a unified item tunnel that serves as the data and service hub. Oxygen AIIC now covers tens of thousands of JD categories and processes hundreds of millions of item updates per day on Huawei Ascend NPUs. It has accumulated hundreds of billions of item-knowledge assets. Deployed across core business scenarios-including search, recommendation, operations, category planning-Oxygen AIIC has delivered measurable gains at scale. Search-traffic coverage reaches 80.4%, item-information quality issues drop by 37%, the automated fill rate of core attributes during item listing exceeds 80%.",
+    "link": "http://arxiv.org/abs/2606.28070v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28062v1",
+    "title": "Single and Multi Truth Data Fusion using Large Language Models",
+    "authors": [
+      "Hira Beril Kucuk",
+      "Norman W Paton",
+      "Jiaoyan Chen",
+      "Zhenyu Wu"
+    ],
+    "summary": "Data fusion, also known as truth discovery, is a data integration problem that aims to determine the correct value or set of values for each attribute of an object when presented with potentially conflicting values from multiple sources. Data fusion tasks belong to two main categories: single-truth scenarios, where each attribute has only one correct value, and multi-truth scenarios, where multiple values can be valid simultaneously. This paper investigates the use of Large Language Models (LLMs) in data fusion tasks for tabular data. Various prompting strategies, encompassing both single-truth and multi-truth scenarios, are investigated empirically. Domain-dependent, domain-independent, zero-shot and one-shot prompts are evaluated on three different benchmark datasets. Experimental results demonstrate that LLM-based approaches outperform traditional unsupervised truth discovery methods, such as DART and LTM, across all datasets. The codebase of this study has been made publicly available on GitHub.",
+    "link": "http://arxiv.org/abs/2606.28062v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28061v1",
+    "title": "ToolPrivacyBench: Benchmarking Purpose-Bound Privacy in Tool-Using LLM Agents",
+    "authors": [
+      "Shijing Hu",
+      "Liang Liu",
+      "Zhu Meng",
+      "Zhicheng Zhao"
+    ],
+    "summary": "Large language models (LLMs) have increasingly moved from standalone text generation systems to agents that invoke external tools, access environments, and execute multi-step tasks. However, conventional function-calling benchmarks mainly evaluate task completion and API correctness, while privacy evaluation benchmarks typically focus on final responses or privacy judgments. Neither perspective captures purpose-bound information flow across an executed multi-tool trajectory. Motivated by this limitation in current agent evaluation, ToolPrivacyBench audits whether task-private atoms are routed only to authorized tools and downstream sinks, thereby evaluating both task completion and privacy over-disclosure during tool use. The benchmark contains 2,150 cases, including 1,150 fully synthetic privacy-sensitive business workflows and 1,000 cases adapted from existing multi-tool and function-calling benchmarks. Each case is represented by a policy knowledge base. After an agent executes against mock business backends, the evaluator compares recorded tool arguments and backend audit logs with this policy knowledge base. The evaluation covers nine widely used agents to characterize purpose-bound privacy over-disclosure. The results show that successful tool execution does not imply appropriate privacy disclosure: an agent may complete a task while transmitting unnecessary private information through intermediate tool calls. ToolPrivacyBench therefore formalizes a need-to-know disclosure boundary, under which each tool should receive only the information necessary for its stated purpose, and uses trajectory-level auditing to identify privacy over-disclosure in multi-tool workflows.",
+    "link": "http://arxiv.org/abs/2606.28061v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28050v1",
+    "title": "Can LLMs Judge Better Than They Generate? Evaluating Task Asymmetry, Mechanistic Interpretability and Transferability for In-Context QA",
+    "authors": [
+      "Sambaran Bandyopadhyay"
+    ],
+    "summary": "LLM-as-a-Judge and self-evaluation pipelines implicitly assume that evaluation is easier than generation. We test this in a controlled in-context QA setting where a context passage is the sole information source and each model judges the answer it generated, removing the parametric-knowledge confound of open-domain comparisons. Across four benchmarks (SQuAD 2.0, DROP, HotpotQA, MuSiQue) and two models, evaluation is not uniformly easier: generation accuracy exceeds self-evaluation on three of four, with multi-hop MuSiQue the exception. Attention analysis reveals why: evaluation attends to context 3--5x less than generation does and barely reads the candidate answer. LoRA fine-tuning confirms the asymmetry is not a training artifact: generation fine-tuning induces over-acceptance and evaluation fine-tuning degrades generation. These findings challenge core assumptions in self-evaluation pipelines.",
+    "link": "http://arxiv.org/abs/2606.28050v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28044v1",
+    "title": "A Tree-of-Thoughts Inspired Hybrid Approach for Legal Case Judgement Summarization using LLMs",
+    "authors": [
+      "Aniket Deroy",
+      "Kripabandhu Ghosh",
+      "Saptarshi Ghosh"
+    ],
+    "summary": "In recent times, Large Language Models (LLMs) are increasingly being used for legal case judgement summarization. Most prior works have tried traditional extractive and abstractive summarization of case judgements. However, hybrid or extractive-abstractive techniques have not been explored much. In this work, we propose a novel tree-of-thoughts inspired extractive-abstractive summarization approach for legal judgement summarization. We conduct experiments using two popular LLMs, DeepSeek and LLama, and compare among extractive, abstractive and extractive-abstractive summarization. Our experiments show that the proposed extractive-abstractive prompt provides better summaries compared to other types of LLM prompts.",
+    "link": "http://arxiv.org/abs/2606.28044v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28016v1",
+    "title": "TempAct: Advancing Temporal Plausibility in Autoregressive Video Generation via Planner-Executor RL",
+    "authors": [
+      "Jing Wang",
+      "Xiangxin Zhou",
+      "Jiajun Liang",
+      "Kaiqi Liu",
+      "Wanyun Pang",
+      "Zhenyu Xie",
+      "Tianyu Pang",
+      "Xiaodan Liang"
+    ],
+    "summary": "Autoregressive (AR) video diffusion models enable low-latency streaming generation by synthesizing videos chunk by chunk with cached visual context, but this chunk-wise formulation makes temporal instruction following ambiguous. A single global prompt does not specify which sub-event should be realized in each chunk, while naively switching to step-wise prompts often leads to delayed reactions, blended step semantics, and error propagation across prompt transitions. These failures are difficult to address with supervised fine-tuning or distillation alone: SFT suffers from exposure bias, while rollout-based distillation still optimizes low-level denoising or teacher-distribution matching rather than directly enforcing action ordering and prompt-transition correctness. We address these challenges with TempAct, a planner--executor reinforcement learning framework that jointly optimizes temporal decomposition and step-conditioned execution for temporally plausible AR video generation. TempAct uses an LLM planner to explore span-aware step prompts that are executable by the video model, and trains an AR diffusion executor to follow these prompts under its own generated histories. Its key mechanism is hierarchical group exploration: candidate plans form planning groups, and each plan induces an execution group of multiple continuations from a shared visual context, enabling plan-level credit assignment for long-horizon temporal outcomes and executor-level credit assignment for prompt-switch behavior. We further design hierarchical rewards that combine plan-quality and full-video temporal feedback for the planner with local transition-level step-following rewards, aesthetic regularization, and KL constraints for the executor. Experiments on Self-Forcing and LongLive show that TempAct improves temporal consistency while preserving overall visual quality.",
+    "link": "http://arxiv.org/abs/2606.28016v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28013v1",
+    "title": "The Signal-Coverage Matrix: Stratifying Type and Semantic Errors in Statement Autoformalization",
+    "authors": [
+      "Chengxiao Dai",
+      "Zhaokun Yan",
+      "Zhanhui Lin"
+    ],
+    "summary": "Headline type-correctness (TC\\%) of LLM autoformalization has climbed from $\\sim$53\\% to $\\sim$76\\% in two years, yet this scalar conceals which errors each method resolves. We propose a signal-coverage matrix that crosses the Lean elaborator (pass/fail) with a semantic-equivalence judgment (equivalent/not), sorting every output into one of four cells: true success (TS), type-only (TO), semantic-only (SO), or both fail (BF). On ProofNet\\# and MiniF2F-test with DeepSeek V4-Pro across Vanilla, Lean-Retry, Sample-Filter, and Stratified Autoformalization (SAF): (1) the +34 to +36 TS gain across the three elab-feedback methods is $\\sim$64\\% type-stratum recovery, with SO flat on net (87.5\\% of original semantic errors rescued, 8 newly created). (2) The TO-to-TS rate is 23/61 for each method (Wilson 95\\% CI [26.6\\%, 50.3\\%]), and this stratum-level recovery rate predicts $\u0394$TS on held-out methods to within 2/186 and renders $\u0394$TC linear in the Vanilla elab-fail rate across six (model, dataset) cells ($R^2=0.96$). (3) The two judges disagree by 26 to 37 pp on elab-feedback outputs (vs. 7 pp on Vanilla), with 30 to 56\\% of symbolic-judge false negatives traceable to elaborator-forced rewrites. The persistent residual reduces to two gold-formalization errors. TC\\% gains should be credited by which cell moved, not by the scalar alone.",
+    "link": "http://arxiv.org/abs/2606.28013v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
+    "id": "http://arxiv.org/abs/2606.28011v1",
+    "title": "From Detection to Action: Using LLM Agents for Fault-Tolerant Control",
+    "authors": [
+      "Javal Vyas",
+      "Milapji Singh Gill",
+      "Artan Markaj",
+      "Felix Gehlhoff",
+      "Mehmet Mercang\u00f6z"
+    ],
+    "summary": "We propose an agentic Large Language Model (LLM) framework for active Fault-Tolerant Control (FTC) that transforms fault detection outputs into constraint-aware recovery actions grounded in plant-specific knowledge. The approach couples (i) a multi-agent workflow that decomposes operator duties into monitoring, planning, action synthesis, simulation, validation, and reprompting; (ii) a Digital Process Plant Twin (DPPT) that exposes plant data, models, and a simulation service for pre-execution testing; and (iii) a Graph Retrieval-Augmented Generation (Graph RAG) layer built on the CPSMod ontology, which organizes plant knowledge (structure, function, hybrid dynamics, control context, and fault semantics) into a graph that supports relation-aware, multi-hop retrieval for the agents. Corrective actions are generated as minimal-risk state-machine recovery paths and corresponding discrete commands or continuous setpoint adaptations, then validated deterministically against interlocks, envelopes, and dynamic feasibility before any actuation. If no acceptable plan is found within a bounded time window, control is handed to a safety fallback. The framework is evaluated in simulation on two representative benchmarks: a discrete batch Mixing Module and a Continuous Stirred-Tank Reactor (CSTR) under closed-loop PID regulation. Results with lightweight LLMs (GPT-4o-mini and GPT-4.1-mini) show that semantically grounded agents can derive valid recovery decisions within latency budgets compatible with the respective process dynamics, demonstrating a practical pathway from detection to validated corrective action across both discrete and continuous FTC tasks.",
+    "link": "http://arxiv.org/abs/2606.28011v1",
+    "date": "2026-06-26",
+    "fetched_at": "2026-06-29"
+  },
+  {
     "id": "http://arxiv.org/abs/2606.20561v1",
     "title": "TimeProVe: Propose, then Verify for Efficient Long Video Temporal Reasoning in Activities of Daily Living",
     "authors": [
