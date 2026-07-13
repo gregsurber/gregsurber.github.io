@@ -1,5 +1,302 @@
 [
   {
+    "id": "http://arxiv.org/abs/2607.09653v1",
+    "title": "VEXAIoT: Autonomous IoT Vulnerability EXploitation using AI Agents",
+    "authors": [
+      "Katherine Swinea",
+      "Kshitiz Aryal",
+      "Lopamudra Praharaj",
+      "Maanak Gupta"
+    ],
+    "summary": "Internet of Things (IoT) systems are inherently vulnerable due to constrained hardware, outdated firmware, and insecure default configurations, creating a need for scalable and adaptive security testing approaches. While recent adoptions of Large Language Model (LLM) agents have demonstrated promise in penetration testing and Capture-the-Flag (CTF) environments, their application to IoT specific vulnerabilities remains unexplored. This paper presents an autonomous multi-agent framework, referred to as Vulnerability EXploitation using AI Agents (VEXAIoT), for vulnerability discovery and exploitation in IoT environments using LLM-based reasoning and offensive security tools. The framework combines a vulnerability detection agent and an attack execution agent to perform reconnaissance, plan attack sequences, and execute exploits against vulnerable IoT services. The system is evaluated in IoTGoat and Metasploitable environments across ten attack scenarios mapped to OWASP IoT vulnerabilities. Experimental results show attack success rate of up to 100% with low token overhead and average execution times under two minutes for most attacks. Across 260 attack executions, VEXAIoT achieves a 95.0% overall success rate, including 94.5% success in IoTGoat and 96.7% success in Metasploitable2. These results demonstrate the potential for LLM-driven agents to automate IoT vulnerability assessment and offensive security workflows in controlled environments",
+    "link": "http://arxiv.org/abs/2607.09653v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09628v1",
+    "title": "Indirect and Direct AI Scaffolding for Computational Problem Posing: A Pilot Experience Report",
+    "authors": [
+      "Shayla Sharmin",
+      "Mohammad Fahim Abrar",
+      "Mohammad Al-Ratrout",
+      "Roghayeh Leila Barmaki"
+    ],
+    "summary": "Problem posing is a valuable learning activity in computing education, encouraging learners to actively construct, refine, and reflect on problems rather than simply solving them. This experience report presents the design and pilot deployment of two LLM-powered scaffolding systems for supporting problem posing across two computational scenarios with different levels of task openness. Both systems assessed student-generated problems using Bloom's Taxonomy-based criteria and applied the same assessment framework, differing only in output modality: one provided guiding questions (Indirect scaffolding), while the other offered worked examples (Direct scaffolding). We conducted a within-subjects, counterbalanced pilot study with 20 graduate students and collected problem-quality ratings, user-experience surveys, and post-session interviews. Our deployment showed that both systems supported problem refinement in complementary ways, each offering distinct benefits. Direct scaffolding produced greater immediate improvements, while interviews showed that participants valued Indirect scaffolding for promoting deeper reflection on their own problem design. Based on these findings, we suggest sequencing the two modalities by beginning with Indirect scaffolding to promote reflection, then shifting to Direct scaffolding when learners become stuck. These lessons offer an initial practical strategy for integrating LLM-based scaffolding into computing classrooms.",
+    "link": "http://arxiv.org/abs/2607.09628v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09616v1",
+    "title": "LLM for EDA in Front-End Design: Challenges and Opportunities",
+    "authors": [
+      "Kangwei Xu",
+      "Bing Li",
+      "Ulf Schlichtmann"
+    ],
+    "summary": "As chip complexity increases and time-to-market pressures grow, front-end design has become a critical bottleneck in chip development. Recently, Large Language Models (LLMs) have shown great potential in Electronic Design Automation (EDA). Beyond specification understanding, LLMs show the potential to serve as a unified intelligent interface for hardware description language (HDL) generation, testbench construction, and design space exploration. The rise of agentic AI, represented by pioneering systems such as OpenClaw, offers a strategic roadmap for the next generation EDA. From this perspective, this paper discusses the evolution of EDA from localized assistance to autonomous agentic execution. Then, we review representative advances of LLMs in front-end design, focusing on key tasks such as circuit and testbench generation from a shared specification, as well as design quality improvement in established workflows such as high-level synthesis. Finally, we discuss the key challenges and limitations of integrating LLMs into EDA, and outline future opportunities for advancing LLM-enabled front-end design, offering a systematic perspective for researchers interested in leveraging agentic AI technologies for EDA.",
+    "link": "http://arxiv.org/abs/2607.09616v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09603v1",
+    "title": "Mosaic: Runtime-Efficient Multi-Agent Embodied Planning",
+    "authors": [
+      "Kunjal Panchal",
+      "Saayan Mitra",
+      "Sunav Choudhary",
+      "Victor Bursztyn",
+      "Somdeb Sarkhel",
+      "Hui Guan"
+    ],
+    "summary": "LLM-based multi-agent embodied planning remains impractical due to prohibitively high execution latency. We identify failed actions as the dominant bottleneck, stemming from two core challenges: inaccurate state tracking under partial observability and inefficient coordination that produces redundant or conflicting actions. We introduce Mosaic, a runtime-efficient multi-agent planning framework that addresses both challenges. Mosaic maintains accurate yet lightweight state tracking through agent-centric semantic memory that stores objects in relative coordinates, enabling geometric transformations and coordination. It ensures efficient coordination through Integer Linear Programming that allocates actions at every planning step, enforcing physical feasibility and inter-agent coordination constraints. Across AI2-THOR and search-and-rescue benchmarks, Mosaic achieves 27-32% faster execution, 30-33% fewer LLM calls, 25-31% fewer steps, and 4-10% points higher success rates. These results demonstrate that efficient memory and constraint-guided coordination are critical for scalable, low-latency multi-agent planning.",
+    "link": "http://arxiv.org/abs/2607.09603v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09600v1",
+    "title": "Agora: Enhancing LLM Agent Reasoning Via Auction-Based Task Allocation",
+    "authors": [
+      "Kaiji Zhou",
+      "Ales Leonardis",
+      "Yue Feng"
+    ],
+    "summary": "Enhancing the reasoning capabilities of large language model (LLM) agents requires effective orchestration of diverse expert models and tools. However, existing frameworks typically call APIs based on coarse-grained matching between tasks and the functions of expert models or tools, while overlooking critical factors such as performance variability and cost efficiency among functionally similar alternatives. To address this, we propose Agora, a framework that introduces an incentive-compatible auction mechanism for dynamically allocating tasks to expert models and tools. By treating reasoning steps as tradeable items, Agora enables agents to bid based on their rectified competence-ensuring that critical logic is routed to the most capable solver rather than the most overconfident one. Evaluations across five benchmarks show that Agora improves over matched single-model, routing, and cascade baselines under comparable candidate pools, while exposing a controllable cost-quality trade-off through a single auction parameter.",
+    "link": "http://arxiv.org/abs/2607.09600v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09576v1",
+    "title": "Conceptual Networks for Cross-Linguistic Idiomatic Expressions:A Feature-Based Graph Approach",
+    "authors": [
+      "Kiran Pala",
+      "Punam Silu",
+      "Lixun Yu"
+    ],
+    "summary": "We present an interpretable network-based framework for representing idiomatic and figurative meaning across eight typologically diverse languages, totaling 160 conventional expressions, the large majority of which are idiomatic. Each expression is annotated with binary conceptual features (containment, concealment, emotional, social, etc.) derived from cognitive-linguistic theory, and pairwise Jaccard similarities define a weighted graph. Community detection reveals that idioms cluster by conceptual schema rather than by language, producing a structure consistent with cognitive-linguistic predictions. The conceptual network captures unique semantic information not present in distributional embeddings, can be scaled via automatic annotation with LLMs, improves downstream idiom detection, and remains robust when enriched with corpus frequencies. Cross-lingual transfer experiments show that conceptual proximity alone can identify acceptable translation equivalents across five language families, with substantial gains over embedding-based baselines. Ablation studies demonstrate that all three feature dimensions -- schemas, roles, and valence -- contribute non-redundantly to both the network's organizational properties and its performance on idiom detection, and that specific graph-derived signals (community membership, neighbor similarity) are particularly informative. The framework offers an interpretable, cross-linguistically stable representation of idiomatic meaning, combining theoretical grounding with practical utility.",
+    "link": "http://arxiv.org/abs/2607.09576v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09553v1",
+    "title": "Writing Bug Reports for Software Repair Agents: What Information Matters Most?",
+    "authors": [
+      "Vincenzo Luigi Bruno",
+      "Alessandro Giagnorio",
+      "Daniele Bifolco",
+      "Leon Wienges",
+      "Massimiliano Di Penta",
+      "Gabriele Bavota"
+    ],
+    "summary": "Software development is increasingly moving toward agentic-first workflows. This includes AI agents responsible for generating initial fixes for submitted issue reports. In this setting, issue reports are no longer merely documentation for human maintainers; they become the primary task specification for the agent. However, little is known about how such reports should be written to maximize the agent's chances of producing a correct fix. We study what makes a bug report agent-ready. Starting from the SWE-bench Verified benchmark (i.e., a collection of 500 real repository issues with human-written gold patches and test suites for evaluating generated fixes) we manually classify each issue by change type (e.g., bug fix vs refactoring) and annotate each sentence with its information type, such as observed behavior, expected behavior, reproduction steps, localization cues, and suggested fixes. We focus on the 441 issues representing bug reports, and we run on them mini-swe-agent using three LLM backbones (i.e., GPT-5-mini, MiniMax M2.5, and Gemini 3 Flash). We then fit a binomial regression model to estimate the incremental association between each information type and agent success, controlling for confounding factors. Our results suggest that agentic-first reports benefit most from information that narrows the agent's search and repair space. Localization cues, such as references to affected code areas, are positively associated with successful repairs, while suggested fixes, expressed either in code or natural language, show some of the strongest positive associations with pass probability. An ablation study removing selected information types confirms that agents benefit less from information traditionally useful to humans, such as reproduction steps, and more from sentences that expose a repair direction, either through bug localization or a suggested fix.",
+    "link": "http://arxiv.org/abs/2607.09553v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09524v1",
+    "title": "Balancing Usefulness and Naturalness: An LLM-based Curation Pipeline for Code Review Comments",
+    "authors": [
+      "Oussama Ben Sghaier",
+      "Martin Weyssow",
+      "Houari Sahraoui"
+    ],
+    "summary": "Code review is a cornerstone of software development, where reviewers provide feedback through written comments to ensure code quality, maintainability, and correctness. The effectiveness of this process hinges on the quality of review comments. As large language models (LLMs) gain traction in automating code review tasks, the utility of these systems is directly limited by the quality of the datasets on which they are trained. Unfortunately, existing code review datasets are often noisy, inconsistent, or poorly structured, which hinders the ability of LLMs to learn to generate accurate, helpful, and human-like review comments.   To overcome these limitations, we propose two different curation pipelines designed to improve both the quality and the utility of large-scale code review datasets. In the first pipeline, all review comments are systematically reformulated by an LLM to improve their clarity, conciseness, and civility while preserving their semantic intent. The curated dataset resulting from this approach, called CuREV, offers cleaner, higher-quality, and easier-to-learn-from comments that lead to measurable improvements in downstream automation tasks, namely review comment generation and code refinement. Building on this, we propose an improved pipeline, guided by high-quality exemplars, that enhances the realism and diversity of curated review comments. This method first separates the dataset into high-quality and low-quality reviews, based on a systematic quality assessment using an evaluation framework. High-quality comments are preserved in their original form and further used as in-context exemplars to inspire the reformulation of low-quality comments. By varying the exemplars provided, the reformulated comments are not only clearer and more actionable but also exhibit a broader range of writing styles, making them more realistic and human-like.",
+    "link": "http://arxiv.org/abs/2607.09524v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09521v1",
+    "title": "SAGEAgent: A Self-Evolving Agent for Cost-Aware Modality Acquisition in Multimodal Survival Prediction",
+    "authors": [
+      "Chongyu Qu",
+      "Can Cui",
+      "Zhengyi Lu",
+      "Junchao Zhu",
+      "Tianyuan Yao",
+      "Junlin Guo",
+      "Juming Xiong",
+      "Yanfan Zhu",
+      "Yuechen Yang",
+      "Bennett A. Landman",
+      "Yuankai Huo"
+    ],
+    "summary": "Does every cancer patient truly need a complete diagnostic workup for accurate survival prediction? In multimodal clinical oncology, diagnostic modalities follow a clinically mandated order of escalating burden -- from demographics collected at intake to genomic profiling requiring specialized tissue analysis. Current multimodal survival methods either assume all modalities are available or passively handle missing data, but none actively reason about whether acquiring the next modality is justified for a given patient along this ordered workflow. We formulate this as a sequential decision problem and propose SAGEAgent (Sequential Acquisition Guided by Experience), a self-evolving LLM-based clinical agent that decides which diagnostic modalities to acquire for each patient, balancing predictive accuracy against clinical invasiveness. SAGEAgent reasons about each patient's evolving diagnostic state through clinical tools that translate numerical predictions into text, an episodic memory that retrieves similar past cases, and a semantic memory that accumulates reusable decision patterns from experience. Experiments on a glioma cohort combining TCGA-LGG, TCGA-GBM, and BraTS with four diagnostic modalities demonstrate that SAGEAgent achieves competitive survival prediction accuracy while reducing average acquisition burden by 55%.",
+    "link": "http://arxiv.org/abs/2607.09521v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09510v1",
+    "title": "Failure as a Process: An Anatomy of CLI Coding Agent Trajectories",
+    "authors": [
+      "Xiangxin Zhao",
+      "Han Li",
+      "Shuaiting Li",
+      "Tianyi Zhao",
+      "Earl T. Barr",
+      "Federica Sarro",
+      "He Ye"
+    ],
+    "summary": "Large language model (LLM) coding agents are increasingly deployed to autonomously perform software engineering tasks in terminal-based environments, making their reliability a growing concern. Existing empirical studies investigate why coding agents fail, yet they largely treat failure as a final outcome rather than a temporal process, providing limited insight into how failures emerge, evolve, and become unrecoverable. We present the first large-scale empirical study of CLI coding-agent failure trajectories, introducing a process-oriented framework that analyzes failure through its onset, evolution, and recovery across execution trajectories. We first collect 3,843 execution trajectories generated by seven frontier models across three coding-agent scaffolds (OpenHands, MiniSWE, and Terminus2) on Terminal-Bench, then carefully filter them to obtain 1,794 complete and valid trajectories for manual annotation (over 63,000 execution steps), from which we derive 14 findings spanning failure occurrence, root causes, recovery, and cross-system consistency. Our findings show that coding-agent failures are predominantly driven by epistemic errors, typically begin within the first few execution steps, and often remain hidden until recovery is no longer possible, suggesting that improving coding-agent reliability requires earlier validation and intervention rather than relying solely on final-outcome evaluation.",
+    "link": "http://arxiv.org/abs/2607.09510v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09493v1",
+    "title": "Shared Selective Persistent Memory for Agentic LLM Systems",
+    "authors": [
+      "Sanjana Pedada",
+      "Aditya Dhavala",
+      "Neelraj Patil"
+    ],
+    "summary": "Agentic LLM systems that generate code through multi-turn tool use face a fundamental context problem: each session starts from zero, discarding the configuration choices, domain constraints, data schemas, and tool-use patterns that made previous sessions productive. Naively persisting entire conversation histories is token-inefficient and counterproductive: irrelevant context degrades generation quality. We introduce shared selective persistent memory, an architecture that identifies and retains four categories of reusable context (task specifications, data schemas, tool configurations, and output constraints) while discarding session-specific reasoning traces. Crucially, this memory is shared: workspaces encapsulating selective memory can be transferred across users with role-based access control, enabling collaborative reuse without redundant specification. We implement it in a deployed collaborative workspace platform where LLM agents produce, edit, and maintain git-versioned artifacts (dashboards, reports, and data-driven documents) from heterogeneous sources (CSV, SQL, REST APIs, and MCP servers). A complementary zero-token data refresh mechanism decouples generated programs from runtime data, enabling artifact reuse without re-invocation. Across three enterprise scenarios, shared selective persistent memory achieves 96% task completion (vs. 79% without memory and 71% with full history). Zero-token refresh eliminates LLM re-invocation for recurring updates (14x task-time reduction), while summary-driven generation cuts per-invocation token cost by 97x versus raw data injection. A replication on four public datasets confirms generalizability, with zero-token refresh succeeding in 12/12 trials. Notably, naive full-history persistence actively degrades completion by biasing the agent with stale traces, while selective memory outperforms both extremes.",
+    "link": "http://arxiv.org/abs/2607.09493v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09488v1",
+    "title": "SigLIP-HD by Fine-to-Coarse Supervision",
+    "authors": [
+      "Lihe Yang",
+      "Zhen Zhao",
+      "Hengshuang Zhao"
+    ],
+    "summary": "High-quality visual representation is a long-standing pursuit in computer vision. In the context of multimodal LLMs (MLLMs), feeding higher-resolution images can produce more fine-grained visual tokens. However, it introduces additional computational and design complexity, due to multiple forward passes and post-processing of increased tokens. Before simply adopting a higher resolution, have we truly unlocked the model's full perception capability at a standard resolution? Therefore, we study an interesting problem: how to achieve fine visual perception under lower cost without larger images. We present SigLIP-HD in this work. The core is a highly simple fine-to-coarse supervision design. We enforce the coarse feature of a mid-resolution image to mimic the fine-grained feature of its high-resolution version. We build this framework on the advanced SigLIP 2 model. Our final model produces better visual tokens at exactly the same inference budget. It is validated on extensive MLLM benchmarks and consistently delivers stronger results than our baseline model, especially on OCR-related tasks.",
+    "link": "http://arxiv.org/abs/2607.09488v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09474v1",
+    "title": "ProofCouncil: An LLM Agent for Solving Open Mathematical Problems",
+    "authors": [
+      "Johannes Schmitt",
+      "Tim Gehrunger",
+      "Jasper Dekoninck",
+      "Gergely B\u00e9rczi",
+      "Uri Kreitner",
+      "Liam Price",
+      "David Holmes"
+    ],
+    "summary": "Large language models (LLMs) have shown increasing promise in solving open problems in mathematics. However, their performance can be further improved through agentic workflows tailored to real-world mathematical practice. To this end, we introduce ProofCouncil, a mathematical agent that is designed to tackle open problems using an author-critic architecture. ProofCouncil served as a submission to the second batch of FirstProof, a challenge consisting of 10 real-world mathematical problems that agents must solve autonomously. Its submissions for 6 of the 10 problems were judged by the referees to be correct up to at most minor revisions, showing the best performance among participating teams. We also evaluate ProofCouncil on 30 open problems collected from mathematical researchers. Among the 21 solutions that received human feedback, 5 were judged completely correct, 2 more were judged promising pending final verification, and a further 8 contained useful partial progress. In this short paper, we describe the development of ProofCouncil and the agent-building library used to create it, which we release as open source to the community.",
+    "link": "http://arxiv.org/abs/2607.09474v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09452v1",
+    "title": "Practical Source Code Recovery from Binary Functions Using Anchor-Based Retrieval and LLM Reasoning",
+    "authors": [
+      "Charles Edward Gagnon",
+      "Steven H. H. Ding",
+      "Philippe Charland",
+      "Benjamin C. M. Fung"
+    ],
+    "summary": "We present a practical pipeline for recovering source code from stripped binary functions by combining reverse engineering, anchor-based source code retrieval, and large language model reasoning. Our binary-to-source-code retrieval method attempts to identify the source function from a source code database, rather than generating approximate decompiled pseudocode. It extracts anchors such as strings, constants, external calls, and available function names using Ghidra, retrieves candidate files via an inverted-index search database, narrows candidates to likely function snippets, and re-ranks them with a large language model (LLM) based on disassembly, decompiled code, and source metadata. Confident matches can also serve as anchors in later passes. In an evaluation backed by our high-fidelity source code database on a stripped, optimized tcpdump binary, our proposed binary-to-source matching method achieves 95.2% assembly instruction coverage. Experiments on a GitHub-based retrieval database showed lower performance with 35.5% instruction coverage on average, mainly due to retrieval misses. These results show that source-level binary recovery excels with high-quality databases and remains a useful tool in noisy environments.",
+    "link": "http://arxiv.org/abs/2607.09452v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09415v1",
+    "title": "Self-Guided Test-Time Training for Long-Context LLMs",
+    "authors": [
+      "Xinyu Zhu",
+      "Zhe Xu",
+      "Xiaohan Wei",
+      "Yunchen Pu",
+      "Fei Tian",
+      "Chonglin Sun",
+      "Kaushik Rangadurai",
+      "Hua Zhi",
+      "Frank Shyu",
+      "Sandeep Pandey",
+      "Luke Simon",
+      "Yu Meng",
+      "Xi Liu"
+    ],
+    "summary": "Long-context processing has become increasingly important for large language models (LLMs), but simply extending the context window does not guarantee effective utilization of long inputs. As input length grows, accuracy often degrades, indicating that models still struggle to identify and use the evidence most relevant to a question. A promising way to improve long-context utilization is test-time training (TTT), which treats the test context as a training example for instance-specific parameter adaptation. However, applying TTT to the entire long context is prohibitively expensive, while adapting on randomly sampled spans introduces severe noise. Because most spans in a long context are irrelevant to the specific question, training on them may even degrade the base model's performance. Our preliminary study shows that TTT is highly sensitive to training-span quality: on LongBench-v2, TTT on randomly sampled spans hurts performance, whereas TTT on oracle spans substantially improves it. Motivated by this, we propose a simple method, Self-Guided TTT (S-TTT): before adaptation, the model identifies the evidence spans it should learn from, and the standard language-modeling training objective is applied only to those selected spans. On two challenging long-context reasoning benchmarks, LongBench-v2 and LongBench-Pro, S-TTT improves accuracy for both Qwen3-4B-Thinking-2507 and Llama-3.1-8B-Instruct, achieving up to a 15% relative improvement.",
+    "link": "http://arxiv.org/abs/2607.09415v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09409v1",
+    "title": "Two Vocabularies, One Phenomenon: Metadata Bias in AI Evidence Synthesis on Fertility Decline",
+    "authors": [
+      "Boyana Buyuklieva",
+      "Veronica-Nicolle Hera"
+    ],
+    "summary": "Declining fertility is one of the defining policy questions of the next decade, and increasingly, what policymakers know about it is shaped by AI-synthesising the evidence base. But ask such a tool about reproduction and the answer depends on the word you use. The same phenomenon, framed clinically (e.g, infertility, IVF) or socially (e.g., childlessness, fertility intentions), is catalogued with radically different completeness. And the catalogue as much, if not more than the underlying scholarship, is what AI synthesis begins with (Bola\u00f1os et al., 2024). That databases under-index the social sciences, books, and grey literature is well established (Visser et al., 2021). What is new here is holding the topic fixed and asking whether metadata gaps act as a hidden policy filter on a single contested issue: the determinants of (in)fertility.   We use two OpenAlex queries on the same phenomenon: a clinical basket (infertility, subfertility, ART, IVF, fecundity; n=101,645) and a social basket (childlessness, social infertility, fertility intentions, reproductive decision-making; n=3,646). We compare them on metadata completeness, open access, output type, and institutional provenance. The social framing is consistently less machine-legible: output skewed to books and dissertations, authorship university -- rather than healthcare-based. Open access rates are essentially equal (43.1% vs 41.3%), so the gap is in indexing depth, not paywalls, suggesting simple OA mandates will not fix it. On this same mixed literature, even before any coverage bias enters the picture, LLM tools already miss more than they catch when asked to extract hypotheses and claims (Uprety et al., 2025); the bias documented here compounds an already-imperfect extraction stage.",
+    "link": "http://arxiv.org/abs/2607.09409v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09403v1",
+    "title": "Fictional Worldbuilding: Multi-Agent LLM Collaboration with Hierarchical Context Compression and Iterative Review",
+    "authors": [
+      "Jingbo Chen",
+      "He Wang",
+      "Wei Yuan",
+      "Yuqiao Lai",
+      "Zhenyan Lu"
+    ],
+    "summary": "Worldbuilding, the construction of coherent fictional worlds, is a foundational task in game design and literary creation. Large Language Models (LLMs) offer new possibilities for automated content generation, but their application to worldbuilding faces three challenges: context explosion that grows linearly with the building process, the tension between creative diversity and content consistency, and the absence of automated quality assurance. This paper presents AutoWorldBuilder, a multi-agent collaborative system that addresses these challenges through five integrated components: a structured concept network with conflict detection; a DAG-based hybrid batch scheduler that groups tasks by semantic locality; a four-layer context compression mechanism achieving approximately 90% token reduction; an iterative review system with specialized Auditor agents that improves proposal pass rates from 42% to over 85%; and a skill-driven agent architecture supporting zero-code extension with differentiated temperature configuration. Two experiments across 20 diverse worldbuilding tasks, using GPT-OSS 120B and DeepSeek v3.2 as LLM backends, demonstrate a 95.0% success rate. The system generated 56-103 self-consistent concepts per world in 18-31 minutes with zero-conflict delivery. The architectural patterns validated here, including layer-as-budget compression, semantic-locality scheduling, and separation of generation and review, transfer to the broader class of knowledge-intensive, multi-agent LLM applications.",
+    "link": "http://arxiv.org/abs/2607.09403v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09366v1",
+    "title": "Diversifying to Verify: When Task-Equivalent Programs Differ in Verifiability",
+    "authors": [
+      "Shirley Yu",
+      "Ruben Martins"
+    ],
+    "summary": "Program verification is crucial for software correctness, but producing fully verified programs remains difficult in practice. This paper studies whether implementation structure affects automated verifiability when multiple generated programs are intended to satisfy the same task-level semantics.   We present Diversify2Verify, a staged LLM-based pipeline for Why3 that infers representation-specific contracts, generates and tests diverse recursive and imperative array/list implementations, and attempts verification with bounded verifier-guided annotation repair. We also construct a verification-oriented benchmark of 73 tasks over integers, arrays, and lists, yielding 292 implementation variants. Diversify2Verify verifies 96 artifacts initially and 154 after two repair passes, improving artifact-level verification from 32.9% to 52.7%. At the task level, at least one variant verifies for 49 of 73 tasks, a 67.1% success rate. These results show that task-equivalent implementations can differ substantially in verifiability and that implementation diversity helps find verification-friendly artifacts.",
+    "link": "http://arxiv.org/abs/2607.09366v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09348v1",
+    "title": "DKCD: Domain Knowledge-Enhanced Causal Discovery from Unstructured Data",
+    "authors": [
+      "Xin Li",
+      "Jin Li",
+      "Shoujin Wang",
+      "Kun Yu",
+      "Fang Chen"
+    ],
+    "summary": "Causal discovery from unstructured data is a challenging yet underexplored task in high-expertise domains such as healthcare, finance, and education. Existing methods typically leverage the general knowledge of large language models (LLMs) to identify causal factors from unstructured data and annotate them into structured data for causal graph construction. However, they remain limited by two key challenges (CHs): (CH1) insufficient identification of latent factors, which are implicit in the data yet essential for causal discovery, due to the lack of domain-specific knowledge; and (CH2) unreliable factor annotation, caused by the lack of domain-grounded reasoning, which propagates errors to the resulting causal graphs. To address these challenges, we introduce a novel Domain Knowledge-enhanced Causal Discovery framework (DKCD) for causal discovery from unstructured data in high-expertise domains with three interconnected components: (1) Knowledge Mining: It retrieves relevant domain knowledge based on observable factors to support subsequent causal reasoning. (2) Knowledge-guided Causal Reasoning: Reasoning with relevant knowledge, it discovers latent causal factors to address CH1 and generates key causal clues for more accurate data annotation to address CH2. (3) Causal Structure Discovery: It constructs the final causal graphs based on a more complete factor set and accurate annotations. Experiments on two domain-specific datasets show that DKCD significantly improves both causal factor identification and causal graph construction.",
+    "link": "http://arxiv.org/abs/2607.09348v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
+    "id": "http://arxiv.org/abs/2607.09338v1",
+    "title": "Towards Detecting Inconsistencies in End-to-end Generated TODs",
+    "authors": [
+      "Tiziano Labruna",
+      "Giovanni Bonetta",
+      "Bernardo Magnini"
+    ],
+    "summary": "Generative AI is profoundly transforming the core technologies behind conversational systems, shifting from component-based to end-to-end approaches. However, Large Language Models (LLMs) may still generate inconsistencies, a critical issue particularly in Task-Oriented Dialogues (TODs), where system responses must strictly adhere to information from a domain knowledge base (e.g., restaurants in a city). A single hallucination (e.g., suggesting a non-existent restaurant) can lead to severe task failures. We investigate a method for automatically detecting inconsistencies by conceptualizing TODs as a Constraint Satisfaction Problem (CSP), where variables represent dialogue segments referencing the conversational domain, and constraints among variables capture dialogue properties such as turn coherence and adherence to domain knowledge. We propose a pipeline that first identifies variables in a target dialogue and then applies a CSP solver to identify valid solutions. By comparing the target dialogue with valid variable assignments, we can detect inconsistencies and suggest minimal changes to ensure dialogue consistency. We demonstrate the high accuracy of the CSP-based approach in detecting inconsistencies, and provide a detailed analysis of our findings.",
+    "link": "http://arxiv.org/abs/2607.09338v1",
+    "date": "2026-07-10",
+    "fetched_at": "2026-07-13"
+  },
+  {
     "id": "http://arxiv.org/abs/2607.02517v1",
     "title": "WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory",
     "authors": [
