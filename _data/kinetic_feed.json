@@ -1,5 +1,280 @@
 [
   {
+    "id": "http://arxiv.org/abs/2610.32980v1",
+    "title": "Separating Thinking from Spelling for Efficient Generative Recommendation",
+    "authors": [
+      "Danil Gusak",
+      "Anna Volodkevich",
+      "Ivan Oseledets",
+      "Evgeny Frolov"
+    ],
+    "summary": "Generative recommenders retrieve items by writing their semantic IDs (SIDs) code by code under trie-constrained beam search, an approach now deployed on large web platforms. Standard autoregressive interfaces pay for the SID length K twice: a history of T items enters the backbone as TK code tokens, and every beam-search step runs through the backbone, so returning B candidates costs O(BK) backbone decode tokens per user. The second cost often dominates, and it grows with the backbone, the SID depth and the candidate budget.   We introduce Deco (decoding from concepts), which separates reading the history from writing the identifier. The backbone reads each history item as one fused token and condenses the history once into a compact next-item concept; a light KV-cached decoder conditioned on the concept and the generated prefix runs the entire beam search, while the identifiers, the trie and the autoregressive factorization stay unchanged. The decoder approaches full-backbone accuracy with cross-entropy alone, and distillation improves it further. On seven datasets from e-commerce, movies and music streaming, Deco achieves comparable or better accuracy than both a standard generative recommender and the full-backbone teacher with fused inputs, while delivering 3.2--8.6$\\times$ their throughput under a 50 ms p95 latency budget in a production-style serving pipeline. Delegating beam search makes larger candidate pools and models practical: Deco generates 1000 candidates faster than its teacher generates 100, and with a 1.5B-parameter LLM backbone, it matches the 69M-parameter teacher's throughput while achieving higher accuracy.",
+    "link": "http://arxiv.org/abs/2610.32980v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32955v1",
+    "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+    "authors": [
+      "Federico Lucca"
+    ],
+    "summary": "Personal email agents decide, for every message, what it is, whether it is urgent, whether to draft a reply, create a task, or ignore it. Their error rate is rarely measured: the stored labels were written by the system itself. We present Foyer, a self-hosted personal inbox agent in daily use, and a measurement protocol (stratified sampling, frozen snapshots, thread-grouped splits, pre-registered hypotheses, human labels in the agent's review loop) that yields ground truth before any training. On 739 real Italian/English emails labelled by the owner (231 unbiased, 500 adversarially sampled), we compare nine systems under thread-grouped cross-validation: the production keyword rules, a TF-IDF + logistic-regression baseline, local typed decision models (Tev1, Nimble), a hosted decision model (Nimble v4-max), and hosted generative LLMs (Qwen2.5-7B, Gemma 4 26B/31B). Four results. The production rules score 28% on message type against a 58% majority class: the field shown most prominently carried no information. With ~200 labels, logistic regression has the highest accuracy on every field (type 0.79, urgency 0.74, needs-reply 0.83, is-noise 0.90), though it never predicts the two rarest classes and is statistically tied with Gemma 4 on type; few-shot prompting does not close the gap. The sender's relationship (client, supplier, service) is recovered from other emails of the same contact with 98.6% accuracy where the contact has been seen, and is not inferable from a single message by any model: it belongs in the contact graph, not the prompt. Finally, accuracy is not the product metric: composed into actions, the most accurate system most often ignores emails needing action (18% vs 4% for the best LLM); a cost-chosen threshold on its noise probability halves that rate and makes it the cheapest system.",
+    "link": "http://arxiv.org/abs/2610.32955v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32951v1",
+    "title": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
+    "authors": [
+      "Yijing Ke",
+      "Tianle Cai",
+      "Ruosong Wang"
+    ],
+    "summary": "Reinforcement learning for large language models often uses separate systems for inference and training. Even with identical weights and BF16 tensors, implementation differences can make an intended on-policy update off-policy and destabilize training. Existing remedies align the entire inference and training stacks, change global precision, or modify the learning algorithm. We ask whether aligning selected parts of the execution stack can stabilize BF16 RL while other implementation differences remain. We align training-side rounding locations with inference in three regions---RoPE, SwiGLU, and residual RMSNorm---by retaining selected intermediates in FP32 until their BF16 outputs. Across four Qwen-family models, aligning all three regions prevents the collapse observed under the default BF16 baseline; RoPE-path alignment alone also suffices in the studied runs, despite remaining numerical discrepancies. The interventions keep the inference engine, matrix-multiplication and attention kernels, and learning objective unchanged.",
+    "link": "http://arxiv.org/abs/2610.32951v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32945v1",
+    "title": "Monetizing Intelligence: Advertising and Subscription Design on LLM Platforms",
+    "authors": [
+      "Yuhang Ji",
+      "Fasheng Xu",
+      "Tianjun Feng"
+    ],
+    "summary": "Large language model (LLM) platforms introducing advertising must decide how much capability ad revenue should fund and what consumers should pay to avoid ads. We study a monopolistic platform that jointly chooses costly response quality, advertising intensity, and subscription prices when advertising reduces user value but better service raises advertising returns. Three findings follow. First, when partly ad-supported and ad-free plans coexist, advertising can finance useful service for consumers who receive none under pure subscription. Lower effective quality in middle plans weakens the alternatives available to premium users, allowing higher prices for unchanged ad-free service. Some fully ad-supported users gain utility, while partly ad-supported and ad-free users lose: broader access can coexist with utility polarization. Second, an intermediate advertising cap can maximize consumer surplus by preserving some revenue that finances service while limiting degradation. Third, cheaper compute can raise quality and reduce ad intensity, yet sufficiently large cost reductions can increase aggregate advertising revenue above its initial level because better service raises the value of the remaining advertised interactions. An extension shows how advertising-funded upgrades can bring plans to the same maximum capability and advertising exposure, eliminating the basis for different prices. These results make menu design central to evaluating LLM advertising: the consequences extend beyond users who see ads to the alternatives and prices faced by those who do not.",
+    "link": "http://arxiv.org/abs/2610.32945v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32891v1",
+    "title": "Green Code or Costly Code? Evaluating the Energy Costs of Iterative LLM-Based Code Optimizations",
+    "authors": [
+      "Sadra Emami",
+      "Benjamin Weigell",
+      "Mohammad Reza Mousavi",
+      "Gunel Jahangirova",
+      "Hugo Araujo",
+      "Bernhard Bauer"
+    ],
+    "summary": "Large Language Models (LLMs) are increasingly used to optimize code for performance. This practice often assumes that improvements in execution speed naturally translate into overall lower energy consumption. We challenge this assumption empirically by measuring whether performance-optimized code produced by LLM self-refinement pipelines is also energy-efficient relative to canonical human reference solutions, and whether the energy cost of the optimization process can be offset by subsequent execution-time savings. We evaluate 11 open-source models across four decoding configurations on all 1,000 problems of EffiBench, a state-of-the-art performance benchmark, while collecting per-process, hardware-level energy measurements throughout. Inference energy spans 0.79 to 8.68 MJ across model-variant pairs, which is roughly equivalent to the energy of 250 to 2800 GPT-4.1 queries. Limiting the maximum number of output tokens has the largest impact, reducing energy use by up to 69% compared to the default configuration. On the execution side, 42 of 44 configurations produce code that consumes more energy per problem than the canonical human reference, with overheads ranging from +4% to +886%. The two exceptions achieve only marginal gains, with break-even points on the order of 10^6 to 10^7 executions. Mixture-of-Experts architectures consume substantially less inference energy than equivalently-sized dense models without sacrificing correctness, making architectural choice a more consequential sustainability lever than decoding parameters. Performance optimization and energy efficiency are not always aligned goals: LLM self-refinement consistently produces faster-seeking but energy-heavier code relative to what a human engineer would write. All artifacts are available at https://doi.org/10.5281/zenodo.23598170.",
+    "link": "http://arxiv.org/abs/2610.32891v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32883v1",
+    "title": "When Should I Trust This? Designing and Evaluating Factuality Indicators for LLM-based Chatbots",
+    "authors": [
+      "Greta Warren",
+      "Jessica Heal",
+      "Sila Eser",
+      "Denise M. Leto",
+      "Christine M. Lehane",
+      "Isabelle Augenstein"
+    ],
+    "summary": "Generative AI systems increasingly mediate how people seek information, yet communicating AI factuality to laypeople remains challenging. Through a mixed-methods investigation involving interviews (N=8), a survey (N=1,000), and an experiment (N=5,151), we examine how people evaluate AI-generated information for gardening, mathematical, and medical queries, and how factuality indicators (confidence and sources) shape perceptions. Our interviews and survey show people selectively verify AI responses using external and AI-provided evidence, moderated by contextual factors. Although confidence-indicators affected trust and accuracy perceptions, people hold diverse, ambiguous interpretations of AI confidence. Sources were viewed as crucial, yet users raised concerns about source reliability and verification effort. Our experiment showed that confidence and source-based indicators influenced initial perceptions, but effects disappeared once participants learned the response's correctness. Medical queries elicited skepticism regardless of indicator. Findings motivate helping users interpret model confidence and integrating source information into the interface to support calibrated trust in AI-supported information-seeking.",
+    "link": "http://arxiv.org/abs/2610.32883v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32878v1",
+    "title": "Advancing SVD-based LLM Compression via Layer-Wise Error Model Search",
+    "authors": [
+      "Moritz Thoma",
+      "Maximilian Groezinger",
+      "Maximilian Forstenh\u00e4usler",
+      "Emad Aghajanzadeh",
+      "Manoj Rohit Vemparala",
+      "Christos Anagnostopoulos",
+      "Pierpaolo Mori",
+      "Nael Fasfous",
+      "Alexander Frickenstein",
+      "Daniel Mueller-Gritschneder",
+      "Ulf Schlichtmann"
+    ],
+    "summary": "Low-rank SVD-based compression offers a powerful strategy to reduce the computational costs of LLMs. However, existing methods face two key limitations: (i) global rank allocation, where uncalibrated error proxies fail to capture complex error propagation, and (ii) decomposition quality, where Fisher-based estimators suffer from severe rank collapse. In this work, we address these limitations by introducing Layer-wise Error Modeling Search (LEMS) and KFAC-SVD. LEMS advances rank allocation by introducing a layer-wise error surrogate that integrates local and global layer importance alongside a propagation bias, enabling effective global rank allocation via an ILP formulation. KFAC-SVD improves decomposition quality by utilizing token-wise statistics, mitigating the rank deficiency observed in prior Fisher-based SVD approaches. Across Mistral, Qwen3, and Llama 3 model families, we show that LEMS consistently outperforms existing search strategies, delivering significant zero-shot accuracy gains of up to 4.8 p.p. that generalize to model sizes of 70B parameters, while KFAC-SVD achieves an average perplexity improvement of 15%. Project page and code: https://lems-svd.github.io",
+    "link": "http://arxiv.org/abs/2610.32878v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32876v1",
+    "title": "Trusting the Tool: Asymmetric Deference of LLM Vulnerability Auditors to Static-Analysis Evidence",
+    "authors": [
+      "ZhiHong Liu",
+      "Shuyao Gao"
+    ],
+    "summary": "Pipelines that combine large language models (LLMs) with static analysis let the model consume the analyser's output as evidence, but whether the model distinguishes true from false evidence, and whether its scrutiny depends on what the evidence claims, has not been measured. We built an intraprocedural analyser for C/C++ that produces proof obligations and audited vulnerable and patched functions from PrimeVul under six evidence conditions that differ only in the notes, including fabricated assurances that a missing check exists and fabricated alarms that an added check is missing. The study covers 916 pairs in four disjoint sets, eleven model configurations from four vendors and 16,572 audits; no model is trained or fine-tuned. True evidence barely improved accuracy (+0.02). False evidence acted asymmetrically: relative to true notes about the same operations, false assurances lowered the detection of real vulnerabilities by up to 19 points, whereas false alarms never significantly lowered accuracy and were disputed far more often. An internally registered replication on seven new models confirmed that false assurances move verdicts towards their claim more than false alarms do (mean asymmetry +0.16, 95% CI +0.10 to +0.24). Instructions in the audit prompt did not reliably reduce deference; the best one failed to replicate. Verifying each claim in a separate call and showing the refuted claims raised accuracy under false assurances by 12 points in a pre-specified test (p=0.002) without loss under true evidence; for a second model the gain was smaller and not significant. Pipelines should therefore verify a tool's guarantees before the model relies on them, and studies should measure deference in a direction-aware way.",
+    "link": "http://arxiv.org/abs/2610.32876v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32874v1",
+    "title": "Do \"True\" and \"False\" Add Up to One? Complement Consistency in LLM-Agent Opinion Simulations",
+    "authors": [
+      "Anouar Imel",
+      "Jin Qi"
+    ],
+    "summary": "In LLM-agent opinion simulations, each agent reports the probability that a claim is true after seeing its own previous probability and the probabilities reported by its neighbors, and that number becomes its state in the next round. If the number describes the agent's position rather than the sentence it was shown, then rewriting the claim as its complement and replacing every probability p with 1 - p should return the complementary answer, so the two reports should sum to one. We test this with three small open models: Qwen3-4B, Llama-3.2-3B and Gemma-3-4B. On 2,304 agent states taken from a running network simulation, Qwen's paired reports sum to 1.18 on average, and on 48 real fact-checking claims from AVeriTeC they again exceed one. A controlled benchmark of 24 worlds, each with exactly two possible outcomes, shows the same failure in all three models. The discrepancy is two to ten times larger than the change produced by a same-meaning paraphrase, and it persists under repeated sampling and across peer group sizes and report strengths. When the reports are fed back into two populations that start from complementary states, the populations do not remain mirror images: their divergence is positive after five rounds for every model. Averaging each answer with the complement of its paired answer restores consistency by construction and lowers Brier loss averaged over the two wordings, but at the final round it beats the better of the two original wordings for only one of the three models. A schedule-by-targeting experiment on the same model gives a small, stable interaction because such sweeps keep the claim wording fixed. Consistency under rewording therefore needs its own test before simulated probabilities are read as beliefs",
+    "link": "http://arxiv.org/abs/2610.32874v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32871v1",
+    "title": "J-Comm: Jacobian-Guided Latent Communication between LLM Agents",
+    "authors": [
+      "Xiangwei Wang",
+      "Wei Wang",
+      "Sachith Seneviratne",
+      "Ken Chen",
+      "Yu Xia",
+      "Peng Wang",
+      "Saman Halgamuge"
+    ],
+    "summary": "Latent communication requires both an effective continuous reasoning process and an interface through which an external model can leverage its intermediate computation. We present J-Comm, a framework comprising two core components. First, a training-free Geometric Agreement for Latent Reasoning (GEAR) reweights token candidates over existing model embeddings, which monotonically optimizes geometric consensus among candidate tokens in embedding space at each step. Second, we introduce an H+J (Hidden-and-Jacobian) communication interface that gives the Receiver two complementary views of the Sender's reasoning. The H channel supplies continuous inputs derived from feedback distributions, while the J channel conveys intermediate-state cues in vocabulary-indexed Jacobian-lens coordinates. Intuitively, H provides inputs for the Receiver to reason from, while J offers additional guidance within its computation. The Receiver reconstructs these cues using its own dictionary and injects them into intermediate layers during prefill, enabling communication without sharing key-value caches or requiring identical model widths. In Qwen3-8B to Qwen3-4B communication, J-Comm achieves the highest mean score across seven benchmarks, including 94.80% on MATH500, 54.55% on GPQA-Diamond, 73.33% on AIME2024+2025, and 62.93% success on ALFWorld. Compared with TextMAS, it improves performance by 1.29-8.59 percentage points and reduces generated text tokens by 19.2-74.8%.",
+    "link": "http://arxiv.org/abs/2610.32871v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32869v1",
+    "title": "From Deliberately Constructed Systemic Representations of the World of Activity to Dialogue: A Five-Level Communication Architecture for Strong Language-Based ASI",
+    "authors": [
+      "Maxim Osovsky"
+    ],
+    "summary": "This paper proposes a five-level organization of message formation and understanding within thinking and activity in which ASI participates. Its central thesis is that a language model's context is fundamentally incapable of presenting the foundations of utterance formation for examination and verification. These foundations are established in advance by acquired schemas, systemic representations of the world of activity, and connections accepted as true within them. Neither context nor trained LLM weights, in themselves, attest to the presence of deliberately constructed systemic representations. The five levels distinguish systemic representations of the world of activity, a particular situation cut out from those representations, its narrative description, the full sense of a message, and text. A situation's schema-model is not identical to a story about it. A recipient reconstructs the full sense from an abbreviated text through jointly constructed and agreed-upon representations and joint activity. Reverse work proceeds from the full sense through an extended description and the situation's schema-model to the reconstruction of systemic foundations. The theoretical foundations draw on the systems methodology of G. P. Shchedrovitskiy, the structural differential of A. Korzybski, and the Meaning-Text theory of I. A. Mel'chuk. The contribution is a specific systemic-activity organization of content for examining and adjusting message foundations and controlling the consequences of their transformation. Further research concerns large graphical models of activity on reconstructible systemic foundations, distinct from text generation from context.",
+    "link": "http://arxiv.org/abs/2610.32869v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32792v1",
+    "title": "SREdit: Scene Response Guided Appearance Editing for Projection Mapping",
+    "authors": [
+      "Yuqiao Xia",
+      "Yuchen Deng",
+      "Ziheng Chang",
+      "Bingyao Huang"
+    ],
+    "summary": "Projection-based appearance editing changes selected visual attributes of a physical object through projection mapping (PM). To display a desired appearance, PM typically uses projector compensation, which computes a projector input that counteracts the geometric and photometric distortions of the scene. Compensation can only approximate this appearance within the available projection range, and it cannot revise the appearance itself. Pretrained LLM-based image editors provide a direct way to produce the desired appearance from a text prompt or reference image; projector compensation can then attempt to reproduce the edited result through projection. However, these editors do not have an accurate measure of the scene geometry or scene response. Therefore, their outputs may contain geometric misalignment, inconsistent shading, or changes outside the available projection range, which downstream projector compensation cannot correct. To address this problem, we introduce SREdit, an efficient response-guided framework for projection-based appearance editing. SREdit estimates a scene response map from the reconstructed scene that reflects how strongly projected illumination can affect different surface regions. SREdit uses the source appearance to constrain the early sampling process and preserve registration with the fixed physical object, while the scene response map adapts the amount of editing across surface regions. Experiments across two pretrained image editors show that SREdit improves projected appearance quality and reproduction fidelity. It adds less than one second per image with negligible VRAM overhead. Participants also consistently preferred the results produced with SREdit in our user study.",
+    "link": "http://arxiv.org/abs/2610.32792v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32780v1",
+    "title": "AI Alignment for Digital Democracy: Fairer Voters Representation against LLM Biases",
+    "authors": [
+      "Yi Qi",
+      "Srijoni Majumdar",
+      "Evangelos Pournaras"
+    ],
+    "summary": "AI representation is emerging in digital democracy, assisting in voter emulation and decision-making. Large language models (LLMs) behave differently depending on the model, the prompt context, and the voter information they receive, representing some groups more accurately than others and potentially making the emulation unfair to certain groups. We investigate demographic biases in LLM-emulated electorates: how accurately LLMs represent individual votes, whether some voter groups are represented more accurately than others, and whether AI alignment can reduce these disparities without sacrificing overall accuracy. Using three U.S. presidential elections, we compare a closed-source and an open-source LLM across voters' demographic features and test AI alignment strategies toward fairer voter representation. Removing gender from the voter profile reduces the largest group error of the models by 22-42%, and removing education reduces it by 64%, whereas removing self-reported race increases the mean group error by over 40%, all without lowering accuracy. Common alignment strategies, such as repeated queries or fairness instructions, do not reduce these errors and can double them.",
+    "link": "http://arxiv.org/abs/2610.32780v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32752v1",
+    "title": "ActionRAG: Evidence-Refining Graph Diffusion for Long-Term Memory in LLM Agents",
+    "authors": [
+      "Navyansh Mahla",
+      "Sashank Vandrangi"
+    ],
+    "summary": "LLM agents need long-term memory that can recover precise and mutually consistent evidence from growing interaction histories, particularly when answers depend on relations among facts rather than isolated semantic matches. Current memory pipelines remain vulnerable at two stages: indexing errors can fragment repeated entities or merge distinct ones, and online retrieval often treats initial similarity scores as final even when the surrounding graph provides evidence for revising them. We introduce ActionRAG, a graph memory architecture that couples cautious indexing with query-time graph retroevaluation. Its indexing pipeline reconciles type labels and applies tiered entity resolution. Given a query, dual-channel entity and triple retrieval forms an initial evidence set and induces a bounded local graph. Query-conditioned receiver-normalized diffusion refines triple scores using local path structure. Seed protection, hub-penalized flux, and triple materialization preserve direct evidence while recovering missed connections. We evaluate ActionRAG on MemoryAgentBench (MAB), which tests accurate retrieval, conflict resolution, long-range understanding, and test-time learning. Across its eight deterministic-scoring columns, ActionRAG achieves 55.1 average accuracy, improving over the strongest retrieval-based memory baseline by 5.4 points. Under MAB's query-time cost accounting, mean synthesis cost stays below \\$0.001 per query on the four reported cost columns, and the sum of separately measured retrieval-side p99 components is 440.7 ms on our consumer Apple Silicon setup.",
+    "link": "http://arxiv.org/abs/2610.32752v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32726v1",
+    "title": "The Butterfly Defects: Tracing Cooperation in LLM Agent Networks",
+    "authors": [
+      "Maria Sampani",
+      "Maria Lymperaiou",
+      "Angeliki Dimitriou",
+      "Giorgos Filandrianos",
+      "Chrysoula Zerva",
+      "Giorgos Stamou"
+    ],
+    "summary": "As large language models (LLMs) increasingly operate as interconnected agents, a fundamental question emerges: does individual cooperation translate into collective cooperation? We investigate this question through the Iterated Prisoner's Dilemma (IPD), moving from dyadic interactions to homogeneous and heterogeneous networks of open-weight LLMs. Our findings reveal that cooperation is highly sensitive to model composition and seemingly minor linguistic changes. Models that cooperate with identical peers can shift toward defection in mixed populations. A simple uncertainty cue can increase or decrease cooperation, redistribute costs, and affect unexposed agents several hops away. Even reversing action-label order can dramatically alter behavior, with uncertainty framing sometimes amplifying this sensitivity. Together, these findings challenge the notion of cooperation as a stable model-level property, revealing how strategic behavior depends on interaction partners, network positions, and the language used to frame decisions.",
+    "link": "http://arxiv.org/abs/2610.32726v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32725v1",
+    "title": "Ontology-Guided Knowledge Graph Construction from Structured Metadata and Climate Science Publications",
+    "authors": [
+      "Aayush Acharya",
+      "Qi Zhang",
+      "Eduard Dragut",
+      "Longin Jan Latecki"
+    ],
+    "summary": "The rapid expansion of scientific literature far outpaces the speed of manual curation, creating a fundamental bottleneck in extracting structured knowledge from scientific texts. To address this, we introduce an agentic, ontology-guided framework for knowledge graph (KG) construction. Our framework utilizes specialized agents for document understanding, information extraction, ontology conformance, and entity linking. First, an LLM extracts factual knowledge in the form of triples with explicit textual evidence from research papers. Then the triplets undergo a multistage verification process to ground the triplets in the ontology. By enforcing schema constraints and requiring evidence in the form of text fragments, we ensure the data is both semantically consistent and traceable. In an agreement study over 1,000 extracted triplets, Gemini-2.5-flash achieves Cohen's $\u03ba$ scores of 0.640--0.700 against three human annotators, matching the human--human agreement range of 0.616--0.689. We applied this framework to 2,000 scientific publications and construct a novel, ontology-grounded KG for climate science with 133,990 nodes and 755,308 relations; of the 23,327 triplets that the publications contribute after validation, 98.96\\% are judged correct. The pipeline code and KG is publicly available https://github.com/aayushacharya/climatekg.",
+    "link": "http://arxiv.org/abs/2610.32725v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32711v1",
+    "title": "Beyond Hotness: High-Resolution Memory Characterization of Cloud and LLM Workloads for Tiered Memory with ARM SPE",
+    "authors": [
+      "Jie Ren",
+      "Ivy Peng"
+    ],
+    "summary": "Memory demands from data analytics and LLM workloads grow rapidly, driving up memory costs in cloud and data centers. Multi-tier memory has emerged as a promising solution to balance performance and cost. However, effectively leveraging it requires a deep understanding of workload memory behaviors. This work introduces a high-resolution memory characterization methodology for analyzing workload-specific opportunities for multi-tier memory usage. In response to the increasing deployment of ARM-based processors in data centers, we implement our methodology using the recent Statistical Profiling Extension (SPE) for ARM. By characterizing eight memory-intensive workloads from CloudSuite and LLM applications, we identify region-specific access patterns, evaluate the effectiveness of cloud-oriented cache hierarchies, and propose new metrics based on memory idle periods and latency profiles to determine suitable data placement for tiered memory.",
+    "link": "http://arxiv.org/abs/2610.32711v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32702v1",
+    "title": "CounselPlex: A Stressor-Aware Full-Duplex Counseling Model",
+    "authors": [
+      "Yeonju Kim",
+      "Bella Godiva",
+      "Yong Man Ro"
+    ],
+    "summary": "Full-duplex speech models can listen and speak at the same time, enabling natural, low-latency interaction. In counseling, however, these models often focus on the latest utterance and lose track of the seeker's underlying problem. We call this failure Stressor Blindness. We propose CounselPlex, a stressor-aware full-duplex framework that uses two operations. CounselPlex updates a short stressor state during seeker silence and injects this state into <PAD> positions while listening. We also introduce RoPE Position Shift Augmentation (RPSA), which broadens positional coverage during training and improves performance at longer turn depths in our evaluation. LLM-judge evaluations show improved counseling quality and stressor grounding over strong baselines.",
+    "link": "http://arxiv.org/abs/2610.32702v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32696v1",
+    "title": "Foundation Models Meet Power Grid Topology for Cascade Prediction",
+    "authors": [
+      "Soumav Biswas",
+      "Mia Naeini"
+    ],
+    "summary": "Accurate early-stage prediction of cascading failure severity is essential for assessing the vulnerability of power transmission networks. However, existing data-driven approaches often rely on network-specific representations, limiting their generalizability across power system topologies. This work investigates the complementary capabilities of Large Language Models (LLMs) and Graph Neural Networks (GNNs) for cascading failure severity prediction. First, standalone LLM predictors are developed using a LoRA-fine-tuned LLaMA-3-8B-Instruct model with varying degrees of topological information. A hybrid Graph-LLM fusion framework is then proposed, integrating a Topology-Aware Graph Attention Transformer (TAGAT) with the LLM through confidence-gated fusion. TAGAT captures structural dependencies among transmission lines, while the LLM extracts representations from early-stage power-flow observations and aggregated cascade descriptors. The frameworks are evaluated on 30,000 simulated cascading failure scenarios for each of the IEEE 118-bus and IEEE 300-bus systems. Using only the first four cascade steps, the hybrid framework achieves weighted F1 scores of 0.94 and 0.92, respectively. In cross-system transfer from IEEE 118-bus to IEEE 300-bus, it achieves 0.72 zero-shot accuracy, improving to 0.83 with limited target-system calibration, outperforming standalone models and conventional baselines. These results show the potential of combining graph-based structural learning with foundation models to improve cascading failure severity prediction and cross-system transferability.",
+    "link": "http://arxiv.org/abs/2610.32696v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
+    "id": "http://arxiv.org/abs/2610.32686v1",
+    "title": "OpenDraco: A Platform for Engineering and Experimenting with Configurable Multi-Agent Architectures for Software Engineering",
+    "authors": [
+      "Xiang Feng Ye Pan",
+      "Vincenzo De Martino",
+      "Matias Martinez"
+    ],
+    "summary": "Experimenting with LLM-based multi-agent systems (MAS) involves an iterative cycle of modeling configurations, executing and evaluating them, comparing results, and refining system designs. Existing approaches provide limited end-to-end support for this experimentation lifecycle. We present OpenDraco, an open-source platform that integrates these activities into a single workflow. OpenDraco represents agents, prompts, tools, models, parameters, and communication topology in exportable, versioned JSON specifications, translated into executable LangGraph workflows supporting different interaction structures. Users can modify and re-evaluate configurations using local or cloud-based LLMs. We instantiate OpenDraco for automated program repair (APR) and evaluate a sequential baseline and seven reconstructed configurations on synthetic and real-world SWE-bench Lite issues. The results reveal substantial cost differences among configurations with similar repair outcomes, while the baseline resolves 12 of 77 SWE-bench issues using open-source LLMs. Additional proof-of-concept tasks illustrate applicability beyond APR. OpenDraco supports iterative experimentation with heterogeneous MAS configurations, enabling researchers to examine their outcomes and costs within a common environment. Demonstration video: https://youtu.be/278sOR4lBEk.",
+    "link": "http://arxiv.org/abs/2610.32686v1",
+    "date": "2026-10-23",
+    "fetched_at": "2026-10-26"
+  },
+  {
     "id": "http://arxiv.org/abs/2610.23847v1",
     "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
     "authors": [
